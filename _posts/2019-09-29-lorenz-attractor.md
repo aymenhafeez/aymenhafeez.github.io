@@ -10,8 +10,6 @@ title: The Lorenz Attractor
 </figure>
 </center>
 
-$$\frac{\dd z}{\dd $t}=xy-\beta z$$
-
 $\newcommand{\dd}{\mathrm{d}}$
 
 Above is an animation of a solution to the Lorenz equations, which are:
