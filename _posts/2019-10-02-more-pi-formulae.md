@@ -1,7 +1,7 @@
 ---
 layout: post
 mathjax: true
-title: Miscellaneous formulae for $\pi$
+title: Miscellaneous formulae for &pi
 ---
   
 ---
