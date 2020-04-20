@@ -6,7 +6,7 @@ title: The Lorenz Attractor
 
 <center>
 <figure> 
-  <img src="https://github.com/aymenhafeez/blog/blob/master/assets/images/lorenz-anim.gif?raw=true" /> 
+  <img src="https://github.com/aymenhafeez/aymenhafeez.github.io/blob/master/images/lorenz-anim.gif" /> 
 </figure>
 </center>
 
