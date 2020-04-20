@@ -4,7 +4,6 @@ mathjax: true
 title: Miscellaneous formulae for pi
 ---
   
----
   
 ### Infinite products
 
