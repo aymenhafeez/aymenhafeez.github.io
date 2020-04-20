@@ -3,7 +3,6 @@ layout: post
 mathjax: true
 title: Neutron diffusion
 ---
-$\newcommand{\dd}{\mathrm{d}}$
 
 The most mathematically involved module I took during my masters was a nuclear
 reactor engineering module. Part of the module involved deriving an expression
@@ -24,6 +23,8 @@ out of $V$, neutrons being absorbed into $V$, or there may be sources present
 within $V$ that emit neutrons within the control volume (Lamarsh & Baratta,
 2001). Based on this, we can perform a balance over the control volume to
 account for the movement of the neutrons over time:
+
+$\newcommand{\dd}{\mathrm{d}}$
 
 $$
     [\text{Rate of change}] \ = \ [\text{Rate of production from diffusion}] -

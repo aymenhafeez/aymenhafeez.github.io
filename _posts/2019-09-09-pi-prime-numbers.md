@@ -1,11 +1,19 @@
 ---
 layout: post
 mathjax: true
-title: Generating $\pi$ with the prime the numbers
+title: Generating pi with the prime the numbers
 ---
-$\newcommand{\dd}{\mathrm{d}}$
 
-At first glance the prime numbers seem randomly distributed along the numberline. Even at the second, third and fourth glance it would be difficult to say that there is some obvious pattern there. However, working with the Riemann zeta function shows that this is far from true. One of my favourite results stemming from the Riemann zeta function is deriving an expression to generate $\pi$ using the prime numbers. This is a pretty astounding result considering the various equations and models in which $\pi$ shows up. At the core of this derivation is Euler's product formula which relates the Riemann zeta function to the prime numbers:
+At first glance the prime numbers seem randomly distributed along the
+numberline. Even at the second, third and fourth glance it would be difficult to
+say that there is some obvious pattern there. However, working with the Riemann
+zeta function shows that this is far from true. One of my favourite results
+stemming from the Riemann zeta function is deriving an expression to generate
+$\pi$ using the prime numbers. This is a pretty astounding result considering
+the various equations and models in which $\pi$ shows up. At the core of this
+derivation is Euler's product formula which relates the Riemann zeta function to
+the prime numbers:
+$\newcommand{\dd}{\mathrm{d}}$
 
   $$\zeta(s)=\sum_{n=1}^{\infty} \frac{1}{n^s} = \prod_{p \ \text{prime}} \frac{1}{1-p^{-s}}$$ 
 
