@@ -6,9 +6,11 @@ title: The Lorenz Attractor
 
 <center>
 <figure> 
-  <img src="https://github.com/aymenhafeez/aymenhafeez.github.io/blob/master/images/lorenz-anim.gif" /> 
+  <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/lorenz-anim.gif" /> 
 </figure>
 </center>
+
+$$\frac{\dd z}{\dd $t}=xy-\beta z$$
 
 $\newcommand{\dd}{\mathrm{d}}$
 
