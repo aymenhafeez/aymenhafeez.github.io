@@ -18,7 +18,7 @@ optimised for CO<sub>2</sub> utilisation from carbon capture. The project poster
 gives a brief overview of the research aims and objects and can be found <a
 href="https://raw.githubusercontent.com/aymenhafeez/blog/master/assets/images/poster.png">here</a>.
 
-<a><img src="https://raw.githubusercontent.com/aymenhafeez/blog/master/assets/images/poster-pres.jpg" width="250"></a>
+<a><img src="https://raw.githubusercontent.com/aymenhafeez/blog/master/assets/images/poster-pres.jpg" class="center" width="250"></a>
 
 Aside from being an engineer, I would consider myself a recreational
 mathematician. I'm really enthusiastic about exploring other areas of
