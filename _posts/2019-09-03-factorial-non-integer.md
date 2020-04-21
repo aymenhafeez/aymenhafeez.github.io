@@ -4,6 +4,11 @@ mathjax: true
 title: Factorial of non-integer values
 ---
 
+Demonstrating the concept of taking the factorial of non-integer values by
+deriving a beautiful result.
+
+---
+
 <p><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/lotr-meme.png" alt="Meme" /></p>
 
 Seeing this meme was the first time I came across this result. Proving it is a little tricky but it involves working with the gamma function, which is always fun. There are a couple of bits which may seem difficult to understand, but I have tried to explain them as best as I can and have provided some links at the end which may be useful.

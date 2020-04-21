@@ -4,6 +4,10 @@ mathjax: true
 title: A strange expression for pi from the error function 
 ---
 
+An innocent looking formula for pi with an interesting plot.
+
+---
+
 In my third year at university I was introduced to the error function during a 'Transport Phenomena' class. It came up in the context of deriving expressions to describe heat and mass transfer through various geometries. It was probably some of the most interesting stuff I learnt at university and I may go into more detail about it in another post. While revising for the exam I, with the help of a friend, derived an expression for $\pi$. There isn't anything particularly strange about the derivation or the expression itself. However, it wasn't until recently when I plotted its convergence that I became a little curious about it.
 
 I'll begin by presenting the derivation, which starts with the error function:

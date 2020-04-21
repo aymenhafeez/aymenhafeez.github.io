@@ -4,6 +4,11 @@ mathjax: true
 title: Generating pi with the prime the numbers
 ---
 
+Looking at a cool relation between pi and the primes through Euler's product
+formula.
+
+---
+
 At first glance the prime numbers seem randomly distributed along the
 numberline. Even at the second, third and fourth glance it would be difficult to
 say that there is some obvious pattern there. However, working with the Riemann

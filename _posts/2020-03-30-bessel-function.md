@@ -4,6 +4,11 @@ mathjax: true
 title: Neutron diffusion
 ---
 
+An application of the Bessel function in nuclear reactor theory --- derivation
+of the diffusion equation.
+
+---
+
 The most mathematically involved module I took during my masters was a nuclear
 reactor engineering module. Part of the module involved deriving an expression
 to model how neutrons behave within an ideal nuclear reactor. Much of this post
