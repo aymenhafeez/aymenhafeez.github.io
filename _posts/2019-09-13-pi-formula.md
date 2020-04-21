@@ -58,7 +58,7 @@ This is a pretty nice result from the error function, however, if we look at its
 
 <center>
   <figure>
-    <img src="https://raw.githubusercontent.com/aymenhafeez/blog/master/assets/images/haf-har.gif">
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/haf-har.gif">
     <figcaption>Convergence at $z=4$</figcaption>
   </figure>
 </center>
@@ -75,7 +75,7 @@ shows that it also converges in an interesting way:
 
 <center>
   <figure>
-    <img src="https://raw.githubusercontent.com/aymenhafeez/blog/master/assets/images/haf-har2.gif">
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/haf-har2.gif">
     <figcaption>Convergence of $\frac{\sqrt{\pi}}{2}$</figcaption>
   </figure>
 </center>

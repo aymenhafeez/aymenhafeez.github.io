@@ -16,10 +16,10 @@ CO<sub>2</sub> utilisation</i>" under Dr. Solomon Brown. I developed a
 mathematical model to gain further insite into how microalgae growth can be
 optimised for CO<sub>2</sub> utilisation from carbon capture. The project poster
 gives a brief overview of the research aims and objects and can be found <a
-href="https://raw.githubusercontent.com/aymenhafeez/blog/master/assets/images/poster.png">here</a>.
+href="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/poster.png">here</a>.
 
 <center>
-<a><img src="https://raw.githubusercontent.com/aymenhafeez/blog/master/assets/images/poster-pres.jpg" class="center" width="250"></a>
+<a><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/poster-pres.jpg" class="center" width="250"></a>
 </center>
 
 Aside from being an engineer, I would consider myself a recreational
@@ -41,7 +41,7 @@ Other than the above, my interests include nature and going on walks, music and
 playing guitar, reading and taking pictures of my cat.
 
 <center>
-<a><img src="https://raw.githubusercontent.com/aymenhafeez/blog/master/assets/images/cat.jpeg" width="250"></a>
+<a><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/cat.jpeg" width="250"></a>
 </center>
 
 ### Contact me

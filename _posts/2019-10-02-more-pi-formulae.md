@@ -23,7 +23,7 @@ The normalised $\text{sinc}$ function is
 
   $$\frac{\sin(\pi x)}{\pi x}=\prod_{n=1}^{\infty}\left(1-\frac{x^2}{n^2}\right)$$
 
-See <a href="https://aymenhafeez.github.io/blog/pi-prime-numbers">this post</a> on generating $\pi$ using the prime numbers for a short, non-rigorous explanation on expressing functions in this form, or look into the Weierstrass factorisation theorem for a more rigorous explanation on expressing functions in this form. Letting $x=\frac{1}{2}$ gives
+See <a href="https://aymenhafeez.github.io/pi-prime-numbers/">this post</a> on generating $\pi$ using the prime numbers for a short, non-rigorous explanation on expressing functions in this form, or look into the Weierstrass factorisation theorem for a more rigorous explanation on expressing functions in this form. Letting $x=\frac{1}{2}$ gives
 
   $$ \frac{2}{\pi}=\prod_{n=1}^{\infty}\left(1-\frac{1}{4n^2}\right) =
   \prod_{n=1}^{\infty}\left(\frac{4n^2-1}{4n^2}\right) $$
@@ -48,7 +48,7 @@ These are both quite nice formulae for $\pi$. However, they converge VERY slowly
 
 ### A recursive formula for $\pi$
 
-I came across another expression whilst writing the <a href="https://aymenhafeez.github.io/blog/pi-prime-numbers">$\pi$ and primes post</a>. In that post we showed that
+I came across another expression whilst writing the <a href="https://aymenhafeez.github.io/pi-prime-numbers/">$\pi$ and primes post</a>. In that post we showed that
 
   $$\pi x\cot(\pi x)=1-2\sum_{n=1}^{\infty}\zeta(2n)x^{2n}$$
 
