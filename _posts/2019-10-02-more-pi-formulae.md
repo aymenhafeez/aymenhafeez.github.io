@@ -3,6 +3,10 @@ layout: post
 mathjax: true
 title: Miscellaneous formulae for pi
 ---
+
+Various formulae for pi that I come across.
+
+---
   
   
 ### Infinite products
