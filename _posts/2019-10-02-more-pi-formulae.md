@@ -4,7 +4,7 @@ mathjax: true
 title: Miscellaneous formulae for pi
 ---
 
-Various formulae for pi that I come across.
+Various formulae relating to pi that I come across.
 
 ---
   
