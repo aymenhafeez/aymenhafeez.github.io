@@ -19,7 +19,7 @@ gives a brief overview of the research aims and objects and can be found <a
 href="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/poster.png">here</a>.
 
 <center>
-<a><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/poster-pres.jpg" class="center" width="250"></a>
+<a><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/poster-pres.jpg" class="fancy-image center" width="250"></a>
 </center>
 
 Aside from being an engineer, I would consider myself a recreational
@@ -41,7 +41,7 @@ Other than the above, my interests include nature and going on walks, music and
 playing guitar, reading and taking pictures of my cat.
 
 <center>
-<a><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/cat.jpeg" width="250"></a>
+<a><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/cat.jpeg" class="fancy-image" width="250"></a>
 </center>
 
 ### Contact me
