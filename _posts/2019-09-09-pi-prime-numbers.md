@@ -48,7 +48,7 @@ However, it can also be expressed as
 
 This can be verified by seeing that $f(-4)$ and $f(-3)=0$. However, look into the Weierstrass factorisation theorem for a more rigorous explanation on expressing functions in this form.
   
-<center> <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/sincpi.png" width="700" height="350" > </center>
+<center> <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/sincpi.png" class="fancy-image" width="700" height="350" > </center>
   
 $\frac{\sin(\pi x)}{\pi x}$ has roots at $x=n$ for $n \in \mathbb{Z}$ and $n \neq 0$, and so, expressing it as a product of its linear factors in a similar way gives
   
