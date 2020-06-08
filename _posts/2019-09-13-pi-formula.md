@@ -51,7 +51,7 @@ Next, we consider the value of the error function at various values of $z$:
   * $\text{erf}(3)\approx0.9999779$
   * $\text{erf}(4)\approx1$
 
-$\text{erf}(4)$ is not exactly equal to $1$, though it is a pretty good approximation. And so, subsituting $z=4$ into Equation (6) gives
+$\text{erf}(4)$ is not exactly equal to $1$, though it is a pretty good approximation. And so, substituting $z=4$ into Equation (6) gives
 
   $$1\approx\frac{2}{\sqrt{\pi}}\sum_{n=0}^{\infty}\frac{(-1)^n4^{2n+1}}{n!(2n+1)}$$
   
@@ -61,33 +61,8 @@ Or more accurately we can say
 
   $$\lim_{z\to\infty}\sum_{n=0}^{\infty}\frac{(-1)^nz^{2n+1}}{n!(2n+1)}=\frac{\sqrt{\pi}}{2}$$
 
-This is a pretty nice result from the error function, however, if we look at its convergence it's quite interesting.
-
-<center>
-  <figure>
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/haf-har.gif">
-    <figcaption>Convergence at $z=4$</figcaption>
-  </figure>
-</center>
-
-I'm aware that the error function is heavily applied in probability theory due
-its relation with the normalised Gaussian function. However, my knowledge and
-understanding of probability theory are far too limited to be able to make sense
-of why the expression converges this way. The normalised Gaussian function has
-the characteristic 'bell' shaped curve, so for now I'll assume that the relation
-to the Gaussian function is why the expression takes this shape. I'll update
-this post if I learn more about it in the future, or if anyone reading this has
-any idea, then please to let me know.
-
-## UPDATE $(28$-$09$-$19)$
-
-After revisiting this post I realised that I had not plotted the convergence of
-the expression for $\frac{\sqrt{\pi}}{2}$, and had only shown the plot for the
-rearranged expressing of for $\pi$. Plotting the expression
-
-  $$\frac{\sqrt{\pi}}{2}\approx\sum_{n=0}^{\infty}\frac{(-1)^n4^{2n+1}}{n!(2n+1)}$$
-
-shows that it also converges in an interesting way:
+Plotting the convergence of the expression for $z = 4$, as well the expression
+rearranged for $\pi$:
 
 <center>
   <figure>
@@ -96,6 +71,11 @@ shows that it also converges in an interesting way:
   </figure>
 </center>
 
-I still haven't committed enough time to truly understand why this expression
-behaves the way it does. If anyone who reads this has an idea, or if I'm missing
-something then let me know!
+
+<center>
+  <figure>
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/haf-har.gif">
+    <figcaption>Convergence at $z=4$</figcaption>
+  </figure>
+</center>
+
