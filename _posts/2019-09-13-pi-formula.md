@@ -4,7 +4,7 @@ mathjax: true
 title: Deriving an expression for pi from the error function 
 ---
 
-An formula for pi with an interesting plot.
+A formula for pi with an interesting plot.
 
 ---
 
