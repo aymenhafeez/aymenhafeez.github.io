@@ -1,14 +1,21 @@
 ---
 layout: post
 mathjax: true
-title: A strange expression for pi from the error function 
+title: Deriving an expression for pi from the error function 
 ---
 
-An innocent looking formula for pi with an interesting plot.
+An formula for pi with an interesting plot.
 
 ---
 
-In my third year at university I was introduced to the error function during a 'Transport Phenomena' class. It came up in the context of deriving expressions to describe heat and mass transfer through various geometries. It was probably some of the most interesting stuff I learnt at university and I may go into more detail about it in another post. While revising for the exam I, with the help of a friend, derived an expression for $\pi$. There isn't anything particularly strange about the derivation or the expression itself. However, it wasn't until recently when I plotted its convergence that I became a little curious about it.
+In my third year at university I was introduced to the error function during a
+'Transport Phenomena' class. It came up in the context of deriving expressions
+to describe heat and mass transfer through various geometries. It was probably
+some of the most interesting stuff I learnt at university and I may go into more
+detail about it in another post. While revising for the exam I, with the help of
+a friend, derived an expression for $\pi$. There isn't anything particularly
+strange about the derivation or the expression itself. However, it wasn't until
+recently when I plotted its convergence that I became a little curious about it.
 
 I'll begin by presenting the derivation, which starts with the error function:
 
@@ -63,11 +70,20 @@ This is a pretty nice result from the error function, however, if we look at its
   </figure>
 </center>
 
-I'm aware that the error function is heavily applied in probability theory due its relation with the normalised Gaussian function. However, my knowledge and understanding of probability theory are far too limited to be able to make sense of why the expression converges this way. The normalised Gaussian function has the characteristic 'bell' shaped curve, so for now I'll assume that the relation to the Gaussian function is why the expression takes this shape. I'll update this post if I learn more about it in the future, or if anyone reading this has any idea, then please to let me know.
+I'm aware that the error function is heavily applied in probability theory due
+its relation with the normalised Gaussian function. However, my knowledge and
+understanding of probability theory are far too limited to be able to make sense
+of why the expression converges this way. The normalised Gaussian function has
+the characteristic 'bell' shaped curve, so for now I'll assume that the relation
+to the Gaussian function is why the expression takes this shape. I'll update
+this post if I learn more about it in the future, or if anyone reading this has
+any idea, then please to let me know.
 
 ## UPDATE $(28$-$09$-$19)$
 
-After revisiting this post I realised that I had not plotted the convergence of the expression for $\frac{\sqrt{\pi}}{2}$, and had only shown the plot for the rearranged expressing of for $\pi$. Plotting the expression
+After revisiting this post I realised that I had not plotted the convergence of
+the expression for $\frac{\sqrt{\pi}}{2}$, and had only shown the plot for the
+rearranged expressing of for $\pi$. Plotting the expression
 
   $$\frac{\sqrt{\pi}}{2}\approx\sum_{n=0}^{\infty}\frac{(-1)^n4^{2n+1}}{n!(2n+1)}$$
 
@@ -80,4 +96,6 @@ shows that it also converges in an interesting way:
   </figure>
 </center>
 
-This also makes a good header for the post. Unfortunately, I still haven't committed enough time to truly understand why this expression behaves the way it does. If anyone who reads this has an idea, or if I'm missing something then let me know!
+I still haven't committed enough time to truly understand why this expression
+behaves the way it does. If anyone who reads this has an idea, or if I'm missing
+something then let me know!
