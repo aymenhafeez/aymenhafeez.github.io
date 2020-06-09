@@ -20,7 +20,7 @@ html {
 body {
 	background: $white;
   font: 18px/1.4 $helvetica;
-  color: $gray;
+  color: $darkGray;
 }
 
 .container {
@@ -70,11 +70,11 @@ p {
 }
 
 a {
-  color: $blue;
+  color: $gray;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: $darkGray;
   }
 }
 
@@ -226,7 +226,7 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $gray;
+    color: $darkGray;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
