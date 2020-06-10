@@ -70,11 +70,11 @@ p {
 }
 
 a {
-  color: $gray;
+  color: $blue;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $darkGray;
+    color: $blue;
   }
 }
 
@@ -245,10 +245,6 @@ nav {
 .posts > .post {
   padding-bottom: 1em;
   border-bottom: 1px solid $lightGray;
-  text-decoration: none;
-	cursor: pointer;
-  &:hover, &:active {
-    color: $black;
 }
 
 .posts > .post:last-child {
