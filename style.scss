@@ -245,6 +245,10 @@ nav {
 .posts > .post {
   padding-bottom: 1em;
   border-bottom: 1px solid $lightGray;
+  text-decoration: none;
+	cursor: pointer;
+  &:hover, &:active {
+    color: $darkGray;
 }
 
 .posts > .post:last-child {
