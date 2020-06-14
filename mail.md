@@ -1,6 +1,6 @@
 <form action="action_page.php">
   <div class="container">
-    <h2>Subscribe to our Newsletter and stay connected.</h2>
+    <h2>Subscribe to my newsletter and stay connected.</h2>
   </div>
 
   <div class="container" style="background-color:white">
