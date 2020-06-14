@@ -1,9 +1,6 @@
-# Mail me
-
 <form action="action_page.php">
   <div class="container">
-    <h2>Subscribe to our Newsletter</h2>
-    <p>Lorem ipsum..</p>
+    <h2>Subscribe to our Newsletter and stay connected.</h2>
   </div>
 
   <div class="container" style="background-color:white">
