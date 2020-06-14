@@ -74,7 +74,7 @@ Expanding the sum out:
 
   $$\frac{\pi}{8}=\frac{1}{2}-\frac{\pi^2}{6\cdot4^2}-\frac{\pi^4}{90\cdot4^4}-\frac{\pi^6}{945\cdot4^6}-\frac{\pi^8}{9450\cdot4^8}-.\ .\ .$$
 
-I find this really beautiful! We can simplify it visually by defining a constant $a_n$:
+which is really pretty. We can simplify it visually by defining a constant $a_n$:
 
   $$a_n=\frac{(-1)^{n+1}4^n\beta_{2n}}{2(2n)!}$$
 
