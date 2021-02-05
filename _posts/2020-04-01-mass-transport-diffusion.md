@@ -89,6 +89,7 @@ We can now re-write the diffusion equation in terms of the similarity variable.
 $$
   \frac{\partial C}{\partial x} = \frac{\partial C}{\partial \eta}\frac{\partial \eta}{\partial x}
 $$
+
 $$
   \frac{\partial \eta}{\partial x} = \frac{1}{\sqrt{4Dt}}
 $$
