@@ -15,7 +15,7 @@ Given some medium, e.g. water,
 containing some material, say salt, the material will DIFFUSE from the
 concentrated area to the dilute area. Diffusion can be generalised by Fick's law:
 
-  $$ J = -D \frac{\text{d} C}{\text{d} x}, $$
+  $$J = -D \frac{\text{d} C}{\text{d} x}$$
 
 where $J$ is molar flux and $D$ is diffusivity. Over a small control volume and
 in a short period of time $\delta t$ we can perform a mass balance over the
@@ -26,7 +26,7 @@ $$
 $$
 
 <p align="center">
-  <img src="cv.png" width="350"/>
+  <img src="../images/cv.png" width="350"/>
 </p>
 
 $$
