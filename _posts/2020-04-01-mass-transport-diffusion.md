@@ -10,7 +10,6 @@ logo: 'assets/images/zeta_logo.png'
 author: aymen
 categories: Mathematics
 ---
-$\newcommand{\dd}{\mathrm{d}}$
 
 Given some medium, e.g. water,
 containing some material, say salt, the material will DIFFUSE from the
