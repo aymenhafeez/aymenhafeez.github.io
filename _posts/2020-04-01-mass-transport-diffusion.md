@@ -1,14 +1,7 @@
 ---
 layout: post
-cover: 'assets/images/sincpi4.png'
-navigation: True
+mathjax: true
 title: Mass transport by diffusion
-date: 2020-04-01
-tags: mathematics diffusion mass-transport
-subclass: 'post tag-diffusion'
-logo: 'assets/images/zeta_logo.png'
-author: aymen
-categories: Mathematics
 ---
 
 Given some medium, e.g. water,
