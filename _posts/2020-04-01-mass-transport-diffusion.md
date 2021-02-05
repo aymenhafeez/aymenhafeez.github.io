@@ -101,6 +101,7 @@ $$
 
 The second derivative term can be broken up as
 
+$$
 \begin{equation*}
 \begin{aligned}
    \frac{\partial^2 C}{\partial x^2} &= \frac{\partial}{\partial x}\left(\frac{\partial C}{\partial x}\right) \\
@@ -109,18 +110,22 @@ The second derivative term can be broken up as
   &= \frac{1}{4Dt} \frac{\partial^2 C}{\partial \eta^2}
 \end{aligned}
 \end{equation*}
+$$
 
 Taking the derivative of $\eta$,
 
+$$
 \begin{equation*}
 \begin{aligned}
   \frac{\partial \eta}{\partial t} &= \frac{x}{4D}\cdot\frac{-t^{-\frac{3}{2}}}{2} \\
   &= -\frac{x}{2t\sqrt{4Dt}}
 \end{aligned}
 \end{equation*}
+$$
 
 and so,
 
+$$
 \begin{equation*}
 \begin{aligned}
   \frac{\partial C}{\partial t} &= \frac{\text{d} C}{\text{d} \eta}
@@ -128,9 +133,11 @@ and so,
   &= \frac{\text{d} C}{\text{d} \eta}\left(-\frac{x}{2t\sqrt{4Dt}}\right)
 \end{aligned}
 \end{equation*}
+$$
 
 The diffusion equation thus becomes
 
+$$
 \begin{equation*}
 \begin{aligned}
   \frac{1}{4Dt}\frac{\partial^2 C}{\partial \eta^2} &= \frac{1}{D}\frac{\text{d}C}{\text{d}\eta}\left(-\frac{x}{2t\sqrt{4Dt}}\right) \\
@@ -138,14 +145,17 @@ The diffusion equation thus becomes
   -\frac{2x}{\sqrt{4Dt}}\frac{\text{d}C}{\text{d}\eta}
 \end{aligned}
 \end{equation*}
+$$
 
 Since $x = \eta\sqrt{4Dt}$, the above becomes
 
+$$
 \begin{equation*}
 \begin{aligned}
   \frac{\text{d}^2 C}{\text{d} \eta} = -2\eta \frac{\text{d} C}{\text{d} \eta}
 \end{aligned}
 \end{equation*}
+$$
 
 Rewriting the boundary conditions in terms of $\eta$ gives
 
@@ -158,29 +168,35 @@ variable $\eta$. And so, the three boundary conditions collapse into two. In
 order to now solve for $C$ let $U = \frac{\text{d}C}{\text{d}\eta}$. The above
 equation then becomes,
 
+$$
 \begin{equation*}
 \begin{aligned}
   \frac{\text{d} U}{\text{d} \eta} = - 2\eta U
 \end{aligned}
 \end{equation*}
+$$
 
 and now integrating both sides,
 
+$$
 \begin{equation*}
 \begin{aligned}
   \ln U &= -\eta^2 + C_0 \\
   U &= C_1e^{-\eta^2}
 \end{aligned}
 \end{equation*}
+$$
 
 Substituting back in for $U$ we can solve for $C$.
 
+$$
 \begin{equation*}
 \begin{aligned}
   \frac{\text{d} C}{\text{d} \eta} &= C_1e^{-\eta^2} \\
   C &= C_1\int e^{-\eta^2} \text{d}\eta + C_2
 \end{aligned}
 \end{equation*}
+$$
 
 Applying the boundary conditions:  
 
@@ -192,15 +208,18 @@ The above integral is half the Gaussian integral which can be evaluated to
 $\frac{\sqrt{\pi}}{2}$ (see this post and the resources and the end to see why
 this is the case). We can, therefore, find the value of $C_1$:
 
+$$
 \begin{equation*}
 \begin{aligned}
   C_i = \frac{\sqrt{\pi}}{2}C_1 + C_s \\
   C_1 = \frac{2}{\sqrt{\pi}}(C_i - C_s)
 \end{aligned}
 \end{equation*}
+$$
 
 And so, we get the expression for $C$:
 
+$$
 \begin{equation*}
 \begin{aligned}
   C = \frac{2}{\sqrt{\pi}}(C_i - C_s)&\int_0^\eta e^{-\eta^2} \text{d} \eta + C_s
@@ -209,22 +228,26 @@ And so, we get the expression for $C$:
   e^{-\eta^2}\text{d}\eta
 \end{aligned}
 \end{equation*}
+$$
 
 The integral $\int_0^\eta e^{-\eta^2} \text{d} \eta$ cannot be solved
 analytically (except for $\eta \to \infty$), however, it can be solved
 numerically. The \textit{error function} can be defined as
 
+$$
 \begin{equation*}
 \begin{aligned}
   \text{erf}(\eta) \equiv \frac{2}{\sqrt{\pi}} \int_0^\eta e^{-\eta^2} \text{d}
   \eta
 \end{aligned}
 \end{equation*}
+$$
 
 with $\text{erf}(1) = 1$ and $\text{erf}(0) = 0$. And so, we get the expression
 for the concentration profile for semi-transient diffusion through a
 semi-infinite geometry,
 
+$$
 \begin{equation*}
 \begin{aligned}
   \boxed{
@@ -232,3 +255,4 @@ semi-infinite geometry,
   }
 \end{aligned}
 \end{equation*}
+$$
