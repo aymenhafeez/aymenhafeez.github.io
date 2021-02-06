@@ -4,10 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Hello! I'm Aymen, a recent chemical engineering graduate from the University of
-Sheffield. Currently, I am taking a short(ish) break before committing to a long
-term career plan (grad job, post grad studies) to work on various projects and
-learn about things I find interesting.
+I'm a recent chemical engineering graduate from the University of Sheffield.
+Currently, I'm taking a short(ish) break before committing to a long term
+career plan (grad job, post grad studies) to work on various projects and learn
+about things I find interesting.
 
 I'm passionate about engineering solutions with the aim of combating climate
 change. I'm particularly interested in low carbon technologies, namely CCUS. As
@@ -18,9 +18,9 @@ optimised for CO<sub>2</sub> utilisation from carbon capture. The project poster
 gives a brief overview of the research aims and objects and can be found <a
 href="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/poster.png">here</a>.
 
-<center>
-<a><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/poster-pres.jpg" class="fancy-image center" width="250"></a>
-</center>
+<!-- <center> -->
+<!-- <a><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/poster-pres.jpg" class="fancy-image center" width="250"></a> -->
+<!-- </center> -->
 
 Aside from being an engineer, I would consider myself a recreational
 mathematician. I'm really enthusiastic about exploring other areas of
@@ -37,8 +37,8 @@ am relatively new to robotics and only have basic knowledge of electronics, and
 so, I will be documenting the progress I have made so far, and the progress I
 hope to make in the future, on this site.
 
-Other than the above, my interests include nature and going on walks, music and
-playing guitar, reading and taking pictures of my cat.
+Other than the above, my interests include music, playing guitar, reading and
+taking pictures of my cat.
 
 <center>
 <a><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/cat.jpeg" class="fancy-image" width="250"></a>
@@ -46,4 +46,4 @@ playing guitar, reading and taking pictures of my cat.
 
 ### Contact me
 
-Feel free to contact me at [aymennh@gmail.com](mailto:aymennh@gmail.com) :)
+Feel free to contact me at [aymennh@gmail.com](mailto:aymennh@gmail.com).
