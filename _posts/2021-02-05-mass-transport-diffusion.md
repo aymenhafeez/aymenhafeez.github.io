@@ -233,7 +233,7 @@ $$
 
 The integral $\int_0^\eta e^{-\eta^2} \text{d} \eta$ cannot be solved
 analytically (except for $\eta \to \infty$), however, it can be solved
-numerically. The \textit{error function} can be defined as
+numerically. The _error function_ can be defined as
 
 $$
 \begin{equation*}
