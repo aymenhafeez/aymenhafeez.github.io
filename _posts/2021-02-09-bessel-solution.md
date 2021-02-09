@@ -8,7 +8,7 @@ Solving the neutron diffusion equation.
 
 ---
 
-$ \newcommand{\dd}{\mathrm{d}} $
+<!-- $ \newcommand{\text{d}}{\mathrm{d}} $ -->
 
 The main reason I was interested in solving this was due to the presence of
 non-constant coefficients, which was not a general form I had come across.
@@ -17,31 +17,39 @@ which produces an infinite series solution. We begin by defining an expression i
 the form which we want the solution to be:
 
 $$
-\begin{align}
+\begin{equation*}
+\begin{aligned}
     \phi = \sum_{n=0}^{\infty}a_nr^{n+k}
-\end{align}
+\end{aligned}
+\end{equation*}
 $$
 
 The first and second derivatives are, therefore,
 
 $$
-\begin{align}
-    \frac{\dd \phi}{\dd r} = \sum_{n=0}^{\infty}(n + k)a_n r^{n+k-1}
-\end{align}
+\begin{equation*}
+\begin{aligned}
+    \frac{\text{d} \phi}{\text{d} r} = \sum_{n=0}^{\infty}(n + k)a_n r^{n+k-1}
+\end{aligned}
+\end{equation*}
 $$
 
 $$
-\begin{align}
-    \frac{\dd^2 \phi}{\dd r^2} = \sum_{n=0}^{\infty}(n+k-1)(n + k)a_n r^{n+k-2}
-\end{align}
+\begin{equation*}
+\begin{aligned}
+    \frac{\text{d}^2 \phi}{\text{d} r^2} = \sum_{n=0}^{\infty}(n+k-1)(n + k)a_n r^{n+k-2}
+\end{aligned}
+\end{equation*}
 $$
 
 Substituting the derivatives back into the ordinal expression gives
 
 $$
-\begin{align}
+\begin{equation*}
+\begin{aligned}
     \sum_{n=0}^{\infty}(n+k-1)(n+k)a_nr^{n+k-2} + \frac{1}{r}\sum_{n=0}^{\infty}(n + k)a_n r^{n+k-1} + B^2\sum_{n=0}^{\infty}a_nr^{n+k} = 0 \\
-\end{align}
+\end{aligned}
+\end{equation*}
 $$
 
 Ideally we would want each $r$ term to be raised to same power. Expanding out
@@ -49,30 +57,36 @@ the first two terms of the $r^{n+k}$ expression, followed by some manipulation,
 gives:
 
 $$
-\begin{align}
+\begin{equation*}
+\begin{aligned}
     \sum_{n=0}^{\infty}(n+k-1)(n+k)a_nr^{n+k-2} +
     \frac{1}{r}\sum_{n=0}^{\infty}(n + k)a_n r^{n+k-1} +
     B^2\sum_{n=2}^{\infty}a_nr^{n+k-2} = 0 \\
-\end{align}
+\end{aligned}
+\end{equation*}
 $$
 
 $$
-\begin{align}
+\begin{equation*}
+\begin{aligned}
     \sum_{n=2}^{\infty} (n+k-1)(n+k)a_{n}r^{n+k-2} +
     \frac{1}{r}\sum_{n=2}^{\infty} (n+k)a_{n}r^{n+k-1} +
     B^{2}\sum_{n=2}^{\infty} a_{n-2}r^{n+k-2} \\
     + k(k-1)a_{0}r^{k-2} + k(k+1)a_{1}r^{k-1} + \frac{1}{r}\left(
     ka_{0}r^{k-1}+(k+1)a_{1}r^{k} \right) = 0 \nonumber
-\end{align}
+\end{aligned}
+\end{equation*}
 $$
 
 $$
-\begin{align}
+\begin{equation*}
+\begin{aligned}
     \sum_{n=2}^{\infty} (n+k-1)(n+k)a_{n}r^{n+k-2} +
     \frac{1}{r}\sum_{n=2}^{\infty} (n+k)a_{n}r^{n+k-1} +
     B^{2}\sum_{n=2}^{\infty} a_{n-2}r^{n+k-2} \\
     + k(k-1)a_{0}r^{k-2} + k(k-1)a_{1}r^{k-1} + ka_{0}r^{k-2} + (k+1)a_{1}r^{k-1} = 0
-\end{align}
+\end{aligned}
+\end{equation*}
 $$
 
 We can equate the coefficients on the right side of the equation to zero. For
