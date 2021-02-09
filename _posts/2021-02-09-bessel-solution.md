@@ -3,7 +3,12 @@ layout: post
 mathjax: true
 title: Neutron diffusion: part 2 (solution) 
 ---
-\newcommand{\dd}{\mathrm{d}}
+
+Solving the neutron diffusion equation.
+
+---
+
+$ \newcommand{\dd}{\mathrm{d}} $
 
 The main reason I was interested in solving this was due to the presence of
 non-constant coefficients, which was not a general form I had come across.
@@ -11,36 +16,47 @@ Solving second order ODE's of this form can be done using the Frobenius method,
 which produces an infinite series solution. We begin by defining an expression in
 the form which we want the solution to be:
 
+$$
 \begin{align}
     \phi = \sum_{n=0}^{\infty}a_nr^{n+k}
 \end{align}
+$$
 
 The first and second derivatives are, therefore,
 
+$$
 \begin{align}
     \frac{\dd \phi}{\dd r} = \sum_{n=0}^{\infty}(n + k)a_n r^{n+k-1}
 \end{align}
+$$
 
+$$
 \begin{align}
     \frac{\dd^2 \phi}{\dd r^2} = \sum_{n=0}^{\infty}(n+k-1)(n + k)a_n r^{n+k-2}
 \end{align}
+$$
 
 Substituting the derivatives back into the ordinal expression gives
 
+$$
 \begin{align}
     \sum_{n=0}^{\infty}(n+k-1)(n+k)a_nr^{n+k-2} + \frac{1}{r}\sum_{n=0}^{\infty}(n + k)a_n r^{n+k-1} + B^2\sum_{n=0}^{\infty}a_nr^{n+k} = 0 \\
 \end{align}
+$$
 
 Ideally we would want each $r$ term to be raised to same power. Expanding out
 the first two terms of the $r^{n+k}$ expression, followed by some manipulation,
 gives:
 
+$$
 \begin{align}
     \sum_{n=0}^{\infty}(n+k-1)(n+k)a_nr^{n+k-2} +
     \frac{1}{r}\sum_{n=0}^{\infty}(n + k)a_n r^{n+k-1} +
     B^2\sum_{n=2}^{\infty}a_nr^{n+k-2} = 0 \\
 \end{align}
+$$
 
+$$
 \begin{align}
     \sum_{n=2}^{\infty} (n+k-1)(n+k)a_{n}r^{n+k-2} +
     \frac{1}{r}\sum_{n=2}^{\infty} (n+k)a_{n}r^{n+k-1} +
@@ -48,13 +64,16 @@ gives:
     + k(k-1)a_{0}r^{k-2} + k(k+1)a_{1}r^{k-1} + \frac{1}{r}\left(
     ka_{0}r^{k-1}+(k+1)a_{1}r^{k} \right) = 0 \nonumber
 \end{align}
+$$
 
+$$
 \begin{align}
     \sum_{n=2}^{\infty} (n+k-1)(n+k)a_{n}r^{n+k-2} +
     \frac{1}{r}\sum_{n=2}^{\infty} (n+k)a_{n}r^{n+k-1} +
     B^{2}\sum_{n=2}^{\infty} a_{n-2}r^{n+k-2} \\
     + k(k-1)a_{0}r^{k-2} + k(k-1)a_{1}r^{k-1} + ka_{0}r^{k-2} + (k+1)a_{1}r^{k-1} = 0
 \end{align}
+$$
 
 We can equate the coefficients on the right side of the equation to zero. For
 the $r^{k-2}$ terms we get

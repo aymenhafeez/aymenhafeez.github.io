@@ -4,6 +4,11 @@ mathjax: true
 title: Mass transport by diffusion
 ---
 
+Deriving an expression for the concentration profile for semi-transient
+diffusion through a semi-infinite geometry.
+
+---
+
 Given some medium, e.g. water,
 containing some material, say salt, the material will DIFFUSE from the
 concentrated area to the dilute area. Diffusion can be generalised by Fick's law:
