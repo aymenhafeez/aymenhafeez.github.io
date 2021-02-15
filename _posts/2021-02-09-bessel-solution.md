@@ -105,42 +105,40 @@ $$
 Doing the same with the $r^{k-1}$ terms:
 
 $$
-  k(k + 1)a_{1} + (k + 1)a_{1} = 0
-$$
-$$
-  a_{1}\left[ k(k + 1) + (k + 1) \right] = 0
-$$
-$$
-  a_{1}(k + 1)(k + 1) = 0
-$$
-$$
-  a_{1} = 0
+\begin{equation*}
+\begin{aligned}
+  k(k + 1)a_{1} + (k + 1)a_{1} = 0 \\
+  a_{1}\left[ k(k + 1) + (k + 1) \right] = 0 \\
+  a_{1}(k + 1)(k + 1) = 0 \\
+  a_{1} = 0 \\
+\end{aligned}
+\end{equation*}
 $$
 
 The previous expression, therefore, becomes
 
 $$
+\begin{equation*}
+\begin{aligned}
   \sum_{n=2}^{\infty} (n + k)(n + k - 1)a_{n}r^{n+i-2} + \sum_{n=2}^{\infty}
-  (n + k)a_{n}r^{n+k-2} + B^{2}\sum_{n=2}^{\infty} a_{n-2}r^{n+k-2} = 0
-$$
-$$
+  (n + k)a_{n}r^{n+k-2} + B^{2}\sum_{n=2}^{\infty} a_{n-2}r^{n+k-2} = 0 \\
   \sum_{n=2}^{\infty} \left\{ \left[ (n + k)(n + k - 1) + (n + k) \right] a_{n} + B^{2}a_{n-2}\right\} r^{n+k-2} = 0
+\end{aligned}
+\end{equation*}
 $$
 
 We can see from this that the coefficients of $r^{n+k-2}$ must equate to 0, and
 so, 
 
 $$
-  \left[ (n + k)(n + k - 1) + (n + k) \right] a_{n} + B^{2}a_{n-2} = 0
-$$
-$$
-  a_{n}(k) = -\frac{B^{2}a_{n-2}}{(n + k)(n + k - 1) + (n + k)}
-$$
-$$
-= - \frac{B^{2}a_{n-2}}{(n + k)(n + k - 1 + 1)} 
-$$
-$$
-  = - \frac{B^{2}a_{n-2}}{(n + k)^{2}}
+\begin{equation*}
+\begin{aligned}
+  \left[ (n + k)(n + k - 1) + (n + k) \right] a_{n} + B^{2}a_{n-2} = 0 \\
+  a_{n}(k) &= -\frac{B^{2}a_{n-2}}{(n + k)(n + k - 1) + (n + k)} \\
+  &= - \frac{B^{2}a_{n-2}}{(n + k)(n + k - 1 + 1)}  \\
+  &= - \frac{B^{2}a_{n-2}}{(n + k)^{2}} \\
+\begin{aligned}
+\begin{equation*}
 $$
 
 If we now let $k = 0$,
@@ -166,10 +164,12 @@ We can see that, for even values of $m$,
 $$
   a_{2} = - \frac{B^{2}a_{0}}{2^{2}}
 $$
+
 $$
   a_{4} = \frac{-B^{2}a_{2}}{2^{2} \cdot 2^{2}} = \frac{-B^{2}a_{0}}{2^{2}}
   \cdot \frac{-B^{2}}{2^{2}\cdot 2^{2}}
 $$
+
 $$
    = \frac{B^{4}a_{0}}{2^{4}\cdot 2^{2}} = \frac{B^{4}a_{0}}{2^{4}(2^{2} \cdot
    1^{2})}
