@@ -94,11 +94,11 @@ the $r^{k-2}$ terms we get
 
 $$
 \begin{equation*}
-\begin{align}
+\begin{aligned}
   k(k - 1)a_{0} + k a_{0} = 0 \\
   a_{0}\left[ k(k - 1) + k \right] = 0 \\
   \implies k = 0 \ \therefore \ a_{0} = 0
-\end{align}
+\end{aligned}
 \end{equation*}
 $$
 
