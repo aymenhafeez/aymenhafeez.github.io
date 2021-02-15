@@ -137,8 +137,8 @@ $$
   a_{n}(k) &= -\frac{B^{2}a_{n-2}}{(n + k)(n + k - 1) + (n + k)} \\
   &= - \frac{B^{2}a_{n-2}}{(n + k)(n + k - 1 + 1)}  \\
   &= - \frac{B^{2}a_{n-2}}{(n + k)^{2}} \\
-\begin{aligned}
-\begin{equation*}
+\end{aligned}
+\end{equation*}
 $$
 
 If we now let $k = 0$,
@@ -167,11 +167,7 @@ $$
 
 $$
   a_{4} = \frac{-B^{2}a_{2}}{2^{2} \cdot 2^{2}} = \frac{-B^{2}a_{0}}{2^{2}}
-  \cdot \frac{-B^{2}}{2^{2}\cdot 2^{2}}
-$$
-
-$$
-   = \frac{B^{4}a_{0}}{2^{4}\cdot 2^{2}} = \frac{B^{4}a_{0}}{2^{4}(2^{2} \cdot
+  \cdot \frac{-B^{2}}{2^{2}\cdot 2^{2}} = \frac{B^{4}a_{0}}{2^{4}\cdot 2^{2}} = \frac{B^{4}a_{0}}{2^{4}(2^{2} \cdot
    1^{2})}
 $$
 
