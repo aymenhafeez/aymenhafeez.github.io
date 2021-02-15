@@ -118,13 +118,13 @@ $$
 The previous expression, therefore, becomes
 
 $$
-\begin{equation*}
-\begin{aligned}
   \sum_{n=2}^{\infty} (n + k)(n + k - 1)a_{n}r^{n+i-2} + \sum_{n=2}^{\infty}
-  (n + k)a_{n}r^{n+k-2} + B^{2}\sum_{n=2}^{\infty} a_{n-2}r^{n+k-2} = 0 \\
-  \sum_{n=2}^{\infty} \left\{ \left[ (n + k)(n + k - 1) + (n + k) \right] a_{n} + B^{2}a_{n-2}\right\} r^{n+k-2} = 0
-\end{aligned}
-\end{equation*}
+  (n + k)a_{n}r^{n+k-2} + B^{2}\sum_{n=2}^{\infty} a_{n-2}r^{n+k-2} = 0
+$$
+
+$$
+  \sum_{n=2}^{\infty} \left\{ \left[ (n + k)(n + k - 1) + (n + k) \right] a_{n}
+  + B^{2}a_{n-2}\right\} r^{n+k-2} = 0
 $$
 
 We can see from this that the coefficients of $r^{n+k-2}$ must equate to 0, and
