@@ -93,16 +93,13 @@ We can equate the coefficients on the right side of the equation to zero. For
 the $r^{k-2}$ terms we get
 
 $$
-  k(k - 1)a_{0} + k a_{0} = 0
-$$
-$$
-  a_{0}\left[ k(k - 1) + k \right] = 0
-$$
-$$
-  \implies k = 0
-$$
-$$
-  \therefore \ a_{0} = 0
+\begin{equation*}
+\begin{align}
+  k(k - 1)a_{0} + k a_{0} = 0 \\
+  a_{0}\left[ k(k - 1) + k \right] = 0 \\
+  \implies k = 0 \ \therefore \ a_{0} = 0
+\end{align}
+\end{equation*}
 $$
 
 Doing the same with the $r^{k-1}$ terms:
