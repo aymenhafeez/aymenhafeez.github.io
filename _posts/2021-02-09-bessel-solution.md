@@ -133,7 +133,7 @@ so,
 $$
 \begin{equation*}
 \begin{aligned}
-  \left[ (n + k)(n + k - 1) + (n + k) \right] a_{n} + B^{2}a_{n-2} = 0 \\
+  \left[ (n + k)(n &+ k - 1) + (n + k) \right] a_{n} + B^{2}a_{n-2} = 0 \\
   a_{n}(k) &= -\frac{B^{2}a_{n-2}}{(n + k)(n + k - 1) + (n + k)} \\
   &= - \frac{B^{2}a_{n-2}}{(n + k)(n + k - 1 + 1)}  \\
   &= - \frac{B^{2}a_{n-2}}{(n + k)^{2}} \\
@@ -166,19 +166,34 @@ $$
 $$
 
 $$
-  a_{4} = \frac{-B^{2}a_{2}}{2^{2} \cdot 2^{2}} = \frac{-B^{2}a_{0}}{2^{2}}
-  \cdot \frac{-B^{2}}{2^{2}\cdot 2^{2}} = \frac{B^{4}a_{0}}{2^{4}\cdot 2^{2}} = \frac{B^{4}a_{0}}{2^{4}(2^{2} \cdot
-   1^{2})}
+\begin{equation*}
+\begin{aligned}
+  a_{4} &= \frac{-B^{2}a_{2}}{2^{2} \cdot 2^{2}} \\
+  &= \frac{-B^{2}a_{0}}{2^{2}} \cdot \frac{-B^{2}}{2^{2}\cdot 2^{2}} \\
+  &= \frac{B^{4}a_{0}}{2^{4}\cdot 2^{2}} \\
+  &= \frac{B^{4}a_{0}}{2^{4}(2^{2} \cdot 1^{2})}
+\end{aligned}
+\end{equation*}
 $$
 
 $$
-a_{6} = \frac{-B^{2}a_{4}}{2^{2}3^{2}} = \frac{-B^{2}}{2^{2}3^{2}} \cdot \frac{B^{4}a_{0}}{2^{4}(2 \cdot 1)^{2}}
-  = \frac{-B^{6}a_{0}}{2^{6}(3 \cdot 2 \cdot 1)^{2}}
+\begin{equation*}
+\begin{aligned}
+  a_{6} &= \frac{-B^{2}a_{4}}{2^{2}3^{2}} \\
+  &= \frac{-B^{2}}{2^{2}3^{2}} \cdot \frac{B^{4}a_{0}}{2^{4}(2 \cdot 1)^{2}} \\
+  &= \frac{-B^{6}a_{0}}{2^{6}(3 \cdot 2 \cdot 1)^{2}}
+\end{aligned}
+\end{equation*}
 $$
 
 $$
-  a_{8} = \frac{-B^{2}a_{6}}{2^{2}4^{2}} = \frac{-B^{2}}{2^{2}4^{2}} \cdot \frac{-B^{6}a_{0}}{2^{6}(3 \cdot 2 \cdot 1)^{2}}
-  = \frac{B^{8}a_{0}}{2^{8}(4 \cdot 3 \cdot 2 \cdot 1)^{2}}
+\begin{equation*}
+\begin{aligned}
+  a_{8} &= \frac{-B^{2}a_{6}}{2^{2}4^{2}}  \\
+  &= \frac{-B^{2}}{2^{2}4^{2}} \cdot \frac{-B^{6}a_{0}}{2^{6}(3 \cdot 2 \cdot 1)^{2}} \\
+  &= \frac{B^{8}a_{0}}{2^{8}(4 \cdot 3 \cdot 2 \cdot 1)^{2}}
+\end{aligned}
+\end{equation*}
 $$
 
 And so, in general we can say that
