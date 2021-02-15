@@ -133,10 +133,17 @@ so,
 $$
 \begin{equation*}
 \begin{aligned}
-  \left[ (n + k)(n + k - 1) + (n + k) \right] a_{n} + B^{2}a_{n-2} = 0 \\
-  a_{n}(k) = -\frac{B^{2}a_{n-2}}{(n + k)(n + k - 1) + (n + k)} \\
-  = - \frac{B^{2}a_{n-2}}{(n + k)(n + k - 1 + 1)}  \\
-  = - \frac{B^{2}a_{n-2}}{(n + k)^{2}} \\
+  \left[ (n + k)(n + k - 1) + (n + k) \right] a_{n} + B^{2}a_{n-2} = 0
+\end{aligned}
+\end{equation*}
+$$
+
+$$
+\begin{equation*}
+\begin{aligned}
+  a_{n}(k) &= -\frac{B^{2}a_{n-2}}{(n + k)(n + k - 1) + (n + k)} \\
+  &= - \frac{B^{2}a_{n-2}}{(n + k)(n + k - 1 + 1)}  \\
+  &= - \frac{B^{2}a_{n-2}}{(n + k)^{2}} \\
 \end{aligned}
 \end{equation*}
 $$
