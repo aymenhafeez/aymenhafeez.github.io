@@ -8,7 +8,16 @@ Solving the neutron diffusion equation.
 
 ---
 
-<!-- $ \newcommand{\text{d}}{\mathrm{d}} $ -->
+$\newcommand{\dd}{\mathrm{d}}$
+
+Recall from the first part of this post a diffusion equation was derived to
+approximate the movement of neutrons in a nuclear reactor, which in two
+dimensions was,
+
+$$
+    \frac{\dd^2 \phi}{\dd r^2} + \frac{1}{r} \frac{\dd \phi}{\dd r} + B^{2}\phi
+    = 0.
+$$
 
 The main reason I was interested in solving this was due to the presence of
 non-constant coefficients, which was not a general form I had come across.
