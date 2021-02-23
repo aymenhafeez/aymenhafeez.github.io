@@ -1,12 +1,17 @@
 ---
 layout: post
 mathjax: true
-title: Relating the gamma function and the Riemann zeta function
+title: The gamma function and the Riemann zeta function
+---
+
+Deriving a relation between the gamma function and the Riemann zeta function.
+
 ---
 
 $\newcommand{\dd}{\mathrm{d}}$
 
-The [Mellin transform][1] of a function $f$ is given by
+The [Mellin transform](https://mathworld.wolfram.com/MellinTransform.html) of a
+function $f$ is given by
 
   $$
     \begin{aligned}
