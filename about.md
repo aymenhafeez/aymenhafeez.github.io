@@ -41,7 +41,7 @@ Other than the above, my interests include music, playing guitar, reading and
 taking pictures of my cat.
 
 <center>
-<a><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/cat.jpeg" class="fancy-image" width="250"></a>
+<a><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/cat2.jpeg" class="fancy-image" width="250"></a>
 </center>
 
 ### Contact me
