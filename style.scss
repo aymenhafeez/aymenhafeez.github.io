@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 28px;
   a {
     color: inherit;
   }
@@ -71,7 +71,7 @@ p {
 }
 
 a {
-  color: $blue;
+  color: $gray;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
@@ -234,7 +234,7 @@ nav {
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      // color: $blue;
     }
   }
 }
@@ -268,7 +268,7 @@ nav {
   }
 
   .read-more {
-    text-transform: uppercase;
+    // text-transform: uppercase;
     font-size: 15px;
   }
 }
