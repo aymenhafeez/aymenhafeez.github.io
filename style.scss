@@ -47,7 +47,8 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 30px;
   a {
-    color: inherit;
+    // color: inherit;
+    color: $lightGray;
   }
 }
 
@@ -57,7 +58,7 @@ h2 {
 
 h3 {
   font-size: 20px;
-  // font-weight: bold;
+  font-weight: bold;
 }
 
 h4 {
