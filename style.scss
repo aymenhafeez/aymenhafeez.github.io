@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 28px;
   a {
-    color: inherit;
+    color: $DimGray;
   }
 }
 
@@ -71,7 +71,7 @@ p {
 }
 
 a {
-  color: $gray;
+  color: $LightGray;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
