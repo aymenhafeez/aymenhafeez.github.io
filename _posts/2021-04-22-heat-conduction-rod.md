@@ -21,7 +21,7 @@ Heat flow in one dimension can be generalised by Fourier's law, which states
 that heat will flow down a negative temperature gradient,
 
 $$
-  q = -k\frac{\dd T}{dx},
+  q = -k\frac{\dd T}{\dd x},
 $$
 
 where $k$ is thermal conductivity. 
@@ -314,7 +314,7 @@ The coefficient is only non-zero for odd values of $n$, i.e. $C_1 =
 have
 
 $$
-  \hat{T} = \sum_{n=1}^\infty \frac{2}{n\pi}(1-(-1)^n) e^{-n^2\pi^2\tau z}
+  \hat{T} = \sum_{n=1}^\infty \frac{2}{n\pi}(1-(-1)^n) e^{-n^2\pi^2\tau}
   \sin(n\pi z)
 $$
 
@@ -330,7 +330,7 @@ along the bar at a given time $t$:
 
 $$
   T = T_1 + (T_0 - T_1)\sum_{n=1}^\infty \frac{2}{n\pi}(1-(-1)^n)
-  e^{-n^2\pi^2\tau z} \sin(n\pi z) 
+  e^{-n^2\pi^2t} \sin(n\pi z) 
 $$
 
 $$
