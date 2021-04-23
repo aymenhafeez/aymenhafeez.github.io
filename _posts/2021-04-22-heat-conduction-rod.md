@@ -13,7 +13,9 @@ $\newcommand{\dd}{\mathrm{d}}$
 
 Consider the following 1-D metal bar
 
-<p><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/hc-1.png" class="center"/></p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/hc-1.png" width="500"/>
+</p>
 
 Heat flow in one dimension can be generalised by Fourier's law, which states
 that heat will flow down a negative temperature gradient,
