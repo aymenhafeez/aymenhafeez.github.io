@@ -40,7 +40,7 @@ We can derive a 1-D heat transfer equation by doing a balance over a small
 control volume in a short period of time $\delta t$:
 
 <p align="center">
-  <img src="../images/hc-3.png" width="600"/>
+  <img src="../images/hc-3.png" width="550"/>
 </p>
 
 $$
