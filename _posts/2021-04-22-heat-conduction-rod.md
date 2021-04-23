@@ -48,13 +48,13 @@ $$
 $$
 
 $$
-  -k\frac{\partial T}{\partial x}A\delta - \left[-k\left(\frac{\partial T}{\partial x} + \frac{\partial^2T}{\partial x^2}\delta x\right)\right]A\delta t = \rho c_p \Delta TV
+  -k\frac{\partial T}{\partial x}A\delta t - \left[-k\left(\frac{\partial T}{\partial x} + \frac{\partial^2T}{\partial x^2}\delta x\right)\right]A\delta t = \rho c_p \Delta TV
 $$
 
 The volume, $V$, can be rewritten as $A\delta x$,
 
 $$
-  -k\frac{\partial T}{\partial x}A\delta - \left[-k\left(\frac{\partial T}{\partial x} + \frac{\partial^2T}{\partial x^2}\delta x\right)\right]A\delta t = \rho A \delta x c_p \Delta T
+  -k\frac{\partial T}{\partial x}A\delta t - \left[-k\left(\frac{\partial T}{\partial x} + \frac{\partial^2T}{\partial x^2}\delta x\right)\right]A\delta t = \rho A \delta x c_p \Delta T
 $$
 
 and after some manipulation we get
