@@ -4,7 +4,8 @@ mathjax: true
 title: Heat conduction in a symmetric, finite rod
 ---
 
-Modelling the heat conduction temperature profile in a symmetric, finite rod geometry.
+Deriving an expression for the temperature profile for a symmetric, finite rod
+geometry.
 
 ---
 
