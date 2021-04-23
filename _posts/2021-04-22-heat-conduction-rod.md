@@ -342,9 +342,16 @@ $$
 $$
 
 We can see that for $x = 0$ every term in the series is $0$ so we have $T =
-T_1$, as expected. Furthermore, we can see that as $t \to \infty$ the temperature
-all along the rod goes to $T_1$. As time increases the higher frequency terms
-become more and more trivial as the terms exponentially decay faster. And so,
-the approximation using just the first few terms of the series becomes more and
-more accurate as time increases. However, at earlier values of time using just
-the first few terms of the series still gives a poor approximation for $T$.
+T_1$, as expected. Furthermore, we can see that as $t \to \infty$ the
+temperature all along the rod goes to $T_1$. As time increases the higher
+frequency terms become more and more trivial as the terms exponentially decay
+faster. And so, the approximation using just the first few terms of the series
+becomes more and more accurate as time increases. However, at earlier values of
+time using just the first few terms of the series still gives a poor
+approximation for $T$. Much of this post was referenced from my lecture notes
+which are based on Bird, Stewart and Lightfoot's 'Transport Phenomena', so see
+that for more on mechanisms of energy transfer.
+
+###  References:
+
+Bird, R., Lightfoot, E. and Stewart, W., 2007. Transport phenomena. New York: Wiley.
