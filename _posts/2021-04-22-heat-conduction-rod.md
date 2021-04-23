@@ -13,7 +13,7 @@ $\newcommand{\dd}{\mathrm{d}}$
 
 Consider the following 1-D metal bar
 
-<p><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/hc-1.png" /></p>
+<p><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/hc-1.png" width="500"/></p>
 
 Heat flow in one dimension can be generalised by Fourier's law, which states
 that heat will flow down a negative temperature gradient,
@@ -30,12 +30,12 @@ and temporal boundary conditions:
 * when $x = 0, \ T = T_1$; when $x = L, \ T = T_1$
 * when $t = 0, \ T = T_0$
 
-<p><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/hc-2.png" /></p>
+<p><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/hc-2.png" width="500"/></p>
 
 We can derive a 1-D heat transfer equation by doing a balance over a small
 control volume in a short period of time $\delta t$:
 
-<p><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/hc-3.png" /></p>
+<p><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/hc-3.png" width="500"/></p>
 
 $$
     \text{HEAT IN} - \text{HEAT OUT} = \text{Accumulated HEAT}
