@@ -4,10 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Hi :wave: I'm a recent chemical engineering graduate from the University of Sheffield.
-Currently, I'm taking a short(ish) break before committing to a long term
-career plan (grad job, post grad studies) to work on various projects and learn
-about things I find interesting.
+Hi 👋 I'm a recent chemical engineering graduate from the University of
+Sheffield.  Currently, I'm taking a short(ish) break before committing to a long
+term career plan (grad job, post grad studies) to work on various projects and
+learn about things I find interesting.
 
 I'm passionate about engineering solutions with the aim of combating climate
 change. I'm particularly interested in low carbon technologies, namely CCUS. As
