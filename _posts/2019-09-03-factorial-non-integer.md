@@ -5,7 +5,7 @@ title: Factorial of non-integer values
 ---
 
 Demonstrating the concept of taking the factorial of non-integer values by
-deriving a beautiful result.
+deriving a really cool result.
 
 ---
 
