@@ -1,7 +1,7 @@
 ---
 layout: post
 mathjax: true
-title: Neutron diffusion
+title: Deriving the neutron diffusion equation
 ---
 
 An application of the Bessel function in nuclear reactor theory --- derivation

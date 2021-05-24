@@ -1,7 +1,7 @@
 ---
 layout: post
 mathjax: true
-title: Neutron diffusion part 2
+title: Neutron flux in an infinite slab reactor
 ---
 
 Deriving an expression for the thermal neutron flux in an infinite slab reactor

@@ -1,7 +1,7 @@
 ---
 layout: post
 mathjax: true
-title: Neutron diffusion part 3
+title: Solving the neutron diffusion equation
 ---
 
 Solving the neutron diffusion equation.
