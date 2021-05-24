@@ -10,8 +10,8 @@ Deriving an expression for the thermal neutron flux in an infinite slab reactor
 
 $\newcommand{\dd}{\mathrm{d}}$
 
-In [this](https://aymenhafeez.github.io/bessel-function/) post we showed how to
-derive the Helmholtz equation
+In [this](https://aymenhafeez.github.io/bessel-function/) post we derived the
+Helmholtz equation
 
 $$
 \begin{equation*}
