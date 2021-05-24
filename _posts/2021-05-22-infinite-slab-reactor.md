@@ -21,9 +21,10 @@ $$
 \end{equation*}
 $$
 
-We saw how this can be solved in 2-dimensions, however, in the simple case of a
-slab reactor of width $a$ in the $x$ direction, and infinite in the $y$ and $z$
-directions the Helmholtz equation reduces to 1-dimension:
+We saw how this [can be solved](https://aymenhafeez.github.io/bessel-solution/)
+in 2-dimensions. However, in the simple case of a slab reactor of width $a$ in
+the $x$ direction, and infinite in the $y$ and $z$ directions the Helmholtz
+equation reduces to 1-dimension:
 
 $$
 \begin{equation*}
