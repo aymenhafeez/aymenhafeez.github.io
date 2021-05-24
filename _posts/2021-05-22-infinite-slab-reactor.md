@@ -1,7 +1,11 @@
 ---
 layout: post
 mathjax: true
-title: Thermal neutron flux in an infinite slab reactor
+title: Neutron diffusion part 2
+---
+
+Deriving an expression for the thermal neutron flux in an infinite slab reactor
+
 ---
 
 $\newcommand{\dd}{\mathrm{d}}$
@@ -201,3 +205,7 @@ $$
 <!-- <center> -->
 <!-- <img src="../images/graph.png" width="500"/> -->
 <!-- </center> -->
+
+###  References:
+Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3d ed.,
+Prentice-Hall, 2001, ISBN: 0-201-82498-1.
