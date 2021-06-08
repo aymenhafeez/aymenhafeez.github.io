@@ -102,8 +102,8 @@ $$
 \end{equation*}
 $$
 
-Seeing that the $e^{-nu}$ term is just $({e^{-u}})^n$, we can see that it is an
-infinite geometric series, and so, it can be rewritten as
+Seeing that the $e^{-nu}$ term is just $({e^{-u}})^n$, we can rewrite the
+infinite geometric series:
 
 $$
 \begin{equation*}
