@@ -62,7 +62,7 @@ itself:
 $$
 \begin{equation*}
 \begin{aligned}
-  \Gamma(s) = \int_{-}^{\infty} t^{s-1} e^{-t} \dd t
+  \Gamma(s) = \int_{0}^{\infty} t^{s-1} e^{-t} \dd t
 \end{aligned}
 \end{equation*}
 $$
@@ -73,12 +73,13 @@ $$
 \begin{equation*}
 \begin{aligned}
   \Gamma(s) &= \int_{0}^{\infty} (nu)^{-s-1} e^{-nu} \dd u \\
-            &= \int_{n=0}^{\infty} n^s u^{s-1} e^{-nu} \dd u
+            &= \int_{0}^{\infty} n^s u^{s-1} e^{-nu} \dd u
 \end{aligned}
 \end{equation*}
 $$
 
-The $n^s$ can be brought out of the integral and onto the other side,
+The $n^s$ term can be brought out of the integral, and multiplying both sides by
+$\frac{1}{n^s}$ gives,
 
 $$
 \begin{equation*}
@@ -101,7 +102,7 @@ $$
 \end{equation*}
 $$
 
-Seeing that the $e^{-nu}$ term is just $(e^{-u}^n$, we can rewrite it as an
+Seeing that the $e^{-nu}$ term is just $({e^{-u}})^n$, we can rewrite it as an
 infinite geometric series:
 
 $$
@@ -113,7 +114,8 @@ $$
 \end{equation*}
 $$
 
-With some rearranging and manipulation we get the desired result:
+Note that $1$ must be subtracted as the summation starts from $n=1$ rather than
+$n=0$. With some rearranging and manipulation we get,
 
 $$
 \begin{equation*}
@@ -122,15 +124,13 @@ $$
   \frac{1 - e^{-u}}{1 - e^{-u}} \right)  \dd u \\
                      &= \int_{0}^{\infty} u^{s-1} \left( \frac{e^{-u}}{1 -
                      e^{-u}} \right)  \dd u \\
-                     &= \int_{0}^{\infty} u^{s-1} \left( \frac{1}{1 - e^{-u}}
-                     \frac{1}{e^u} \right)  \dd u \\
                      &= \int_{0}^{\infty} u^{s-1} \left( \frac{1}{e^u - 1}
                      \right) \dd u
 \end{aligned}
 \end{equation*}
 $$
 
-And so, we get
+And so, we have the desired result:
 
 $$
 \begin{equation*}
