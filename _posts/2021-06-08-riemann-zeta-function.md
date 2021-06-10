@@ -72,7 +72,7 @@ Making the substitution $t = nu$ with $\dd t = n\dd u$, we have
 $$
 \begin{equation*}
 \begin{aligned}
-  \Gamma(s) &= \int_{0}^{\infty} (nu)^{-s-1} e^{-nu} \dd u \\
+  \Gamma(s) &= \int_{0}^{\infty} (nu)^{s-1} e^{-nu} \dd u \\
             &= \int_{0}^{\infty} n^s u^{s-1} e^{-nu} \dd u
 \end{aligned}
 \end{equation*}
@@ -84,12 +84,12 @@ $\frac{1}{n^s}$ gives,
 $$
 \begin{equation*}
 \begin{aligned}
-  \Gamma(s) \frac{1}{n^s} = \int_{n=0}^{\infty} u^{s-1} e^{-nu} \dd u
+  \Gamma(s) \frac{1}{n^s} = \int_{0}^{\infty} u^{s-1} e^{-nu} \dd u
 \end{aligned}
 \end{equation*}
 $$
 
-Taking the sum over both sides gives the Riemann zeta function on the left,
+Taking the sum over both sides gives us the Riemann zeta function on the left,
 
 $$
 \begin{equation*}
