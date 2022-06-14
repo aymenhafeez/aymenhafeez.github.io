@@ -1,22 +1,11 @@
 ---
 layout: page
+title: Iceland
 ---
 
 
 <center>
-<a><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/iceland/iceland_1.png" width="400"></a>
-</center>
-
-//
-
-<center>
 <a><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/iceland/iceland_2.png" width="600"></a>
-</center>
-
-//
-
-<center>
-<a><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/iceland/iceland_3.png" width="400"></a>
 </center>
 
 //
@@ -34,7 +23,25 @@ layout: page
 //
 
 <center>
+<a><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/iceland/iceland_1.png" width="400"></a>
+</center>
+
+//
+
+<center>
 <a><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/iceland/iceland_6.png" width="400"></a>
+</center>
+
+//
+
+<center>
+<a><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/iceland/iceland_7.png" width="400"></a>
+</center>
+
+//
+
+<center>
+<a><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/iceland/iceland_8.png" width="400"></a>
 </center>
 
 <!-- <div class="row"> -->
