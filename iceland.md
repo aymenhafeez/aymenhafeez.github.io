@@ -27,7 +27,7 @@ layout: page
   <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/iceland/iceland_3.png" width="200">
 </div>
 <div class="column">
-  <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/iceland/iceland_4.png" with="200">
+  <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/iceland/iceland_4.png" width="200">
 </div>
 </div> 
 
