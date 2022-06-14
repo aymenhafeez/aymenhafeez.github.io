@@ -21,13 +21,13 @@ layout: page
 
 <div class="row">
 <div class="column">
-  <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/iceland/iceland_1.png" width="400">
+  <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/iceland/iceland_1.png" width="200">
 </div>
 <div class="column">
-  <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/iceland/iceland_3.png" width="400">
+  <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/iceland/iceland_3.png" width="200">
 </div>
 <div class="column">
-  <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/iceland/iceland_4.png" with="400">
+  <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/iceland/iceland_4.png" with="200">
 </div>
 </div> 
 
