@@ -2,10 +2,10 @@
 layout: page
 ---
 
-pentax k1000
+pentax k1000  
 fuji superia xtra 400
 
-  
+//
 
 <center>
 <a><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/iceland/iceland_2.png" width="700"></a>
