@@ -2,10 +2,9 @@
 layout: page
 ---
 
-pentax k1000
+pentax k1000  
 ilford HP5 plus 400
 
-<br>
 
 <center>
 <a><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/london/london_1.png" width="700"></a>
