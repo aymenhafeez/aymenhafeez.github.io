@@ -42,7 +42,7 @@ width="500"></a>
 
 <center>
 <a><img
-src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/bath/bath_5.png"
+src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/bath/bath_6.png"
 width="500"></a>
 </center>
 
@@ -50,7 +50,7 @@ width="500"></a>
 
 <center>
 <a><img
-src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/bath/bath_6.png"
+src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/bath/bath_5.png"
 width="500"></a>
 </center>
 
