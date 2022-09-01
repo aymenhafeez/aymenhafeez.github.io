@@ -195,29 +195,24 @@ img {
 }
 
 .site-name {
-  // margin: -2;
-  // margin-top: 20px; // @TODO: Vertically middle align
+  margin: 0;
   color: $darkGray;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 200;
   font-size: 28px;
   letter-spacing: 1px;
-  height: 100px;
-  line-height: 100px;
-  text-align: center;
-  border: 2px
 }
 
-.site-description {
-  margin: -5px 0 0 0;
-  color: $gray;
-  font-size: 16px;
-
-  @include mobile {
-    margin: 3px 0;
-  }
-}
+// .site-description {
+//   margin: -5px 0 0 0;
+//   color: $gray;
+//   font-size: 16px;
+//
+//   @include mobile {
+//     margin: 3px 0;
+//   }
+// }
 
 nav {
   float: right;
