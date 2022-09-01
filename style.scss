@@ -195,7 +195,8 @@ img {
 }
 
 .site-name {
-  margin: -5;
+  // margin: -2.5;
+  margin-top: 23px; // @TODO: Vertically middle align
   color: $darkGray;
   cursor: pointer;
   font-family: $helveticaNeue;
