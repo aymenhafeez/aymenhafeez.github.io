@@ -1,7 +1,7 @@
 ---
 layout: post
 mathjax: true
-title: Grammar checking in (Neo)vim
+title: Grammar checking in Neovim
 ---
 
 Setting up grammar checking with Neovim's native LSP client and grammar-guard
