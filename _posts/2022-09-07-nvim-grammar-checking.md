@@ -87,5 +87,5 @@ We can run `:LspInfo` to see what langage servers are attached to the current
 buffer, and we should see that grammar-guard is one of them.
 
 <p align="center">
-  <img src="../images/figs/example.png" width="500"/>
+  <img src="../images/figs/example.png" width="700"/>
 </p>
