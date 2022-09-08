@@ -16,7 +16,7 @@ mappings](https://github.com/aymenhafeez/dotfiles/blob/master/nvim/after/ftplugi
 to compile and show a PDF preview.
 
 <p align="center">
-  <img src="../images/figs/workflow.gif" style="border-radius:50%" width="500"/>
+  <img src="../images/figs/workflow.gif" style="border-radius:10%" width="500"/>
 </p>
 
 Combined with Neovim's native LSP and
