@@ -15,8 +15,8 @@ and a couple of [janky
 mappings](https://github.com/aymenhafeez/dotfiles/blob/master/nvim/after/ftplugin/tex.lua)
 to compile and show a PDF preview.
 
-<p align="center">
-  <img src="../images/figs/workflow.gif" style="fancy-image" width="500"/>
+<p align="center" style="fancy-image">
+  <img src="../images/figs/workflow.gif" width="500"/>
 </p>
 
 Combined with Neovim's native LSP and
