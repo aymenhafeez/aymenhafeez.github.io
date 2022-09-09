@@ -15,11 +15,11 @@ and a couple of [janky
 mappings](https://github.com/aymenhafeez/dotfiles/blob/master/nvim/after/ftplugin/tex.lua)
 to compile and show a PDF preview.
 
-<!-- <p align="center" style="fancy-image"> -->
-<!--   <img src="../images/figs/workflow.gif" width="500"/> -->
-<!-- </p> -->
+<br>
 
 ![Workflow]({{ site.url }}/images/figs/workflow.gif){: .fancy-image }
+
+<br>
 
 Combined with Neovim's native LSP and
 [nvim-cmp](http://github.com/hrsh7th/nvim-cmp) for completion suggestions, this
