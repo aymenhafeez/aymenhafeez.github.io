@@ -19,7 +19,7 @@ to compile and show a PDF preview.
 <!--   <img src="../images/figs/workflow.gif" width="500"/> -->
 <!-- </p> -->
 
-![Workflow]({{ site.url }}/images/figs/workflow.gif =500x){: .fancy-image }
+![Workflow]({{ site.url }}/images/figs/workflow.gif){: .fancy-image }
 
 Combined with Neovim's native LSP and
 [nvim-cmp](http://github.com/hrsh7th/nvim-cmp) for completion suggestions, this
