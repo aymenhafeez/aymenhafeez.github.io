@@ -26,7 +26,7 @@ Combined with Neovim's native LSP and
 creates a fast and seamless writing environment. Though Neovim has
 a built-in spell checker, one thing I was missing was some sort of system to
 check grammar while writing. This doesn't seem essential but a quick way of
-checking for grammatical errors can be useful, particularly when writing
+checking for grammatical errors can be convenient, particularly when writing
 important documents or reports. After some research I came across a plug-in
 called [grammar-guard](http://github.com/brymer-meneses/grammar-guard.nvim),
 which uses the [ltex](http://github.com/valentjn/ltex-ls) language server to
@@ -34,7 +34,7 @@ carry out grammar checks and give suggestions. This was exactly what I was
 looking for.
 
 Getting it setup is relatively straightforward, as described by the
-documentation. The plug-in itself can be installed with whatever package manager
+documentation. The plug-in itself can be installed with whatever plug-in manager
 you use, for example with packer.nvim,
 
 ```lua
@@ -48,21 +48,28 @@ use {
 ```
 
 nvim-lspconfig provides configurations for Neovim's LSP client and
-nvim-lsp-installer allows you to easily manage LSP servers. Once these are
-installed we can run `:LspInstall ltex` to install the ltex language server.
+nvim-lsp-installer allows you to easily manage and install LSP servers. Once
+these are installed we need to install the
+[ltex-ls](https://github.com/valentjn/ltex-ls) language server. On macOS,
+I installed it via homebrew:
 
-After that, we need to configure grammar-guard to enable it with the LSP. First,
-we need to initialise grammar-guard:
+```bash
+brew install ltex-ls
+```
+
+After that, grammar-guard needs to be enabled with the LSP. First, initialising
+grammar-guard:
 
 ```lua
 require("grammar-guard").init()
 ```
 
-We can then configure grammar-guard itself with lsp-config, for example:
+Grammar-guard isn't itself a language sever. But because it uses the ltex
+client, it can be configured with `lspconfig` like any other server:
 
 ```lua
 require("lspconfig").grammar_guard.setup({
-  on_attach = on_attach,
+  on_attach = handlers.on_attach,
   capabilities = capabilities,
   cmd = { "/usr/local/bin/ltex-ls" },
   settings = {
@@ -70,23 +77,38 @@ require("lspconfig").grammar_guard.setup({
       enabled = { "latex", "tex", "bib", "markdown" },
       language = "en-GB",
       diagnosticSeverity = "info",
-      checkFrequency="save",
+      checkFrequency = "save",
       setenceCacheSize = 2000,
       additionalRules = {
         enablePickyRules = false,
       },
       trace = { server = "verbose" },
-      dictionary = {},
-      disabledRules = {},
-      hiddenFalsePositives = {},
+      disabledRules = {
+        ["en-GB"] = { "MORFOLOGIK_RULE_EN_GB" },
+      },
     },
   },
 })
 ```
 
+Here, `on_attach` is a function which can be used to provide settings and
+mappings that can be called specifically when an LSP client attaches to
+a buffer. The specifics of this go a bit beyond the scope of this post, so I may
+go more into the details in a separate post about how I have LSP and nvim-cmp
+setup. I find the spell-checking provided by grammar-guard really annoying as it
+marks spelling errors in code blocks, as well as in LaTeX commands. The
+`disabledRules` table disables this. Neovim's built-in spellchecker works fine
+for me.
+
+![LspInfo]({{ site.url }}/images/figs/lspinfo.png){: .fancy-image }
+
 Now, opening up a tex or markdown file, grammar-guard should be up and running.
-We can run `:LspInfo` to see what langage servers are attached to the current
-buffer, and we should see that grammar-guard is one of them.
+And running `:LspInfo` shows information about the servers attached to the current
+buffer.
+
+I am slightly in two minds about whether this will be a permanent addition to my
+configuration as it can be quite slow to start up, and it still gives some
+spelling recommendations. But otherwise, it's a pretty cool tool.
 
 <p align="center">
   <img src="../images/figs/example.png" width="700"/>
