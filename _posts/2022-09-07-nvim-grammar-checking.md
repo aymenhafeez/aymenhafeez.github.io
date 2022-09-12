@@ -100,7 +100,9 @@ marks spelling errors in code blocks, as well as in LaTeX commands. The
 `disabledRules` table disables this. Neovim's built-in spellchecker works fine
 for me.
 
-![LspInfo]({{ site.url }}/images/figs/lspinfo.png){: .fancy-image }
+<p align="center">
+  <img src="../images/figs/lspinfo.png" width="700"/>
+</p>
 
 Now, opening up a tex or markdown file, grammar-guard should be up and running.
 And running `:LspInfo` shows information about the servers attached to the current
