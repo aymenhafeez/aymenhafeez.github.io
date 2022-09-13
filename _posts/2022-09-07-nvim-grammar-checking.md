@@ -64,8 +64,8 @@ grammar-guard:
 require("grammar-guard").init()
 ```
 
-Grammar-guard isn't itself a language sever. But because it uses the ltex
-client, it can be configured with `lspconfig` like any other server:
+Grammar-guard isn't itself a language sever. But because it uses ltex, it can be
+configured with `lspconfig` like any other server:
 
 ```lua
 require("lspconfig").grammar_guard.setup({
@@ -92,7 +92,7 @@ require("lspconfig").grammar_guard.setup({
 ```
 
 Here, `on_attach` is a function which can be used to provide settings and
-mappings that can be called specifically when an LSP client attaches to
+mappings that can be called specifically when a language server attaches to
 a buffer. The specifics of this go a bit beyond the scope of this post, so I may
 go more into the details in a separate post about how I have LSP and nvim-cmp
 setup. I find the spell-checking provided by grammar-guard really annoying as it
