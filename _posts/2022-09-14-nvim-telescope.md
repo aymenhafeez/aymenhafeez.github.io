@@ -26,7 +26,7 @@ For example, when wanting to quickly check the help docs for something, unless
 I knew the exact help-tag I wanted to search for, there wasn't any quick and
 easy way to get to the result I wanted, which would lead to having to use
 `:helpgrep` and filter thought the results. If only there was a tool which could
-quickly filter and sort through any list given to it.
+quickly filter and sort through any list given to it... 
 
 ## "File gazing" in Lua
 
@@ -149,7 +149,7 @@ when going through the quickfix list, each file would get opened in a new
 buffer, and so after eventually finding the note I was looking for, the buffer
 list would be full of random .tex files. We can mirror this functionality with
 Telescope, but without having to open each file to check it. By default, the
-`find_files` picker list files in the current working directory. However, it can
+`find_files` picker lists files in the current working directory. However, it can
 also be given a specific directory to list files from. The same can be done with
 the `live_grep` picker.
 
