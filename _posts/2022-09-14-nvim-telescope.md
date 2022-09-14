@@ -4,6 +4,10 @@ mathjax: true
 title: "File gazing" with Telescope.nvim
 ---
 
+Talking about one of my favourtite Neovim plugins
+
+---
+
 Though I do use a fair few ([a
 lot](https://github.com/aymenhafeez/dotfiles/blob/master/nvim/lua/plugins/init.lua))
 plugins, I like to use (Neo)vim's built-in features wherever possible (with some
