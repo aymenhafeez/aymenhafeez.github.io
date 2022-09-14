@@ -26,7 +26,7 @@ For example, when wanting to quickly check the help docs for something, unless
 I knew the exact help-tag I wanted to search for, there wasn't any quick and
 easy way to get to the result I wanted, which would lead to having to use
 `:helpgrep` and filter thought the results. If only there was a tool which could
-quickly filter and sort through any list given to it... 
+quickly filter and sort through any list given to it...🔭 
 
 ## "File gazing" in Lua
 
