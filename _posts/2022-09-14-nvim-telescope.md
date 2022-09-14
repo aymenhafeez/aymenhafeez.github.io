@@ -8,8 +8,8 @@ Talking about one of my favourtite Neovim plugins
 
 ---
 
-Though I do use a fair few ([a
-lot](https://github.com/aymenhafeez/dotfiles/blob/master/nvim/lua/plugins/init.lua))
+Though I do use a fair few ([a lot
+of](https://github.com/aymenhafeez/dotfiles/blob/master/nvim/lua/plugins/init.lua))
 plugins, I like to use (Neo)vim's built-in features wherever possible (with some
 exceptions). And when it comes to file-navigation Vim does have some pretty good
 options. There's the built-in hierarchical file-explorer, Netrw, as well as the
