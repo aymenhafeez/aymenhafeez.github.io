@@ -1,7 +1,7 @@
 ---
 layout: post
 mathjax: true
-title: "File gazing" with Telescope.nvim
+title: File gazing with Telescope
 ---
 
 Talking about one of my favourtite Neovim plugins
@@ -12,8 +12,8 @@ Though I do use a fair few ([a
 lot](https://github.com/aymenhafeez/dotfiles/blob/master/nvim/lua/plugins/init.lua))
 plugins, I like to use (Neo)vim's built-in features wherever possible (with some
 exceptions). And when it comes to file-navigation Vim does have some pretty good
-options. There's a built-in hierarchical file-explorer called Netrw, as well as
-the [`:edit`](https://neovim.io/doc/user/editing.html#:edit) and
+options. There's the built-in hierarchical file-explorer, Netrw, as well as the
+[`:edit`](https://neovim.io/doc/user/editing.html#:edit) and
 [`:find`](https://neovim.io/doc/user/editing.html#:find) commands. When combined
 with setting the [`'path'`](https://neovim.io/doc/user/options.html#'path')
 option to be optimised with the context of the directory structure you're
@@ -23,8 +23,8 @@ command-line completion. This was the setup I worked with for a long time, and
 I was mainly happy with it. The main issue I had was that `wildmenu` would only
 complete exact matches for substrings when searching/navigating for something.
 For example, when wanting to quickly check the help docs for something, unless
-I knew the exact help-tag I wanted to search for, then there wasn't any quick
-and easy way to get to the result I wanted, which would lead to having to
+I knew the exact help-tag I wanted to search for, there wasn't any quick and
+easy way to get to the result I wanted, which would lead to having to use
 `:helpgrep` and filter thought the results. If only there was a tool which could
 quickly filter and sort through any list given to it.
 
@@ -39,7 +39,7 @@ projects, too. The main reason I prefer Telescope, however, is that it feels
 like it could be a built-in Neovim feature. Let me explain.
 
 Fzf.vim is an amazing fuzzy finder and I used it for a long time before
-migrating to Neovim and Telescope. However, it isn't really a Vim plugin, as it
+migrating to Telescope. However, it isn't really a Vim plugin, as it
 says itself in its README. It really just acts as a way of calling the fzf
 command-line tool from within Vim. The difference with Telescope is that it's
 essentially just running Lua functions _inside_ Neovim, and interacting with the
@@ -51,17 +51,16 @@ Telescope comes with a bunch of built-in "pickers" by default. They can be
 accessed by running `:Telescope <builtin_picker>`. For example
 `find_files` will list files in the current working directory, `oldfiles` will
 list recently opened files, `live_grep` will give results for a string search as
-you type etc. It even integrates with the native LSP with commands such
+you type etc. It even integrates with the native LSP with commands like
 `lsp_references` for search for references of the word under the cursor, as well
 as `diagnostics` for diagnostic search. The whole list of built-in pickers can
-be found [here](https://github.com/nvim-telescope/telescope.nvim#pickers).
+be found in the [docs](https://github.com/nvim-telescope/telescope.nvim#pickers).
 
 ## Extensibility
 
-Telescope is hugely configurable, both visually and functionally. The defaults
-can be configured similarly to any other plugin using the setup function. There
-are two modes of configuring the default layout: `layout_strategy` and
-`layout_config`, for example:
+Telescope is hugely configurable, both visually and functionally. There are two
+modes of configuring the default layout: `layout_strategy` and `layout_config`,
+for example:
 
 ```lua
 require("telescope").setup {
@@ -82,16 +81,16 @@ require("telescope").setup {
 The above shows the default `horizontal` `layout_strategy`. See `:help
 telescope.layout` for more detail on the various different layouts available.
 
-The above `setup` function set global settings which are applied to all built-in
+The above `setup` function sets global settings which are applied to all built-in
 pickers. However, certain pickers are better suited to other layouts than the
 default `horizontal` layout. Luckily, Telescope allows each picker to be called
 with its own settings, and each layout can be configured individually with some
 simple Lua functions. 
 
 Just as an aside to make more sense of the next section, my Telescope
-configuration has a dedicated folder `nvim/lua/ah/telescope`, with the following
-structure. The plug-in is set up and required in `init.lua`, and various
-functions are kept in `utils.lua` to be called from the `mappings.lua`.
+configuration has a dedicated folder `nvim/lua/ah/telescope`. The plug-in is set
+up and required in `init.lua`, and various functions are kept in `utils.lua` to
+be called from `mappings.lua`.
 
 ```bash
 telescope
@@ -136,10 +135,7 @@ vim.keymap.set("n", "<leader>ss", require("utils").spell_check, { noremap = true
 
 ![Workflow]({{ site.url }}/images/figs/spell.png){: .fancy-image }
 
-By default, the `find_files` picker list files in the current working directory.
-However, it can also be given a specific directory to list files from. The same
-can be done with `live_grep` picker. I used to have the following line in my
-`.vimrc`:
+I used to have the following line in my `.vimrc`:
 
 ```viml
 command! -nargs=1 Search vimgrep <args> ~/Dropbox/notes/MyNotes/**/*.{tex,md}
@@ -152,7 +148,10 @@ look something up in my notes. The issue with this command, however, was that
 when going through the quickfix list, each file would get opened in a new
 buffer, and so after eventually finding the note I was looking for, the buffer
 list would be full of random .tex files. We can mirror this functionality with
-Telescope, but without having to open each file to check it:
+Telescope, but without having to open each file to check it. By default, the
+`find_files` picker list files in the current working directory. However, it can
+also be given a specific directory to list files from. The same can be done with
+the `live_grep` picker.
 
 ```lua
 function M.search_notes()
