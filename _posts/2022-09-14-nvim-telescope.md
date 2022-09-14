@@ -76,7 +76,7 @@ require("telescope").setup {
 ```
 
 <p align="center">
-  <img src="../images/figs/layout_eg.png" width="650"/>
+  <img src="../images/figs/layout.png" width="650"/>
 </p>
 
 The above shows the default `horizontal` `layout_strategy`. See `:help
