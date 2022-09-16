@@ -8,29 +8,26 @@ Talking about one of my favourtite Neovim plugins
 
 ---
 
-Though I do use a fair few ([a lot
-of](https://github.com/aymenhafeez/dotfiles/blob/master/nvim/lua/plugins/init.lua))
-plugins, I like to use (Neo)vim's built-in features wherever possible (with some
-exceptions). And when it comes to file-navigation Vim does have some pretty good
-options. There's the built-in hierarchical file-explorer, Netrw, as well as the
+(Neo)Vim has some great built-in options when it comes to file navigation. The
 [`:edit`](https://neovim.io/doc/user/editing.html#:edit) and
-[`:find`](https://neovim.io/doc/user/editing.html#:find) commands. When combined
-with setting the [`'path'`](https://neovim.io/doc/user/options.html#'path')
-option to be optimised with the context of the directory structure you're
-working in, these can provide a fuzzy-finder like experience, particularly with
-[`wildmenu`](https://neovim.io/doc/user/options.html#'wildmenu') set for
-command-line completion. This was the setup I worked with for a long time, and
-I was mainly happy with it. The main issue I had was that `wildmenu` would only
-complete exact matches for substrings when searching/navigating for something.
-For example, when wanting to quickly check the help docs for something, unless
-I knew the exact help-tag I wanted to search for, there wasn't any quick and
-easy way to get to the result I wanted, which would lead to having to use
-`:helpgrep` and filter thought the results. If only there was a tool which could
-quickly filter and sort through any list given to it...🔭 
+[`:find`](https://neovim.io/doc/user/editing.html#:find) commands, paired with
+[`wildmenu`](https://neovim.io/doc/user/options.html#'wildmenu') and the
+[`'path'`](https://neovim.io/doc/user/options.html#'path') option, set to be
+optimised with the context of the directory you're working in, can provide
+a pretty good overall experience for moving around a project. An issue I had
+with this setup, however, was that `wildmenu` would only complete exact matches
+for substrings when searching/navigating for something. For example, when
+wanting to quickly check the help docs for something, unless I knew the exact
+help-tag I wanted to search for, there wasn't any quick and easy way to get to
+the result I wanted, which would lead to having to use `:helpgrep` and filter
+through the results. For me, this is an area where fuzzy-finders can be very
+useful...🔭
 
 ## "File gazing" in Lua
 
-> telescope.nvim is a highly extendable fuzzy finder over lists. Built on the latest awesome features from neovim core. Telescope is centered around modularity, allowing for easy customization.
+> telescope.nvim is a highly extendable fuzzy finder over lists. Built on the
+> latest awesome features from neovim core. Telescope is centered around
+> modularity, allowing for easy customization.
 
 There are a lot of fuzzy finders available for (Neo)vim, such as
 [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim) and
@@ -81,11 +78,11 @@ require("telescope").setup {
 The above shows the default `horizontal` `layout_strategy`. See `:help
 telescope.layout` for more detail on the various different layouts available.
 
-The above `setup` function sets global settings which are applied to all built-in
-pickers. However, certain pickers are better suited to other layouts than the
-default `horizontal` layout. Luckily, Telescope allows each picker to be called
-with its own settings, and each layout can be configured individually with some
-simple Lua functions. 
+The above `setup` function sets global settings which are applied to all
+built-in pickers. However, certain pickers can be better suited to other layouts
+than the default `horizontal` layout. Luckily, Telescope allows each picker to
+be called with its own settings, and each layout can be configured individually
+with some simple Lua functions. 
 
 Just as an aside to make more sense of the next section, my Telescope
 configuration has a dedicated folder `nvim/lua/ah/telescope`. The plug-in is set
