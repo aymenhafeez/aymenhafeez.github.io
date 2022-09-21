@@ -37,7 +37,7 @@ src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/
 
 <center>
 <a><img
-src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/wales/wales_5.png" width="500"></a>
+src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/wales/wales_5.png" width="700"></a>
 </center>
 
 //
