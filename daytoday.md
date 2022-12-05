@@ -32,12 +32,6 @@ ilford HP5 plus 400
 //
 
 <center>
-<a><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/daytoday/daytoday_5.png" width="500"></a>
-</center>
-
-//
-
-<center>
 <a><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/daytoday/daytoday_6.png" width="500"></a>
 </center>
 
