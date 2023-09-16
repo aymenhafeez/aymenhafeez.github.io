@@ -62,12 +62,19 @@ $$
 Here $a,\ b,\ c$ and $d$ are constants. Generating $(x,y)$ coordinates over
 many iterations results in some striking visualisations of the attractor
 
+<!-- <center> -->
+<!--   <figure>  -->
+<!--     <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/De_Jong_Attractors.png" width="800" height="640"/>  -->
+<!--   </figure> -->
+<!-- </center> -->
+<!---->
+<!---->
+
 <center>
   <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/De_Jong_Attractors.png" width="800" height="640"/> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/De_Jong_Attractors.png" /> 
   </figure>
 </center>
-
 
 The above plots have the same initial conditions for $x$ and $y$ but show how
 changing the values of the parameters $a,\ b,\ c$ and $d$ affects the system.
