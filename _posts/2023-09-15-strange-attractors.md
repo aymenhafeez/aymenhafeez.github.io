@@ -109,7 +109,7 @@ $$
 
 <center>
   <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/svensson_attractor.png" /> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/svensson_attractor.png" width="200" height="100" /> 
   </figure>
 </center>
 
