@@ -14,8 +14,6 @@ Visualising some interesting strange attractors
 three-dimensional continuous autonomous system
 * Prompted the emergence of a large number of chaotic systems in various
 disciplines
-* New chaotic systems take on different topological structures i.e. one-scroll,
-multi-scroll, butterfly, multi-wing etc.
 
 The most well known attractor is the Lorenz attractor. This was discovered by
 Edward Lorenz in the 1960s while he was trying to create a mathematical model
@@ -52,19 +50,35 @@ The classic butterfly shaped solution curve is achieved when $\rho = 28, \ \sigm
   </figure>
 </center>
 
-Another attractor which has a striking visual representation is the De Jong
-attractor, which is characterised by the following equations
+# De Jong attractor
+
+The De Jong attractor can be characterised by the following equations
 
 $$
 x_{n+1} = \sin(a y_n) - \cos(b x_n) \\
 y_{n+1} = \sin(c x_n) - \cos(d y_n),
 $$
 
-where $a,\ b,\ c$ and $d$ are constants. Generating $(x,y)$ coordinates over
-many iterations results in some incredible plots
+Here $a,\ b,\ c$ and $d$ are constants. Generating $(x,y)$ coordinates over
+many iterations results in some striking visualisations of the attractor
 
 <center>
   <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/De_Jong_Attractors.png" /> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/De_Jong_Attractors.png" width="800" height="640"/> 
   </figure>
 </center>
+
+
+The above plots have the same initial conditions for $x$ and $y$ but show how
+changing the values of the parameters $a,\ b,\ c$ and $d$ affects the system.
+
+## Clifford attractor
+
+## Svensson attractor
+
+
+
+# Other attractors
+
+* New chaotic systems take on different topological structures i.e. one-scroll,
+multi-scroll, butterfly, multi-wing etc.
