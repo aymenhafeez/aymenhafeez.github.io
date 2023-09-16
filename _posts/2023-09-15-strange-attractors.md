@@ -81,7 +81,37 @@ changing the values of the parameters $a,\ b,\ c$ and $d$ affects the system.
 
 ## Clifford attractor
 
+A variation of the De Jong attractor is the Clifford attractor:
+
+$$
+x_{n+1} = \sin(a y_n) + c \cos(b x_n) \\
+y_{n+1} = \sin(c x_n) + d \cos(d y_n),
+$$
+
+Similar to the De Jong attractor, varying the constants $a,\ b,\ c$ and $d$ with
+set initial conditions, and plotting $x$ and $y$ over a large number of
+iterations leads to some cool looking plots.
+
+<center>
+  <figure> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/clifford_attractor.png" /> 
+  </figure>
+</center>
+
 ## Svensson attractor
+
+Another similar attractor is the Svensson attractor:
+
+$$
+x_{n+1} = d \sin(a x_n) - \sin(b y_n) \\
+y_{n+1} = c \cos(a x_n) + \cos(b y_n),
+$$
+
+<center>
+  <figure> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/svensson_attractor.png" /> 
+  </figure>
+</center>
 
 
 
