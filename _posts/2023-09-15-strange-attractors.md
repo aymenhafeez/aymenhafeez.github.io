@@ -10,11 +10,6 @@ Visualising some interesting strange attractors
 
 # Lorenz attractor
 
-* The Lorenz attractor was the first chaotic attractor to be found in
-three-dimensional continuous autonomous system
-* Prompted the emergence of a large number of chaotic systems in various
-disciplines
-
 The most well known attractor is the Lorenz attractor. This was discovered by
 Edward Lorenz in the 1960s while he was trying to create a mathematical model
 to describe the behaviour of convection cells in the Earth's atmosphere. He
@@ -98,24 +93,50 @@ iterations leads to some cool looking plots.
   </figure>
 </center>
 
-## Svensson attractor
+<!-- ## Svensson attractor -->
+<!---->
+<!-- Another similar attractor is the Svensson attractor: -->
+<!---->
+<!-- $$ -->
+<!-- x_{n+1} = d \sin(a x_n) - \sin(b y_n) \\ -->
+<!-- y_{n+1} = c \cos(a x_n) + \cos(b y_n), -->
+<!-- $$ -->
+<!---->
+<!-- A plot with some example parameter values, again plotted over many iterations -->
+<!-- can be seen below. -->
+<!---->
+<!-- <center> -->
+<!--   <figure>  -->
+<!--     <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/svensson_attractor.png" width="200" height="100" />  -->
+<!--   </figure> -->
+<!-- </center> -->
+<!---->
+<!---->
 
-Another similar attractor is the Svensson attractor:
+# Other attractors
+
+The discovery of the Lorenz attractor prompted the emergence of a large number
+of chaotic systems in various disciplines. These new chaotic systems take on
+different topological structures i.e. one-scroll, multi-scroll, butterfly,
+multi-wing. Some of these are Visualised below.
+
+## Aizawa attractor
+
+The Aizawa attractor, names after Akira Aizawa is described by the following set
+of differential equations:
 
 $$
-x_{n+1} = d \sin(a x_n) - \sin(b y_n) \\
-y_{n+1} = c \cos(a x_n) + \cos(b y_n),
+\left\{
+  \begin{array}{ll}
+    \frac{dx}{dt}&=&(z - b)  x - d  y\\
+    \frac{dy}{dt}&=& d  x + (z - b)  y\\
+    \frac{dz}{dt}&=&c + a z - \frac{z^3}{3} -\\&  &\;(x^2+y^2)(1+e z)+f z x^3
+  \end{array}
+\right.
 $$
 
 <center>
   <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/svensson_attractor.png" width="200" height="100" /> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/aizawa_2d.png" /> 
   </figure>
 </center>
-
-
-
-# Other attractors
-
-* New chaotic systems take on different topological structures i.e. one-scroll,
-multi-scroll, butterfly, multi-wing etc.
