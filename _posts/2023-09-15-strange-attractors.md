@@ -140,3 +140,13 @@ $$
     <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/aizawa_2d.png" /> 
   </figure>
 </center>
+
+<center>
+  <video width="350" height="327" controls>
+    <source src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/aizawa.mp4"" type="video/mp4">
+    Your browser does not support the video tag.
+  </video> 
+</center>
+
+The above visualisations correspond to parameter values of $a = 1,\ b = 0.7,\
+c = 0.6,\ d = 3.5,\ e = 0.25,\ f = 0.1$.
