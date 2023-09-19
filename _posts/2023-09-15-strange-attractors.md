@@ -120,7 +120,7 @@ of chaotic systems in various disciplines. These new chaotic systems take on
 different topological structures i.e. one-scroll, multi-scroll, butterfly,
 multi-wing. Some of these are Visualised below.
 
-## Aizawa attractor
+## Aizawa
 
 The Aizawa attractor, names after Akira Aizawa is described by the following set
 of differential equations:
@@ -141,19 +141,57 @@ $$
   </figure>
 </center>
 
-<center>
-  <video width="350" height="327" controls>
-    <source src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/aizawa.mp4"" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video> 
-</center>
-
-
 <!-- <center> -->
-<!--   <figure>  -->
-<!--     <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/aizawa.gif" />  -->
-<!--   </figure> -->
+<!--   <video width="375" controls> -->
+<!--     <source src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/aizawa.mp4"" type="video/mp4" /> -->
+<!--     Your browser does not support the video tag. -->
+<!--   </video>  -->
 <!-- </center> -->
+
+
+<center>
+  <figure> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/aizawa.gif" width="300" height="300"/> 
+  </figure>
+</center>
 
 The above visualisations correspond to parameter values of $a = 1,\ b = 0.7,\
 c = 0.6,\ d = 3.5,\ e = 0.25,\ f = 0.1$.
+
+## Sprott
+
+$$
+\left\{
+  \begin{array}{ll}
+    \frac{dx}{dt}&=& y + a x y +x z \\
+    \frac{dy}{dt}&=& 1 - b x^2 +yz \\
+    \frac{dz}{dt}&=& x-x^2-y^2
+  \end{array}
+\right.
+$$
+
+## Chen attractor
+
+$$
+\left\{
+  \begin{array}{ll}
+    \frac{dx}{dt}&=&\alpha x- y z\\
+    \frac{dy}{dt}&=&\beta y + x z \\
+    \frac{dz}{dt}&=&\delta z + x y/3
+  \end{array}
+\right.
+$$
+
+## Multi-wing attractors
+
+### Four-wing
+
+$$
+\left\{
+  \begin{array}{ll}
+    \frac{dx}{dt}&=& ax+yz \\
+    \frac{dy}{dt}&=& b x + cy - xz \\
+    \frac{dz}{dt}&=& -z-xy
+  \end{array}
+\right.
+$$
