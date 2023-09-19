@@ -158,7 +158,7 @@ $$
 The above visualisations correspond to parameter values of $a = 1,\ b = 0.7,\
 c = 0.6,\ d = 3.5,\ e = 0.25,\ f = 0.1$.
 
-## Sprott
+## Three-scroll
 
 $$
 \left\{
@@ -169,6 +169,18 @@ $$
   \end{array}
 \right.
 $$
+
+<center>
+  <figure> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/three_scroll_3d.png" /> 
+  </figure>
+</center>
+
+<center>
+  <figure> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/three_scroll.gif" /> 
+  </figure>
+</center>
 
 ## Chen attractor
 
@@ -182,16 +194,36 @@ $$
 \right.
 $$
 
+<center>
+  <figure> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/chen.gif" /> 
+  </figure>
+</center>
+
+
 ## Multi-wing attractors
 
-### Four-wing
+### Dadras
 
 $$
 \left\{
   \begin{array}{ll}
-    \frac{dx}{dt}&=& ax+yz \\
-    \frac{dy}{dt}&=& b x + cy - xz \\
-    \frac{dz}{dt}&=& -z-xy
+    \frac{dx}{dt}&=& y - a x +b  y  z\\
+    \frac{dy}{dt}&=&  c  y - x  z +z\\
+    \frac{dz}{dt}&=& d  x  y - e  z
   \end{array}
 \right.
 $$
+
+
+<center>
+  <figure> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/dadras.png" /> 
+  </figure>
+</center>
+
+<center>
+  <figure> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/dadras.gif" /> 
+  </figure>
+</center>
