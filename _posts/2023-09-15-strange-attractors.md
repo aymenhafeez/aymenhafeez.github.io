@@ -135,23 +135,15 @@ $$
 \right.
 $$
 
-<center>
-  <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/aizawa_2d.png" /> 
-  </figure>
-</center>
-
 <!-- <center> -->
-<!--   <video width="375" controls> -->
-<!--     <source src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/aizawa.mp4"" type="video/mp4" /> -->
-<!--     Your browser does not support the video tag. -->
-<!--   </video>  -->
+<!--   <figure>  -->
+<!--     <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/aizawa_2d.png" />  -->
+<!--   </figure> -->
 <!-- </center> -->
 
-
 <center>
   <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/aizawa.gif" width="300" height="300"/> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/aizawa.gif" width="200" height="200"/> 
   </figure>
 </center>
 
@@ -170,15 +162,15 @@ $$
 \right.
 $$
 
-<center>
-  <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/three_scroll_3d.png" /> 
-  </figure>
-</center>
+<!-- <center> -->
+<!--   <figure>  -->
+<!--     <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/three_scroll_3d.png" height='250' width='750'/>  -->
+<!--   </figure> -->
+<!-- </center> -->
 
 <center>
   <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/three_scroll.gif" /> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/three_scroll.gif" height='200' width='250'/> 
   </figure>
 </center>
 
@@ -216,14 +208,14 @@ $$
 $$
 
 
-<center>
-  <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/dadras.png" /> 
-  </figure>
-</center>
+<!-- <center> -->
+<!--   <figure>  -->
+<!--     <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/dadras.png" />  -->
+<!--   </figure> -->
+<!-- </center> -->
 
 <center>
   <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/dadras.gif" /> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/dadras.gif" height='300' width='300' /> 
   </figure>
 </center>
