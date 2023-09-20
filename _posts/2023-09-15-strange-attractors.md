@@ -143,7 +143,7 @@ $$
 
 <center>
   <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/aizawa.gif" width="200" height="200"/> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/aizawa.gif" width="350" height="350"/> 
   </figure>
 </center>
 
@@ -170,7 +170,7 @@ $$
 
 <center>
   <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/three_scroll.gif" height='200' width='250'/> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/three_scroll.gif" height='325' width='425'/> 
   </figure>
 </center>
 
@@ -216,6 +216,6 @@ $$
 
 <center>
   <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/dadras.gif" height='300' width='300' /> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/dadras.gif" height='450' width='450' /> 
   </figure>
 </center>
