@@ -174,28 +174,28 @@ $$
   </figure>
 </center>
 
-## Chen attractor
+## Thomas attractor
 
 $$
 \left\{
   \begin{array}{ll}
-    \frac{dx}{dt}&=&\alpha x- y z\\
-    \frac{dy}{dt}&=&\beta y + x z \\
-    \frac{dz}{dt}&=&\delta z + x y/3
+    \frac{dx}{dt}&=&\sin y -bx\\
+    \frac{dy}{dt}&=&\sin z -by\\
+    \frac{dz}{dt}&=&\sin x-bz
   \end{array}
 \right.
 $$
 
 <center>
   <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/chen.gif" /> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/thomas.gif" height=325 width=340 /> 
   </figure>
 </center>
 
 
 ## Multi-wing attractors
 
-### Dadras
+## Dadras
 
 $$
 \left\{
@@ -216,6 +216,6 @@ $$
 
 <center>
   <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/dadras.gif" height='450' width='450' /> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/dadras.gif" height='475' width='475' /> 
   </figure>
 </center>
