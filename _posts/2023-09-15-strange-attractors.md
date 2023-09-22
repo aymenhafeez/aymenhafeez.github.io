@@ -188,7 +188,7 @@ $$
 
 <center>
   <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/thomas.gif" height=325 width=340 /> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/thomas.gif" height='325' width='340' /> 
   </figure>
 </center>
 
