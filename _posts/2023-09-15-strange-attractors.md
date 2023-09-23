@@ -174,6 +174,9 @@ $$
   </figure>
 </center>
 
+The above visualisations correspond to parameter values of $a = 1,\ b = 0.7,\
+c = 0.6,\ d = 3.5,\ e = 0.25,\ f = 0.1$.
+
 ## Thomas attractor
 
 $$
@@ -192,6 +195,8 @@ $$
   </figure>
 </center>
 
+The above visualisations correspond to parameter values of $a = 1,\ b = 0.7,\
+c = 0.6,\ d = 3.5,\ e = 0.25,\ f = 0.1$.
 
 ## Multi-wing attractors
 
@@ -219,3 +224,6 @@ $$
     <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/dadras.gif" height='475' width='475' /> 
   </figure>
 </center>
+
+The above visualisations correspond to parameter values of $a = 1,\ b = 0.7,\
+c = 0.6,\ d = 3.5,\ e = 0.25,\ f = 0.1$.
