@@ -9,7 +9,7 @@ Various formulae relating to pi that I come across.
 ---
   
   
-### Infinite products
+## Infinite products
 
 The $\text{sinc}$ function is defined for $x\neq0$ as
 
@@ -46,7 +46,7 @@ Again, taking the reciprocal gives
 
 These are both quite nice formulae for $\pi$. However, they converge VERY slowly. The first expression approximates $\pi\approx3.1415848$ after ten thousand terms.
 
-### A recursive formula for $\pi$
+## A recursive formula for $\pi$
 
 I came across another expression whilst writing the <a href="https://aymenhafeez.github.io/pi-prime-numbers/">$\pi$ and primes post</a>. In that post we showed that
 
@@ -74,7 +74,8 @@ Expanding the sum out:
 
   $$\frac{\pi}{8}=\frac{1}{2}-\frac{\pi^2}{6\cdot4^2}-\frac{\pi^4}{90\cdot4^4}-\frac{\pi^6}{945\cdot4^6}-\frac{\pi^8}{9450\cdot4^8}-.\ .\ .$$
 
-which is really pretty. We can simplify it visually by defining a constant $a_n$:
+Although useless for actually generating or approximating $\pi$, it's quite
+pretty. We can simplify it visually by defining a constant $a_n$:
 
   $$a_n=\frac{(-1)^{n+1}4^n\beta_{2n}}{2(2n)!}$$
 
@@ -82,11 +83,7 @@ So the expression becomes
 
   $$\frac{\pi}{8}=\frac{1}{2}-a_1\frac{\pi^2}{4^2}-a_2\frac{\pi^4}{4^4}-a_3\frac{\pi^6}{4^6}-a_4\frac{\pi^8}{4^8}-.\ .\ .$$
 
-Defining this constant also allows us to simplify the expression for $\zeta(2n)$ into a nice, compact form:
-
-  $$\zeta(2n)=a_n\pi^{2n}$$
-
-### Euler
+## Euler
 
 Euler famously proved that $\zeta(2) = \frac{\pi^{2}}{6}$. He started with the
 function  $\frac{\sin x}{x}$, i.e. the $\text{sinc}$ function, which has the
@@ -114,7 +111,7 @@ $$ -\left( \frac{1}{\pi^{2}} + \frac{1}{4\pi^{2}} + \frac{1}{9\pi^{2}} + \ldots
 $$ \zeta(2) = \sum_{n=1}^{\infty} \frac{1}{n^{2}} = \frac{\pi^{2}}{6} $$
 
 A similar result can be derived for the odd squares. Instead of $\text{sinc } x$
-we start with $\cos x$. The series expansion for $\cos x$:
+we start with $\cos x$. The series expansion for $\cos x$ is
 
 $$ \cos x = \sum_{n=0}^{\infty}  \frac{(-1)^{n}}{(2n)!}x^{2n} = 1 -
 \frac{x^{2}}{2!} + \frac{x^{4}}{4!} - \frac{x^{6}}{6!} + \ldots $$
@@ -157,5 +154,3 @@ $$ \frac{\pi}{4} = 1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \frac{1}{9} -
 \ldots . $$
 
 ---
-
-Last updated 04/04/20

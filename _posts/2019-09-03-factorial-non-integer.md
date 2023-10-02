@@ -4,14 +4,16 @@ mathjax: true
 title: Factorial of non-integer values
 ---
 
-Demonstrating the concept of taking the factorial of non-integer values by
-deriving a really cool result.
+Demonstrating the concept of taking the factorial of non-integer values
 
 ---
 
-<p><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/lotr-meme.png" alt="Meme" class="fancy-image" /></p>
+<p><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/lotr-meme.png" alt="Meme" class="fancy-image" height=250/></p>
 
-Seeing this meme was the first time I came across this result. Proving it is a little tricky but it involves working with the gamma function, which is always fun. There are a couple of bits which may seem difficult to understand, but I have tried to explain them as best as I can and have provided some links at the end which may be useful.
+Seeing this meme was the first time I came across this result. In terms of
+proving it, there are a couple of bits which may seem difficult to understand,
+but I have tried to explain them as well as I can, and have provided some
+links at the end which may be useful.
 
 The factorial operator can be defined as the following:
 
@@ -158,11 +160,11 @@ We showed earlier that $\Gamma\left(\frac{3}{2}\right)=\left(\frac{1}{2}\right)\
 
   $$\Gamma\left(\frac{1}{2}\right)=\sqrt{\pi}$$
 
-If we recall the property $\Gamma(z)=(z-1)!$ (Equation (5)), then we see that
+If we recall the property $\Gamma(z)=(z-1)!$, then we see that
 
   $$\left(-\frac{1}{2}\right)!=\sqrt{\pi}$$
 
-This is stunning! I find this result to be even more remarkable than the one we actually set out to prove. The gamma function has some other really cool properties, such as its relation to the Riemann zeta function, which I may go into more detail about in another post.
+Crazy.
 
 Useful links:
 * <a href="https://math.stackexchange.com/questions/1636021/rigorous-proof-that-dx-dy-r-dr-d-theta">Why $dxdy=rdrd\theta$</a>

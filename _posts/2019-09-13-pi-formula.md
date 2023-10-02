@@ -10,14 +10,9 @@ A formula for pi with an interesting plot.
 
 In my third year at university I was introduced to the error function during a
 'Transport Phenomena' class. It came up in the context of deriving expressions
-to describe heat and mass transfer through various geometries. It was probably
-some of the most interesting stuff I learnt at university and I may go into more
-detail about it in another post. While revising for the exam I, with the help of
-a friend, derived an expression for $\pi$. There isn't anything particularly
-strange about the derivation or the expression itself. However, it wasn't until
-recently when I plotted its convergence that I became a little curious about it.
-
-I'll begin by presenting the derivation, which starts with the error function:
+to describe heat and mass transfer through various geometries. While revising
+for the exam I derived an expression for $\pi$. Starting with the error
+function:
 
   $$\text{erf}(z)=\frac{2}{\sqrt{\pi}}\int_{0}^{z}e^{-x^2}dx$$
 
@@ -49,15 +44,17 @@ Next, we consider the value of the error function at various values of $z$:
   * $\text{erf}(1)\approx0.8427008$
   * $\text{erf}(2)\approx0.9953223$
   * $\text{erf}(3)\approx0.9999779$
-  * $\text{erf}(4)\approx1$
+  * $\text{erf}(4)\approx0.9999999$
 
-$\text{erf}(4)$ is not exactly equal to $1$, though it is a pretty good approximation. And so, substituting $z=4$ into Equation (6) gives
+We essentially see that as $z$ increases $\text{erf}(z)$ get closer and closer to 1.
+And so, substituting $z=4$ into the expression for $\text{erf}(z)$ shown above
+we can say that
 
   $$1\approx\frac{2}{\sqrt{\pi}}\sum_{n=0}^{\infty}\frac{(-1)^n4^{2n+1}}{n!(2n+1)}$$
   
   $$\frac{\sqrt{\pi}}{2}\approx\sum_{n=0}^{\infty}\frac{(-1)^n4^{2n+1}}{n!(2n+1)}$$
 
-Or more accurately we can say
+Or more accurately
 
   $$\lim_{z\to\infty}\sum_{n=0}^{\infty}\frac{(-1)^nz^{2n+1}}{n!(2n+1)}=\frac{\sqrt{\pi}}{2}$$
 
