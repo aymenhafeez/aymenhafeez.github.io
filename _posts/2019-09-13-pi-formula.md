@@ -4,7 +4,7 @@ mathjax: true
 title: Deriving an expression for pi from the error function 
 ---
 
-A formula for pi with an interesting plot.
+A formula for pi derived from the error function.
 
 ---
 
@@ -47,16 +47,10 @@ Next, we consider the value of the error function at various values of $z$:
   * $\text{erf}(4)\approx0.9999999$
 
 We essentially see that as $z$ increases $\text{erf}(z)$ get closer and closer to 1.
-And so, substituting $z=4$ into the expression for $\text{erf}(z)$ shown above
-we can say that
+And so, we can say that
 
-  $$1\approx\frac{2}{\sqrt{\pi}}\sum_{n=0}^{\infty}\frac{(-1)^n4^{2n+1}}{n!(2n+1)}$$
-  
-  $$\frac{\sqrt{\pi}}{2}\approx\sum_{n=0}^{\infty}\frac{(-1)^n4^{2n+1}}{n!(2n+1)}$$
-
-Or more accurately
-
-  $$\lim_{z\to\infty}\sum_{n=0}^{\infty}\frac{(-1)^nz^{2n+1}}{n!(2n+1)}=\frac{\sqrt{\pi}}{2}$$
+  $$\lim_{z\to\infty} \text{erf}(z) = \lim_{z\to\infty} \frac{2}{\sqrt{\pi}} \sum_{n=0}^{\infty}\frac{(-1)^nz^{2n+1}}{n!(2n+1)} = 1$$
+  $$\frac{\sqrt{\pi}}{2} = \lim_{z\to\infty}\sum_{n=0}^{\infty}\frac{(-1)^nz^{2n+1}}{n!(2n+1)}$$
 
 Plotting the convergence of the expression for $z = 4$, as well the expression
 rearranged for $\pi$:
