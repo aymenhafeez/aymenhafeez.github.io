@@ -49,8 +49,12 @@ Next, we consider the value of the error function at various values of $z$:
 We essentially see that as $z$ increases $\text{erf}(z)$ get closer and closer to 1.
 And so, we can say that
 
-  $$\lim_{z\to\infty} \text{erf}(z) = \lim_{z\to\infty} \frac{2}{\sqrt{\pi}} \sum_{n=0}^{\infty}\frac{(-1)^nz^{2n+1}}{n!(2n+1)} = 1$$
-  $$\frac{\sqrt{\pi}}{2} = \lim_{z\to\infty}\sum_{n=0}^{\infty}\frac{(-1)^nz^{2n+1}}{n!(2n+1)}$$
+  $$
+  \begin{aligned}
+    \lim_{z\to\infty} \text{erf}(z) &= \lim_{z\to\infty} \frac{2}{\sqrt{\pi}} \sum_{n=0}^{\infty}\frac{(-1)^nz^{2n+1}}{n!(2n+1)} = 1 \\
+    \frac{\sqrt{\pi}}{2} &= \lim_{z\to\infty}\sum_{n=0}^{\infty}\frac{(-1)^nz^{2n+1}}{n!(2n+1)}
+  \end{aligned}
+  $$
 
 Plotting the convergence of the expression for $z = 4$, as well the expression
 rearranged for $\pi$:
