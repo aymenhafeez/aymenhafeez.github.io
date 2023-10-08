@@ -84,6 +84,6 @@ $$
   \zeta(s) = \prod_{p \text{ prime}} \frac{1}{1 - p^{-s}}
 $$
 
-This is just such a cool result. And again, while this result is by no means
+This is just such a cool result. And again, while this derivation is by no means
 mathematically rigorous I think it provides a good high-level overview for the
 intuition behind the Euler product for the Riemann zeta function.
