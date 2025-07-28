@@ -10,7 +10,7 @@ I'm interested in low carbon tech, particularly CCUS. My undergraduate research
 revolved around developing mathematical models to gain further incite into how
 microalgae growth can be optimised for CO<sub>2</sub> utilisation from carbon
 capture. You can read about the background
-[here](https://aymenhafeez.github.io/p-i-model/)
+[here](https://aymenhafeez.github.io/pi-model/)
 
 Check out the photos page for recent trips I've been on, my
 [github](http://www.github.com/aymenhafeez) for projects I'm working on and blog
