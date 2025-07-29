@@ -101,10 +101,10 @@ $$
 and taking the sum,
 
 $$
-  \sum n^{-s} &= \sum 2^{-\epsilon_2s}3^{-\epsilon_3s}5^{-\epsilon_5s} \cdots,
+  \sum n^{-s} = \sum 2^{-\epsilon_2s}3^{-\epsilon_3s}5^{-\epsilon_5s} \cdots,
 $$
 $$
-  \sum n^{-s} &= (1 + 2^{-s} + 2^{-2s} + \cdots)(1 + 3^{-s} + 3^{-2s} + \cdots)(1 + 5^{-s} + 5^{-2s} + \cdots)
+  \sum n^{-s} = (1 + 2^{-s} + 2^{-2s} + \cdots)(1 + 3^{-s} + 3^{-2s} + \cdots)(1 + 5^{-s} + 5^{-2s} + \cdots)
 $$
 
 And so, we see that the terms on the right hand side, for each prime $p$, equate to
