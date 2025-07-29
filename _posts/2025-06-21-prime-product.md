@@ -58,7 +58,7 @@ $$
 Here we see that each term being multiplied is a geometric series. Recall that
 in general a geometric series can  be written as
 
-{-s}uu$$
+$$
   \sum_{n=0}^{\infty} a r^{n} = \frac{a}{1 - r}
 $$
 
@@ -91,7 +91,7 @@ $$
   n = 2^{\epsilon_2}3^{\epsilon_3}5^{\epsilon_5} \cdots,
 $$
 
-where $\epsilon_2,\epsilon_3,\epsilon_5 \cdots}$ are non-negative integers. Raising both sides
+where $\epsilon_2,\epsilon_3,\epsilon_5 \cdots$ are non-negative integers. Raising both sides
 to the power of $-s$,
 
 $$
@@ -101,10 +101,10 @@ $$
 and taking the sum,
 
 $$
-\begin{aligned}
-  \sum n^{-s} &= \sum 2^{-\epsilon_2s}3^{-\epsilon_3s}5^{-\epsilon_5s} \cdots, \\
+  \sum n^{-s} &= \sum 2^{-\epsilon_2s}3^{-\epsilon_3s}5^{-\epsilon_5s} \cdots,
+$$
+$$
   \sum n^{-s} &= (1 + 2^{-s} + 2^{-2s} + \cdots)(1 + 3^{-s} + 3^{-2s} + \cdots)(1 + 5^{-s} + 5^{-2s} + \cdots)
-\end{aligned}
 $$
 
 And so, we see that the terms on the right hand side, for each prime $p$, equate to
