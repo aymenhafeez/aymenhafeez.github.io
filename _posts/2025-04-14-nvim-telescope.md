@@ -21,7 +21,7 @@ wanting to quickly check the help docs for something, unless I knew the exact
 help-tag I wanted to search for, there wasn't any quick and easy way to get to
 the result I wanted, which would lead to having to use `:helpgrep` and filter
 through the results. For me, this is an area where fuzzy-finders can be very
-useful...🔭
+useful.
 
 ## "File gazing" in Lua
 
@@ -33,7 +33,7 @@ There are a lot of fuzzy finders available for (Neo)vim, such as
 [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim) and
 [fzf.vim](https://github.com/junegunn/fzf.vim), and they're really good
 projects, too. The main reason I prefer Telescope, however, is that it feels
-like it could be a built-in Neovim feature. Let me explain.
+like it could be a built-in Neovim feature.
 
 Fzf.vim is an amazing fuzzy finder and I used it for a long time before
 migrating to Telescope. However, it isn't really a Vim plugin, as it

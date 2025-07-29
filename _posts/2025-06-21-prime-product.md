@@ -58,7 +58,7 @@ $$
 Here we see that each term being multiplied is a geometric series. Recall that
 in general a geometric series can  be written as
 
-$$
+{-s}uu$$
   \sum_{n=0}^{\infty} a r^{n} = \frac{a}{1 - r}
 $$
 
@@ -82,6 +82,41 @@ $$
 
 $$
   \zeta(s) = \prod_{p \text{ prime}} \frac{1}{1 - p^{-s}}
+$$
+
+This formula can also be understood more simply starting with the Fundamental Theorem of
+Arithmetic, which states that any integer, $n \geq 1$ can be expressed as
+
+$$
+  n = 2^{\epsilon_2}3^{\epsilon_3}5^{\epsilon_5} \cdots,
+$$
+
+where $\epsilon_2,\epsilon_3,\epsilon_5\cdots} are non-negative integers. Raising both sides
+to the power of $-s$,
+
+$$
+  n^{-s} = 2^{-\epsilon_2s}3^{-\epsilon_3s}5^{-\epsilon_5s} \cdots,
+$$
+
+and taking the sum,
+
+$$
+\begin{aligned}
+  \sum n^{-s} = \sum 2^{-\epsilon_2s}3^{-\epsilon_3s}5^{-\epsilon_5s} \cdots, \\
+  \sum n^{-s} = (1 + 2^{-s} + 2^{-2s} + \cdots)(1 + 3^{-s} + 3^{-2s} + \cdots)(1 + 5^{-s} + 5^{-2s} + \cdots)
+\end{aligned}
+$$
+
+And so, we see that the terms on the right hand side, for each prime $p$, equate to
+
+$$
+1 + p^{-s} + p^{-2s} + \cdots = (1 - p^{-s})^{-1},
+$$
+
+giving us
+
+$$
+  \sum n^{-s} = \prod_{p \text{ prime}} \frac{1}{1 - p^{-s}}
 $$
 
 This is just such a cool result. And again, while this derivation is by no means
