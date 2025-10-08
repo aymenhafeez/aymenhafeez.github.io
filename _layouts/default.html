@@ -47,6 +47,26 @@
       </div>
     </div>
 
+    <script>
+        const toggle = document.getElementById('theme-toggle');
+        const root = document.documentElement;
+        const savedTheme = localStorage.getItem('theme');
+
+        // Default: use saved theme or system preference
+        if (savedTheme) {
+            root.setAttribute('data-theme', savedTheme);
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            root.setAttribute('data-theme', 'dark');
+        }
+
+        toggle.addEventListener('click', () => {
+            const current = root.getAttribute('data-theme');
+            const next = current === 'dark' ? 'light' : 'dark';
+            root.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+        });
+    </script>
+
     {% include analytics.html %}
   </body>
 </html>
