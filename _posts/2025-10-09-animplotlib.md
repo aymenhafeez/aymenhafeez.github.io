@@ -1,7 +1,7 @@
 ---
 layout: post
 mathjax: true
-title: Animplotlib: A Python Library for Creating Animated Plots
+title: Advanced example use of the animplotlib package
 ---
 
 Advanced example use of the animplotlib package
