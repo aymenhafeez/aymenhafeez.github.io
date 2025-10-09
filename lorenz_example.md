@@ -4,11 +4,11 @@ mathjax: true
 title: The Lorenz Attractor 
 ---
 
-<!-- <center> -->
-<!-- <figure>  -->
-<!--   <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/lorenz-anim.gif" height="300" width="300"/>  -->
-<!-- </figure> -->
-<!-- </center> -->
+<center>
+  <figure> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lorenz_colour.gif" /> 
+  </figure>
+</center>
 
 $\newcommand{\dd}{\mathrm{d}}$
 
@@ -207,5 +207,11 @@ AnimPlot3D(fig, [ax] * len(lines), lines, points, xs, ys, zs, plot_speed=2,
            rotation_speed=0.25, l_num=100, p_num=1)
 ```
 
-![](images/lorenz_colour.gif)
+<!-- ![](images/lorenz_colour.gif) -->
+
+<center>
+  <figure> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lorenz_colour.gif" /> 
+  </figure>
+</center>
 
