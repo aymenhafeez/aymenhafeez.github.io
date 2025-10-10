@@ -3,12 +3,12 @@ layout: post
 mathjax: true
 title: The Lorenz Attractor 
 ---
-
-<center>
-  <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lorenz_colour.gif" /> 
-  </figure>
-</center>
+<!---->
+<!-- <center> -->
+<!--   <figure>  -->
+<!--     <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lorenz_colour.gif" />  -->
+<!--   </figure> -->
+<!-- </center> -->
 
 $\newcommand{\dd}{\mathrm{d}}$
 
@@ -39,37 +39,36 @@ data being plotted. First we import the necessary libraries and define the
 attractor:
 
 ```python
-import numpy as np
-from scipy.integrate import odeint
 import matplotlib.pyplot as plt
-from animplotlib import AnimPlot # AnimPlot class used for 2D animations
+from scipy.integrate import odeint
+import numpy as np
+import animplotlib as anim
 
-# parameters and initial conditions
-sigma = 10
-rho = 28
-beta = 8/3
-x0 = [0, 1, 15] # initial conditions
-t = np.linspace(0, 100, 10000)
+x0 = [0, 1, 15]
+t = np.linspace(0.01, 100, 10000)
 
-# defining the lorenz system
-def lorenz(x_var, t):
+def lorenz(x_var, t, sigma, rho, beta):
     x, y, z = x_var
     dx_dt = sigma * (y - x)
     dy_dt = x * (rho - z) - y
     dz_dt = x * y - beta * z
     return [dx_dt, dy_dt, dz_dt]
 
+def solve_lorenz(x0, t, sigma, rho, beta):
+    return odeint(lorenz, x0, t, args=(sigma, rho, beta))
 
-# solving the system
-x_solve = odeint(lorenz, x0, t)
-x = x_solve[:, 0]
-y = x_solve[:, 1]
-z = x_solve[:, 2]
+x_solve = solve_lorenz(x0, t, sigma=10, rho=28, beta=8/3)
+x, y, z = x_solve.T
 ```
 
 ## 2D Animation
 
-Let's visualize the Lorenz attractor in three 2D projections: `x vs y`, `x vs z`, and `y vs z`.
+Let's visualize the Lorenz attractor in three 2D projections: `x vs y`, `x vs
+z`, and `y vs z`, each on its own axis within the same figure. The method
+parallels the example of making a 2D animation containing a single axis,
+however, here we create a list of axes, lines and points and pass them to
+AnimPlot the same way.
+
 
 ```python
 fig, axs = plt.subplots(1, 3, figsize=(15, 5))
@@ -116,70 +115,56 @@ xs.append(y)
 ys.append(z)
 
 # Call the AnimPlot class
-AnimPlot(fig, lines, points, xs, ys, plot_speed=2, l_num=1000)
+anim.AnimPlot(fig, lines, points, xs, ys, plot_speed=2, l_num=1000)
 ```
-
-![](examples/gifs/lorenz_2d_multi.gif)
+<center>
+  <figure> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lorenz_project.gif" height="300" /> 
+  </figure>
+</center>
 
 ## 3D Animation
 
 To better see how these projections relate to each other we can create an
-animation in 3D using the AnimPlot3D class. Using the same code as above to
-solve the Lorenz system and generate the data:
+animation in 3D using the AnimPlot3D class. A standout property of chaotic
+systems is that they're very sensitive to changes in their input parameters. We
+can visualise this by plotting the Lorenz attractor with various initial
+conditions on the same axes.
+
+Here, we solve the Lorenz system for each set of initial conditions and the
+store the results in separate arrays. We then create a line and a point for
+each solution and add them to a list of lines and points to be passed to
+AnimPlot3D. Note that when passing the axes to AnimPlot3D we multiply the list
+by `len(lines)`. This is because AnimPlot3D expects a list of axes, one for
+each line/trajectory we want to animate. Passing just `[ax]` (a single axis)
+would result in only the first line/trajectory being animated. By multiplying
+`[ax] * len(lines)`, we create a list with the same axis repeated for each
+line, allowing all lines to be animated.
 
 ```python
-fig = plt.figure(figsize=(8, 6))
-ax = fig.add_subplot(111, projection='3d') # for 3D plotting
-line, = ax.plot([], [], [], lw=0.5)
-point, = ax.plot([], [], [], 'ro', markersize=4)
-ax.set_xlim(np.min(x), np.max(x))
-ax.set_ylim(np.min(y), np.max(y))
-ax.set_zlim(np.min(z), np.max(z))
-ax.set_title('3D Lorenz Attractor')
-ax.set_axis_off()
-
-anim.AnimPlot3D(fig, ax, line, point, x, y, z, plot_speed=2,
-                rotation_speed=0.25, l_num=1000, blit=False)
-```
-
-A standout property of chaotic systems is that they are very sensitive to
-change in their input parameters. We can visualise this by plotting the Lorenz
-attractor with various initial conditions on the same axes:
-
-```python
-import numpy as np
-import matplotlib.pyplot as plt
-from scipy.integrate import odeint
-from animplotlib import AnimPlot3D
-
-def lorenz_deriv(state, t, sigma=10, rho=28, beta=8/3):
-    x, y, z = state
-    dxdt = sigma * (y - x)
-    dydt = x * (rho - z) - y
-    dzdt = x * y - beta * z
-    return [dxdt, dydt, dzdt]
-
-def lorenz_trajectory(x0, y0, z0, t_step=5000, dt=0.01):
-    t = np.linspace(0, t_step*dt, t_step)
-    initial_state = [x0, y0, z0]
-    states = odeint(lorenz_deriv, initial_state, t)
-    xs, ys, zs = states[:,0], states[:,1], states[:,2]
-    return xs, ys, zs
-
-# Varying initial conditions
-initial_conditions = [
+t = np.linspace(0.01, 50, 5000)
+x0 = [
     (0., 1., 1.05),
     (15., 10., 20.),
     (-15., -10., 30.),
     (5., -20., 40.)
 ]
-# Colour values for each plot
 colors = [
     "#4E79A7",
     "#F28E2B",
-    "#76B7B2",
+    "#46ACB8",
     "#E15759"
 ]
+
+def lorenz(x_var, t, sigma, rho, beta):
+    x, y, z = x_var
+    dxdt = sigma * (y - x)
+    dydt = x * (rho - z) - y
+    dzdt = x * y - beta * z
+    return [dxdt, dydt, dzdt]
+
+def solve_lorenz(x0, t, sigma, rho, beta):
+    return odeint(lorenz, x0, t, args=(sigma, rho, beta))
 
 fig = plt.figure(figsize=(8, 8))
 ax = fig.add_subplot(111, projection='3d')
@@ -189,8 +174,9 @@ lines = []
 points = []
 xs, ys, zs = [], [], []
 
-for ic, color in zip(initial_conditions, colors):
-    x, y, z = lorenz_trajectory(*ic)
+for init_cond, color in zip(x0, colors):
+    x_solve = solve_lorenz(init_cond, t, sigma=10, rho=28, beta=8/3)
+    x, y, z = x_solve.T
     xs.append(x)
     ys.append(y)
     zs.append(z)
@@ -203,15 +189,13 @@ ax.set_xlim(np.min(xs), np.max(xs))
 ax.set_ylim(np.min(ys), np.max(ys))
 ax.set_zlim(np.min(zs), np.max(zs))
 
-AnimPlot3D(fig, [ax] * len(lines), lines, points, xs, ys, zs, plot_speed=2,
+anim.AnimPlot3D(fig, [ax] * len(lines), lines, points, xs, ys, zs, plot_speed=1,
            rotation_speed=0.25, l_num=100, p_num=1)
 ```
 
-<!-- ![](images/lorenz_colour.gif) -->
-
 <center>
   <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lorenz_colour.gif" /> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lorenz_colour.gif" width="500" /> 
   </figure>
 </center>
 
