@@ -124,7 +124,7 @@ anim.AnimPlot(fig, lines, points, xs, ys, plot_speed=2, l_num=1000)
 
 <center>
   <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lorenz_project.gif", width="1000" /> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lorenz_project.gif", width="900" /> 
   </figure>
 </center>
 
