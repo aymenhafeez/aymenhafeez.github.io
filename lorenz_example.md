@@ -47,6 +47,7 @@ import animplotlib as anim
 x0 = [0, 1, 15]
 t = np.linspace(0.01, 100, 10000)
 
+# defining the Lorenz system
 def lorenz(x_var, t, sigma, rho, beta):
     x, y, z = x_var
     dx_dt = sigma * (y - x)
@@ -54,6 +55,7 @@ def lorenz(x_var, t, sigma, rho, beta):
     dz_dt = x * y - beta * z
     return [dx_dt, dy_dt, dz_dt]
 
+# solving the system
 def solve_lorenz(x0, t, sigma, rho, beta):
     return odeint(lorenz, x0, t, args=(sigma, rho, beta))
 
@@ -71,8 +73,10 @@ AnimPlot the same way.
 
 
 ```python
+# creating three subplots
 fig, axs = plt.subplots(1, 3, figsize=(15, 5))
 
+# lists to hold lines, points, and data for each subplot
 lines = []
 points = []
 xs = []
@@ -114,12 +118,13 @@ points.append(point3)
 xs.append(y)
 ys.append(z)
 
-# Call the AnimPlot class
+# call the AnimPlot class
 anim.AnimPlot(fig, lines, points, xs, ys, plot_speed=2, l_num=1000)
 ```
+
 <center>
   <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lorenz_project.gif" height="300" /> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lorenz_project.gif", width="1000" /> 
   </figure>
 </center>
 
@@ -143,12 +148,14 @@ line, allowing all lines to be animated.
 
 ```python
 t = np.linspace(0.01, 50, 5000)
+# list of initial conditions
 x0 = [
     (0., 1., 1.05),
     (15., 10., 20.),
     (-15., -10., 30.),
     (5., -20., 40.)
 ]
+# distinct colors for each trajectory
 colors = [
     "#4E79A7",
     "#F28E2B",
@@ -156,6 +163,7 @@ colors = [
     "#E15759"
 ]
 
+# definig the Lorenz system
 def lorenz(x_var, t, sigma, rho, beta):
     x, y, z = x_var
     dxdt = sigma * (y - x)
@@ -163,6 +171,7 @@ def lorenz(x_var, t, sigma, rho, beta):
     dzdt = x * y - beta * z
     return [dxdt, dydt, dzdt]
 
+# solving the system
 def solve_lorenz(x0, t, sigma, rho, beta):
     return odeint(lorenz, x0, t, args=(sigma, rho, beta))
 
@@ -170,10 +179,12 @@ fig = plt.figure(figsize=(8, 8))
 ax = fig.add_subplot(111, projection='3d')
 ax.set_axis_off()
 
+# lists to hold lines, points, and data for each trajectory
 lines = []
 points = []
 xs, ys, zs = [], [], []
 
+# solve for each set of initial conditions and create a line and point for each
 for init_cond, color in zip(x0, colors):
     x_solve = solve_lorenz(init_cond, t, sigma=10, rho=28, beta=8/3)
     x, y, z = x_solve.T
@@ -195,7 +206,6 @@ anim.AnimPlot3D(fig, [ax] * len(lines), lines, points, xs, ys, zs, plot_speed=1,
 
 <center>
   <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lorenz_colour.gif" width="500" /> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lorenz_colour.gif" width="450" /> 
   </figure>
 </center>
-
