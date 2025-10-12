@@ -3,12 +3,8 @@ layout: post
 mathjax: true
 title: The Lorenz Attractor 
 ---
-<!---->
-<!-- <center> -->
-<!--   <figure>  -->
-<!--     <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lorenz_colour.gif" />  -->
-<!--   </figure> -->
-<!-- </center> -->
+
+---
 
 $\newcommand{\dd}{\mathrm{d}}$
 
@@ -124,7 +120,7 @@ anim.AnimPlot(fig, lines, points, xs, ys, plot_speed=2, l_num=1000)
 
 <center>
   <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lorenz_project.gif", width="900" /> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lorenz_project.gif" /> 
   </figure>
 </center>
 
@@ -136,13 +132,13 @@ systems is that they're very sensitive to changes in their input parameters. We
 can visualise this by plotting the Lorenz attractor with various initial
 conditions on the same axes.
 
-Here, we solve the Lorenz system for each set of initial conditions and the
+To do this we solve the Lorenz system for each set of initial conditions and
 store the results in separate arrays. We then create a line and a point for
 each solution and add them to a list of lines and points to be passed to
 AnimPlot3D. Note that when passing the axes to AnimPlot3D we multiply the list
 by `len(lines)`. This is because AnimPlot3D expects a list of axes, one for
 each line/trajectory we want to animate. Passing just `[ax]` (a single axis)
-would result in only the first line/trajectory being animated. By multiplying
+would result in only the first line/trajectory being animated. By passing
 `[ax] * len(lines)`, we create a list with the same axis repeated for each
 line, allowing all lines to be animated.
 
