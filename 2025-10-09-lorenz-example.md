@@ -1,7 +1,7 @@
 ---
 layout: nodatepost
 mathjax: true
-title: The Lorenz Attractor 
+title: The Lorenz Attractor
 ---
 
 Animating the Lorenz attractor
