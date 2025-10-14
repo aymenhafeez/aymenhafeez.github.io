@@ -14,8 +14,8 @@ finite Fourier series. A particular subset of the Fourier knots are the
 the simplest form of Fourier knots as the Fourier series for each coordinate is
 given by a single cosine term:
 
-$$x(t) = \cos(n_x t + \phi_x) \\$$
-$$y(t) = \cos(n_y t + \phi_y) \\$$
+$$x(t) = \cos(n_x t + \phi_x)$$
+$$y(t) = \cos(n_y t + \phi_y)$$
 $$z(t) = \cos(n_z t + \phi_z)$$
 
 where $n_x$, $n_y$, and $n_z$ are integers that determine the number of
@@ -28,6 +28,7 @@ A characteristic of the Lissajous knot is that its projection onto any of the
 three coordinate planes is a Lissajous curve:
 
 ![](images/lissajous_plot.png)
+
 
 Though animating this in 3D isn't much different to the example outlined in the
 [quickstart
