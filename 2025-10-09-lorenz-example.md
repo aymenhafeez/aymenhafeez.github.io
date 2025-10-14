@@ -207,3 +207,10 @@ anim.AnimPlot3D(fig, [ax] * len(lines), lines, points, xs, ys, zs, plot_speed=1,
     <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lorenz_colour.gif" width="600" /> 
   </figure>
 </center>
+
+<br>
+<br>
+
+<a href="/2025-10-09-animplotlib.md">Back to examples</a>
+
+<br>

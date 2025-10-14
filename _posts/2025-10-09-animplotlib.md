@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: nodatepost
 mathjax: true
 title: animplotlib
 ---

@@ -85,3 +85,10 @@ anim.AnimPlot3D(fig, ax, line, point, x, y, z, plot_speed=3,
 ```
 
 ![](images/fourier_trefoil.gif)
+
+<br>
+<br>
+
+<a href="/2025-10-09-animplotlib.md">Back to examples</a>
+
+<br>
