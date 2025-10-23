@@ -14,4 +14,6 @@ guide](https://github.com/aymenhafeez/animplotlib?tab=readme-ov-file#quickstart)
 
 <a href="/2025-10-13-trefoil-example">Lissajous knot</a> <br>
 <br>
+<a href="/2025-10-23-torus-example">Lissajous knot</a> <br>
+<br>
 <a href="/2025-10-09-lorenz-example">Lorenz attractor</a> <br>
