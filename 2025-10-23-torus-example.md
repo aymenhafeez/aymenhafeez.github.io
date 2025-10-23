@@ -18,8 +18,14 @@ torus.
 
 <!-- ![](images/torus.png) -->
 
-Because they produce a cool looking plot we'll use the torus knot as an example
-of to use animlotlib to plot multiple 3D animations on a single figure.
+Because it produces a cool looking plot we'll use the torus knot as a slightly
+more complex example of using `animplotlib`. This will be similar to creating the
+[lorenz attractor
+animation](https://aymenhafeez.github.io/2025-10-09-lorenz-example/) where we
+made multiple plots on a single axes. Here, however, we'll create three
+animations, each on its own axis within the same figure.
+
+---
 
 Torus knots are defined parametrically by the following set of equations:
 
@@ -29,14 +35,16 @@ $$y(t) = (R + \cos(pt))(\sin(qt)) $$
 
 $$z(t) = -\sin(pt)$$
 
-where $R$ is the radius of the torus and $p$ and $q$ are integers which must be
-coprime. This is important as it allows the torus to form a single, continuous
-loop. A common configuration to view the torus knot is with $R = 2$. For the
-parameters $p$ and $q$ we'll use three different pairs: $(3, 2)$, $(7, 3)$ and
-$(15, 4)$ and see how the shape of the knot changes.
+where $R$ is the radius of the torus (think of this as its "thickness") and $p$
+and $q$ are integers which must be coprime. This is important as it allows the
+torus to form a single, continuous loop. A common configuration to view the
+torus knot is with $R = 2$. For the parameters $p$ and $q$ we'll use three
+different pairs: $(3, 2)$, $(7, 3)$ and $(15, 4)$. Once animated, we'll be able
+to get a better idea as to how these parameters determine the shape of their
+respective knots.
 
 We can start with importing the necessary libraries, defining the knot and
-values for $p$ and $q$. We'll allow $t$ to run over a period of $0$ to $2\pi$
+the values for $p$ and $q$. We'll allow $t$ to run over a period of $0$ to $2\pi$
 (i.e. one whole revolution).
 
 ```python
@@ -71,7 +79,7 @@ xs, ys, zs = [], [], []
 
 Next, we call the $\texttt{torus}$ function for each  set of parameters we
 defined earlier. We can then create a line, point and static plot and append
-each of these to corresponding lists created above.
+each of these to the corresponding lists created above.
 
 ```python
 for parameter, color in zip(parameters, colors):
@@ -100,6 +108,18 @@ anim.AnimPlot3D(fig, axes, lines, points, xs, ys, zs, plot_speed=2,
 ```
 
 ![](images/torus_knots.gif)
+
+We can see from the animation how the density and complexity of the knot
+increases as we change the values of $p$ and $q$. Let's overlay the knot with
+$p = 7$ and $q = 3$ to better see how these parameters relate to a torus:
+
+![](images/torus_on_torus.gif)
+
+Staring at this for a while you may begin to see that the knot actually loops
+around the torus 7 times (i.e. $p$ times) and around its central axis 3 times
+(i.e. $q$ times). Creating these animations makes it a lot easier to understand
+what these parameters actually mean in the context of the equations and how the
+knot is affected as we change them.
 
 <br>
 
