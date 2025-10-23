@@ -5,9 +5,7 @@ title: Fourier Knot
 ---
 
 ---
-
 $\newcommand{\dd}{\mathrm{d}}$
-
 A Fourier knot is a mathematical knot whose coordinates can be expressed as a
 finite Fourier series. A particular subset of the Fourier knots are the
 [Lissajous knots](https://mathworld.wolfram.com/LissajousCurve.html). They're
@@ -87,8 +85,5 @@ anim.AnimPlot3D(fig, ax, line, point, x, y, z, plot_speed=3,
 ![](images/fourier_trefoil.gif)
 
 <br>
-<br>
 
 <a href="https://aymenhafeez.github.io/animplotlib/">Back to examples</a>
-
-<br>

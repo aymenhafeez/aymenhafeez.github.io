@@ -4,12 +4,8 @@ mathjax: true
 title: The Lorenz Attractor
 ---
 
-Animating the Lorenz attractor
-
 ---
-
 $\newcommand{\dd}{\mathrm{d}}$
-
 The Lorenz system is a classic example of chaos in dynamical systems. It's
 known for its butterfly-shaped attractor and is defined by the following set of
 ordinary differential equations:
@@ -209,8 +205,5 @@ anim.AnimPlot3D(fig, [ax] * len(lines), lines, points, xs, ys, zs, plot_speed=1,
 </center>
 
 <br>
-<br>
 
 <a href="https://aymenhafeez.github.io/animplotlib/">Back to examples</a>
-
-<br>
