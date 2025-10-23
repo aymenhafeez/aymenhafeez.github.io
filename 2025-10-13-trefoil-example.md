@@ -13,7 +13,9 @@ the simplest form of Fourier knots as the Fourier series for each coordinate is
 given by a single cosine term:
 
 $$x(t) = \cos(n_x t + \phi_x)$$
+
 $$y(t) = \cos(n_y t + \phi_y)$$
+
 $$z(t) = \cos(n_z t + \phi_z)$$
 
 where $n_x$, $n_y$, and $n_z$ are integers that determine the number of
