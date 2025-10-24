@@ -56,7 +56,7 @@ n = 1000
 t = np.linspace(0, 2 * np.pi, n)
 
 parameters = [(3, 2), (7, 3), (15, 4)]
-colors = ['#46ACB8', '#F28E2B', '#E15759']
+colours = ['#46ACB8', '#F28E2B', '#E15759']
 
 
 def torus(p, q):
@@ -82,7 +82,7 @@ defined earlier. We can then create a line, point and static plot and append
 each of these to the corresponding lists created above.
 
 ```python
-for parameter, color in zip(parameters, colors):
+for parameter, colour in zip(parameters, colours):
     p, q = parameter
     x, y, z = torus(p, q)
     xs.append(x)
@@ -91,9 +91,9 @@ for parameter, color in zip(parameters, colors):
 
     ax = fig.add_subplot(1, 3, len(axes) + 1, projection='3d')
     axes.append(ax)
-    ax.plot(x, y, z, c=color)
+    ax.plot(x, y, z, c=colour)
     line, = ax.plot([], [], [], lw=0)
-    point, = ax.plot([], [], [], 'o', color=color, markersize=10)
+    point, = ax.plot([], [], [], 'o', c=colour, markersize=10)
     lines.append(line)
     points.append(point)
 
