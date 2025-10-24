@@ -116,7 +116,6 @@ anim.AnimPlot3D(fig, [ax] * len(lines), lines, points, xs, ys, zs, plot_speed=1,
   </figure>
 </center>
 
-
 <br>
 
 <a href="https://aymenhafeez.github.io/animplotlib/">Back to examples</a>

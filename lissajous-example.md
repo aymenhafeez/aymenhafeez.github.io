@@ -84,12 +84,12 @@ anim.AnimPlot3D(fig, ax, line, point, x, y, z, plot_speed=3,
 > rotation at the same time as the plot finishes, giving a smooth transition
 > into the loop resetting.
 
-While the rotation and the plot are synchronised it would be cool if the have
-the animation loop seamlessly without a noticeable reset. We could achieve this
-by increasing the interval by multiples of $2\pi$ to make the animation longer
-and trace over itself, but it would still eventually reset at the end of each
-cycle. To have a truly seamless loop we plot a static Lissajous knot and have
-just the point trace over it and make the animated line invisible.
+While the rotation and the plot are synchronised it would be cool to have the
+animation loop seamlessly without a noticeable reset. We could achieve this by
+increasing the interval by multiples of $2\pi$ to make the animation longer and
+trace over itself, but it would still eventually reset at the end of each
+cycle. To have a truly seamless loop we can plot a static Lissajous knot and
+have just the point trace over it and make the animated line invisible.
 
 ```python
 # Static Lissajous knot
