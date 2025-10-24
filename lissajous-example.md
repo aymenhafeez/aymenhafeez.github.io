@@ -27,7 +27,7 @@ $n_z=7$ and $\phi_x=0$, $\phi_y=\pi/4$, $\phi_z=\pi/12$.
 A characteristic of the Lissajous knot is that its projection onto any of the
 three coordinate planes is a Lissajous curve:
 
-![](images/Lissajous_plot.png)
+![](images/lissajous_plot.png)
 
 
 Though animating this in 3D isn't much different to the example outlined in the
