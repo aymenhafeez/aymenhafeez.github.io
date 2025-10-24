@@ -6,7 +6,6 @@ title: Fourier Knot
 
 ---
 $\newcommand{\dd}{\mathrm{d}}$
-
 Torus knots are a class of knots that lie on and wrap around the surface of a
 torus.
 
