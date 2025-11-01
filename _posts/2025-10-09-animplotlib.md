@@ -18,6 +18,8 @@ guide](https://github.com/aymenhafeez/animplotlib?tab=readme-ov-file#quickstart)
 
 <a href="/torus-example">Torus knot</a> <br>
 
+<a href="/glowing-attractor-example">Glow effect animation</a> <br>
+
 <br>
 <br>
 <br>
