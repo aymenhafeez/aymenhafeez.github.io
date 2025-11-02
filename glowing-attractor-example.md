@@ -143,3 +143,7 @@ anim.AnimPlot3D(fig, [ax] * len(lines), lines, points, xs, ys, zs,
 
 What we're seeing in the animation is just the same plot being animated over
 itself, but each with a slightly thicker line and slightly higher alpha value.
+
+<br>
+
+<a href="https://aymenhafeez.github.io/animplotlib/">Back to examples</a>
