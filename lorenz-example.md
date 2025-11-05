@@ -16,6 +16,9 @@ $$\frac{\dd y}{\dd t}=x(\rho-z)-y$$
 
 $$\frac{\dd z}{\dd t}=xy-\beta z$$
 
+<iframe src="/lorenz.html" width="100%" height="600px" frameborder="0"
+style="border:none;"></iframe>
+
 Because of its striking visual when plotted it'll serve as a good example to
 show how `animplotlib` can be used for creating a more complex animation. A
 standout property of chaotic systems is that they're very sensitive to changes
