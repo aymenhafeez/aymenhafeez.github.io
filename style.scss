@@ -80,6 +80,23 @@ h3 {
   color: #6C7278 !important;
 }
 
+/* More specific selectors for subheadings */
+.posts h2 {
+  color: #6C7278 !important;
+}
+
+.posts h3 {
+  color: #6C7278 !important;
+}
+
+.post h2 {
+  color: #6C7278 !important;
+}
+
+.post h3 {
+  color: #6C7278 !important;
+}
+
 h4 {
   font-size: 16px;
   color: $text-secondary;
@@ -192,12 +209,14 @@ img {
 }
 
 .masthead {
-  padding: 20px 0;
+  padding: 8px 0;
   border-bottom: 1px solid $text-secondary;
   background: $bg-medium;
   width: 100vw;
   margin-left: -20px;
   margin-right: -20px;
+  position: relative;
+  left: -20px;
 
   @include mobile {
     text-align: center;
@@ -311,12 +330,8 @@ nav {
   border-bottom: none;
   margin-bottom: 2em;
   position: relative;
-
-  h1 {
-    position: relative;
-    padding-left: 1em;
-    border-left: 3px solid #61dafb;
-  }
+  border-left: 3px solid #61dafb;
+  padding-left: 1em;
 
   &::before {
     content: "";
