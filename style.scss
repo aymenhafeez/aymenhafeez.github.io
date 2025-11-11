@@ -25,8 +25,8 @@ body {
 }
 
 .container {
-  margin: 0;
-  max-width: none;
+  margin: 0 auto;
+  max-width: 800px;
   padding: 0 20px;
   width: 100%;
 }
@@ -55,7 +55,7 @@ h6 {
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 20px;
   color: $text-primary;
 
   a {
@@ -85,22 +85,7 @@ h4 {
   color: $text-secondary;
 }
 
-h2 {
-  font-size: 20px;
-  color: $text-secondary;
-}
 
-h3 {
-  font-size: 18px;
-  color: $text-secondary;
-  border-left-color: $text-muted;
-}
-
-h4 {
-  font-size: 16px;
-  color: $text-secondary;
-  border-left-color: $text-dim;
-}
 
 p {
   margin: 15px 0;
@@ -211,6 +196,7 @@ img {
   border-bottom: 1px solid $text-secondary;
   background: $bg-medium;
   width: 100%;
+  margin: 0;
 
   @include mobile {
     text-align: center;
