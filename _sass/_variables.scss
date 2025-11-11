@@ -3,18 +3,33 @@
 // VARIABLES
 //
 
-// Colors
-$blue: #4183C4;
+// Modern TUI-inspired Colors
+$accent: #61dafb;      // Soft blue (like VS Code)
+$accent-secondary: #f39c12;  // Warm orange
+$accent-tertiary: #e74c3c;   // Subtle red
 
-// Grays
-$black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
-$white: #fff;
+// Modern Terminal Grays
+$black: #000000;
+$bg-dark: #1e1e1e;     // VS Code dark background
+$bg-medium: #252526;   // Slightly lighter
+$bg-light: #2d2d30;    // Even lighter
+$text-primary: #d4d4d4;  // Soft white
+$text-secondary: #9cdcfe;  // Light blue-gray
+$text-muted: #6a6a6a;   // Muted gray
+$text-dim: #3e3e42;     // Very dim
+$border: #3e3e42;
+$selection: #264f78;    // Subtle blue selection
+
+// Legacy aliases for compatibility
+$blue: $accent;
+$white: $text-primary;
+$darkerGray: $text-secondary;
+$darkGray: $text-muted;
+$gray: $text-dim;
+$lightGray: $border;
 
 // Font stacks
+$monospace: 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'SF Mono', 'Monaco', 'Menlo', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
