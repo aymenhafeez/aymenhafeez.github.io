@@ -93,6 +93,11 @@ h3 {
   color: #6C7278 !important;
 }
 
+/* Override entry color for normal text content */
+.post p, .page p, .post div, .page div {
+  color: #95999E !important;
+}
+
 h4 {
   font-size: 16px;
   color: $text-secondary;
