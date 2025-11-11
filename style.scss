@@ -25,7 +25,7 @@ body {
 }
 
 .container {
-  margin: 0;
+  margin: 0 auto;
   max-width: 800px;
   padding: 0 20px;
   width: 100%;
@@ -196,7 +196,7 @@ img {
   border-bottom: 1px solid $text-secondary;
   background: $bg-medium;
   width: 100%;
-  margin: 0;
+  margin: 0 -20px;
 
   @include mobile {
     text-align: center;
@@ -240,8 +240,8 @@ img {
   letter-spacing: normal;
   text-transform: none;
   text-shadow: none;
-  float: left;
-  line-height: 1;
+  display: inline-block;
+  vertical-align: middle;
   
   &:hover {
     color: $text-primary;
@@ -260,15 +260,16 @@ img {
 // }
 
 nav {
-  float: right;
-  margin-top: 23px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 40px;
   font-family: $monospace;
   font-size: 16px;
 
   @include mobile {
-    float: none;
-    margin-top: 9px;
     display: block;
+    margin-left: 0;
+    margin-top: 9px;
     font-size: 14px;
   }
 
@@ -285,6 +286,7 @@ nav {
     background: none;
     transition: all 0.2s ease;
     border-bottom: none;
+    display: inline-block;
 
     &:hover {
       color: $text-secondary;

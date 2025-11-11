@@ -2,9 +2,9 @@
 .highlight {
   background-color: $bg-medium;
   padding: 1em;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
   margin: 20px 0 20px 0;
   overflow-x: auto;
   font-family: $monospace;
@@ -14,11 +14,21 @@
 code {
   font-family: $monospace;
   background: $bg-medium;
-  border: none;
-  border-radius: 0;
+  border: none !important;
+  border-radius: 0 !important;
   padding: 0.2em 0.4em;
   font-size: 16px;
   color: $text-primary;
+}
+
+pre {
+  font-family: $monospace;
+  background: $bg-medium;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 1em;
+  margin: 1em 0;
+  overflow-x: auto;
 }
 
 /* TUI-inspired syntax highlighting */
