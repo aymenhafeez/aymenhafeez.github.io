@@ -80,20 +80,16 @@ h3 {
   color: #6C7278 !important;
 }
 
-/* More specific selectors for subheadings */
-.posts h2 {
+/* Fix post entry/description color */
+.entry {
   color: #6C7278 !important;
 }
 
-.posts h3 {
+.posts .entry {
   color: #6C7278 !important;
 }
 
-.post h2 {
-  color: #6C7278 !important;
-}
-
-.post h3 {
+.post .entry {
   color: #6C7278 !important;
 }
 
@@ -213,10 +209,10 @@ img {
   border-bottom: 1px solid $text-secondary;
   background: $bg-medium;
   width: 100vw;
-  margin-left: -20px;
-  margin-right: -20px;
+  margin-left: -50vw;
+  margin-right: -50vw;
   position: relative;
-  left: -20px;
+  left: 50%;
 
   @include mobile {
     text-align: center;
