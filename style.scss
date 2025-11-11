@@ -25,9 +25,9 @@ body {
 }
 
 .container {
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
+  margin: 0;
+  max-width: none;
+  padding: 0 20px;
   width: 100%;
 }
 
@@ -87,7 +87,7 @@ h4 {
 
 h2 {
   font-size: 20px;
-  color: $accent-tertiary;
+  color: $text-secondary;
 }
 
 h3 {
@@ -210,6 +210,7 @@ img {
   padding: 20px 0;
   border-bottom: 1px solid $text-secondary;
   background: $bg-medium;
+  width: 100%;
 
   @include mobile {
     text-align: center;
@@ -249,10 +250,11 @@ img {
   cursor: pointer;
   font-family: $monospace;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
   letter-spacing: normal;
   text-transform: none;
   text-shadow: none;
+  float: left;
   
   &:hover {
     color: $text-primary;
@@ -379,7 +381,7 @@ body {
 .wrapper-footer {
   margin-top: auto;
   border-top: 1px solid $text-secondary;
-  background: $bg-medium;
+  background: $bg-dark;
   flex-shrink: 0;
 }
 
