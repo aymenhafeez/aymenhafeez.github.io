@@ -8,14 +8,7 @@ Demonstrating the concept of taking the factorial of non-integer values
 
 ---
 
-<p><img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/lotr-meme.png" alt="Meme" class="fancy-image" height=250/></p>
-
-Seeing this meme was the first time I came across this result. In terms of
-proving it, there are a couple of bits which may seem difficult to understand,
-but I have tried to explain them as well as I can, and have provided some
-links at the end which may be useful.
-
-The factorial operator can be defined as the following:
+The factorial operator can be defined as:
 
   $$n!=n\cdot(n-1)\cdot(n-2)\cdot(n-3)\cdots3\cdot2\cdot1$$
 
@@ -23,11 +16,16 @@ Or in a more compact form:
 
   $$n!=\prod_{k=1}^nk$$
 
-However, this is only true for integer values of $n$. In order to prove the given result, the factorial operation must be defined for non-integer values. This can be done using the gamma function. The integral form of the gamma function is
+However, this is only true for integer values of $n$. The factorial for
+non-integer values can be defined using the gamma function. The integral form of
+the gamma function is
 
   $$\Gamma(z)=\int_0^\infty x^{z-1}e^{-x}dx$$
 
-In this form it is difficult to see how this could be used to find $(\frac{1}{2})!$. However, it can be equated to a general expression for finding the factorial of any real or complex $z$, with $\Re(z)>0$. This expression can be found inductively. First, we must find $\Gamma(1)$:
+
+From here we'll inductively derive an expression for finding the factorial of
+any real or complex $z$, with $\Re(z)>0$. We do this by first finding
+$\Gamma(1)$:
 
   $$
     \begin{aligned}
@@ -39,10 +37,6 @@ In this form it is difficult to see how this could be used to find $(\frac{1}{2}
   $$
 
 Next, we find $\Gamma(z+1)$:
-
-  $$\Gamma(z+1)=\int_0^{\infty}x^ze^{-x}dx$$
-
-This can be evaluated by integrating by parts:
 
   $$
     \begin{aligned}
@@ -150,13 +144,17 @@ Taking the square root of both sides gives
 
   $$\Gamma\left(\frac{3}{2}\right)=\frac{\sqrt{\pi}}{2}$$
 
-We showed earlier that $\Gamma(\frac{3}{2})=(\frac{1}{2})!$. And so, using this we get the desired result:
+We showed earlier that $\Gamma(\frac{3}{2})=(\frac{1}{2})!$. And so, using this we get:
 
   $$\left(\frac{1}{2}\right)!=\frac{\sqrt{\pi}}{2}$$
 
-I think the reason that this result is so mind-blowing is that we have a preconceived understanding of what $n!$ means, though, it is only valid for positive integers. And after struggling with the idea of applying that meaning to a fraction it turns out that it is actually equal to a factor of $\pi$! Amazing.
+Though the method of getting to the above result was
+pretty convoluted, I think with just how mind-blowing the result is, it's
+definitely worth working through.
 
-We showed earlier that $\Gamma\left(\frac{3}{2}\right)=\left(\frac{1}{2}\right)\Gamma\left(\frac{1}{2}\right)$. And so, from the result we just proved, it follows that
+We showed earlier that
+$\Gamma\left(\frac{3}{2}\right)=\left(\frac{1}{2}\right)\Gamma\left(\frac{1}{2}\right)$.
+And so, from the result we just proved, it follows that
 
   $$\Gamma\left(\frac{1}{2}\right)=\sqrt{\pi}$$
 
@@ -164,7 +162,6 @@ If we recall the property $\Gamma(z)=(z-1)!$, then we see that
 
   $$\left(-\frac{1}{2}\right)!=\sqrt{\pi}$$
 
-Crazy.
 
 Useful links:
 * <a href="https://math.stackexchange.com/questions/1636021/rigorous-proof-that-dx-dy-r-dr-d-theta">Why $dxdy=rdrd\theta$</a>
