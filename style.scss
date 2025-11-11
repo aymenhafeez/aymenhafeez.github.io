@@ -206,7 +206,7 @@ img {
 
 .masthead {
   padding: 8px 0;
-  border-bottom: 1px solid $text-secondary;
+  border-bottom: 0.5px solid $text-secondary;
   background: $bg-medium;
   width: 100vw;
   margin-left: -50vw;
@@ -247,7 +247,7 @@ img {
 }
 
 .site-name {
-  margin: 0;
+  margin: 0 0 0 20px;
   color: $text-primary;
   cursor: pointer;
   font-family: $monospace;
@@ -386,7 +386,7 @@ body {
 
 .wrapper-footer {
   margin-top: auto;
-  border-top: 1px solid $text-secondary;
+  border-top: 0.5px solid $text-secondary;
   background: $bg-dark;
   flex-shrink: 0;
 }
@@ -427,8 +427,7 @@ footer {
 
 // Modern TUI-specific additions
 .terminal-prompt {
-  color: $accent-secondary;
-  font-weight: bold;
+  display: none;
 }
 
 .terminal-cursor {
