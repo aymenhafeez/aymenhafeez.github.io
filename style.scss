@@ -16,7 +16,7 @@ html {
 
 body {
   background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 18px/1.4 $monospace;
   color: $darkGray;
   font-weight: 200;
 }
@@ -34,7 +34,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: monospace;
+  font-family: $monospace;
   color: $darkerGray;
   font-weight: 200;
 
@@ -211,7 +211,7 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: monospace;
+  font-family: $monospace;
   font-weight: 200;
   font-size: 28px;
   letter-spacing: 1px;
@@ -230,7 +230,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: monospace;
+  font-family: $monospace;
   font-size: 18px;
 
   @include mobile {
