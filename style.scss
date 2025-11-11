@@ -326,8 +326,13 @@ nav {
   border-bottom: none;
   margin-bottom: 2em;
   position: relative;
-  border-left: 3px solid #61dafb;
+  border-left: 3px solid transparent;
   padding-left: 1em;
+  transition: border-color 0.2s ease;
+
+  &:hover {
+    border-left-color: #61dafb;
+  }
 
   &::before {
     content: "";
