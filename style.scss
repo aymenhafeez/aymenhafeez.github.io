@@ -18,7 +18,7 @@ html {
 
 body {
   background: $bg-dark;
-  font: 16px/1.6 $monospace;
+  font: 16px/1.6 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'SF Mono', 'Monaco', 'Menlo', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
   color: $text-primary;
   font-weight: 400;
   text-rendering: optimizeSpeed;
@@ -72,12 +72,12 @@ h1 {
 
 h2 {
   font-size: 20px;
-  color: $text-secondary;
+  color: #6C7278 !important;
 }
 
 h3 {
   font-size: 18px;
-  color: $text-secondary;
+  color: #6C7278 !important;
 }
 
 h4 {
@@ -195,8 +195,9 @@ img {
   padding: 20px 0;
   border-bottom: 1px solid $text-secondary;
   background: $bg-medium;
-  width: 100%;
-  margin: 0 -20px;
+  width: 100vw;
+  margin-left: -20px;
+  margin-right: -20px;
 
   @include mobile {
     text-align: center;
