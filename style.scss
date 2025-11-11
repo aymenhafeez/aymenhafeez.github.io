@@ -1,7 +1,4 @@
----
----
-
-//
+--- --- //
 // IMPORTS
 //
 
@@ -18,7 +15,7 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
   font-weight: 200;
@@ -31,8 +28,13 @@ body {
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: monospace;
   color: $darkerGray;
   font-weight: 200;
 
@@ -47,6 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 26px;
+
   a {
     // color: inherit;
     color: $darkGray;
@@ -75,13 +78,16 @@ p {
 a {
   color: $gray;
   text-decoration: none;
-	cursor: pointer;
-  &:hover, &:active {
+  cursor: pointer;
+
+  &:hover,
+  &:active {
     color: $blue;
   }
 }
 
-ul, ol {
+ul,
+ol {
   margin: 15px 0;
   padding-left: 30px;
 }
@@ -94,19 +100,25 @@ ol {
   list-style-type: decimal;
 }
 
-ol ul, ul ol, ul ul, ol ol {
+ol ul,
+ul ol,
+ul ul,
+ol ol {
   margin: 0;
 }
 
-ul ul, ol ul {
+ul ul,
+ol ul {
   list-style-type: circle;
 }
 
-em, i {
+em,
+i {
   font-style: italic;
 }
 
-strong, b {
+strong,
+b {
   font-weight: normal;
 }
 
@@ -129,6 +141,7 @@ img {
   color: $black;
   background: $lightGray;
 }
+
 ::selection {
   color: $black;
   background: $lightGray;
@@ -138,12 +151,12 @@ img {
 // http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+  content: " ";
+  display: table;
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 /*********************/
@@ -198,7 +211,7 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: monospace;
   font-weight: 200;
   font-size: 28px;
   letter-spacing: 1px;
@@ -217,7 +230,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: monospace;
   font-size: 18px;
 
   @include mobile {
@@ -245,12 +258,12 @@ nav {
 // .main
 //
 
-.posts > .post {
+.posts>.post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
 }
 
-.posts > .post:last-child {
+.posts>.post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
 }
@@ -294,16 +307,16 @@ footer {
 @import "svg-icons";
 
 .fancy-image {
-    margin: 0 auto;
-    border-radius: 10px;
-    display: block;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-    width: 75%
+  margin: 0 auto;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  width: 75%
 }
 
 .rounded-corners {
-    border-radius: 10px;
-    display: inline-block
+  border-radius: 10px;
+  display: inline-block
 }
 
 .center {
