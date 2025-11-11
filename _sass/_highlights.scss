@@ -2,9 +2,9 @@
 .highlight {
   background-color: $bg-medium;
   padding: 1em;
-  border: 1px solid $border;
-  border-radius: 3px;
-  box-shadow: 0 0 10px rgba(97, 218, 251, 0.1);
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
   margin: 20px 0 20px 0;
   overflow-x: auto;
   font-family: $monospace;
@@ -14,8 +14,8 @@
 code {
   font-family: $monospace;
   background: $bg-medium;
-  border: 1px solid $border;
-  border-radius: 2px;
+  border: none;
+  border-radius: 0;
   padding: 0.2em 0.4em;
   font-size: 0.9em;
   color: $text-primary;
