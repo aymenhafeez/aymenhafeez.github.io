@@ -25,7 +25,7 @@ body {
 }
 
 .container {
-  margin: 0 auto;
+  margin: 0;
   max-width: 800px;
   padding: 0 20px;
   width: 100%;
@@ -241,6 +241,7 @@ img {
   text-transform: none;
   text-shadow: none;
   float: left;
+  line-height: 1;
   
   &:hover {
     color: $text-primary;
