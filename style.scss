@@ -18,7 +18,7 @@ html {
 
 body {
   background: $bg-dark;
-  font: 16px/1.6 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'SF Mono', 'Monaco', 'Menlo', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+  font: 16px/1.6 'Geist Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'SF Mono', 'Monaco', 'Menlo', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
   color: $text-primary;
   font-weight: 400;
   text-rendering: optimizeSpeed;
@@ -384,19 +384,7 @@ body {
   flex: 1;
 }
 
-.wrapper-footer {
-  margin-top: auto;
-  border-top: 0.5px solid $text-secondary;
-  background: $bg-dark;
-  flex-shrink: 0;
-}
 
-footer {
-  padding: 20px 0;
-  text-align: center;
-  color: $text-muted;
-  font-size: 14px;
-}
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
