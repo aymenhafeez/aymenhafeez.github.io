@@ -53,6 +53,7 @@ y = np.cos(5*t + np.pi/4)
 z = np.cos(7*t + np.pi/12)
 
 # Creating a figure and 3D axes
+plt.style.use("dark_background")
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 ```
@@ -65,7 +66,7 @@ After that we call the `AnimPlot3D` class:
 
 
 ```python
-line, = ax.plot([], [], [], lw=1)
+line, = ax.plot([], [], [], lw=2)
 point, = ax.plot([], [], [], 'o', markersize=10)
 ax.set_xlim(np.min(x), np.max(x))
 ax.set_ylim(np.min(y), np.max(y))
@@ -93,7 +94,7 @@ have just the point trace over it and make the animated line invisible.
 
 ```python
 # Static Lissajous knot
-ax.plot(x, y, z, lw=1)
+ax.plot(x, y, z, lw=2)
 # Setting lw=0 to make the line invisible
 line, = ax.plot([], [], [], lw=0)
 point, = ax.plot([], [], [], 'o', markersize=10)

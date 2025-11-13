@@ -23,8 +23,14 @@ $$\frac{\dd y}{\dd t} = cy - xz + z$$
 
 $$\frac{\dd z}{\dd t} = dxy - hz$$
 
-<iframe src="/dadras.html" width="100%" height="600px" frameborder="0"
-style="border:none;"></iframe>
+<!-- <iframe src="/dadras.html" width="100%" height="600px" frameborder="0" -->
+<!-- style="border:none;"></iframe> -->
+
+<center>
+  <figure> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/dadras.png" width="600" /> 
+  </figure>
+</center>
 
 A common parameter configuration for the Dadras attractor to display the
 multi-scrolled shape shown above is $a=3, b=2.7, c=1.7, d=2, e=9$

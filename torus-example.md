@@ -9,14 +9,14 @@ $\newcommand{\dd}{\mathrm{d}}$
 Torus knots are a class of knots that lie on and wrap around the surface of a
 torus.
 
-<!-- <center> -->
-<!--   <figure>  -->
-<!--     <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/torus.png" width="500" />  -->
-<!--   </figure> -->
-<!-- </center> -->
+<center>
+  <figure> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/torus.png" width="500" /> 
+  </figure>
+</center>
 
-<iframe src="/torus.html" width="100%" height="600px" frameborder="0"
-style="border:none;"></iframe>
+<!-- <iframe src="/torus.html" width="100%" height="600px" frameborder="0" -->
+<!-- style="border:none;"></iframe> -->
 
 <!-- ![](images/torus.png) -->
 
