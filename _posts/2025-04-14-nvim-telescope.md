@@ -71,9 +71,11 @@ require("telescope").setup {
   }
 ```
 
-<p align="center">
-  <img src="../images/figs/layout.png" width="650"/>
-</p>
+<!-- <p align="center"> -->
+<!--   <img src="../images/figs/layout.png" width="850"/> -->
+<!-- </p> -->
+
+![Workflow]({{ site.url }}/images/figs/layout.png){: .fancy-image }
 
 The above shows the default `horizontal` `layout_strategy`. See `:help
 telescope.layout` for more detail on the various different layouts available.
@@ -155,39 +157,42 @@ function M.search_notes()
   telescope.find_files {
     cwd = "~/Dropbox/notes/MyNotes/",
     prompt_title = "Notes",
-    layout_config = {
-      height = 0.85
-    }
   }
 end
 
 function M.grep_notes()
   telescope.live_grep {
     cwd = "~/Dropbox/notes/MyNotes/",
-    prompt_title = "Notes",
-    layout_strategy = "vertical",
+    path_display = { "shorten" },
+    sorting_strategy = "ascending",
     layout_config = {
-      height = 0.85,
-      width = 0.75
-    }
-  }
+      prompt_position = "top",
+      width = 0.9,
+      height = 0.8,
+    },
+    attach_mappings = function(_, map)
+      map("i", "<C-n>", action.move_selection_next)
+      map("i", "<C-p>", action.move_selection_previous)
+      return true
+    end,
+   }
 end
 ```
 
-The first function is simply using the `find_files` picker, but being pointed to
-a specific directory to list from.
+The first function is simply using the `find_files` picker, but is being pointed
+to a specific directory to list from.
 
-<p align="center">
-  <img src="../images/figs/notes.png" width="650"/>
-</p>
+![Workflow]({{ site.url }}/images/figs/notes.png){: .fancy-image }
 
 The second function more closely mirrors the Ex command I mentioned before,
-using the `live_grep` picker. Having the preview while skimming through my notes
-is super convenient
+using the `live_grep` picker. Similarly, `cwd` points the picker to the
+directory to grep through, and `path_display` shortens the directory names.
+`sorting_strategy` with `prompt_position = top` makes the search and sorting
+from top to bottom. The `attach_mappings` field allows you to have custom
+mappings for specific pickers (see `:help telescope.mappings` for more details
+of this).
 
-<p align="center">
-  <img src="../images/figs/grep.png" width="650"/>
-</p>
+![Workflow]({{ site.url }}/images/figs/grep.png){: .fancy-image }
 
 And again, both of these functions are just called using a keymap:
 
@@ -196,21 +201,13 @@ vim.keymap.set("n", "<leader>sn", require("utils").search_notes, { noremap = tru
 vim.keymap.set("n", "<leader>gn", require("utils").grep_notes, { noremap = true, silent = true })
 ```
 
-This post is a lot longer than I initially planned it to be, and I feel like
-I've barely scratched the surface of what Telescope is capable of. Other than
-the builtin pickers, there's also a wide range of extensions available. Check
-out the telescope [topics page](https://github.com/topics/telescope) to see
-what's available.
+This post barely scratched the surface of what Telescope is capable of. Other
+than the builtin pickers, there's also a wide range of extensions available.
+Check out the telescope [topics page](https://github.com/topics/telescope) to
+see what's available. The [developers
+documentation](https://github.com/nvim-telescope/telescope.nvim/blob/master/developers.md)
+also goes into detail on how you can write your own pickers.
 
-NOTE: `:help telescope.nvim` goes into A LOT of detail in terms of configuring
-not only the layout, but also the sorting and previewing algorithms available.
-I highly recommend reading through there.
+![Workflow]({{ site.url }}/images/figs/planets.png){: .fancy-image }
+> `:Telescope planets`
 
-I'll end by highlighting my favourite Telescope picker:
-```lua
-require("telescope.builtin").planets
-```
-
-<p align="center">
-  <img src="../images/figs/planets.png" width="650"/>
-</p>
