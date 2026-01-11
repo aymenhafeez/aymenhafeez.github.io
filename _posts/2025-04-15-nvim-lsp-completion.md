@@ -1,13 +1,13 @@
-***
+---
 
 layout: post
 mathjax: true
 title: Neovim 0.11 native LSP and autocompletion
-------------------------------------------------
+---
 
 Simpler native LSP and autocompletion setup in Neovim 0.11
 
-***
+---
 
 Though the LSP client has been part of Neovim since version 0.5, setting it up
 hasn't been all that simple or clear, and the use of plugins such as
@@ -35,7 +35,11 @@ activate the language server in, and calling `vim.lsp.enable()` will auto-activa
 the LSP in the specified buffers. Running `:checkhealth vim.lsp` should show
 that the Lua language server is enabled.
 
-![](../images/lua.png)
+<center>
+  <figure> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lua.png" height="464" width="768"/> 
+  </figure>
+</center>
 
 While the above snippet is enough to get the language server running, the
 following settings make it more optimised for writing Lua in Neovim.
@@ -151,4 +155,8 @@ This is just a high level overview of getting LSP and auto-completion setup
 natively, but `:help lsp-quickstart` and `:help lsp-completion` has a lot more
 details.
 
-![](images/lua.mp4)
+<center>
+  <figure> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lua.gif" height="640" width="670"/> 
+  </figure>
+</center>
