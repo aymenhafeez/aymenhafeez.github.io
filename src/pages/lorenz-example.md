@@ -10,11 +10,11 @@ The Lorenz system is a classic example of chaos in dynamical systems. It's
 known for its butterfly-shaped attractor and is defined by the following set of
 ordinary differential equations:
 
-$$\frac{\dd x}{\dd t}=\sigma(y-x)$$
+$$\frac{\text{d} x}{\text{d} t}=\sigma(y-x)$$
 
-$$\frac{\dd y}{\dd t}=x(\rho-z)-y$$
+$$\frac{\text{d} y}{\text{d} t}=x(\rho-z)-y$$
 
-$$\frac{\dd z}{\dd t}=xy-\beta z$$
+$$\frac{\text{d} z}{\text{d} t}=xy-\beta z$$
 
 <!-- <iframe src="/lorenz.html" width="100%" height="600px" frameborder="0" -->
 <!-- style="border:none;"></iframe> -->
