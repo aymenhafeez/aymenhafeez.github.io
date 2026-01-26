@@ -1,27 +1,29 @@
 ---
-layout: ../layouts/MarkdownPage.astro
-title: "The Lorenz Attractor"
-description: "Lorenz attractor animation example using animplotlib"
+layout: nodatepost
+mathjax: true
+title: The Lorenz Attractor
 ---
 
-<div class="prose prose-sm prose-cactus max-w-none">
-
+---
 $\newcommand{\dd}{\mathrm{d}}$
-
 The Lorenz system is a classic example of chaos in dynamical systems. It's
 known for its butterfly-shaped attractor and is defined by the following set of
 ordinary differential equations:
 
-$$\frac{\dd x}{\dd t}=\sigma(y-x)$$
+$$\frac{\dd x}{\dd t}=\sigma(y-x)$$ 
 
-$$\frac{\dd y}{\dd t}=x(\rho-z)-y$$
+$$\frac{\dd y}{\dd t}=x(\rho-z)-y$$ 
 
 $$\frac{\dd z}{\dd t}=xy-\beta z$$
 
 <!-- <iframe src="/lorenz.html" width="100%" height="600px" frameborder="0" -->
 <!-- style="border:none;"></iframe> -->
 
-![Lorenz attractor 3D](/images/lorenz_3d.png)
+<center>
+  <figure> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lorenz_3d.png" width="600" /> 
+  </figure>
+</center>
 
 Because of its striking visual when plotted it'll serve as a good example to
 show how `animplotlib` can be used for creating a more complex animation. A
@@ -110,18 +112,19 @@ ax.set_zlim(np.min(zs), np.max(zs))
 anim.AnimPlot3D(fig, [ax] * len(lines), lines, points, xs, ys, zs, plot_speed=1,
            rotation_speed=0.25, l_num=100, p_num=1)
 ```
+>Note that when passing the axes to `AnimPlot3D` we multiply the list by
+>`len(lines)`. This is because `AnimPlot3D` expects a list of axes, one for each
+>line/trajectory we want to animate. Passing just `[ax]` (a single axis) would
+>result in only the first line/trajectory being animated. By passing `[ax] *
+>len(lines)`, we create a list with the same axis repeated for each line,
+>allowing all lines to be animated.
 
-> Note that when passing the axes to `AnimPlot3D` we multiply the list by
-> `len(lines)`. This is because `AnimPlot3D` expects a list of axes, one for each
-> line/trajectory we want to animate. Passing just `[ax]` (a single axis) would
-> result in only the first line/trajectory being animated. By passing `[ax] *
-len(lines)`, we create a list with the same axis repeated for each line,
-> allowing all lines to be animated.
-
-![Lorenz attractor animation with colors](/images/lorenz_colour.gif)
+<center>
+  <figure> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lorenz_colour.gif" width="600" /> 
+  </figure>
+</center>
 
 <br>
 
-[Back to examples](/posts/animplotlib/)
-
-</div>
+<a href="https://aymenhafeez.github.io/animplotlib/">Back to examples</a>

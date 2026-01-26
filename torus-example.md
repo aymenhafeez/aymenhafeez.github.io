@@ -1,17 +1,19 @@
 ---
-layout: ../layouts/MarkdownPage.astro
-title: "Torus Knot"
-description: "Torus knot animation example using animplotlib"
+layout: nodatepost
+mathjax: true
+title: Fourier Knot
 ---
 
-<div class="prose prose-sm prose-cactus max-w-none">
-
+---
 $\newcommand{\dd}{\mathrm{d}}$
-
 Torus knots are a class of knots that lie on and wrap around the surface of a
 torus.
 
-![Torus diagram](/images/torus.png)
+<center>
+  <figure> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/torus.png" width="500" /> 
+  </figure>
+</center>
 
 <!-- <iframe src="/torus.html" width="100%" height="600px" frameborder="0" -->
 <!-- style="border:none;"></iframe> -->
@@ -67,7 +69,7 @@ def torus(p, q):
 ```
 
 We can create a figure as well as some empty lists to store the axes, lines,
-points and the data we'll be plotting.
+points and the data we'll be plotting. 
 
 ```python
 fig = plt.figure(figsize=(10, 5))
@@ -77,7 +79,7 @@ points = []
 xs, ys, zs = [], [], []
 ```
 
-Next, we call the $\texttt{torus}$ function for each set of parameters we
+Next, we call the $\texttt{torus}$ function for each  set of parameters we
 defined earlier. We can then create a line, point and static plot and append
 each of these to the corresponding lists created above.
 
@@ -107,13 +109,13 @@ anim.AnimPlot3D(fig, axes, lines, points, xs, ys, zs, plot_speed=2,
                 rotation_speed=0.36)
 ```
 
-![Torus knots animation](/images/torus_knots.gif)
+![](images/torus_knots.gif)
 
 We can see from the animation how the density and complexity of the knot
 increases as we change the values of $p$ and $q$. Let's overlay the knot with
 $p = 7$ and $q = 3$ to better see how these parameters relate to a torus:
 
-![Torus on torus animation](/images/torus_on_torus.gif)
+![](images/torus_on_torus.gif)
 
 Staring at this for a while you may begin to see that the knot actually loops
 around the torus 7 times (i.e. $p$ times) and around its central axis 3 times
@@ -123,6 +125,4 @@ knot is affected as we change them.
 
 <br>
 
-[Back to examples](/posts/animplotlib/)
-
-</div>
+<a href="https://aymenhafeez.github.io/animplotlib/">Back to examples</a>

@@ -1,11 +1,10 @@
 ---
-layout: ../layouts/MarkdownPage.astro
-title: "Glowing Animation"
-description: "Glow effect animation example using animplotlib"
+layout: nodatepost
+mathjax: true
+title: Glowing animation
 ---
 
-<div class="prose prose-sm prose-cactus max-w-none">
-
+---
 $\newcommand{\dd}{\mathrm{d}}$
 
 We'll use some of the techniques demonstrated in the other examples to expand
@@ -18,16 +17,20 @@ attractor. The Dadras attractor differs from the Lorenz attractor in that it
 displays a winged, or multi-scrolled shaped when plotted. It can be described by
 the following set of nonlinear differential equations:
 
-$$\frac{\dd x}{\dd t} = y - ax + byz$$
+$$\frac{\dd x}{\dd t} = y - ax + byz$$ 
 
-$$\frac{\dd y}{\dd t} = cy - xz + z$$
+$$\frac{\dd y}{\dd t} = cy - xz + z$$ 
 
 $$\frac{\dd z}{\dd t} = dxy - hz$$
 
 <!-- <iframe src="/dadras.html" width="100%" height="600px" frameborder="0" -->
 <!-- style="border:none;"></iframe> -->
 
-![Dadras attractor](/images/dadras.png)
+<center>
+  <figure> 
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/dadras.png" width="600" /> 
+  </figure>
+</center>
 
 A common parameter configuration for the Dadras attractor to display the
 multi-scrolled shape shown above is $a=3, b=2.7, c=1.7, d=2, e=9$
@@ -86,7 +89,6 @@ lines = []
 points = []
 xs, ys, zs = [], [], []
 ```
-
 > Setting `plt.style.use("dark_background")` will help enhance the affect we're
 > trying to achieve. Note that this must be done before setting `fig` and `ax`
 > in order for it to be applied to the figure and axes
@@ -143,13 +145,11 @@ anim.AnimPlot3D(fig, [ax] * len(lines), lines, points, xs, ys, zs,
                 plot_speed=20, rotation_speed=0.036, l_num=1500)
 ```
 
-![Dadras attractor with glow effect](/images/dadras_glow.gif)
+![](images/dadras_glow.gif)
 
 What we're seeing in the animation is just the same plot being animated over
 itself, but each with a slightly thicker line and slightly higher alpha value.
 
 <br>
 
-[Back to examples](/posts/animplotlib/)
-
-</div>
+<a href="https://aymenhafeez.github.io/animplotlib/">Back to examples</a>
