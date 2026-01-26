@@ -4,7 +4,7 @@ title: "Lissajous Knot Example"
 description: "Lissajous knot animation example using animplotlib"
 ---
 
-<div class="prose prose-sm prose-cactus max-w-none">
+<div class="prose prose prose-cactus max-w-none">
 
 # Fourier Knot
 

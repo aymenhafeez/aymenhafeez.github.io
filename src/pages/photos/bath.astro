@@ -18,9 +18,9 @@ const photos = [
 
 <PageLayout meta={meta}>
 	<h1 class="title mb-12">Bath</h1>
-	<div class="prose prose-sm prose-cactus max-w-none">
+	<div class="prose prose prose-cactus max-w-none">
 		<p class="mb-8">pentax k1000<br/>ilford HP5 plus 400</p>
-		
+
 		{photos.map((photo, index) => (
 			<div class="mb-8 text-center">
 				<img src={photo.src} alt={`Bath photo ${index + 1}`} style={`max-width: ${photo.width}px; width: 100%; height: auto; margin: 0 auto;`} />

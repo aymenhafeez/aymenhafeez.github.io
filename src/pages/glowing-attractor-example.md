@@ -4,7 +4,7 @@ title: "Glowing Animation"
 description: "Glow effect animation example using animplotlib"
 ---
 
-<div class="prose prose-sm prose-cactus max-w-none">
+<div class="prose prose prose-cactus max-w-none">
 
 We'll use some of the techniques demonstrated in the other examples to expand
 on how we can leverage `matplotlib`'s builtin functionality with `animplotlib`

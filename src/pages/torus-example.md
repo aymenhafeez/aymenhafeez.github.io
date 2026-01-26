@@ -4,7 +4,7 @@ title: "Torus Knot"
 description: "Torus knot animation example using animplotlib"
 ---
 
-<div class="prose prose-sm prose-cactus max-w-none">
+<div class="prose prose prose-cactus max-w-none">
 
 Torus knots are a class of knots that lie on and wrap around the surface of a
 torus.
