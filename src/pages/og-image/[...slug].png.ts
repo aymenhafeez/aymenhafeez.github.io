@@ -9,27 +9,27 @@ import { siteConfig } from "@/site.config";
 import { getFormattedDate } from "@/utils/date";
 
 const ogOptions: SatoriOptions = {
-	// debug: true,
-	fonts: [
-		{
-			data: Buffer.from(RobotoMono),
-			name: "Roboto Mono",
-			style: "normal",
-			weight: 400,
-		},
-		{
-			data: Buffer.from(RobotoMonoBold),
-			name: "Roboto Mono",
-			style: "normal",
-			weight: 700,
-		},
-	],
-	height: 630,
-	width: 1200,
+  // debug: true,
+  fonts: [
+    {
+      data: Buffer.from(RobotoMono),
+      name: "Roboto Mono",
+      style: "normal",
+      weight: 400,
+    },
+    {
+      data: Buffer.from(RobotoMonoBold),
+      name: "Roboto Mono",
+      style: "normal",
+      weight: 700,
+    },
+  ],
+  height: 630,
+  width: 1200,
 };
 
 const markup = (title: string, pubDate: string) =>
-	html`<div tw="flex flex-col w-full h-full bg-[#1d1f21] text-[#c9cacc]">
+  html`<div tw="flex flex-col w-full h-full bg-[#1d1f21] text-[#c9cacc]">
 		<div tw="flex flex-col flex-1 w-full p-10 justify-center">
 			<p tw="text-2xl mb-6">${pubDate}</p>
 			<h1 tw="text-6xl font-bold leading-snug text-white">${title}</h1>
@@ -46,7 +46,7 @@ const markup = (title: string, pubDate: string) =>
 						d="M90.667 26.667 136.001 0l45.333 26.667-45.333 26.666zM181.334 53.33l45.333-26.72L272 53.33 226.667 80zM136 240l-45.333-26.67v53.34zM0 193.33l45.333-26.72 45.334 26.72L45.333 220zM181.334 93.277 226.667 120l-45.333 26.67z"
 					/>
 					<path
-						fill="#2abc89"
+						fill="#ebcb8b"
 						d="m136 53.333 45.333-26.666v120L226.667 120V80L272 53.333V160l-90.667 53.333v240L136 480V306.667L45.334 360V220l45.333-26.667v73.334L136 240z"
 					/>
 				</svg>
@@ -59,32 +59,32 @@ const markup = (title: string, pubDate: string) =>
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
 export async function GET(context: APIContext) {
-	const { pubDate, title } = context.props as Props;
+  const { pubDate, title } = context.props as Props;
 
-	const postDate = getFormattedDate(pubDate, {
-		month: "long",
-		weekday: "long",
-	});
-	const svg = await satori(markup(title, postDate), ogOptions);
-	const pngBuffer = new Resvg(svg).render().asPng();
-	const png = new Uint8Array(pngBuffer);
-	return new Response(png, {
-		headers: {
-			"Cache-Control": "public, max-age=31536000, immutable",
-			"Content-Type": "image/png",
-		},
-	});
+  const postDate = getFormattedDate(pubDate, {
+    month: "long",
+    weekday: "long",
+  });
+  const svg = await satori(markup(title, postDate), ogOptions);
+  const pngBuffer = new Resvg(svg).render().asPng();
+  const png = new Uint8Array(pngBuffer);
+  return new Response(png, {
+    headers: {
+      "Cache-Control": "public, max-age=31536000, immutable",
+      "Content-Type": "image/png",
+    },
+  });
 }
 
 export async function getStaticPaths() {
-	const posts = await getAllPosts();
-	return posts
-		.filter(({ data }) => !data.ogImage)
-		.map((post) => ({
-			params: { slug: post.id },
-			props: {
-				pubDate: post.data.updatedDate ?? post.data.publishDate,
-				title: post.data.title,
-			},
-		}));
+  const posts = await getAllPosts();
+  return posts
+    .filter(({ data }) => !data.ogImage)
+    .map((post) => ({
+      params: { slug: post.id },
+      props: {
+        pubDate: post.data.updatedDate ?? post.data.publishDate,
+        title: post.data.title,
+      },
+    }));
 }
