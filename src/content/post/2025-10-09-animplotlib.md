@@ -5,7 +5,6 @@ description: "Advanced example use of the animplotlib package"
 tags: []
 ---
 
-
 Advanced example use of the animplotlib package
 
 ---
@@ -14,13 +13,13 @@ Below are some examples of more advanced animations using the animplotlib
 package. For a general overview of the package see the [quickstart
 guide](https://github.com/aymenhafeez/animplotlib?tab=readme-ov-file#quickstart) and the [API docs](https://github.com/aymenhafeez/animplotlib/blob/master/docs/API.md).
 
-<a href="/lissajous-example">Lissajous knot</a> <br>
+[Lissajous knot](/posts/lissajous-example)
 
-<a href="/lorenz-example">Lorenz attractor</a> <br>
+[Lorenz attractor](/posts/lorenz-example)
 
-<a href="/torus-example">Torus knot</a> <br>
+[Torus knot](/posts/torus-example)
 
-<a href="/glowing-attractor-example">Glow effect animation</a> <br>
+[Glow effect animation](/posts/glowing-attractor-example)
 
 <br>
 <br>
