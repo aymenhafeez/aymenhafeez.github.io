@@ -24,9 +24,7 @@ $$
     \text{MOLES IN} - \text{MOLES OUT} = \text{Accumulated MOLES}
 $$
 
-<p align="center">
-  <img src="../images/cv.png" width="350"/>
-</p>
+![Control volume diagram](/images/cv.png)
 
 $$
     -D\frac{\partial C}{\partial x} A \delta t - \left[ -D \left( \frac{\partial

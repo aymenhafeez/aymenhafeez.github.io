@@ -40,11 +40,7 @@ the various scientific disciplines.
 The classic butterfly shaped solution curve is achieved when $\rho = 28, \ \sigma
 = 10$ and $\beta = 8/3$, and initial conditions such as $[0, 1, 15]$.
 
-<center>
-  <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/lorenz-anim.gif" height="300" width="300"/> 
-  </figure>
-</center>
+![Lorenz attractor animation](/images/lorenz-anim.gif)
 
 # De Jong attractor
 
@@ -66,11 +62,7 @@ many iterations results in some striking visualisations of the attractor
 <!---->
 <!---->
 
-<center>
-  <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/De_Jong_Attractors.png" /> 
-  </figure>
-</center>
+![De Jong Attractors](/images/De_Jong_Attractors.png)
 
 The above plots have the same initial conditions for $x$ and $y$ but show how
 changing the values of the parameters $a,\ b,\ c$ and $d$ affects the system.
@@ -88,11 +80,7 @@ Similar to the De Jong attractor, varying the constants $a,\ b,\ c$ and $d$ with
 set initial conditions, and plotting $x$ and $y$ over a large number of
 iterations leads to some cool looking plots.
 
-<center>
-  <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/clifford_attractor.png" /> 
-  </figure>
-</center>
+![Clifford attractor](/images/clifford_attractor.png)
 
 <!-- ## Svensson attractor -->
 <!---->
@@ -142,11 +130,7 @@ $$
 <!--   </figure> -->
 <!-- </center> -->
 
-<center>
-  <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/aizawa.gif" width="350" height="350"/> 
-  </figure>
-</center>
+![Aizawa attractor animation](/images/aizawa.gif)
 
 The above visualisations correspond to parameter values of $a = 1,\ b = 0.7,\
 c = 0.6,\ d = 3.5,\ e = 0.25,\ f = 0.1$.
@@ -169,11 +153,7 @@ $$
 <!--   </figure> -->
 <!-- </center> -->
 
-<center>
-  <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/three_scroll.gif" height='325' width='425'/> 
-  </figure>
-</center>
+![Three-scroll attractor animation](/images/three_scroll.gif)
 
 The above visualisations correspond to parameter values of $a = 1,\ b = 0.7,\
 c = 0.6,\ d = 3.5,\ e = 0.25,\ f = 0.1$.
@@ -190,11 +170,7 @@ $$
 \right.
 $$
 
-<center>
-  <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/thomas.gif" height='325' width='340' /> 
-  </figure>
-</center>
+![Thomas attractor animation](/images/thomas.gif)
 
 The above visualisations correspond to parameter values of $a = 1,\ b = 0.7,\
 c = 0.6,\ d = 3.5,\ e = 0.25,\ f = 0.1$.
@@ -219,11 +195,7 @@ $$
 <!--   </figure> -->
 <!-- </center> -->
 
-<center>
-  <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/dadras.gif" height='475' width='475' /> 
-  </figure>
-</center>
+![Dadras attractor animation](/images/dadras.gif)
 
 The above visualisations correspond to parameter values of $a = 1,\ b = 0.7,\
 c = 0.6,\ d = 3.5,\ e = 0.25,\ f = 0.1$.

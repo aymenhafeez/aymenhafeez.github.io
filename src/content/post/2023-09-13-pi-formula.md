@@ -60,16 +60,6 @@ $$
 Plotting the convergence of the expression for $z = 4$, as well the expression
 rearranged for $\pi$:
 
-<center>
-  <figure>
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/haf-har2.gif">
-    <figcaption>Convergence of $\frac{\sqrt{\pi}}{2}$</figcaption>
-  </figure>
-</center>
+![Convergence of sqrt(pi)/2](/images/haf-har2.gif)
 
-<center>
-  <figure>
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/haf-har.gif">
-    <figcaption>Convergence at $z=4$</figcaption>
-  </figure>
-</center>
+![Convergence at z=4](/images/haf-har.gif)

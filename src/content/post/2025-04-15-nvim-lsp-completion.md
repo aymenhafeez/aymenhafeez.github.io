@@ -35,11 +35,7 @@ activate the language server in, and calling `vim.lsp.enable()` will auto-activa
 the LSP in the specified buffers. Running `:checkhealth vim.lsp` should show
 that the Lua language server is enabled.
 
-<center>
-  <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lua.png" height="464" width="768"/> 
-  </figure>
-</center>
+![Lua LSP example](/images/lua.png)
 
 While the above snippet is enough to get the language server running, the
 following settings make it more optimised for writing Lua in Neovim.
@@ -155,8 +151,4 @@ This is just a high level overview of getting LSP and auto-completion setup
 natively, but `:help lsp-quickstart` and `:help lsp-completion` has a lot more
 details.
 
-<center>
-  <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lua.gif" height="640" width="670"/> 
-  </figure>
-</center>
+![Lua LSP completion demo](/images/lua.gif)

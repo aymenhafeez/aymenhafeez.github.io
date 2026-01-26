@@ -14,9 +14,7 @@ $\newcommand{\dd}{\mathrm{d}}$
 
 Consider the following 1-D metal bar
 
-<p align="center">
-  <img src="../images/hc-1.png" width="500"/>
-</p>
+![Heat conduction diagram 1](/images/hc-1.png)
 
 Heat flow in one dimension can be generalised by Fourier's law, which states
 that heat will flow down a negative temperature gradient,
@@ -33,16 +31,12 @@ and temporal boundary conditions:
 - when $x = 0, \ T = T_1$; when $x = L, \ T = T_1$
 - when $t = 0, \ T = T_0$
 
-<p align="center">
-  <img src="../images/hc-2.png" width="500"/>
-</p>
+![Heat conduction diagram 2](/images/hc-2.png)
 
 We can derive a 1-D heat transfer equation by doing a balance over a small
 control volume in a short period of time $\delta t$:
 
-<p align="center">
-  <img src="../images/hc-3.png" width="550"/>
-</p>
+![Heat conduction diagram 3](/images/hc-3.png)
 
 $$
     \text{HEAT IN} - \text{HEAT OUT} = \text{Accumulated HEAT}

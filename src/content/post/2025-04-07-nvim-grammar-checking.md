@@ -101,9 +101,7 @@ marks spelling errors in code blocks, as well as in LaTeX commands. The
 `disabledRules` table disables this. Neovim's built-in spellchecker works fine
 for me.
 
-<p align="center">
-  <img src="../images/figs/lspinfo.png" width="700"/>
-</p>
+![LSP info screenshot](/images/figs/lspinfo.png)
 
 Now, opening up a tex or markdown file, grammar-guard should be up and running.
 And running `:LspInfo` shows information about the servers attached to the current
@@ -113,6 +111,4 @@ I am slightly in two minds about whether this will be a permanent addition to my
 configuration as it can be quite slow to start up, and it still gives some
 spelling recommendations. But otherwise, it's a pretty cool tool.
 
-<p align="center">
-  <img src="../images/figs/example.png" width="700"/>
-</p>
+![Grammar checking example](/images/figs/example.png)

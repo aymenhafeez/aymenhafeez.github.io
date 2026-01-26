@@ -35,9 +35,7 @@ $$
 \end{equation*}
 $$
 
-<center>
-<img src="../images/slab.png" width="300"/>
-</center>
+![Infinite slab reactor diagram](/images/slab.png)
 
 We can place the slab at $x = 0$ with its width in the interval
 $\left[-\frac{a}{2}, \frac{a}{2}\right]$. We know that the flux must be
