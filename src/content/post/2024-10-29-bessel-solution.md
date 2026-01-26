@@ -2,21 +2,15 @@
 title: "Solving the neutron diffusion equation"
 publishDate: "29 October 2024"
 description: "Solving the neutron diffusion equation."
-tags: ["physics", "nuclear engineering", "bessel function", "pde"]
+tags: ["physics", "nuclear engineering", "bessel function"]
 ---
-
-Solving the neutron diffusion equation.
-
----
-
-$\newcommand{\dd}{\mathrm{d}}$
 
 Recall from the first part of this post a diffusion equation was derived to
 approximate the movement of neutrons in a nuclear reactor, which in two
 dimensions was,
 
 $$
-    \frac{\dd^2 \phi}{\dd r^2} + \frac{1}{r} \frac{\dd \phi}{\dd r} + B^{2}\phi
+    \frac{\text{d}^2 \phi}{\text{d} r^2} + \frac{1}{r} \frac{\text{d} \phi}{\text{d} r} + B^{2}\phi
     = 0.
 $$
 

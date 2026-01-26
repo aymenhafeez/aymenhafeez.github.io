@@ -2,7 +2,7 @@
 title: "Deriving the neutron diffusion equation"
 publishDate: "11 October 2024"
 description: "An application of the Bessel function in nuclear reactor theory --- derivation"
-tags: ["physics", "nuclear engineering", "bessel function", "pde"]
+tags: ["physics", "nuclear engineering", "bessel function"]
 ---
 
 An application of the Bessel function in nuclear reactor theory --- derivation
@@ -30,8 +30,6 @@ within $V$ that emit neutrons within the control volume (Lamarsh & Baratta,
 2001). Based on this, we can perform a balance over the control volume to
 account for the movement of the neutrons over time:
 
-$\newcommand{\dd}{\mathrm{d}}$
-
 $$
     [\text{Rate of change}] \ = \ [\text{Rate of production from diffusion}] -
 $$
@@ -45,21 +43,21 @@ If $n$ is the neutron density at a given point and time in $V$, then the total
 number of neutrons in $V$ is
 
 $$
-    \int_{V} n \dd V.
+    \int_{V} n \text{d} V.
 $$
 
 The rate of change in the number of neutrons is, therefore,
 
 $$
-    \frac{\dd }{\dd t}\int_{V} n \dd V = \int_{V}^{}\frac{\partial n}{\partial
-    t} \dd V.
+    \frac{\text{d} }{\text{d} t}\int_{V} n \text{d} V = \int_{V}^{}\frac{\partial n}{\partial
+    t} \text{d} V.
 $$
 
 Let $s$ be the neutron emission rate from sources per unit volume. The rate of
 neutron production is
 
 $$
-    \int_{V} s \dd V.
+    \int_{V} s \text{d} V.
 $$
 
 Neutron loss due to absorption is given by $\sum_{a}\phi$ cm$^3$ s$^{-1}$, where
@@ -68,7 +66,7 @@ target area of all the nuclei contained in $V$ (Stacey, 2001). $\phi$ is the
 neutron flux. The neutron absorption rate is, therefore,
 
 $$
-    \int_{V} \Sigma_{a} \phi \dd V.
+    \int_{V} \Sigma_{a} \phi \text{d} V.
 $$
 
 If $\boldsymbol{J}$ is the neutron current density vector, and $\boldsymbol{n}$
@@ -77,7 +75,7 @@ passing out of the $V$ is $\boldsymbol{J} \cdot \boldsymbol{n}$. And so, the
 loss of neutrons due to leakage out of $V$ is
 
 $$
-    \int_{A} \boldsymbol{J} \ \boldsymbol{n} \dd A.
+    \int_{A} \boldsymbol{J} \ \boldsymbol{n} \text{d} A.
 $$
 
 We can make use of the [divergence
@@ -86,14 +84,14 @@ to transform the above surface integral to a volume integral over $V$, if we
 instead take the integral of the divergence of $\boldsymbol{J}$:
 
 $$
-    \int_{V} \text{div} \ \boldsymbol{J} \dd V.
+    \int_{V} \text{div} \ \boldsymbol{J} \text{d} V.
 $$
 
 Substituting back into the volume balance gives
 
 $$
-    \int_{V} \frac{\partial n}{\partial t} \dd V = \int_{V}^{}s \dd V -
-    \int_{V}^{} \Sigma_a \phi \dd V - \int_{V}^{} \text{div} \ \boldsymbol{J} \dd
+    \int_{V} \frac{\partial n}{\partial t} \text{d} V = \int_{V}^{}s \text{d} V -
+    \int_{V}^{} \Sigma_a \phi \text{d} V - \int_{V}^{} \text{div} \ \boldsymbol{J} \text{d}
     V.
 $$
 
@@ -176,7 +174,7 @@ from.
 In two dimensions the above expression is
 
 $$
-    \frac{\dd^2 \phi}{\dd r^2} + \frac{1}{r} \frac{\dd \phi}{\dd r} + B^{2}\phi
+    \frac{\text{d}^2 \phi}{\text{d} r^2} + \frac{1}{r} \frac{\text{d} \phi}{\text{d} r} + B^{2}\phi
     = 0
 $$
 

@@ -2,11 +2,7 @@
 title: "The Riemann zeta function at even values"
 publishDate: "28 November 2022"
 description: "Deriving an expression for the Riemann zeta function at even values"
-tags: ["mathematics", "pi", "zeta function"]
----
-
-Deriving an expression for the Riemann zeta function at even values
-
+tags: ["mathematics", "zeta function"]
 ---
 
 <!-- At first glance the prime numbers seem randomly distributed along the -->
@@ -22,7 +18,6 @@ Deriving an expression for the Riemann zeta function at even values
 
 I wanted to show the derivation of the expression for the Riemann zeta function
 at even values, i.e.
-$\newcommand{\dd}{\mathrm{d}}$
 
 $$\zeta(2k)=\frac{(-1)^{k+1}(2\pi)^{2k}\beta_{2k}}{2(2k)!}$$
 
@@ -73,7 +68,7 @@ $$\log{(\sin(\pi x))}=\log{(\pi x)}+\sum_{n=1}^{\infty}\log{\left(1-\frac{x^2}{n
 
 Taking the derivative of both sides:
 
-$$\frac{\dd}{\dd x}\left[\log{(\sin(\pi x))}\right]=\frac{\dd}{\dd x}\left[\log{(\pi x)}+\sum_{n=1}^{\infty}\log{\left(1-\frac{x^2}{n^2}\right)}\right]$$
+$$\frac{\text{d}}{\text{d} x}\left[\log{(\sin(\pi x))}\right]=\frac{\text{d}}{\text{d} x}\left[\log{(\pi x)}+\sum_{n=1}^{\infty}\log{\left(1-\frac{x^2}{n^2}\right)}\right]$$
 
 $$\frac{\pi \cos(\pi x)}{\sin(\pi x)}=\frac{1}{x}-\sum_{n=1}^{\infty}\left(\frac{2x}{n^2}\right)\left(\frac{1}{1-\frac{x^2}{n^2}}\right)$$
 

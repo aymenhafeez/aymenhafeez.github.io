@@ -2,14 +2,8 @@
 title: "Neutron flux in an infinite slab reactor"
 publishDate: "22 January 2025"
 description: "Deriving an expression for the thermal neutron flux in an infinite slab reactor"
-tags: ["physics", "nuclear engineering", "neutron diffusion"]
+tags: ["physics", "nuclear engineering"]
 ---
-
-Deriving an expression for the thermal neutron flux in an infinite slab reactor
-
----
-
-$\newcommand{\dd}{\mathrm{d}}$
 
 In [this](https://aymenhafeez.github.io/bessel-function/) post we derived the
 Helmholtz equation
@@ -30,7 +24,7 @@ equation reduces to 1-dimension:
 $$
 \begin{equation*}
 \begin{aligned}
-  \frac{\dd^2 \phi}{\dd x^2} + B^2\phi = 0
+  \frac{\text{d}^2 \phi}{\text{d} x^2} + B^2\phi = 0
 \end{aligned}
 \end{equation*}
 $$
@@ -58,7 +52,7 @@ proportional to the derivative of $\phi$, at the center of the slab i.e. at $x =
 $$
 \begin{equation*}
 \begin{aligned}
-  \frac{\dd \phi}{\dd x} = 0
+  \frac{\text{d} \phi}{\text{d} x} = 0
 \end{aligned}
 \end{equation*}
 $$
@@ -166,7 +160,7 @@ power, $P$ (watts/cm$^2$), is
 $$
 \begin{equation*}
 \begin{aligned}
-  P = E_f\Sigma_f \int_{-\frac{a}{2}}^{\frac{a}{2}} \phi(x) \dd x
+  P = E_f\Sigma_f \int_{-\frac{a}{2}}^{\frac{a}{2}} \phi(x) \text{d} x
 \end{aligned}
 \end{equation*}
 $$

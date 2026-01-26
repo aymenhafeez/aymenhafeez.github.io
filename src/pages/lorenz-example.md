@@ -6,8 +6,6 @@ description: "Lorenz attractor animation example using animplotlib"
 
 <div class="prose prose-sm prose-cactus max-w-none">
 
-$\newcommand{\dd}{\mathrm{d}}$
-
 The Lorenz system is a classic example of chaos in dynamical systems. It's
 known for its butterfly-shaped attractor and is defined by the following set of
 ordinary differential equations:

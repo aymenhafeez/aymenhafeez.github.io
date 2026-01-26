@@ -5,18 +5,12 @@ description: "Deriving a relation between the gamma function and the Riemann zet
 tags: ["mathematics", "gamma function", "zeta function"]
 ---
 
-Deriving a relation between the gamma function and the Riemann zeta function.
-
----
-
-$\newcommand{\dd}{\mathrm{d}}$
-
 The [Mellin transform](https://mathworld.wolfram.com/MellinTransform.html) of a
 function $f$ is given by
 
 $$
   \begin{aligned}
-      \left\{\mathscr{M}f\right\}(s)=\phi(s)=\int_0^{\infty}x^{s-1}f(x)\dd x
+      \left\{\mathscr{M}f\right\}(s)=\phi(s)=\int_0^{\infty}x^{s-1}f(x)\text{d} x
   \end{aligned}
 $$
 
@@ -32,8 +26,8 @@ we have
 
 $$
   \begin{aligned}
-    \phi(s)&=\int_0^{\infty}\frac{x^{s-1}}{e^x - 1}\dd x \\
-          &=\sum_{n \geq1}\int_{0}^{\infty}x^{s-1}e^{-nx}\dd x
+    \phi(s)&=\int_0^{\infty}\frac{x^{s-1}}{e^x - 1}\text{d} x \\
+          &=\sum_{n \geq1}\int_{0}^{\infty}x^{s-1}e^{-nx}\text{d} x
   \end{aligned}
 $$
 
@@ -41,7 +35,7 @@ Making the substitution $u=nx$ gives
 
 $$
   \begin{aligned}
-      \phi(s)&=\sum_{n \geq1}\frac{1}{n^s}\int_{0}^{\infty}u^{s-1}e^{-u}\dd u \\
+      \phi(s)&=\sum_{n \geq1}\frac{1}{n^s}\int_{0}^{\infty}u^{s-1}e^{-u}\text{d} u \\
             &=\zeta(s)\Gamma(s)
   \end{aligned}
 $$
@@ -50,8 +44,8 @@ Equating this to the above integral gives the desired result:
 
 $$
   \begin{aligned}
-      \zeta(s)\Gamma(s)&=\int_{0}^{\infty}\frac{x^{s-1}}{e^x - 1}\dd x \\
-                      \zeta(s)&=\frac{1}{\Gamma(s)}\int_{0}^{\infty}\frac{x^{s-1}}{e^x - 1}\dd x
+      \zeta(s)\Gamma(s)&=\int_{0}^{\infty}\frac{x^{s-1}}{e^x - 1}\text{d} x \\
+                      \zeta(s)&=\frac{1}{\Gamma(s)}\int_{0}^{\infty}\frac{x^{s-1}}{e^x - 1}\text{d} x
   \end{aligned}
 $$
 
@@ -61,18 +55,18 @@ itself:
 $$
 \begin{equation*}
 \begin{aligned}
-  \Gamma(s) = \int_{0}^{\infty} t^{s-1} e^{-t} \dd t
+  \Gamma(s) = \int_{0}^{\infty} t^{s-1} e^{-t} \text{d} t
 \end{aligned}
 \end{equation*}
 $$
 
-Making the substitution $t = nu$ with $\dd t = n\dd u$, we have
+Making the substitution $t = nu$ with $\text{d} t = n\text{d} u$, we have
 
 $$
 \begin{equation*}
 \begin{aligned}
-  \Gamma(s) &= \int_{0}^{\infty} (nu)^{s-1} e^{-nu} \dd u \\
-            &= \int_{0}^{\infty} n^s u^{s-1} e^{-nu} \dd u
+  \Gamma(s) &= \int_{0}^{\infty} (nu)^{s-1} e^{-nu} \text{d} u \\
+            &= \int_{0}^{\infty} n^s u^{s-1} e^{-nu} \text{d} u
 \end{aligned}
 \end{equation*}
 $$
@@ -83,7 +77,7 @@ $\frac{1}{n^s}$ gives,
 $$
 \begin{equation*}
 \begin{aligned}
-  \Gamma(s) \frac{1}{n^s} = \int_{0}^{\infty} u^{s-1} e^{-nu} \dd u
+  \Gamma(s) \frac{1}{n^s} = \int_{0}^{\infty} u^{s-1} e^{-nu} \text{d} u
 \end{aligned}
 \end{equation*}
 $$
@@ -94,8 +88,8 @@ $$
 \begin{equation*}
 \begin{aligned}
   \Gamma(s) \sum_{n=1}^{\infty} \frac{1}{n^s} = \sum_{n=1}^{\infty}
-  \int_{0}^{\infty} u^{s-1} e^{-nu} \dd u \\
-  \Gamma(s) \zeta(s) = \int_{0}^{\infty} u^{s-1} \sum_{n=1}^{\infty} e^{-nu} \dd
+  \int_{0}^{\infty} u^{s-1} e^{-nu} \text{d} u \\
+  \Gamma(s) \zeta(s) = \int_{0}^{\infty} u^{s-1} \sum_{n=1}^{\infty} e^{-nu} \text{d}
   u \\
 \end{aligned}
 \end{equation*}
@@ -108,7 +102,7 @@ $$
 \begin{equation*}
 \begin{aligned}
   \Gamma(s)\zeta(s) = \int_{0}^{\infty} u^{s-1} \left( \frac{1}{1 - e^{-u}} - 1
-  \right) \dd u
+  \right) \text{d} u
 \end{aligned}
 \end{equation*}
 $$
@@ -120,11 +114,11 @@ $$
 \begin{equation*}
 \begin{aligned}
   \Gamma(s) \zeta(s) &= \int_{0}^{\infty} u^{s-1} \left( \frac{1}{1 - e^{-u}} -
-  \frac{1 - e^{-u}}{1 - e^{-u}} \right)  \dd u \\
+  \frac{1 - e^{-u}}{1 - e^{-u}} \right)  \text{d} u \\
                      &= \int_{0}^{\infty} u^{s-1} \left( \frac{e^{-u}}{1 -
-                     e^{-u}} \right)  \dd u \\
+                     e^{-u}} \right)  \text{d} u \\
                      &= \int_{0}^{\infty} u^{s-1} \left( \frac{1}{e^u - 1}
-                     \right) \dd u
+                     \right) \text{d} u
 \end{aligned}
 \end{equation*}
 $$
@@ -134,7 +128,7 @@ And so, we have the desired result:
 $$
 \begin{equation*}
 \begin{aligned}
-  \zeta(s) = \frac{1}{\Gamma(s)} \int_{0}^{\infty} \frac{u^{s-1}}{e^u - 1} \dd u
+  \zeta(s) = \frac{1}{\Gamma(s)} \int_{0}^{\infty} \frac{u^{s-1}}{e^u - 1} \text{d} u
 \end{aligned}
 \end{equation*}
 $$

@@ -4,9 +4,6 @@ mathjax: true
 title: Glowing animation
 ---
 
----
-$\newcommand{\dd}{\mathrm{d}}$
-
 We'll use some of the techniques demonstrated in the other examples to expand
 on how we can leverage `matplotlib`'s builtin functionality with `animplotlib`
 to create some cool looking animations.
@@ -17,18 +14,18 @@ attractor. The Dadras attractor differs from the Lorenz attractor in that it
 displays a winged, or multi-scrolled shaped when plotted. It can be described by
 the following set of nonlinear differential equations:
 
-$$\frac{\dd x}{\dd t} = y - ax + byz$$ 
+$$\frac{\text{d} x}{\text{d} t} = y - ax + byz$$
 
-$$\frac{\dd y}{\dd t} = cy - xz + z$$ 
+$$\frac{\text{d} y}{\text{d} t} = cy - xz + z$$
 
-$$\frac{\dd z}{\dd t} = dxy - hz$$
+$$\frac{\text{d} z}{\text{d} t} = dxy - hz$$
 
 <!-- <iframe src="/dadras.html" width="100%" height="600px" frameborder="0" -->
 <!-- style="border:none;"></iframe> -->
 
 <center>
-  <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/dadras.png" width="600" /> 
+  <figure>
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/dadras.png" width="600" />
   </figure>
 </center>
 

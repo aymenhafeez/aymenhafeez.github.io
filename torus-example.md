@@ -4,14 +4,12 @@ mathjax: true
 title: Fourier Knot
 ---
 
----
-$\newcommand{\dd}{\mathrm{d}}$
 Torus knots are a class of knots that lie on and wrap around the surface of a
 torus.
 
 <center>
-  <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/torus.png" width="500" /> 
+  <figure>
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/torus.png" width="500" />
   </figure>
 </center>
 
@@ -69,7 +67,7 @@ def torus(p, q):
 ```
 
 We can create a figure as well as some empty lists to store the axes, lines,
-points and the data we'll be plotting. 
+points and the data we'll be plotting.
 
 ```python
 fig = plt.figure(figsize=(10, 5))

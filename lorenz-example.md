@@ -4,24 +4,22 @@ mathjax: true
 title: The Lorenz Attractor
 ---
 
----
-$\newcommand{\dd}{\mathrm{d}}$
 The Lorenz system is a classic example of chaos in dynamical systems. It's
 known for its butterfly-shaped attractor and is defined by the following set of
 ordinary differential equations:
 
-$$\frac{\dd x}{\dd t}=\sigma(y-x)$$ 
+$$\frac{\text{d} x}{\text{d} t}=\sigma(y-x)$$
 
-$$\frac{\dd y}{\dd t}=x(\rho-z)-y$$ 
+$$\frac{\text{d} y}{\text{d} t}=x(\rho-z)-y$$
 
-$$\frac{\dd z}{\dd t}=xy-\beta z$$
+$$\frac{\text{d} z}{\text{d} t}=xy-\beta z$$
 
 <!-- <iframe src="/lorenz.html" width="100%" height="600px" frameborder="0" -->
 <!-- style="border:none;"></iframe> -->
 
 <center>
-  <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lorenz_3d.png" width="600" /> 
+  <figure>
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lorenz_3d.png" width="600" />
   </figure>
 </center>
 
@@ -120,8 +118,8 @@ anim.AnimPlot3D(fig, [ax] * len(lines), lines, points, xs, ys, zs, plot_speed=1,
 >allowing all lines to be animated.
 
 <center>
-  <figure> 
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lorenz_colour.gif" width="600" /> 
+  <figure>
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lorenz_colour.gif" width="600" />
   </figure>
 </center>
 

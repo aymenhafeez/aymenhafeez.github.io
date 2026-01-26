@@ -2,15 +2,8 @@
 title: "Heat conduction in a symmetric, finite rod"
 publishDate: "17 November 2024"
 description: "Deriving an expression for the temperature profile for a symmetric, finite rod"
-tags: ["physics", "heat transfer", "pde"]
+tags: ["physics", "heat transfer"]
 ---
-
-Deriving an expression for the temperature profile for a symmetric, finite rod
-geometry.
-
----
-
-$\newcommand{\dd}{\mathrm{d}}$
 
 Consider the following 1-D metal bar
 
@@ -20,7 +13,7 @@ Heat flow in one dimension can be generalised by Fourier's law, which states
 that heat will flow down a negative temperature gradient,
 
 $$
-  q = -k\frac{\dd T}{\dd x},
+  q = -k\frac{\text{d} T}{\text{d} x},
 $$
 
 where $k$ is thermal conductivity.
@@ -178,8 +171,8 @@ $$
 
 $$
   \frac{\partial \hat{T}}{\partial \tau} =
-  Z(z) \frac{\partial(\Theta(\tau))}{\partial \tau} = Z(z)\frac{\dd
-  (\Theta(\tau))}{\dd \tau} = Z \Theta'
+  Z(z) \frac{\partial(\Theta(\tau))}{\partial \tau} = Z(z)\frac{\text{d}
+  (\Theta(\tau))}{\text{d} \tau} = Z \Theta'
 $$
 
 And so, we have
@@ -199,7 +192,7 @@ We can now integrate both sides of the above by separation of variables:
 $$
 \begin{equation*}
 \begin{aligned}
-\int \frac{\Theta'}{\Theta} &= \int \lambda^2 \dd \tau \\
+\int \frac{\Theta'}{\Theta} &= \int \lambda^2 \text{d} \tau \\
 \ln \Theta &= -\lambda^2 \tau + C \\
 \Theta &= Ae^{-\lambda^2\tau}
 \end{aligned}
@@ -252,7 +245,7 @@ $$
 Because the $\sin$ function is orthogonal we can use the property
 
 $$
-  \int_0^1 \sin(m\pi z)\sin(n\pi z) \ \dd z = 0,
+  \int_0^1 \sin(m\pi z)\sin(n\pi z) \ \text{d} z = 0,
 $$
 
 unless $n = m$. We can multiply both sides of the equation where the temporal
@@ -262,10 +255,10 @@ integrate both sides over $z$ from $0$ to $1$.
 $$
 \begin{equation*}
 \begin{aligned}
-  \int_0^1 \sin(m\pi z) \dd z &= \int_0^1 \sin(m\pi z)\sum_{n=1}^\infty
-  C_n\sin(n\pi z) \dd z \\
+  \int_0^1 \sin(m\pi z) \text{d} z &= \int_0^1 \sin(m\pi z)\sum_{n=1}^\infty
+  C_n\sin(n\pi z) \text{d} z \\
   &= \sum_{n=1}^\infty C_n\int_0^1 \sin(m\pi z)\sin(n\pi z)
-  \dd z
+  \text{d} z
 \end{aligned}
 \end{equation*}
 $$
@@ -283,7 +276,7 @@ integral in the denominator as
 $$
 \begin{equation*}
 \begin{aligned}
-  \int_0^1 \sin^2(n\pi z) \ \dd z &= \frac{1}{2}\int_0^1 1 - \cos(2n\pi z) \ \dd z
+  \int_0^1 \sin^2(n\pi z) \ \text{d} z &= \frac{1}{2}\int_0^1 1 - \cos(2n\pi z) \ \text{d} z
   \\
   &= \left[\frac{z}{2} - \frac{\sin(2n\pi z)}{2n\pi}\right]_0^1 \\
   & = \frac{1}{2}
@@ -296,7 +289,7 @@ The coefficient is, therefore,
 $$
 \begin{equation*}
 \begin{aligned}
-  C_n &= 2\int_0^1 \sin(n\pi z) \ \dd z \\
+  C_n &= 2\int_0^1 \sin(n\pi z) \ \text{d} z \\
   &= 2\left[-\frac{\cos(n\pi z)}{n\pi}\right] \\
   &= \frac{2}{n\pi}(1 - (-1)^n)
 \end{aligned}
