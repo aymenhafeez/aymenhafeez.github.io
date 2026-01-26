@@ -1,0 +1,214 @@
+---
+title: "File gazing with Telescope"
+publishDate: "14 April 2025"
+description: "Talking about one of my favourtite Neovim plugins"
+tags: []
+---
+
+
+Talking about one of my favourtite Neovim plugins
+
+---
+
+(Neo)Vim has some great built-in options when it comes to file navigation. The
+[`:edit`](https://neovim.io/doc/user/editing.html#:edit) and
+[`:find`](https://neovim.io/doc/user/editing.html#:find) commands, paired with
+[`wildmenu`](https://neovim.io/doc/user/options.html#'wildmenu') and the
+[`'path'`](https://neovim.io/doc/user/options.html#'path') option, set to be
+optimised with the context of the directory you're working in, can provide
+a pretty good overall experience for moving around a project. An issue I had
+with this setup, however, was that `wildmenu` would only complete exact matches
+for substrings when searching/navigating for something. For example, when
+wanting to quickly check the help docs for something, unless I knew the exact
+help-tag I wanted to search for, there wasn't any quick and easy way to get to
+the result I wanted, which would lead to having to use `:helpgrep` and filter
+through the results. For me, this is an area where fuzzy-finders can be very
+useful.
+
+## "File gazing" in Lua
+
+> telescope.nvim is a highly extendable fuzzy finder over lists. Built on the
+> latest awesome features from neovim core. Telescope is centered around
+> modularity, allowing for easy customization.
+
+There are a lot of fuzzy finders available for (Neo)vim, such as
+[ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim) and
+[fzf.vim](https://github.com/junegunn/fzf.vim), and they're really good
+projects, too. The main reason I prefer Telescope, however, is that it feels
+like it could be a built-in Neovim feature.
+
+Fzf.vim is an amazing fuzzy finder and I used it for a long time before
+migrating to Telescope. However, it isn't really a Vim plugin, as it
+says itself in its README. It really just acts as a way of calling the fzf
+command-line tool from within Vim. The difference with Telescope is that it's
+essentially just running Lua functions _inside_ Neovim, and interacting with the
+current buffer. To me, this just feels a lot more natural.
+
+## Vast defaults
+
+Telescope comes with a bunch of built-in "pickers" by default. They can be
+accessed by running `:Telescope <builtin_picker>`. For example
+`find_files` will list files in the current working directory, `oldfiles` will
+list recently opened files, `live_grep` will give results for a string search as
+you type etc. It even integrates with the native LSP with commands like
+`lsp_references` for search for references of the word under the cursor, as well
+as `diagnostics` for diagnostic search. The whole list of built-in pickers can
+be found in the [docs](https://github.com/nvim-telescope/telescope.nvim#pickers).
+
+## Extensibility
+
+Telescope is hugely configurable, both visually and functionally. There are two
+modes of configuring the default layout: `layout_strategy` and `layout_config`,
+for example:
+
+```lua
+require("telescope").setup {
+    defaults = {
+        layout_strategy = "horizontal",
+        layout_config = {
+            height = 0.75,
+            widht = 0.9
+          }
+      }
+  }
+```
+
+<!-- <p align="center"> -->
+<!--   <img src="../images/figs/layout.png" width="850"/> -->
+<!-- </p> -->
+
+![Workflow]({{ site.url }}/images/figs/layout.png){: .fancy-image }
+
+The above shows the default `horizontal` `layout_strategy`. See `:help
+telescope.layout` for more detail on the various different layouts available.
+
+The above `setup` function sets global settings which are applied to all
+built-in pickers. However, certain pickers can be better suited to other layouts
+than the default `horizontal` layout. Luckily, Telescope allows each picker to
+be called with its own settings, and each layout can be configured individually
+with some simple Lua functions. 
+
+Just as an aside to make more sense of the next section, my Telescope
+configuration has a dedicated folder `nvim/lua/ah/telescope`. The plug-in is set
+up and required in `init.lua`, and various functions are kept in `utils.lua` to
+be called from `mappings.lua`.
+
+```bash
+telescope
+├── init.lua
+├── mappings.lua
+└── utils.lua
+```
+
+One of the built-in pickers is `spell_suggest`, which, when called, gives
+spelling suggestions for the word under the cursor. However, having the default
+large display pop-up seems a bit excessive for spelling suggestions. Instead, we
+can write a function to call the `spell_suggest` picker with specified settings:
+
+```lua
+local M = {}
+
+local telescope = require("telescope.builtin")
+
+function M.spell_check()
+  telescope.spell_suggest(
+    theme.get_cursor {
+      prompt_title = "",
+      layout_config = {
+        height = 0.25,
+        width = 0.25
+      }
+    })
+end
+
+return M
+```
+
+Here, we're calling the `spell_suggest` picker with the built-in `get_cursor`
+theme, which provides a cursor relative list, which seems more appropriate for
+this picker. After that we're just getting rid of the `prompt_title` by setting
+it to an empty string, and then setting the size of the list in
+`layout_strategy`. The function can then be called with a keymap, for example
+
+```lua
+vim.keymap.set("n", "<leader>ss", require("utils").spell_check, { noremap = true, silent = true })
+```
+
+![Workflow]({{ site.url }}/images/figs/spell.png){: .fancy-image }
+
+I used to have the following line in my `.vimrc`:
+
+```viml
+command! -nargs=1 Search vimgrep <args> ~/Dropbox/notes/MyNotes/**/*.{tex,md}
+```
+
+This created an Ex command, `Search`, which used `vimgrep` to search for
+a string in my notes directory, and list all the files with the occurrence of
+the string in a quickfix window. This was very handy when needing to quickly
+look something up in my notes. The issue with this command, however, was that
+when going through the quickfix list, each file would get opened in a new
+buffer, and so after eventually finding the note I was looking for, the buffer
+list would be full of random .tex files. We can mirror this functionality with
+Telescope, but without having to open each file to check it. By default, the
+`find_files` picker lists files in the current working directory. However, it can
+also be given a specific directory to list files from. The same can be done with
+the `live_grep` picker.
+
+```lua
+function M.search_notes()
+  telescope.find_files {
+    cwd = "~/Dropbox/notes/MyNotes/",
+    prompt_title = "Notes",
+  }
+end
+
+function M.grep_notes()
+  telescope.live_grep {
+    cwd = "~/Dropbox/notes/MyNotes/",
+    path_display = { "shorten" },
+    sorting_strategy = "ascending",
+    layout_config = {
+      prompt_position = "top",
+      width = 0.9,
+      height = 0.8,
+    },
+    attach_mappings = function(_, map)
+      map("i", "<C-n>", action.move_selection_next)
+      map("i", "<C-p>", action.move_selection_previous)
+      return true
+    end,
+   }
+end
+```
+
+The first function is simply using the `find_files` picker, but is being pointed
+to a specific directory to list from.
+
+![Workflow]({{ site.url }}/images/figs/notes.png){: .fancy-image }
+
+The second function more closely mirrors the Ex command I mentioned before,
+using the `live_grep` picker. Similarly, `cwd` points the picker to the
+directory to grep through, and `path_display` shortens the directory names.
+`sorting_strategy` with `prompt_position = top` makes the search and sorting
+from top to bottom. The `attach_mappings` field allows you to have custom
+mappings for specific pickers (see `:help telescope.mappings` for more details
+of this).
+
+![Workflow]({{ site.url }}/images/figs/grep.png){: .fancy-image }
+
+And again, both of these functions are just called using a keymap:
+
+```lua
+vim.keymap.set("n", "<leader>sn", require("utils").search_notes, { noremap = true, silent = true }) 
+vim.keymap.set("n", "<leader>gn", require("utils").grep_notes, { noremap = true, silent = true })
+```
+
+This post barely scratched the surface of what Telescope is capable of. Other
+than the builtin pickers, there's also a wide range of extensions available.
+Check out the telescope [topics page](https://github.com/topics/telescope) to
+see what's available. The [developers
+documentation](https://github.com/nvim-telescope/telescope.nvim/blob/master/developers.md)
+also goes into detail on how you can write your own pickers.
+
+![Workflow]({{ site.url }}/images/figs/planets.png){: .fancy-image }
+> `:Telescope planets`
