@@ -2,9 +2,8 @@
 title: "The prime product formula"
 publishDate: "21 June 2025"
 description: "Intuition behind the Euler product formula for the Riemann zeta function"
-tags: []
+tags: ["mathematics", "prime numbers", "zeta function"]
 ---
-
 
 Intuition behind the Euler product formula for the Riemann zeta function
 
@@ -58,7 +57,7 @@ $$
 $$
 
 Here we see that each term being multiplied is a geometric series. Recall that
-in general a geometric series can  be written as
+in general a geometric series can be written as
 
 $$
   \sum_{n=0}^{\infty} a r^{n} = \frac{a}{1 - r}
@@ -80,7 +79,7 @@ $$
 \begin{aligned}
   \zeta(s) = \left( \frac{1}{1 - \frac{1}{2^{s}}} \right) \cdot \left( \frac{1}{1 - \frac{1}{3^{s}}} \right) \cdot \left( \frac{1}{1 - \frac{1}{4^{s}}} \right) \cdot \left( \frac{1}{1 - \frac{1}{5^{s}}} \right) \cdots
 \end{aligned}
-$$           
+$$
 
 $$
   \zeta(s) = \prod_{p \text{ prime}} \frac{1}{1 - p^{-s}}
@@ -105,6 +104,7 @@ and taking the sum,
 $$
   \sum n^{-s} = \sum 2^{-\epsilon_2s}3^{-\epsilon_3s}5^{-\epsilon_5s} \cdots,
 $$
+
 $$
   \sum n^{-s} = (1 + 2^{-s} + 2^{-2s} + \cdots)(1 + 3^{-s} + 3^{-2s} + \cdots)(1 + 5^{-s} + 5^{-2s} + \cdots)
 $$

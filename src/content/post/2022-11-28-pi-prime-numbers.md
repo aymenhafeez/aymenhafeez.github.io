@@ -2,9 +2,8 @@
 title: "The Riemann zeta function at even values"
 publishDate: "28 November 2022"
 description: "Deriving an expression for the Riemann zeta function at even values"
-tags: []
+tags: ["mathematics", "pi", "zeta function"]
 ---
-
 
 Deriving an expression for the Riemann zeta function at even values
 
@@ -25,8 +24,7 @@ I wanted to show the derivation of the expression for the Riemann zeta function
 at even values, i.e.
 $\newcommand{\dd}{\mathrm{d}}$
 
-  $$\zeta(2k)=\frac{(-1)^{k+1}(2\pi)^{2k}\beta_{2k}}{2(2k)!}$$
-
+$$\zeta(2k)=\frac{(-1)^{k+1}(2\pi)^{2k}\beta_{2k}}{2(2k)!}$$
 
 <!--   $$\zeta(s)=\sum_{n=1}^{\infty} \frac{1}{n^s} = \prod_{p \ \text{prime}} \frac{1}{1-p^{-s}}$$  -->
 <!---->
@@ -36,145 +34,145 @@ $\newcommand{\dd}{\mathrm{d}}$
 
 We start by expressing the function $\frac{\sin(\pi x)}{\pi x}$ in its infinite product form:
 
-  $$\frac{\sin(\pi x)}{\pi x}=\prod_{n=1}^{\infty}\left(1-\frac{x^2}{n^2}\right)$$
- 
-A way of understanding this representation is by realising that $\frac{\sin(\pi x)}{\pi x}$ can be expressed as a product of linear factors, as you would with any other polynomial. Let us consider a second degree polynomial as an example:  
+$$\frac{\sin(\pi x)}{\pi x}=\prod_{n=1}^{\infty}\left(1-\frac{x^2}{n^2}\right)$$
 
-  $$f(x)=x^2+7x+12$$ 
+A way of understanding this representation is by realising that $\frac{\sin(\pi x)}{\pi x}$ can be expressed as a product of linear factors, as you would with any other polynomial. Let us consider a second degree polynomial as an example:
 
-We know that it can be expressed as a product of its linear factors:  
+$$f(x)=x^2+7x+12$$
 
-  $$f(x)=(x+4)(x+3)$$
+We know that it can be expressed as a product of its linear factors:
 
-However, it can also be expressed as  
+$$f(x)=(x+4)(x+3)$$
 
-  $$f(x)=\left(1+\frac{x}{4}\right)\left(1+\frac{x}{3}\right)$$
+However, it can also be expressed as
+
+$$f(x)=\left(1+\frac{x}{4}\right)\left(1+\frac{x}{3}\right)$$
 
 This can be verified by seeing that $f(-4)$ and $f(-3)=0$. However, look into the Weierstrass factorisation theorem for a more rigorous explanation on expressing functions in this form.
-  
+
 <!-- <center> <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/master/images/sincpi.png" width="700" height="350" > </center> -->
-  
+
 $\frac{\sin(\pi x)}{\pi x}$ has roots at $x=n$ for $n \in \mathbb{Z}$ and $n \neq 0$, and so, expressing it as a product of its linear factors in a similar way gives
-  
-  $$\frac{\sin(\pi x)}{\pi x}=\left(1-x\right)\left(1+x\right)\left(1-\frac{x}{2}\right)\left(1+\frac{x}{2}\right)\left(1-\frac{x}{3}\right)\left(1+\frac{x}{3}\right)\cdots$$
-  
+
+$$\frac{\sin(\pi x)}{\pi x}=\left(1-x\right)\left(1+x\right)\left(1-\frac{x}{2}\right)\left(1+\frac{x}{2}\right)\left(1-\frac{x}{3}\right)\left(1+\frac{x}{3}\right)\cdots$$
+
 Making the observation that pairing terms gives the difference of two squares we get the infinite product form:
 
-  $$\frac{\sin(\pi x)}{\pi x}=\left(1-x^2\right)\left(1-\frac{x^2}{4}\right)\left(1-\frac{x^2}{9}\right)\cdots$$
-  
+$$\frac{\sin(\pi x)}{\pi x}=\left(1-x^2\right)\left(1-\frac{x^2}{4}\right)\left(1-\frac{x^2}{9}\right)\cdots$$
+
 From here we're going to manipulate the product of $\frac{sin(\pi x)}{\pi x}$ to a point where we recognise
 something of the sort we are trying to derive. Firstly, we take the natural logarithm of both sides:
-  
-  $$\log{\frac{\sin(\pi x)}{\pi x}}=\log\left(\prod_{n=1}^{\infty}\left(1-\frac{x^2}{n^2}\right)\right)$$
+
+$$\log{\frac{\sin(\pi x)}{\pi x}}=\log\left(\prod_{n=1}^{\infty}\left(1-\frac{x^2}{n^2}\right)\right)$$
 
 Making use of the property that the logarithm of a product is equivalent to the sum of the individual logarithms gives
 
-  $$\log{\frac{\sin(\pi x)}{\pi x}}=\sum_{n=1}^{\infty}\log{\left(1-\frac{x^2}{n^2}\right)}$$  
-  
-  $$\log{(\sin(\pi x))}=\log{(\pi x)}+\sum_{n=1}^{\infty}\log{\left(1-\frac{x^2}{n^2}\right)}$$  
+$$\log{\frac{\sin(\pi x)}{\pi x}}=\sum_{n=1}^{\infty}\log{\left(1-\frac{x^2}{n^2}\right)}$$
+
+$$\log{(\sin(\pi x))}=\log{(\pi x)}+\sum_{n=1}^{\infty}\log{\left(1-\frac{x^2}{n^2}\right)}$$
 
 Taking the derivative of both sides:
 
-  $$\frac{\dd}{\dd x}\left[\log{(\sin(\pi x))}\right]=\frac{\dd}{\dd x}\left[\log{(\pi x)}+\sum_{n=1}^{\infty}\log{\left(1-\frac{x^2}{n^2}\right)}\right]$$  
-  
-  $$\frac{\pi \cos(\pi x)}{\sin(\pi x)}=\frac{1}{x}-\sum_{n=1}^{\infty}\left(\frac{2x}{n^2}\right)\left(\frac{1}{1-\frac{x^2}{n^2}}\right)$$  
-  
-  $$\pi x \cot(\pi x)=1-2\sum_{n=1}^{\infty}\left(\frac{x^2}{n^2}\right)\left(\frac{1}{1-\frac{x^2}{n^2}}\right)$$  
+$$\frac{\dd}{\dd x}\left[\log{(\sin(\pi x))}\right]=\frac{\dd}{\dd x}\left[\log{(\pi x)}+\sum_{n=1}^{\infty}\log{\left(1-\frac{x^2}{n^2}\right)}\right]$$
+
+$$\frac{\pi \cos(\pi x)}{\sin(\pi x)}=\frac{1}{x}-\sum_{n=1}^{\infty}\left(\frac{2x}{n^2}\right)\left(\frac{1}{1-\frac{x^2}{n^2}}\right)$$
+
+$$\pi x \cot(\pi x)=1-2\sum_{n=1}^{\infty}\left(\frac{x^2}{n^2}\right)\left(\frac{1}{1-\frac{x^2}{n^2}}\right)$$
 
 Expressing $\frac{1}{1-\frac{x^2}{n^2}}$ as its series expansion gives
 
-  $$\pi x \cot(\pi x)=1-2\sum_{n=1}^{\infty}\sum_{k=0}^{\infty}\left(\frac{x^2}{n^2}\right)\left(\frac{x^2}{n^2}\right)^k$$
-  
-  $$\pi x \cot(\pi x)=1-2\sum_{n=1}^{\infty}\sum_{k=0}^{\infty}\left(\frac{x^2}{n^2}\right)^{k+1}$$
+$$\pi x \cot(\pi x)=1-2\sum_{n=1}^{\infty}\sum_{k=0}^{\infty}\left(\frac{x^2}{n^2}\right)\left(\frac{x^2}{n^2}\right)^k$$
+
+$$\pi x \cot(\pi x)=1-2\sum_{n=1}^{\infty}\sum_{k=0}^{\infty}\left(\frac{x^2}{n^2}\right)^{k+1}$$
 
 The lower limit of the inner summation can be changed to $k=1$ if we also change the exponent of the term being summed:
 
-  $$\pi x \cot(\pi x)=1-2\sum_{n=1}^{\infty}\sum_{k=1}^{\infty}\frac{x^{2k}}{n^{2k}}$$
+$$\pi x \cot(\pi x)=1-2\sum_{n=1}^{\infty}\sum_{k=1}^{\infty}\frac{x^{2k}}{n^{2k}}$$
 
-  $$\pi x \cot(\pi x)=1-2\sum_{k=1}^{\infty}\zeta(2k)x^{2k}$$
+$$\pi x \cot(\pi x)=1-2\sum_{k=1}^{\infty}\zeta(2k)x^{2k}$$
 
 And so, we see that we have some sort of expression with $\zeta(2k)$ on the right-hand side. Let's now take a closer look at the cotangent function on the left-hand side.
-  
+
 The cotangent can be expressed as the ratio of cosine to sine. Expressing the cosine and sine in their exponential function form gives
 
-  $$
-    \begin{aligned}
-        \pi x \cot(\pi x)&=\pi x\frac{\cos(\pi x)}{\sin(\pi x)} \\
-        &=\pi x \frac{e^{i\pi x}+e^{-i\pi x}}{2}\frac{2i}{e^{i\pi x}-e^{-i\pi x}} \\
-        &=i\pi x \frac{e^{i\pi x}+e^{-i\pi x}}{e^{i\pi x}-e^{-i\pi x}}
-    \end{aligned}
-  $$
+$$
+  \begin{aligned}
+      \pi x \cot(\pi x)&=\pi x\frac{\cos(\pi x)}{\sin(\pi x)} \\
+      &=\pi x \frac{e^{i\pi x}+e^{-i\pi x}}{2}\frac{2i}{e^{i\pi x}-e^{-i\pi x}} \\
+      &=i\pi x \frac{e^{i\pi x}+e^{-i\pi x}}{e^{i\pi x}-e^{-i\pi x}}
+  \end{aligned}
+$$
 
 Multiplying the right-hand side by $\frac{e^{i\pi x}}{e^{i\pi x}}$ (just because it
 seemed to work):
 
-  $$
-    \begin{aligned}  
-      \pi x \cot(\pi x)&=i\pi x \frac{e^{i\pi x}+e^{-i\pi x}}{e^{i\pi x}-e^{-i\pi x}} \cdot \frac{e^{i\pi x}}{e^{i\pi x}} \\
-      &=i\pi x \frac{e^{2i\pi x}+1}{e^{2i\pi x}-1}
-    \end{aligned}
-  $$
+$$
+  \begin{aligned}
+    \pi x \cot(\pi x)&=i\pi x \frac{e^{i\pi x}+e^{-i\pi x}}{e^{i\pi x}-e^{-i\pi x}} \cdot \frac{e^{i\pi x}}{e^{i\pi x}} \\
+    &=i\pi x \frac{e^{2i\pi x}+1}{e^{2i\pi x}-1}
+  \end{aligned}
+$$
 
 And now, splitting the numerator, we get
 
-  $$
-    \begin{aligned}
-      \pi x \cot(\pi x)&=i\pi x \frac{e^{2i\pi x}-1+2}{e^{2i\pi x}-1} \\
-      &=i\pi x \left(1+\frac{2}{e^{2i\pi x}-1}\right) \\
-      &=i\pi x+\frac{2i\pi x}{e^{2i\pi x}-1} \\
-    \end{aligned}
-  $$
+$$
+  \begin{aligned}
+    \pi x \cot(\pi x)&=i\pi x \frac{e^{2i\pi x}-1+2}{e^{2i\pi x}-1} \\
+    &=i\pi x \left(1+\frac{2}{e^{2i\pi x}-1}\right) \\
+    &=i\pi x+\frac{2i\pi x}{e^{2i\pi x}-1} \\
+  \end{aligned}
+$$
 
 Those last couple of steps may have seemed counterintuitive, however, it
 allows us to make use of the following relation:
 
-  $$\frac{x}{e^x-1}=\sum_{k=0}^{\infty}\frac{\beta_k}{k!}x^k$$
- 
- Substituting this into our second cotangent expression gives
- 
-   $$\pi x \cot(\pi x)=i\pi x+\sum_{k=0}^{\infty}\frac{\beta_k}{k!}(2i\pi x)^k$$
- 
+$$\frac{x}{e^x-1}=\sum_{k=0}^{\infty}\frac{\beta_k}{k!}x^k$$
+
+Substituting this into our second cotangent expression gives
+
+$$\pi x \cot(\pi x)=i\pi x+\sum_{k=0}^{\infty}\frac{\beta_k}{k!}(2i\pi x)^k$$
+
 You may notice that this looks quite similar in form to the first cotangent equation we derived. Manipulating the above equation into a similar form to the one we derived earlier will allow the $x^{2k}$ coefficients to be equated, which will give the expression for $\zeta({2k})$.
 
 We begin by expanding out the first two terms of the summation:
 
-  $$\pi x \cot(\pi x)=i\pi x+\frac{\beta_0}{0!}+\frac{\beta_1}{1!}(2i \pi x)+\sum_{k=2}^{\infty}\frac{\beta_k}{k!}(2i\pi x)^k$$
+$$\pi x \cot(\pi x)=i\pi x+\frac{\beta_0}{0!}+\frac{\beta_1}{1!}(2i \pi x)+\sum_{k=2}^{\infty}\frac{\beta_k}{k!}(2i\pi x)^k$$
 
 $\beta_0=1$ and $\beta_1=-\frac{1}{2}$, and so we get
 
-  $$
-    \begin{aligned}
-      \pi x \cot(\pi x)&=i\pi x+1-\frac{1}{2}(2i \pi x)+\sum_{k=2}^{\infty}\frac{\beta_k}{k!}(2i\pi x)^k \\
-      &=1+\sum_{k=2}^{\infty}\frac{\beta_k}{k!}(2i\pi x)^k
-    \end{aligned}
-  $$
+$$
+  \begin{aligned}
+    \pi x \cot(\pi x)&=i\pi x+1-\frac{1}{2}(2i \pi x)+\sum_{k=2}^{\infty}\frac{\beta_k}{k!}(2i\pi x)^k \\
+    &=1+\sum_{k=2}^{\infty}\frac{\beta_k}{k!}(2i\pi x)^k
+  \end{aligned}
+$$
 
 Taking out a factor of $-2$, just because we know what we're working towards and
 the expression is getting close,
 
-  $$\pi x \cot(\pi x)=1-2\sum_{k=2}^{\infty}\frac{\beta_k}{k!}\frac{(2i\pi x)^k}{-2}$$
-  
+$$\pi x \cot(\pi x)=1-2\sum_{k=2}^{\infty}\frac{\beta_k}{k!}\frac{(2i\pi x)^k}{-2}$$
+
 We can alter the lower summation limit again by altering the exponent:
 
-  $$
-    \begin{aligned}
-      \pi x \cot(\pi x)&=1-2\sum_{k=1}^{\infty}\frac{\beta_{2k}}{2k!}\frac{(2i\pi x)^{2k}}{-2}x^{2k} \\
-      &=1-2\sum_{k=1}^{\infty}\frac{i^{2k}(2\pi)^{2k}\beta_{2k}}{-2(2k)!}x^{2k} \\
-      &=1-2\sum_{k=1}^{\infty}\frac{(-1)^{k}(2\pi)^{2k}\beta_{2k}}{-2(2k)!}x^{2k}
-    \end{aligned}
-    $$
+$$
+  \begin{aligned}
+    \pi x \cot(\pi x)&=1-2\sum_{k=1}^{\infty}\frac{\beta_{2k}}{2k!}\frac{(2i\pi x)^{2k}}{-2}x^{2k} \\
+    &=1-2\sum_{k=1}^{\infty}\frac{i^{2k}(2\pi)^{2k}\beta_{2k}}{-2(2k)!}x^{2k} \\
+    &=1-2\sum_{k=1}^{\infty}\frac{(-1)^{k}(2\pi)^{2k}\beta_{2k}}{-2(2k)!}x^{2k}
+  \end{aligned}
+$$
 
 And so, we get
 
-  $$\pi x \cot(\pi x)=1-2\sum_{k=1}^{\infty}\frac{(-1)^{k+1}(2\pi)^{2k}\beta_{2k}}{2(2k)!}x^{2k}$$
+$$\pi x \cot(\pi x)=1-2\sum_{k=1}^{\infty}\frac{(-1)^{k+1}(2\pi)^{2k}\beta_{2k}}{2(2k)!}x^{2k}$$
 
 Now recall the cotangent expression we got to earlier:
 
-  $$\pi x \cot(\pi x)=1-2\sum_{k=1}^{\infty}\zeta(2k)x^{2k}$$
+$$\pi x \cot(\pi x)=1-2\sum_{k=1}^{\infty}\zeta(2k)x^{2k}$$
 
 Equating the two cotangent expression, we get
 
-  $$\zeta(2k)=\frac{(-1)^{k+1}(2\pi)^{2k}\beta_{2k}}{2(2k)!}$$
+$$\zeta(2k)=\frac{(-1)^{k+1}(2\pi)^{2k}\beta_{2k}}{2(2k)!}$$
 
 <!-- And so all together we have -->
 <!---->

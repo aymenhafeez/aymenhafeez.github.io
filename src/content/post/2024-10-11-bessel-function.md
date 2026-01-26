@@ -2,9 +2,8 @@
 title: "Deriving the neutron diffusion equation"
 publishDate: "11 October 2024"
 description: "An application of the Bessel function in nuclear reactor theory --- derivation"
-tags: []
+tags: ["physics", "nuclear engineering", "bessel function", "pde"]
 ---
-
 
 An application of the Bessel function in nuclear reactor theory --- derivation
 of the diffusion equation.
@@ -36,6 +35,7 @@ $\newcommand{\dd}{\mathrm{d}}$
 $$
     [\text{Rate of change}] \ = \ [\text{Rate of production from diffusion}] -
 $$
+
 $$
     \qquad \qquad [\text{Rate of absorption}] -[\text{Rate of loss due to
 leakage and diffusion}].
@@ -55,7 +55,7 @@ $$
     t} \dd V.
 $$
 
-Let $s$ be the neutron emission rate  from sources per unit volume. The rate of
+Let $s$ be the neutron emission rate from sources per unit volume. The rate of
 neutron production is
 
 $$
@@ -185,7 +185,8 @@ general form I had come across. Solving second order ODE's of this form can be
 done using the Frobenius method, which produces an infinite series solution. The
 solution will be outlined in the second part of this post.
 
-###  References:
+### References:
+
 Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3d ed.,
 Prentice-Hall, 2001, ISBN: 0-201-82498-1.
 

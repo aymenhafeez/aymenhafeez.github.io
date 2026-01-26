@@ -2,7 +2,7 @@
 title: "animplotlib"
 publishDate: "9 October 2025"
 description: "Advanced example use of the animplotlib package"
-tags: []
+tags: ["python", "visualization", "animation", "matplotlib"]
 ---
 
 Advanced example use of the animplotlib package

@@ -1,0 +1,39 @@
+---
+import PageLayout from "@/layouts/Base.astro";
+
+const meta = {
+	description: "Day to day photos - pentax k1000, ilford HP5 plus 400",
+	title: "Day to Day",
+};
+
+const photos = [
+	{ src: "/images/daytoday/daytoday_1.png", width: 500 },
+	{ src: "/images/daytoday/daytoday_2.png", width: 500 },
+	{ src: "/images/daytoday/daytoday_3.png", width: 700 },
+	{ src: "/images/daytoday/daytoday_4.png", width: 700 },
+	{ src: "/images/daytoday/daytoday_6.png", width: 500 },
+	{ src: "/images/daytoday/daytoday_7.png", width: 700 },
+	{ src: "/images/daytoday/daytoday_8.png", width: 700 },
+	{ src: "/images/daytoday/daytoday_9.png", width: 500 },
+	{ src: "/images/daytoday/daytoday_10.png", width: 700 },
+	{ src: "/images/daytoday/daytoday_11.png", width: 700 },
+	{ src: "/images/daytoday/daytoday_12.png", width: 500 },
+	{ src: "/images/daytoday/daytoday_13.png", width: 500 },
+	{ src: "/images/daytoday/daytoday_14.png", width: 500 },
+	{ src: "/images/daytoday/daytoday_15.png", width: 500 },
+];
+---
+
+<PageLayout meta={meta}>
+	<h1 class="title mb-12">Day to Day</h1>
+	<div class="prose prose-sm prose-cactus max-w-none">
+		<p class="mb-8">pentax k1000<br/>ilford HP5 plus 400</p>
+		
+		{photos.map((photo, index) => (
+			<div class="mb-8 text-center">
+				<img src={photo.src} alt={`Day to day photo ${index + 1}`} style={`max-width: ${photo.width}px; width: 100%; height: auto; margin: 0 auto;`} />
+				{index < photos.length - 1 && <p class="my-4">//</p>}
+			</div>
+		))}
+	</div>
+</PageLayout>

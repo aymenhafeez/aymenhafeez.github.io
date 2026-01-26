@@ -2,9 +2,8 @@
 title: "Mass transport by diffusion"
 publishDate: "5 August 2024"
 description: "Deriving an expression for the concentration profile for semi-transient"
-tags: []
+tags: ["physics", "diffusion", "pde"]
 ---
-
 
 Deriving an expression for the concentration profile for semi-transient
 diffusion through a semi-infinite geometry.
@@ -15,7 +14,7 @@ Given some medium, e.g. water,
 containing some material, say salt, the material will DIFFUSE from the
 concentrated area to the dilute area. Diffusion can be generalised by Fick's law:
 
-  $$J = -D \frac{\text{d} C}{\text{d} x}$$
+$$J = -D \frac{\text{d} C}{\text{d} x}$$
 
 where $J$ is molar flux and $D$ is diffusivity. Over a small control volume and
 in a short period of time $\delta t$ we can perform a mass balance over the
@@ -51,7 +50,7 @@ $$
 
 $$
     -D\frac{\partial C}{\partial x} + D\frac{\partial
-    C}{\partial x} + D\frac{\partial^2 C}{\partial x^2}\delta x 
+    C}{\partial x} + D\frac{\partial^2 C}{\partial x^2}\delta x
     = \delta x \frac{\Delta C}{\delta t}.
 $$
 
@@ -76,9 +75,9 @@ This is the 1D diffusion equation over a small control volume $V$.
 Let us consider the case of transient diffusion through a semi-infinite
 geometry. The boundary conditions in this case are
 
-* at $t < 0$, $C_{A} = C_{A,i},$ which is the initial molar concentration.
-* at $t > 0$, $C_{A} \to C_{A,i}$ at $x = 0$.
-* at $t > 0$, $C_{A} = C_{A,s}$.
+- at $t < 0$, $C_{A} = C_{A,i},$ which is the initial molar concentration.
+- at $t > 0$, $C_{A} \to C_{A,i}$ at $x = 0$.
+- at $t > 0$, $C_{A} = C_{A,s}$.
 
 <!-- $$ -->
 <!--   D \frac{\partial^2 x_{A}}{\partial x^2} = \frac{\partial x_{A}}{\partial t} -->
@@ -167,9 +166,9 @@ $$
 
 Rewriting the boundary conditions in terms of $\eta$ gives
 
-* $C_{A} = C_{A, i}$ at $t = 0 \ \therefore \ \eta \to \infty$
-* $C_{A} = C_{A, s}$ at $t > 0 \ \therefore \ \eta = 0$
-* $C_{A} = C_{A, i}$ at $t > 0$ and as $x \to \infty \ \therefore \ \eta = 0$
+- $C_{A} = C_{A, i}$ at $t = 0 \ \therefore \ \eta \to \infty$
+- $C_{A} = C_{A, s}$ at $t > 0 \ \therefore \ \eta = 0$
+- $C_{A} = C_{A, i}$ at $t > 0$ and as $x \to \infty \ \therefore \ \eta = 0$
 
 The similarity variable combines the variables $x$ and $t$ into a single
 variable $\eta$. And so, the three boundary conditions collapse into two. In
@@ -206,10 +205,10 @@ $$
 \end{equation*}
 $$
 
-Applying the boundary conditions:  
+Applying the boundary conditions:
 
-* $C(\eta = 0) = C_s \Rightarrow C_2 = C_s$
-* $C(\eta \to \infty) = C_i \Rightarrow C_i = C_1\int_0^\infty e^{-\eta^2}
+- $C(\eta = 0) = C_s \Rightarrow C_2 = C_s$
+- $C(\eta \to \infty) = C_i \Rightarrow C_i = C_1\int_0^\infty e^{-\eta^2}
 \text{d} \eta + C_s$
 
 The above integral is half the Gaussian integral which can be evaluated to

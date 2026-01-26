@@ -2,9 +2,8 @@
 title: "Strange Attractors"
 publishDate: "15 April 2025"
 description: "Visualising some interesting strange attractors"
-tags: []
+tags: ["mathematics", "chaos", "visualization"]
 ---
-
 
 Visualising some interesting strange attractors
 
@@ -213,7 +212,6 @@ $$
   \end{array}
 \right.
 $$
-
 
 <!-- <center> -->
 <!--   <figure>  -->

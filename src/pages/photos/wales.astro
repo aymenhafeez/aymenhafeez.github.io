@@ -1,0 +1,31 @@
+---
+import PageLayout from "@/layouts/Base.astro";
+
+const meta = {
+	description: "Wales photos - pentax k1000, kodak portra 400",
+	title: "Wales",
+};
+
+const photos = [
+	{ src: "/images/wales/wales_1.png", width: 500 },
+	{ src: "/images/wales/wales_2.png", width: 500 },
+	{ src: "/images/wales/wales_3.png", width: 500 },
+	{ src: "/images/wales/wales_4.png", width: 500 },
+	{ src: "/images/wales/wales_5.png", width: 700 },
+	{ src: "/images/wales/wales_6.png", width: 500 },
+];
+---
+
+<PageLayout meta={meta}>
+	<h1 class="title mb-12">Wales</h1>
+	<div class="prose prose-sm prose-cactus max-w-none">
+		<p class="mb-8">pentax k1000<br/>kodak portra 400</p>
+		
+		{photos.map((photo, index) => (
+			<div class="mb-8 text-center">
+				<img src={photo.src} alt={`Wales photo ${index + 1}`} style={`max-width: ${photo.width}px; width: 100%; height: auto; margin: 0 auto;`} />
+				{index < photos.length - 1 && <p class="my-4">//</p>}
+			</div>
+		))}
+	</div>
+</PageLayout>

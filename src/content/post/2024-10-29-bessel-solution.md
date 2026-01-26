@@ -2,9 +2,8 @@
 title: "Solving the neutron diffusion equation"
 publishDate: "29 October 2024"
 description: "Solving the neutron diffusion equation."
-tags: []
+tags: ["physics", "nuclear engineering", "bessel function", "pde"]
 ---
-
 
 Solving the neutron diffusion equation.
 
@@ -139,7 +138,7 @@ $$
 $$
 
 We can see from this that the coefficients of $r^{n+k-2}$ must equate to 0, and
-so, 
+so,
 
 $$
 \begin{equation*}

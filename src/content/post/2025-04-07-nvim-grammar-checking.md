@@ -2,9 +2,8 @@
 title: "Grammar checking in Neovim"
 publishDate: "7 April 2025"
 description: "Setting up grammar checking with Neovim's native LSP client and grammar-guard"
-tags: []
+tags: ["neovim", "editor", "lsp"]
 ---
-
 
 Setting up grammar checking with Neovim's native LSP client and grammar-guard
 
@@ -19,7 +18,7 @@ to compile and show a PDF preview.
 
 <br>
 
-![Workflow]({{ site.url }}/images/figs/workflow.gif){: .fancy-image }
+![Workflow](/images/figs/workflow.gif)
 
 <br>
 

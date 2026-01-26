@@ -2,9 +2,8 @@
 title: "Neutron flux in an infinite slab reactor"
 publishDate: "22 January 2025"
 description: "Deriving an expression for the thermal neutron flux in an infinite slab reactor"
-tags: []
+tags: ["physics", "nuclear engineering", "neutron diffusion"]
 ---
-
 
 Deriving an expression for the thermal neutron flux in an infinite slab reactor
 
@@ -130,9 +129,9 @@ $$
 \end{equation*}
 $$
 
-for odd values of $n$.  The square of the lowest value of $B$, i.e. $B_1^2$, is
-the *buckling* of the reactor, which represents the fuel material in an infinite
-medium.  Under non-critical conditions, the reactor flux is the sum of the
+for odd values of $n$. The square of the lowest value of $B$, i.e. $B_1^2$, is
+the _buckling_ of the reactor, which represents the fuel material in an infinite
+medium. Under non-critical conditions, the reactor flux is the sum of the
 cosine functions for all values of $B_n$, i.e.
 
 $$
@@ -209,6 +208,7 @@ $$
 <!-- <img src="../images/graph.png" width="500"/> -->
 <!-- </center> -->
 
-###  References:
+### References:
+
 Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3d ed.,
 Prentice-Hall, 2001, ISBN: 0-201-82498-1.

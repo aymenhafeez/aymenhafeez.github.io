@@ -2,9 +2,8 @@
 title: "Neovim 0.11 native LSP and autocompletion"
 publishDate: "15 April 2025"
 description: "Simpler native LSP and autocompletion setup in Neovim 0.11"
-tags: []
+tags: ["neovim", "editor", "lsp"]
 ---
-
 
 Simpler native LSP and autocompletion setup in Neovim 0.11
 

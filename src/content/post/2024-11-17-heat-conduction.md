@@ -2,9 +2,8 @@
 title: "Heat conduction in a symmetric, finite rod"
 publishDate: "17 November 2024"
 description: "Deriving an expression for the temperature profile for a symmetric, finite rod"
-tags: []
+tags: ["physics", "heat transfer", "pde"]
 ---
-
 
 Deriving an expression for the temperature profile for a symmetric, finite rod
 geometry.
@@ -26,13 +25,13 @@ $$
   q = -k\frac{\dd T}{\dd x},
 $$
 
-where $k$ is thermal conductivity. 
+where $k$ is thermal conductivity.
 
 For a system with symmetric, finite geometry we can set the following spatial
 and temporal boundary conditions:
 
-* when $x = 0, \ T = T_1$; when $x = L, \ T = T_1$
-* when $t = 0, \ T = T_0$
+- when $x = 0, \ T = T_1$; when $x = L, \ T = T_1$
+- when $t = 0, \ T = T_0$
 
 <p align="center">
   <img src="../images/hc-2.png" width="500"/>
@@ -332,7 +331,7 @@ along the bar at a given time $t$:
 
 $$
   T = T_1 + (T_0 - T_1)\sum_{n=1}^\infty \frac{2}{n\pi}(1-(-1)^n)
-  e^{-n^2\pi^2t} \sin(n\pi z) 
+  e^{-n^2\pi^2t} \sin(n\pi z)
 $$
 
 $$
@@ -354,6 +353,6 @@ approximation for $T$. Much of this post was referenced from my lecture notes
 which are based on Bird, Stewart and Lightfoot's 'Transport Phenomena', so see
 that for more on mechanisms of energy transfer.
 
-###  References:
+### References:
 
 Bird, R., Lightfoot, E. and Stewart, W., 2007. Transport phenomena. New York: Wiley.

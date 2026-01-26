@@ -2,9 +2,8 @@
 title: "File gazing with Telescope"
 publishDate: "14 April 2025"
 description: "Talking about one of my favourtite Neovim plugins"
-tags: []
+tags: ["neovim", "editor", "plugins"]
 ---
-
 
 Talking about one of my favourtite Neovim plugins
 
@@ -77,7 +76,7 @@ require("telescope").setup {
 <!--   <img src="../images/figs/layout.png" width="850"/> -->
 <!-- </p> -->
 
-![Workflow]({{ site.url }}/images/figs/layout.png){: .fancy-image }
+![Layout](/images/figs/layout.png)
 
 The above shows the default `horizontal` `layout_strategy`. See `:help
 telescope.layout` for more detail on the various different layouts available.
@@ -86,7 +85,7 @@ The above `setup` function sets global settings which are applied to all
 built-in pickers. However, certain pickers can be better suited to other layouts
 than the default `horizontal` layout. Luckily, Telescope allows each picker to
 be called with its own settings, and each layout can be configured individually
-with some simple Lua functions. 
+with some simple Lua functions.
 
 Just as an aside to make more sense of the next section, my Telescope
 configuration has a dedicated folder `nvim/lua/ah/telescope`. The plug-in is set
@@ -134,7 +133,7 @@ it to an empty string, and then setting the size of the list in
 vim.keymap.set("n", "<leader>ss", require("utils").spell_check, { noremap = true, silent = true })
 ```
 
-![Workflow]({{ site.url }}/images/figs/spell.png){: .fancy-image }
+![Spell suggestions](/images/figs/spell.png)
 
 I used to have the following line in my `.vimrc`:
 
@@ -184,7 +183,7 @@ end
 The first function is simply using the `find_files` picker, but is being pointed
 to a specific directory to list from.
 
-![Workflow]({{ site.url }}/images/figs/notes.png){: .fancy-image }
+![Notes search](/images/figs/notes.png)
 
 The second function more closely mirrors the Ex command I mentioned before,
 using the `live_grep` picker. Similarly, `cwd` points the picker to the
@@ -194,12 +193,12 @@ from top to bottom. The `attach_mappings` field allows you to have custom
 mappings for specific pickers (see `:help telescope.mappings` for more details
 of this).
 
-![Workflow]({{ site.url }}/images/figs/grep.png){: .fancy-image }
+![Grep notes](/images/figs/grep.png)
 
 And again, both of these functions are just called using a keymap:
 
 ```lua
-vim.keymap.set("n", "<leader>sn", require("utils").search_notes, { noremap = true, silent = true }) 
+vim.keymap.set("n", "<leader>sn", require("utils").search_notes, { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>gn", require("utils").grep_notes, { noremap = true, silent = true })
 ```
 
@@ -210,5 +209,6 @@ see what's available. The [developers
 documentation](https://github.com/nvim-telescope/telescope.nvim/blob/master/developers.md)
 also goes into detail on how you can write your own pickers.
 
-![Workflow]({{ site.url }}/images/figs/planets.png){: .fancy-image }
+![Planets](/images/figs/planets.png)
+
 > `:Telescope planets`
