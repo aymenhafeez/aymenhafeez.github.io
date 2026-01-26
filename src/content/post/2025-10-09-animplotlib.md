@@ -13,13 +13,13 @@ Below are some examples of more advanced animations using the animplotlib
 package. For a general overview of the package see the [quickstart
 guide](https://github.com/aymenhafeez/animplotlib?tab=readme-ov-file#quickstart) and the [API docs](https://github.com/aymenhafeez/animplotlib/blob/master/docs/API.md).
 
-[Lissajous knot](/posts/lissajous-example)
+[Lissajous knot](/lissajous-example)
 
-[Lorenz attractor](/posts/lorenz-example)
+[Lorenz attractor](/lorenz-example)
 
-[Torus knot](/posts/torus-example)
+[Torus knot](/torus-example)
 
-[Glow effect animation](/posts/glowing-attractor-example)
+[Glow effect animation](/glowing-attractor-example)
 
 <br>
 <br>
