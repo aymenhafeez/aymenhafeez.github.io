@@ -5,10 +5,6 @@ description: "Setting up grammar checking with Neovim's native LSP client and gr
 tags: ["neovim", "editor", "lsp"]
 ---
 
-Setting up grammar checking with Neovim's native LSP client and grammar-guard
-
----
-
 I use Neovim these days primarily for writing in LaTeX, as well as some light
 Python development for hobby projects. The core of my LaTeX workflow is made up
 of using [Ultisnips](http://github.com/SirVer/ultisnips) as my snippet engine

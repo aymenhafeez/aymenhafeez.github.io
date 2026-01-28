@@ -5,10 +5,6 @@ description: "Various formulae relating to pi that I come across."
 tags: ["mathematics", "pi", "series"]
 ---
 
-Various formulae relating to pi that I come across.
-
----
-
 ## Infinite products
 
 The $\text{sinc}$ function is defined for $x\neq0$ as

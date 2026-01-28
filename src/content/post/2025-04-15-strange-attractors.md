@@ -5,10 +5,6 @@ description: "Visualising some interesting strange attractors"
 tags: ["mathematics", "chaos", "visualization"]
 ---
 
-Visualising some interesting strange attractors
-
----
-
 # Lorenz attractor
 
 The most well known attractor is the Lorenz attractor. This was discovered by

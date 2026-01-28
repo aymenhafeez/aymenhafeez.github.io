@@ -5,10 +5,6 @@ description: "A formula for pi derived from the error function."
 tags: ["mathematics", "pi", "calculus"]
 ---
 
-A formula for pi derived from the error function.
-
----
-
 In my third year at university I was introduced to the error function during a
 'Transport Phenomena' class. It came up in the context of deriving expressions
 to describe heat and mass transfer through various geometries. While revising

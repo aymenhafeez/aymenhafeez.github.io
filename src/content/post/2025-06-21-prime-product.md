@@ -5,10 +5,6 @@ description: "Intuition behind the Euler product formula for the Riemann zeta fu
 tags: ["mathematics", "prime numbers", "zeta function"]
 ---
 
-Intuition behind the Euler product formula for the Riemann zeta function
-
----
-
 I've written about the Riemann zeta function in other posts and touched briefly
 on the product formula representation. Here, I wanted to go through
 a derivation of the product formula. Like most maths related subjects I write

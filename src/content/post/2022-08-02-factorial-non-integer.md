@@ -5,10 +5,6 @@ description: "Demonstrating the concept of taking the factorial of non-integer v
 tags: ["mathematics", "calculus", "gamma function"]
 ---
 
-Demonstrating the concept of taking the factorial of non-integer values
-
----
-
 The factorial operator can be defined as:
 
 $$n!=n\cdot(n-1)\cdot(n-2)\cdot(n-3)\cdots3\cdot2\cdot1$$

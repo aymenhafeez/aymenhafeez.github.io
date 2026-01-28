@@ -5,10 +5,6 @@ description: "Talking about one of my favourtite Neovim plugins"
 tags: ["neovim", "editor", "plugins"]
 ---
 
-Talking about one of my favourtite Neovim plugins
-
----
-
 (Neo)Vim has some great built-in options when it comes to file navigation. The
 [`:edit`](https://neovim.io/doc/user/editing.html#:edit) and
 [`:find`](https://neovim.io/doc/user/editing.html#:find) commands, paired with
