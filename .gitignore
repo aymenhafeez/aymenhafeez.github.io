@@ -43,7 +43,7 @@ iceland.md
 london.md
 newyork.md
 wales.md
-images/
+# images/
 old_images/
 style.scss
 index.html
