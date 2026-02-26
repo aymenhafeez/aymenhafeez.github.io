@@ -245,6 +245,6 @@ be shown with proper syntax highlighting. `omnifunc` is also set the
 
 <center>
   <figure>
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lsp_showcase.gif" width="600" />
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lsp_showcase.gif" width="400" />
   </figure>
 </center>
