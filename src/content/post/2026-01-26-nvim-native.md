@@ -32,7 +32,7 @@ So when a document is opened and a request is made by doing something like
 go-to-definition, a message gets sent to the language server as structured JSON
 containing information about the current file and cursor position. The language
 server is able to analyse code in the context of a whole project, and sends back
-a response with the file and location of the definition.
+a response with something like the file and location of the definition.
 
 Having this process as a standardised protocol means language servers can be
 used across different tools without these tools having to reimplement their own
@@ -68,14 +68,14 @@ omnicompletion could now be used with the newly added `vim.lsp.omnifunc`
 handler, which extended `<C-X><C-O>` completion to allow completion from the
 language server.
 
-The addition of the LSP support into Neovim's core was huge a step. It
-introduced the `vim.lsp` Lua framework which allowed Neovim to be able to
-communicate directly with language servers. Semantic featurs like
-go-to-definition, hover documentation, diagnostics etc. could now be achieved
-without the use of complex plugins. However, though the initial integration was
-powerful, the configuration was still not particularly intuitive, and so,
-plugins like nvim-lspconfig were needed to make setting up language servers
-easier. From `:h lsp-quickstart` in v0.5:
+The addition of the LSP support into Neovim's core introduced the `vim.lsp` Lua
+framework which allowed Neovim to be able to communicate directly with language
+servers. Semantic features like go-to-definition, hover documentation,
+diagnostics etc. could now be achieved without the use of complex plugins.
+However, though the initial integration was powerful, the configuration was
+still not particularly intuitive, and so, plugins like nvim-lspconfig were
+needed to make setting up language servers easier. From `:h lsp-quickstart` in
+v0.5:
 
 > 1. Install the nvim-lspconfig plugin.  It provides common configuration for
 >    various servers so you can get started quickly.
@@ -145,8 +145,8 @@ require('lspconfig').sumneko_lua.setup({
 })
 ```
 
-We see that things like keymap setup, root detection attaching to the correct
-buffer was all manual. So while this worked well, it was far from an
+We see that things like keymap setup, root detection and attaching to the
+correct buffer was all manual. So while this worked well, it was far from an
 out-of-the-box experience.
 
 The following versions brought general improvements to the LSP implementation,
@@ -160,11 +160,13 @@ meant in Neovim. This also added confusion for new users over why it was
 a requirement to install plugins to access what were supposed to be built-in
 features.
 
-This changed with v0.11 with addition `vim.lsp.config()` and `vim.lsp.enable()`.
-These new API's allowed for simpler LSP configuration, with nvim-lspconfig now
-being more of a reference point for language server configuration options.
-Setting up a language server for Lua, for example, was a lot simpler. From `:h
-lsp-quickstart` in v0.11+:
+### The current landscape
+
+Big changes came in v0.11 with the addition of `vim.lsp.config()` and
+`vim.lsp.enable()`. These new API's allowed for simpler LSP configuration, with
+nvim-lspconfig now being more of a reference point for language server
+configuration options. Setting up a language server for Lua, for example, was
+not a lot simpler. From `:h lsp-quickstart` in v0.11+:
 
 ```lua
 vim.lsp.config['lua_ls'] = {
@@ -229,7 +231,7 @@ Then `vim.lsp.enable()` can be called with all the language severs you want
 enabled. So in your `init.lua` you would have `vim.lsp.enable({"basedpyright",
 "clangd", "lua_ls", "ruff", "rust_analyzer"})`. What's nice about this is that
 it follows the pattern Neovim already uses in having configuration files in the
-runtimepath for Neovim to automatically load when needed.
+runtimepath to automatically load when needed.
 
 As well as easier configuration, Neovim also now sets some default options and
 keymaps (`:h lsp-defaults`), such as "grn" for `vim.lsp.buf.rename()`, "grt" for
@@ -240,3 +242,9 @@ be shown with proper syntax highlighting. `omnifunc` is also set the
 `vim.lsp.omnifunc()` by default (this has been the case for a while).
 
 ![](/images/lsp_showcase.gif)
+
+<center>
+  <figure>
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lsp_showcase.gif" width="600" />
+  </figure>
+</center>
