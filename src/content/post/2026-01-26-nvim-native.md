@@ -241,8 +241,6 @@ Markdown treesitter highlighting, allowing for code samples in documentation to
 be shown with proper syntax highlighting. `omnifunc` is also set the
 `vim.lsp.omnifunc()` by default (this has been the case for a while).
 
-![](/images/lsp_showcase.gif)
-
 <center>
   <figure>
     <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lsp_showcase.gif" width="400" />
