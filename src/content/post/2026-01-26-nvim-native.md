@@ -1,6 +1,6 @@
 ---
 title: "Native LSP in Neovim"
-publishDate: "1 February 2026"
+publishDate: "26 January 2026"
 description: "Setting up LSP using Neovim's native methods"
 tags: ["neovim"]
 ---
@@ -20,9 +20,7 @@ editors to be able to communicate with language servers which could provide
 capabilities such as autocompletion, go-to-definition jumping, diagnostics etc.
 (i.e the sort of features which are now considered the norm in modern IDE's).
 Prior to this, every editor would have their own method of providing language
-aware features. The LSP standardises this so that for a given language, any
-editor which uses the LSP can communicate with the same language server to
-provide language specific capabilities.
+aware features.
 
 ![Language server protocol (Microsoft, What is the Language Server Protocol?)](/images/lsp.png)
 
@@ -30,9 +28,10 @@ Essentially an editor (which the LSP specification refers to as *tools*) acts as
 a client communicating with a language server over a JSON-RPC message protocol.
 So when a document is opened and a request is made by doing something like
 go-to-definition, a message gets sent to the language server as structured JSON
-containing information about the current file and cursor position. The language
-server is able to analyse code in the context of a whole project, and sends back
-a response with something like the file and location of the definition.
+containing information, such as the current file and cursor position. The
+language server is able to analyse code in the context of a whole project, and
+sends back a response with something like the file and location of the
+definition.
 
 Having this process as a standardised protocol means language servers can be
 used across different tools without these tools having to reimplement their own
@@ -52,21 +51,23 @@ behaviour would rely on plugins such as
 [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe),
 [coc.nvim](https://github.com/neoclide/coc.nvim) and
 [ALE](https://github.com/dense-analysis/ale), among others, which would run
-external processes to connect Vim/Neovim to language servers. coc.nvim was my
-first experience with LSP features in Vim, and while the experience was pretty
-good it did feel like glueing together an IDE to run *within* the editor, as
-opposed to having those features feeling like they were *part* of the editor.
+external processes to connect Vim/Neovim to language servers. YouCompleteMe was
+my first experience with LSP features in Vim, and while the experience was
+pretty good it did feel like glueing together an IDE to run *within* the editor,
+as opposed to having those features feeling like they were *part* of the editor.
 
-It should be noted that Vim/Neovim had and still has omnicompletion, which
-allows filetype, syntax aware insert mode completion with the option `setlocal
-omnifunc=syntaxcomplete#Complete`. However, the syntaxcomplete plugin that's
-builtin in to Vim/Neovim only serves to recognise and highlight language
-keywords, and then populate the completion list with those keywords, providing
-simple, language specific completion. See `:h omnicompletion`,` 'omnifunc'`,
-`ins-completion`. With Neovim being able to act as a client to LSP servers,
-omnicompletion could now be used with the newly added `vim.lsp.omnifunc`
-handler, which extended `<C-X><C-O>` completion to allow completion from the
-language server.
+<!-- TODO: make the :h references links to the relevant neovim docs pages -->
+<!-- TODO: not sure how necessary this paragraph is -->
+<!-- It should be noted that Vim/Neovim has omnicompletion. Setting setting `selocal -->
+<!-- omnifunc=syntaxcomplete#Complete` would allow for filetype, syntax aware insert -->
+<!-- mode completion with the option. However, the syntaxcomplete plugin that's -->
+<!-- builtin in to Vim/Neovim only serves to recognise and highlight language -->
+<!-- keywords, and then populate the completion list with those keywords, providing -->
+<!-- simple, language specific completion. See `:h omnicompletion`,` 'omnifunc'`, -->
+<!-- `ins-completion`. With Neovim being able to act as a client to LSP servers, -->
+<!-- omnicompletion could now be used with the newly added `vim.lsp.omnifunc` -->
+<!-- handler, which extended `<C-X><C-O>` completion to allow completion from the -->
+<!-- language server. -->
 
 The addition of the LSP support into Neovim's core introduced the `vim.lsp` Lua
 framework which allowed Neovim to be able to communicate directly with language
@@ -89,7 +90,7 @@ v0.5:
 > 4. Check that an LSP client has attached to the current buffer: `:lua
 >    print(vim.inspect(vim.lsp.buf_get_clients()))`
 
-The following is an example configuration snippet from the `:h lsp.txt` for
+The following is an example configuration snippet from `:h lsp-quickstart` in
 v0.5 to setup a language server for Lua:
 
 ```lua
@@ -147,7 +148,7 @@ require('lspconfig').sumneko_lua.setup({
 
 We see that things like keymap setup, root detection and attaching to the
 correct buffer was all manual. So while this worked well, it was far from an
-out-of-the-box experience.
+out-of-the-box solution.
 
 The following versions brought general improvements to the LSP implementation,
 with refinements to diagnostics and overall performance. Plugins such as
@@ -166,7 +167,7 @@ Big changes came in v0.11 with the addition of `vim.lsp.config()` and
 `vim.lsp.enable()`. These new API's allowed for simpler LSP configuration, with
 nvim-lspconfig now being more of a reference point for language server
 configuration options. Setting up a language server for Lua, for example, was
-not a lot simpler. From `:h lsp-quickstart` in v0.11+:
+now a lot simpler. From `:h lsp-quickstart` in v0.11+:
 
 ```lua
 vim.lsp.config['lua_ls'] = {
@@ -243,6 +244,6 @@ be shown with proper syntax highlighting. `omnifunc` is also set the
 
 <center>
   <figure>
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lsp_showcase.gif" width="400" />
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/public/images/lsp_showcase.gif" width="500" />
   </figure>
 </center>
