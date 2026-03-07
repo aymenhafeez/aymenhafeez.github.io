@@ -244,6 +244,66 @@ be shown with proper syntax highlighting. `omnifunc` is also set the
 
 <center>
   <figure>
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/public/images/lsp_showcase.gif" width="500" />
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/public/images/lsp_showcase.gif" width="450" />
+  </figure>
+</center>
+
+## Autocompletion
+
+As mentioned earlier, `omnifun` is set to `vim.lsp.omnifunc()` by default. This
+means that just having a language server attached to the curent buffer gives you
+manual LSP completion with `<C-X><C-O>`. However, this can be extended to enable
+autocompletion from LSP sources using the `vim.lsp.completion` module. Enabling
+autocompletion can be done with `vim.lsp.completion.enable()`. For example, to
+enable LSP autocompletion when attaching to a language serve:
+
+```lua
+vim.api.nvim_create_autocmd("LspAttach", {
+  group = vim.api.nvim_create_augroup("lsp-group", {}),
+  callback = function(args)
+    local client = assert(vim.lsp.get_client_by_id(args.data.client_id))
+    if client:supports_method("textDocument/completion") then
+      vim.lsp.completion.enable(true, client.id, args.buf, {autotrigger = true})
+    end
+  end,
+})
+```
+
+By default this will trigger completion on whatever the language server defines
+as its `triggerCharacters`. To trigger the completion on every keypress like
+many completion plugins do there are two options. The first is to override the
+trigger characters before calling `vim.lsp.completion.enable`:
+
+```lua
+vim.api.nvim_create_autocmd("LspAttach", {
+  group = vim.api.nvim_create_augroup("lsp-group", {}),
+  callback = function(args)
+    local client = assert(vim.lsp.get_client_by_id(args.data.client_id))
+
+    # Override language server defined trigger characters
+    local chars = {}; for i = 32, 126 do table.insert(chars, string.char(i)) end
+    client.server_capabilities.completionProvider.triggerCharacters = chars
+
+    if client:supports_method("textDocument/completion") then
+      vim.lsp.completion.enable(true, client.id, args.buf, {autotrigger = true})
+    end
+  end,
+})
+```
+
+Another option is to create an autocommand which calls `vim.lsp.completion.get()`
+on the `InsertCharPre` event.
+
+```lua
+vim.api.nvim_create_autocmd("InsertCharPre", {
+  callback = function()
+    vim.lsp.completion.get()
+  end
+})
+```
+
+<center>
+  <figure>
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/public/images/lsp_showcase_2.gif" width="450" />
   </figure>
 </center>
