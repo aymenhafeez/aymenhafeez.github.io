@@ -5,8 +5,6 @@ description: "A minimalist Neovim colorscheme port with subtle gradients and car
 tags: ["neovim"]
 ---
 
-## Neovim port of the [Doric themes](https://github.com/protesilaos/doric-themes) from GNU Emacs
-
 I've been a fan of [Protesilaos'](https://protesilaos.com/) Emacs themes and
 have used the [Neovim port](https://github.com/miikanissi/modus-themes.nvim) of
 the [Modus themes](https://github.com/protesilaos/modus-themes) in the past, but
