@@ -22,7 +22,11 @@ capabilities such as autocompletion, go-to-definition jumping, diagnostics etc.
 Prior to this, every editor would have their own method of providing language
 aware features.
 
-![Language server protocol (Microsoft, What is the Language Server Protocol?)](/images/lsp.png)
+<center>
+  <figure>
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/public/images/lsp_microsoft.png" width="450" />
+  </figure>
+</center>
 
 Essentially an editor (which the LSP specification refers to as *tools*) acts as
 a client communicating with a language server over a JSON-RPC message protocol.
@@ -269,6 +273,12 @@ vim.api.nvim_create_autocmd("LspAttach", {
 })
 ```
 
+<center>
+  <figure>
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/public/images/lsp_showcase_2.gif" width="450" />
+  </figure>
+</center>
+
 By default this will trigger completion on whatever the language server defines
 as its `triggerCharacters`. To trigger the completion on every keypress like
 many completion plugins do there are two options. The first is to override the
@@ -302,8 +312,27 @@ vim.api.nvim_create_autocmd("InsertCharPre", {
 })
 ```
 
-<center>
-  <figure>
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/public/images/lsp_showcase_2.gif" width="450" />
-  </figure>
-</center>
+## Potential limitations
+
+Based on your particular use case, the functionality provided by native
+autocompletion may be more than enough. However, there are certain features
+provided by plugins such as [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) and
+[blink.cmp](https://github.com/saghen/blink.cmp) which aren't directly available
+using builtin autocompletion. For example, automatically showing documentation
+and signature help as you type isn't something that's builtin. Signature help
+can be shown with `<C-S>`, as well as hover documentation with `K`.
+[mini.completion](https://nvim-mini.org/mini.nvim/doc/mini-completion.html) is
+a really nice middle ground which isn't as complex as the other. It uses
+Neovim's native popup ins-completion window while blink.cmp and nvim-cmp
+implement their own popup menus. nvim-cmp itself is also only a completion
+engine and requires separate plugins to provide completion sources. They do
+provide features like ghost text and completion from sources other than LSP
+which isn't available with mini.nvim  or natively (kind of, see `:h
+'complete'`), so it's really up to you depending on what features you feel you
+need.
+
+Also note I am NOT trying to bag on blink.cmp or nvim-cmp (they're both really
+great projects) or the use of plugins in general, but if you're wanting to use
+the native option and find it's slightly lacking in the some features you might
+want then mini.nvim is a good option (honestly I'd recommend all of [Evgeni's
+plugins](https://nvim-mini.org/) I've used).
