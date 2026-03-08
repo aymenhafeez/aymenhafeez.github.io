@@ -1,7 +1,7 @@
 ---
 title: "Native command-line autocompletion and fuzzy search in Neovim"
 publishDate: "5 March 2026"
-description: "A minimalist Neovim colorscheme port with subtle gradients and careful typography"
+description: "A minimal cmdline fuzzy picker for Neovim"
 tags: ["neovim"]
 ---
 
