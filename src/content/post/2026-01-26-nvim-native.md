@@ -12,6 +12,10 @@ a requirement to simplify setup and manage per-server configuration. Here, we'll
 look at the leaps Neovim's LSP implementation has made, and how simple the
 native configuration has become.
 
+> If you're just her for the LSP setup you can skip the history lesson and jump
+> straight
+> [here](https://aymenhafeez.github.io/posts/2026-01-26-nvim-native/#the-current-landscape).
+
 ## What is LSP?
 
 The language serve protocol (LSP) is a standardised JSON-RPC protocol originally
@@ -301,8 +305,8 @@ vim.api.nvim_create_autocmd("LspAttach", {
 })
 ```
 
-Another option is to create an autocommand which calls `vim.lsp.completion.get()`
-on the `InsertCharPre` event.
+Alternatively, you could create an autocommand which calls
+`vim.lsp.completion.get()` on the `InsertCharPre` event.
 
 ```lua
 vim.api.nvim_create_autocmd("InsertCharPre", {
