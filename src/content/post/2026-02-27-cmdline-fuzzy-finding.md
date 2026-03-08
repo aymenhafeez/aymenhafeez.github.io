@@ -11,7 +11,9 @@ fuzzy finder natively in Neovim by using `rg`, and integrating with the builtin
 
 <center>
   <figure>
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/public/images/cmdline.gif" width="650" />
+  <tr>
+    <td><img data-zoomable src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/public/images/cmdline.gif" width="650"/></td>
+  </tr>
   </figure>
 </center>
 
@@ -247,7 +249,9 @@ vim.keymap.set("n", "<leader>f", ":find <C-z>")
 
 <center>
   <figure>
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/public/images/fuzzy.gif" width="650" />
+  <tr>
+    <td><img data-zoomable src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/public/images/fuzzy.gif" width="650"/></td>
+  </tr>
   </figure>
 </center>
 
