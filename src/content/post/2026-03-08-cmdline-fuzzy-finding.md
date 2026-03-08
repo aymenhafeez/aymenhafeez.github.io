@@ -149,7 +149,7 @@ local function get_files()
   local cwd = vim.uv.cwd()
 ```
 
-`ripgrep` gets run through the `vim.system()` function:
+`ripgrep` gets run through `vim.system()`:
 
 ```lua
 local result = vim.system({
@@ -199,8 +199,8 @@ local cache_cwd = nil
 ```
 
 Without this, every change to `:find` would trigger a full filesystem scan.
-Instead, the code stores both the cached file list and the working directory it
-belongs to. If the completion runs again in the same directory and the cache is
+Instead the the cached file list and the working directory it belongs to get
+cached. If the completion runs again in the same directory and the cache is
 already populated, get_files() returns the existing table straight away.
 
 Before running ripgrep we check:
@@ -219,19 +219,14 @@ _G._cmdline_fuzzy_find = function(arg)
   local files = get_files()
   return arg == "" and files or vim.fn.matchfuzzy(files, arg)
 end
-```
 
-This will either return the cached files list if there's no text being searched
-for or fuzzy match the search from the list.
-
-We then set the function to `findfunc` to be used for the `:find` command
-
-```lua
 vim.opt.findfunc = "v:lua._cmdline_fuzzy_find"
 ```
 
-To make sure that a new files list is created every time we run `:file`, we
-clear the cache when entering cmdline-mode:
+The above function returns the cached files list if there's no text being
+searched for or fuzzy match the search from the list. To make sure that a new
+files list is created every time we run `:file`, we clear the cache when
+entering cmdline-mode:
 
 ```lua
 vim.api.nvim_create_autocmd("CmdlineEnter", {
