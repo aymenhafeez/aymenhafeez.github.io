@@ -40,8 +40,16 @@ reported by the OSC 9;4 escape sequence. What's cool is that it picks up
 progress messages emitted by `nvim_echo()` and integrates it into its progress
 bar:
 
+<!-- <center> -->
+<!--   <figure> -->
+<!--     <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/public/images/ghostty.gif" width="650" /> -->
+<!--   </figure> -->
+<!-- </center> -->
+
 <center>
   <figure>
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/public/images/ghostty.gif" width="650" />
+  <tr>
+    <td><img data-zoomable src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/public/images/ghostty.gif" width="650"/></td>
+  </tr>
   </figure>
 </center>
