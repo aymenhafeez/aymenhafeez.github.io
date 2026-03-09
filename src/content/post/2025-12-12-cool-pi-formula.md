@@ -1,5 +1,5 @@
 ---
-title: "A cool formula for $\pi/8$"
+title: "A cool formula for \$\pi/8\$"
 publishDate: "12 December 2025"
 description: "A cool formula for pi / 8 from the zeta function"
 tags: ["mathematics"]
