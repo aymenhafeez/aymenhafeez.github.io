@@ -100,7 +100,7 @@ $$
   \zeta(s) = \prod_{p} \frac{1}{1 - p^{-s}}
 $$
 
-We get
+Which gives us a _general formula for an $n$-ball in terms of the prime numbers_
 
 $$
   V_n = \frac{1}{(n/2)!}\left( 6 \prod_{p} \frac{1}{1 - p^{-s}} \right)^{n/4}
