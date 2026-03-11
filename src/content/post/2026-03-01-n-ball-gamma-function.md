@@ -1,6 +1,6 @@
 ---
 title: "The volume of an n-ball and the gamma function"
-publishDate: "3 January 2026"
+publishDate: "1 March 2026"
 description: "Relation between the volume of an n-ball and the gamma function"
 tags: ["mathematics"]
 ---

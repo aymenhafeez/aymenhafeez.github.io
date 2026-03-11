@@ -1,6 +1,6 @@
 ---
-title: "Nvim LSP Progress bar in Ghostty"
-publishDate: "1 March 2026"
+title: "Neovim LSP Progress bar in Ghostty"
+publishDate: "25 February 2026"
 description: "Showing Nvim Lsp Progress using ghostty's progress bar"
 tags: ["neovim"]
 ---
@@ -39,12 +39,6 @@ vim.api.nvim_create_autocmd("LspProgress", {
 reported by the OSC 9;4 escape sequence. What's cool is that it picks up
 progress messages emitted by `nvim_echo()` and integrates it into its progress
 bar:
-
-<!-- <center> -->
-<!--   <figure> -->
-<!--     <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/public/images/ghostty.gif" width="650" /> -->
-<!--   </figure> -->
-<!-- </center> -->
 
 <center>
   <figure>
