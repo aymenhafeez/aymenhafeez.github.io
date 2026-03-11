@@ -231,7 +231,7 @@ $$
 And so, the volume formula can also be written as
 
 $$
-  V_n = \frac{\pi^{n/2}}{(n/2)!}
+  \boxed{V_n = \frac{\pi^{n/2}}{(n/2)!}}
 $$
 
 which is pretty amazing. Just to confirm that this formula works, consider an
