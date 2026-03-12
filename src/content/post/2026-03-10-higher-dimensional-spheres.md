@@ -58,57 +58,47 @@ $$
   V_8 = \frac{\pi^{8/2}}{(8/2)!} = \frac{\pi^4}{24}
 $$
 
-And since
+The Riemann zeta function also gives us an expression for $\pi$ raised to fourth
+power:
 
 $$
   \zeta(4) = \frac{\pi^4}{90}
 $$
 
-We get
+Putting these together and then equation to the prime product formula at $s = 4$:
 
 $$
   V_8 = \frac{90}{24}\zeta(4) = \frac{15}{4}\zeta(4)
 $$
-
-And using the Euler product again:
-
 $$
   V_8 = \frac{15}{4}\prod_{p}\frac{1}{1 - p^{-4}}
 $$
 
-We can get a general expression relating the $V_n$ to the primes:
+We can get a general expression relating $V_n$ to the primes:
 
 $$
   \zeta(2) = \frac{\pi^2}{6} \ \ \ \ \ \Rightarrow \ \ \ \ \ \pi^2 = 6\zeta(2)
 $$
-
-And so, we have
-
 $$
   \pi^{n/2} = (\pi^2)^{n/4} = (6\zeta(2))^{n/4}
 $$
 
-Subsituting this back into the volume formula:
+Substituting this back into the volume formula:
 
 $$
   V_n = \frac{(6\zeta(2))^{n/4}}{(n/2)!}
 $$
 
-Since we know that
+And then using the prime product formula at $s = 2$:
 
 $$
-  \zeta(s) = \prod_{p} \frac{1}{1 - p^{-s}}
+  V_n = \frac{1}{(n/2)!}\left( 6 \prod_{p} \frac{1}{1 - p^{-2}} \right)^{n/4}
 $$
 
-Which gives us a _general formula for an $n$-ball in terms of the prime numbers_
-
-$$
-  V_n = \frac{1}{(n/2)!}\left( 6 \prod_{p} \frac{1}{1 - p^{-s}} \right)^{n/4}
-$$
-
-While this isn't as clean as the expression for $n = 4$ it's a pretty incredible
-formula. But because when $n = 4$ we get a single power of the prime product so
-the expression simplifies significantly.
+This is a _general formula for a unit $n$-ball in terms of the prime numbers_.
+While this isn't as clean as the expression for $n = 4$ it's still a pretty
+incredible formula. But because when $n = 4$ we get a single power of the prime
+product so the expression simplifies significantly.
 
 <!-- From here we can further see how the -->
 <!-- volume of higher dimensional spheres plays a roll in the analytical structure of -->

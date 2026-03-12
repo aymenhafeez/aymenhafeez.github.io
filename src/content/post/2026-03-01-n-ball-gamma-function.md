@@ -7,21 +7,19 @@ tags: ["mathematics"]
 
 Grant Sanderson recently gave an [amazing
 talk](https://www.youtube.com/watch?v=fsLh-NYhOoU) about the volumes of higher
-dimensional spheres in which here mentioned that a similar results to that which
-he showed in the talk can be derived using the gamma function. Since we've
-already looked at the gamma function, it's relation the zeta function, and its
-relation to the prime numbers, what if we could by extension relate the volume
-of a unit $n$-ball to the prime numbers? In this post we'll first concentrate on
-seeing how the volume of a unit $n$-ball relates to the gamma function, and
-we'll take this further in future posts.
+dimensional spheres in which he mentioned that the same result that he showed in
+the talk can be derived using the gamma function. Since we've already looked at
+the gamma function, it's relation the zeta function, and its relation to the
+prime numbers, what if we could by extension relate the volume of a unit
+$n$-ball to the prime numbers? In this post we'll first concentrate on seeing
+how the volume of a unit $n$-ball relates to the gamma function, and we'll take
+this further in future posts.
 
 A unit $n$-ball is defined as the set of all points in $n$-dimensions whose
-distance from the origin is 1.
-
-We know that a line segment of radius $1$ has length $2$ (think of this as
-a $1$-D sphere), a disk (i.e. a circle) of radius $1$ has an area of $\pi$, and
-a sphere of radius $1$ has a volume of $\frac{4}{3}\pi$. So the volume of a unit
-ball in $n$ dimensions is obviously
+distance from the origin is 1. We know that a line segment of radius $1$ has
+length $2$ (think of this as a $1$-D sphere), a disk (i.e. a circle) of radius
+$1$ has an area of $\pi$, and a sphere of radius $1$ has a volume of
+$\frac{4}{3}\pi$. So the volume of a unit ball in $n$ dimensions is obviously
 
 $$
   V_n = \frac{\pi^{n/2}}{\Gamma \left(\frac{n}{2} + 1 \right)}
@@ -86,13 +84,13 @@ unit sphere in $n$ dimensions, then the surface area of a sphere with radius $r$
 is
 
 $$
-  \text{d}V_n = S_{n-1}r^{n-1}
+   S_{n-1}r^{n-1}
 $$
 
 So a thin shell of radius $r$ and thickness $\text{d}r$ has volume
 
 $$
-  S_{n-1}r^{n-1}\text{d}r
+  \text{d}V_n = S_{n-1}r^{n-1}\text{d}r
 $$
 
 Applying this the volume integral we defined above:
@@ -171,12 +169,10 @@ $$
   S_{n-1} = \frac{2\pi^{n/2}}{\Gamma(n/2)}
 $$
 
-which gives us an formula for the surface area of a unit sphere in $n$
+which gives us a formula for the surface area of a unit sphere in $n$
 dimensions. This itself is a very nice expression, but it can relatively simply
-be used to find an expression for volume.
-
-Remember we said that for thin shell of radius $r$ and thickness $\text{d}r$ has
-volume
+be used to find an expression for volume. Remember we said that a thin shell of
+radius $r$ and thickness $\text{d}r$ has volume
 
 $$
   \text{d}V_n = S_{n-1}r^{n-1}\text{d}r
@@ -208,21 +204,22 @@ $$
   \left(\frac{n}{2}\right) \\
 $$
 
-Notice that in out volume expression we a factor of $\frac{2}{n\Gamma(n/2)}$.
-Taking the reciprocal of both sides of the above formula:
+Notice that in our volume expression we have a factor of
+$\frac{2}{n\Gamma(n/2)}$. So taking the reciprocal of both sides of the above
+formula:
 
 $$
   \frac{1}{\Gamma(n/2 + 1)} = \frac{2}{n\Gamma(n/2)}
 $$
 
-And so, substituting this back into the volume expression we get:
+And then substituting this back into the volume expression we get:
 
 $$
   \boxed {V_n = \frac{\pi^{n/2}}{\Gamma \left( \frac{n}{2} + 1 \right)}}
 $$
 
-which is the general formula for a unit $n$-ball. One of the definitions of the
-Gamma function is
+which is _the general formula for the volume of a unit $n$-ball_. One of the
+definitions of the Gamma function is
 
 $$
   \Gamma (z) = (z-1)!
@@ -234,9 +231,9 @@ $$
   \boxed{V_n = \frac{\pi^{n/2}}{(n/2)!}}
 $$
 
-which is pretty amazing. Just to confirm that this formula works, consider an
-$n-$-ball in $1$, $2$ and $3$, dimensions (i.e. a line segment, a circle and
-a sphere with radius $1$). In **1D**:
+which is pretty amazing. Just to confirm that this formula works, consider
+a unit $n$-ball in $1$, $2$ and $3$, dimensions (i.e. a line segment, a circle
+and a sphere with radius $1$). In **1D**:
 
 $$
   V_1 = \frac{\pi^{1/2}}{\Gamma(3/2)} \\ \Gamma(3/2)
@@ -282,6 +279,6 @@ $$
   V_4 = 3\zeta(2)
 $$
 
-A wild zeta function appears. In a future post we'll look more closely at how
+A wild zeta function appears! In a future post we'll look more closely at how
 the Riemann zeta function relates to the the volume of an $n$-ball, and by
 extension the prime numbers.
