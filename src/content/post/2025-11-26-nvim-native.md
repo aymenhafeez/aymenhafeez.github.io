@@ -1,6 +1,6 @@
 ---
 title: "Native LSP in Neovim"
-publishDate: "26 January 2026"
+publishDate: "26 November 2025"
 description: "Setting up LSP using Neovim's native methods"
 tags: ["neovim"]
 ---
