@@ -1,6 +1,6 @@
 ---
 title: "File gazing with Telescope"
-publishDate: "14 April 2025"
+publishDate: "14 April 2022"
 description: "Talking about one of my favourtite Neovim plugins"
 tags: ["neovim", "editor", "plugins"]
 ---

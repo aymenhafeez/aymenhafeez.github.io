@@ -1,6 +1,6 @@
 ---
 title: "Grammar checking in Neovim"
-publishDate: "7 April 2025"
+publishDate: "7 April 2023"
 description: "Setting up grammar checking with Neovim's native LSP client and grammar-guard"
 tags: ["neovim", "editor", "lsp"]
 ---
