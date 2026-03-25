@@ -27,9 +27,12 @@ standout property of chaotic systems is that they're very sensitive to changes
 in their input parameters. We can visualise this by plotting the Lorenz
 attractor with various initial conditions on the same axes.
 
-First we import the necessary libraries and create a list of initial conditions
-we'll be solving over. We can also create two functions: one for defining the
-Lorenz system and one for solving it.
+First we import the necessary libraries and then create a list of initial
+conditions we'll be solving over. We do this by adding a tiny $\epsilon$ to
+an initial condition. This will demonstrate how varying the initial conditions
+by such a small value can cause a non-trivial change to the solution. We can
+also create two functions: one for defining the Lorenz system and one for
+solving it.
 
 ```python
 import matplotlib.pyplot as plt
@@ -38,20 +41,28 @@ import numpy as np
 import animplotlib as anim
 
 t = np.linspace(0.01, 50, 5000)
-# List of initial conditions
-x0 = [
-    (0., 1., 1.05),
-    (15., 10., 20.),
-    (-15., -10., 30.),
-    (5., -20., 40.)
-]
 # Distinct colours for each trajectory
 colours = [
     "#4E79A7",
     "#F28E2B",
     "#46ACB8",
-    "#E15759"
+    "#E15759",
+    "#4E79A7",
+    "#F28E2B",
+    "#4E79A7",
+    "#F28E2B",
+    "#46ACB8",
+    "#E15759",
+    "#4E79A7",
+    "#F28E2B",
+    "#4E79A7",
+    "#4E79A7",
+    "#F28E2B",
+    "#F28E2B",
 ]
+# List of initial conditions
+epsilon = 1e-5
+x0 = [(10.0, 10.0, 10.0 + n * epsilon) for n in range(len(colours))]
 
 
 # Defining the Lorenz system
@@ -116,7 +127,13 @@ anim.AnimPlot3D(fig, [ax] * len(lines), lines, points, xs, ys, zs, plot_speed=1,
 len(lines)`, we create a list with the same axis repeated for each line,
 > allowing all lines to be animated.
 
-![Lorenz attractor animation with colors](/images/lorenz_colour.gif)
+<!-- ![Lorenz attractor animation with colors](/images/lorenz_colour.gif) -->
+
+<center>
+  <figure>
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lorenz_colour.gif" width="600" />
+  </figure>
+</center>
 
 <br>
 
