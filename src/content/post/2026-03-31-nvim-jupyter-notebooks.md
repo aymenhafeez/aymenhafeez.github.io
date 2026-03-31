@@ -11,7 +11,7 @@ of Jupter notebooks. I also often have to work with Jupyter notebooks for presen
 sharing code, and so, in this post I'll walk through how I work with the two. It's
 a pretty simple setup, and while there are plugins which allow for more sophisticated
 functionality, this workflow has served me well for a long time, and gives me the access
-to the parts of notebooks I like while still having access to all the tools I normally
+to the parts of notebooks I like while still being able to use all the tools I normally
 use when working in Neovim.
 
 ## Jupytext
@@ -159,9 +159,9 @@ M.send_repl_selection = function()
 end
 ```
 
-Similar to the function to send the current line, we first start the IPython job if it
-doesn't exist. But notices here we're wrapping the selected text in escape sequences for
-[bracketed paste
+Similar to the function to the `M.send_repl_line` function, we first start the IPython
+job if it doesn't exist. But notices here we're wrapping the selected text in escape
+sequences for [bracketed paste
 mode](https://invisible-island.net/xterm/ctlseqs/ctlseqs.html#h2-Bracketed-Paste-Mode).
 When Neovim sends text to a terminal job it is essentially sending a stream of
 characters over a PTY. The terminal, therefore, doesn't know the difference between text
@@ -220,3 +220,28 @@ end)
     <img data-zoomable src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/public/images/repl.gif" width="500" />
   </figure>
 </center>
+
+## Plugin alternatives
+
+If you don't want to do the manual Jupytext setup, the
+[jupytext.nvim](https://github.com/goerz/jupytext.nvim) plugin does what I described
+automatically when you open an `.ipynb` file.
+[jupynium.nvim](https://github.com/kiyoon/jupynium.nvim) is another plugin which
+provieds a live preivew of the jupyter notebook. Plugins like
+[magma-nvim](https://github.com/dccsillag/magma-nvim) and
+[molten.nvim](https://github.com/benlubas/molten-nvim) also exist, which allow for
+interactive code execution with a jupyter kernel. I wrote this script really just for
+fun and so it's very much tailored to my needs, so these plugins may or may not be
+better suited to you depending on your requirements.
+
+### References
+
+[Jupytext](https://jupytext.readthedocs.io/en/latest/)
+<br>
+[Neovim job_control](https://neovim.io/doc/user/job_control/#job)
+<br>
+[Neovim jobstart()](https://neovim.io/doc/user/vimfn/#jobstart())
+<br>
+[Neovim chansend()](https://neovim.io/doc/user/vimfn/#chansend())
+<br>
+[XTerm bracketed paste](https://invisible-island.net/xterm/xterm-paste64.html)
