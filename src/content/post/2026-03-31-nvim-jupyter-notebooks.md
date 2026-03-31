@@ -73,13 +73,13 @@ are reflected in the notebook:
 The main functionality I wanted from the notebook style workflow was being able to
 execute blocks of code and see their output without having to run the whole file. The
 way I achieve this in Neovim is with a Lua script which spawns an IPython process and
-allows me to send lines/blocks/selections of code to the REPL. I'll walk through the
-most important parts but the whole script can be found
-[here](https://github.com/aymenhafeez/dotfiles/blob/master/nvim/lua/repl.lua). The main
-parts to the process are creating an IPython process, capturing the code we want to send
-and then getting it into a form that can be sent to the REPL to be executed. Each job
-spawned is identified by an unique ID which share the same ""key-space" as a valid
-channel-id. This is stored and kept track of for the currently running job.
+allows me to send lines/blocks/selections of code to the REPL. The whole script can be
+found [here](https://github.com/aymenhafeez/dotfiles/blob/master/nvim/lua/repl.lua). The
+main aspects of the process are creating an IPython job, capturing the code we want to
+send and then getting it into a form that can be sent to the REPL to be executed.
+
+Each job spawned is identified by a unique ID which shares the same ""key-space" as
+a valid channel-id. This is stored and kept track of for the currently running job.
 
 ```lua
 local M ={}
@@ -107,8 +107,8 @@ M.create_repl = function()
 end
 ```
 
-Here, if there isn't a job assigned to the `job_id`, we create a split and assign
-`job_id` to a new `ipython` job. `term = true` spawns the corresponding command in a new
+Here, if there isn't a job assigned to `job_id`, we create a split and assign `job_id`
+to a new `ipython` job. `term = true` spawns the corresponding command in a new
 pseudo-terminal (PTY) session connected to the current buffer. Setting `job_id` back to
 nil `on_exit` ensures that if the job is closed we can run the function again to start
 a new one. Adding a small delay avoids sending input before IPython has fully loaded.
@@ -125,12 +125,9 @@ end
 
 `vim.fn.chansend()` sends data to the given job/channel-id and writes it to the stdin of
 the process. `vim.fn.getline(".")` gets the line under the cursor. Concatenating a new
-line literal to it makes sure the line gets executed when it's sent to IPYthon.
+line literal makes sure the line gets executed when it's sent to IPython.
 
-Sending blocks and selections is where things get a bit sketchy. The following helper
-function is used to return selected text:
-
-Sending blocks and selections requires a helper function:
+The following helper function is used to return visually selected text:
 
 ```lua
 local get_selection = function()
@@ -159,9 +156,9 @@ M.send_repl_selection = function()
 end
 ```
 
-Similar to the function to the `M.send_repl_line` function, we first start the IPython
-job if it doesn't exist. But notices here we're wrapping the selected text in escape
-sequences for [bracketed paste
+Similar to the `M.send_repl_line` function, we first start the IPython job if it doesn't
+exist. But notice here we're wrapping the selected text in escape sequences for
+[bracketed paste
 mode](https://invisible-island.net/xterm/ctlseqs/ctlseqs.html#h2-Bracketed-Paste-Mode).
 When Neovim sends text to a terminal job it is essentially sending a stream of
 characters over a PTY. The terminal, therefore, doesn't know the difference between text
@@ -178,8 +175,8 @@ for i, j in range(n):
 ```
 
 when you hit enter after the for loop line, the next line gets indented automatically.
-But when this text gets sent over the PTY the indentation gets paster literally on top
-of each new line being autoindented. This leads to the text being pasted in as:
+But when this text gets sent over the PTY the indentation gets pasted literally on top
+of each new line being autoindented. This leads to the text being pasted in as
 
 ```python
 for i, j in range(n):
@@ -227,7 +224,7 @@ If you don't want to do the manual Jupytext setup, the
 [jupytext.nvim](https://github.com/goerz/jupytext.nvim) plugin does what I described
 automatically when you open an `.ipynb` file.
 [jupynium.nvim](https://github.com/kiyoon/jupynium.nvim) is another plugin which
-provieds a live preivew of the jupyter notebook. Plugins like
+provides a live preivew of the jupyter notebook. Plugins like
 [magma-nvim](https://github.com/dccsillag/magma-nvim) and
 [molten.nvim](https://github.com/benlubas/molten-nvim) also exist, which allow for
 interactive code execution with a jupyter kernel. I wrote this script really just for
