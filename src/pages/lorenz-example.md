@@ -10,13 +10,19 @@ The Lorenz system is a classic example of chaos in dynamical systems. It's
 known for its butterfly-shaped attractor and is defined by the following set of
 ordinary differential equations:
 
-$$\frac{\text{d} x}{\text{d} t}=\sigma(y-x)$$
+$$
+\frac{\text{d} x}{\text{d} t}=\sigma(y-x)
+$$
 
-$$\frac{\text{d} y}{\text{d} t}=x(\rho-z)-y$$
+$$
+\frac{\text{d} y}{\text{d} t}=x(\rho-z)-y
+$$
 
-$$\frac{\text{d} z}{\text{d} t}=xy-\beta z$$
+$$
+\frac{\text{d} z}{\text{d} t}=xy-\beta z
+$$
 
-<!-- <iframe src="/lorenz.html" width="100%" height="600px" frameborder="0" -->
+<!-- <iframe src="public/images/lorenz.html" width="100%" height="600px" frameborder="0" -->
 <!-- style="border:none;"></iframe> -->
 
 ![Lorenz attractor 3D](/images/lorenz_3d.png)
@@ -28,11 +34,9 @@ in their input parameters. We can visualise this by plotting the Lorenz
 attractor with various initial conditions on the same axes.
 
 First we import the necessary libraries and then create a list of initial
-conditions we'll be solving over. We do this by adding a tiny $\epsilon$ to
-an initial condition. This will demonstrate how varying the initial conditions
-by such a small value can cause a non-trivial change to the solution. We can
-also create two functions: one for defining the Lorenz system and one for
-solving it.
+conditions we'll be solving over. We do this by adding a tiny $\epsilon$ to an
+initial condition. We can also create two functions: one for defining the Lorenz
+system and one for solving it.
 
 ```python
 import matplotlib.pyplot as plt
@@ -107,7 +111,7 @@ for init_cond, colour in zip(x0, colours):
     ys.append(y)
     zs.append(z)
     line, = ax.plot([], [], [], lw=2, color=colour)
-    point, = ax.plot([], [], [], 'o', color=colour, markersize=8)
+    point, = ax.plot([], [], [], 'o', color=colour, markersize=10)
     lines.append(line)
     points.append(point)
 
@@ -124,7 +128,7 @@ anim.AnimPlot3D(fig, [ax] * len(lines), lines, points, xs, ys, zs, plot_speed=1,
 > `len(lines)`. This is because `AnimPlot3D` expects a list of axes, one for each
 > line/trajectory we want to animate. Passing just `[ax]` (a single axis) would
 > result in only the first line/trajectory being animated. By passing `[ax] *
-len(lines)`, we create a list with the same axis repeated for each line,
+> len(lines)`, we create a list with the same axis repeated for each line,
 > allowing all lines to be animated.
 
 <!-- ![Lorenz attractor animation with colors](/images/lorenz_colour.gif) -->
@@ -134,6 +138,12 @@ len(lines)`, we create a list with the same axis repeated for each line,
     <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/lorenz_colour.gif" width="600" />
   </figure>
 </center>
+
+Notice how initially it looks as though there is only one solution being plotted
+with all the solutions overlapping. As the time steps progress the solutions
+begin to spread. Remember the initial conditions for each solution only differ
+by $0.000001$, and even then each solution begins to take its own unique
+trajectory.
 
 <br>
 
