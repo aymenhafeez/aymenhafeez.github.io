@@ -55,7 +55,7 @@ Below is a function which returns the square root of its input.
 """
 
 # %%
-def primes(n: int | float) -> int | float:
+def square_root(n: int | float) -> int | float:
     return sqrt(n)
 ```
 
