@@ -197,19 +197,26 @@ set in `nvim/after/ftplugin/python.lua`:
 
 ```lua
 -- Send current line
-vim.keymap.set("n", "<leader>pp", function() require("repl").send_repl_line() end)
+vim.keymap.set("n", "<leader>pp", function() require("repl").send_repl_line() end, { buf = 0 })
 
 -- Send visual selection
 vim.keymap.set("x", "<leader>vv", function()
   vim.cmd 'exe "normal \\<Esc>"'
   require("repl").send_repl_selection()
-end)
+end, { buf = 0 })
 
 -- Send current paragraph
 vim.keymap.set("n", "<leader>vp", function()
   vim.cmd 'exe "normal vipj\\<Esc>"'
   require("repl").send_repl_selection()
-end)
+end, { buf = 0 })
+
+-- Send buffer
+vim.keymap.set("n", "<leader>pb", function()
+  vim.cmd 'exe "normal! mmggVG\\<Esc>`m"'
+  require("repl").send_repl_selection()
+  vim.cmd "delmarks m"
+end, { buf = 0 })
 ```
 
 <center>
