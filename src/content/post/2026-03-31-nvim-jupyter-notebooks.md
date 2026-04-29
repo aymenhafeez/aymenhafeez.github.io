@@ -231,11 +231,21 @@ If you don't want to do the manual Jupytext setup, the
 [jupytext.nvim](https://github.com/goerz/jupytext.nvim) plugin does what I described
 automatically when you open an `.ipynb` file.
 [jupynium.nvim](https://github.com/kiyoon/jupynium.nvim) is another plugin which
-provides a live preivew of the jupyter notebook. Plugins like
+provides a live preview of the jupyter notebook. Plugins like
 [magma-nvim](https://github.com/dccsillag/magma-nvim) and
 [molten.nvim](https://github.com/benlubas/molten-nvim) also exist, which allow for
-interactive code execution with a jupyter kernel. I wrote this script really just for
-fun and so it's very much tailored to my needs, so these plugins may or may not be
+interactive code execution with a jupyter kernel.
+
+[pyrepl.nvim](https://github.com/dangooddd/pyrepl.nvim) provides a lot of the same
+functionality as the script described in this post (opening a Python REPL, sending
+lines, blocks, selection to the REPL etc.), as well as things like converting Python
+scripts to notebooks and, vice versa. It's also able to show images of plot figures. It
+most closely matches the functionality I want in my Python workflow, and so if you're
+reading this and want an actively maintained solution with more features I'd recommend
+using this plugin instead.
+
+I wrote this script really just
+for fun and so it's very much tailored to my needs, so these plugins may or may not be
 better suited to you depending on your requirements.
 
 ### References
