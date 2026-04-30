@@ -13,11 +13,11 @@ shape of other strange attractors, like the Lorenz or Dadras attractors. Instead
 trajectory seemingly follows the surface of sphere while twisting upwards through
 a funnel shaped column.
 
-<center>
-  <figure>
-    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/aizawa_still.png" width="500" />
-  </figure>
-</center>
+<!-- <center> -->
+<!--   <figure> -->
+<!--     <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/aizawa_still.png" width="500" /> -->
+<!--   </figure> -->
+<!-- </center> -->
 
 <iframe
   src="/aizawa.html"
