@@ -86,10 +86,10 @@ While this is a nice animation, we can combine the interesting shape with the ab
 easily extending it with `Animplotlib`'s configuration options to make some more
 interesting looking animations.
 
-`Animplotlib` also has `l_num` and `p_num` parameter options, which control how many
-points are plotted to `lines` and `points` up to the current most point each frame. By
-default, lines plots all points and points plots just the current most point. This
-pairing gives a 'point with leading trail' look, as seen in the above the gif.Using some
+`Animplotlib` has `l_num` and `p_num` parameter options, which control how many points
+are plotted to `lines` and `points` up to the current most point each frame. By default,
+lines plots all points and points plots just the current most point. This pairing gives
+a 'point with a leading trail' look, as seen in the above the gif. Using some
 `matplotlib` configuration options like adding a dark background,
 
 ```python
@@ -145,9 +145,9 @@ points = ax.plot([], [], [], ".", markersize=0.02)
   </figure>
 </center>
 
-While these examples don't necessarily give better insight on how the behaviour of the
+While these examples don't necessarily give a better insight on how the behaviour of the
 attractor, it demonstrates how `Animplotlib` can be used with `matplotlib`'s
-configuration options to make some interesting looking animations.
+configuration options to make some unique looking animations.
 
 <br>
 
