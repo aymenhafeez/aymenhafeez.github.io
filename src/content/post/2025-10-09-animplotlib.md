@@ -17,6 +17,8 @@ guide](https://github.com/aymenhafeez/animplotlib?tab=readme-ov-file#quickstart)
 
 [Glow effect animation](/glowing-attractor-example)
 
+[Aizawa attractor](/aizawa-attractor-example)
+
 <br>
 <br>
 <br>
