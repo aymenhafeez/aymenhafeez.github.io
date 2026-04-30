@@ -11,7 +11,23 @@ attractor](https://www.algosome.com/articles/aizawa-attractor-chaos.html). What'
 interesting about the Aizawa attractor is that it doesn't follow the conventional
 shape of other strange attractors, like the Lorenz or Dadras attractors. Instead its
 trajectory seemingly follows the surface of sphere while twisting upwards through
-a funnel shaped column. Because of it's unique shape, it can be used to make some pretty
+a funnel shaped column.
+
+<center>
+  <figure>
+    <img src="https://raw.githubusercontent.com/aymenhafeez/aymenhafeez.github.io/refs/heads/master/images/aizawa_still.png" width="500" />
+  </figure>
+</center>
+
+<iframe
+  src="/aizawa.html"
+  width="100%"
+  height="600"
+  frameborder="0"
+  style="border: none;"
+></iframe>
+
+Because of it's unique shape, it can be used to make some pretty
 cool looking visualisations. This example mainly goes through how Animplotlib can be
 used to take a standard animation of the solution for a system of differential
 equations, and turn it into a unique visual.
