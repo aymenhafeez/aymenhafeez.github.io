@@ -5,15 +5,14 @@ description: "Relation between the volume of an n-ball and the gamma function"
 tags: ["mathematics"]
 ---
 
-Grant Sanderson recently gave an [amazing
-talk](https://www.youtube.com/watch?v=fsLh-NYhOoU) about the volumes of higher
-dimensional spheres in which he mentioned that the same result that he showed in
-the talk can be derived using the gamma function. Since we've already looked at
-the gamma function, it's relation the zeta function, and its relation to the
-prime numbers, what if we could by extension relate the volume of a unit
-$n$-ball to the prime numbers? In this post we'll first concentrate on seeing
-how the volume of a unit $n$-ball relates to the gamma function, and we'll take
-this further in future posts.
+Grant Sanderson recently gave a [great
+talk](https://www.youtube.com/watch?v=fsLh-NYhOoU) on the volumes of higher dimensional
+spheres in which he mentioned that the same result that he showed in the talk can be
+derived using the gamma function. Since we've already looked at the gamma function, its
+relation the zeta function, and its relation to the prime numbers, what if we could by
+extension relate the volume of a unit $n$-ball to the prime numbers? In this post we'll
+first concentrate on seeing how the volume of a unit $n$-ball relates to the gamma
+function, and we'll take this further in future posts.
 
 A unit $n$-ball is defined as the set of all points in $n$-dimensions whose
 distance from the origin is 1. We know that a line segment of radius $1$ has
@@ -39,7 +38,7 @@ $$
   |x^2| = x_1^2 + x_2^2 + \cdots + x^2_n
 $$
 
-We then consider the integral the integral over $n$ dimensional space:
+We then consider the integral over $n$ dimensional space:
 
 $$
   \int_{\mathbb{R}^n} e^{-|x^2|} \text{d} V
@@ -59,7 +58,7 @@ $$
   \int_{\mathbb{R}^n} e^{-|x^2|} \text{d} V = \left( \int_{-\infty}^{\infty} e^{-x^2} \text{d} x \right)^n
 $$
 
-Then using Gaussian result in $1$D we get:
+Then using Gaussian the result in $1$D we get:
 
 $$
   \int_{\mathbb{R}^n} e^{-|x^2|} \text{d} V = (\sqrt{\pi})^n = \pi^{n/2}
@@ -279,6 +278,6 @@ $$
   V_4 = 3\zeta(2)
 $$
 
-A wild zeta function appears! In a future post we'll look more closely at how
-the Riemann zeta function relates to the the volume of an $n$-ball, and by
-extension the prime numbers.
+A wild zeta function appears! In a future post we'll look more closely at how the
+Riemann zeta function relates to the volume of an $n$-ball, and by extension the
+prime numbers.
