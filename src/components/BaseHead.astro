@@ -18,6 +18,16 @@ const socialImageURL = new URL(ogImage ? ogImage : "/social-card.png", Astro.url
 <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 <title>{siteTitle}</title>
 
+{/* Google Analytics — place early per Google recommendation */}
+{
+	import.meta.env.PROD && siteConfig.gaMeasurementId && (
+		<>
+			<script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.gaMeasurementId}`} />
+			<script is:inline set:html={`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${siteConfig.gaMeasurementId}');`} />
+		</>
+	)
+}
+
 {/* Icons */}
 <link href="/icon.svg" rel="icon" type="image/svg+xml" />
 {
@@ -28,13 +38,6 @@ const socialImageURL = new URL(ogImage ? ogImage : "/social-card.png", Astro.url
 			<link href="/icons/apple-touch-icon.png" rel="apple-touch-icon" />
 			{/* Manifest */}
 			<link href="/manifest.webmanifest" rel="manifest" />
-			{/* Google Analytics */}
-			{siteConfig.gaMeasurementId && (
-				<>
-					<script is:inline src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.gaMeasurementId}`} />
-					<script is:inline set:html={`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${siteConfig.gaMeasurementId}');`} />
-				</>
-			)}
 		</>
 	)
 }
