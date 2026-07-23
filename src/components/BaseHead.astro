@@ -28,6 +28,13 @@ const socialImageURL = new URL(ogImage ? ogImage : "/social-card.png", Astro.url
 			<link href="/icons/apple-touch-icon.png" rel="apple-touch-icon" />
 			{/* Manifest */}
 			<link href="/manifest.webmanifest" rel="manifest" />
+			{/* Google Analytics */}
+			{siteConfig.gaMeasurementId && (
+				<>
+					<script is:inline src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.gaMeasurementId}`} />
+					<script is:inline set:html={`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${siteConfig.gaMeasurementId}');`} />
+				</>
+			)}
 		</>
 	)
 }

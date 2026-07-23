@@ -5,6 +5,7 @@ export interface SiteConfig {
 		options: Intl.DateTimeFormatOptions;
 	};
 	description: string;
+	gaMeasurementId?: string;
 	lang: string;
 	ogLocale: string;
 	title: string;
