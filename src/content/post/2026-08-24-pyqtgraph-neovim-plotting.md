@@ -1,6 +1,6 @@
 ---
 title: "A small plotting tool using Neovim and PyQtGraph"
-publishDate: "10 March 2026"
+publishDate: "24 August 2026"
 description: "A small plugin which links Neovim to a PtQtGraph console and plot widget"
 tags: ["visualization"]
 ---
