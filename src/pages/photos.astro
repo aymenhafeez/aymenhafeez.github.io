@@ -1,22 +1,47 @@
 ---
 import PageLayout from "@/layouts/Base.astro";
 
-const meta = {
-	description: "Photo galleries",
-	title: "Photos",
-};
+const galleries = [
+	{ href: "/photos/iceland/", title: "Iceland", detail: "Pentax K1000 · Fuji Superia X-Tra 400" },
+	{ href: "/photos/bath/", title: "Bath", detail: "Streets and architecture" },
+	{ href: "/photos/london/", title: "London", detail: "Around the city" },
+	{ href: "/photos/wales/", title: "Wales", detail: "Landscape and coast" },
+	{ href: "/photos/newyork/", title: "New York", detail: "Scenes from New York" },
+	{ href: "/photos/daytoday/", title: "Day to day", detail: "An everyday collection" },
+];
 ---
-<!-- '<,'>s/bg =[^,]*\?//g -->
-<PageLayout meta={meta}>
-	<h1 class="title mb-12">Photos</h1>
-	<div class="prose prose-sm prose-cactus max-w-none">
-		<ul class="list-inside list-disc" role="list">
-      <a class="cactus-link inline-block" href="/photos/iceland/">Iceland</a><br>
-      <a class="cactus-link inline-block" href="/photos/bath/">Bath</a><br>
-      <a class="cactus-link inline-block" href="/photos/london/">London</a><br>
-      <a class="cactus-link inline-block" href="/photos/wales/">Wales</a><br>
-      <a class="cactus-link inline-block" href="/photos/newyork/">New York</a><br>
-      <a class="cactus-link inline-block" href="/photos/daytoday/">Day to Day</a><br>
+
+<PageLayout meta={{ description: "", title: "Photos" }}>
+	<div class="content-column">
+		<!-- <p class="eyebrow mb-4">Photography</p> -->
+		<!-- <h1 class="title text-4xl sm:text-5xl">Photo journals</h1> -->
+		<!-- <p class="mt-5 max-w-xl text-lg text-[var(--muted)]"> -->
+		<!-- 	A small collection of places, trips, and everyday observations. -->
+		<!-- </p> -->
+		<ul class="mt-12 divide-y border-y">
+			{
+				galleries.map((gallery) => (
+					<li>
+						<a
+							class="group flex items-center justify-between gap-6 py-6 no-underline"
+							href={gallery.href}
+						>
+							<span>
+								<span class="title block text-xl group-hover:text-[var(--accent)]">
+									{gallery.title}
+								</span>
+								<span class="mt-1 block text-sm text-[var(--muted)]">{gallery.detail}</span>
+							</span>
+							<span
+								class="text-[var(--muted)] transition-transform group-hover:translate-x-1 group-hover:text-[var(--accent)]"
+								aria-hidden="true"
+							>
+								→
+							</span>
+						</a>
+					</li>
+				))
+			}
 		</ul>
 	</div>
 </PageLayout>

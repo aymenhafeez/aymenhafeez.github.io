@@ -3,24 +3,24 @@ import BaseHead from "@/components/BaseHead.astro";
 import Footer from "@/components/layout/Footer.astro";
 import Header from "@/components/layout/Header.astro";
 import SkipLink from "@/components/SkipLink.astro";
-import ThemeProvider from "@/components/ThemeProvider.astro";
 import { siteConfig } from "@/site.config";
 
 const { title, description } = Astro.props.frontmatter;
 ---
 
-<html class="scroll-smooth" lang={siteConfig.lang}>
+<html lang={siteConfig.lang}>
 	<head>
 		<BaseHead description={description || siteConfig.description} title={title} />
 	</head>
-	<body
-		class="bg-global-bg text-global-text mx-auto flex min-h-screen max-w-3xl flex-col px-4 pt-16 text-sm font-normal antialiased sm:px-8"
-	>
-		<ThemeProvider />
+	<body class="flex min-h-screen flex-col antialiased">
 		<SkipLink />
 		<Header />
-		<main id="main">
-			<slot />
+		<main id="main" class="page-shell grow py-14 sm:py-20">
+			<article class="content-column">
+				<p class="eyebrow mb-4">Project note</p>
+				<h1 class="title mb-12 text-3xl sm:text-5xl">{title}</h1>
+				<slot />
+			</article>
 		</main>
 		<Footer />
 	</body>

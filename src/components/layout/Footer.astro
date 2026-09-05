@@ -1,28 +1,23 @@
 ---
-import { menuLinks, siteConfig } from "@/site.config";
+import { siteConfig } from "@/site.config";
 
 const year = new Date().getFullYear();
 ---
 
-<footer
-	class="mt-auto flex w-full flex-col items-center justify-center gap-y-2 pt-20 pb-4 text-center align-top font-semibold text-gray-600 sm:flex-row sm:justify-between sm:text-xs dark:text-gray-400"
->
-	<div class="me-0 sm:me-4">
-		&copy; {siteConfig.author}
-    {year}.<span class="inline-block">&nbsp;>&nbsp;{siteConfig.title} </span>
-	</div>
-  <a href="https://github.com/aymenhafeez"> Github </a>
-	<nav
-		aria-labelledby="footer_links"
-		class="flex gap-x-2 sm:gap-x-0 sm:divide-x sm:divide-gray-500"
+<footer class="border-t">
+	<div
+		class="page-shell flex flex-col gap-3 py-8 text-sm text-[var(--muted)] sm:flex-row sm:items-center sm:justify-between"
 	>
-		<p id="footer_links" class="sr-only">More on this site</p>
-		{
-			menuLinks.map((link) => (
-				<a class="hover:text-global-text px-4 py-2 hover:underline sm:py-0" href={link.path}>
-					{link.title}
-				</a>
-			))
-		}
-	</nav>
+		<p>&copy; {year} {siteConfig.author}</p>
+		<div class="flex gap-5">
+			<a class="hover:text-[var(--heading)]" href="/rss.xml">RSS</a>
+			<a class="hover:text-[var(--heading)]" href="mailto:aymennh@gmail.com">Email</a>
+			<a
+				class="hover:text-[var(--heading)]"
+				href="https://github.com/aymenhafeez"
+				rel="noreferrer"
+				target="_blank">GitHub</a
+			>
+		</div>
+	</div>
 </footer>

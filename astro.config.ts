@@ -36,7 +36,7 @@ export default defineConfig({
 		webmanifest({
 			// See: https://github.com/alextim/astro-lib/blob/main/packages/astro-webmanifest/README.md
 			name: siteConfig.title,
-			short_name: "Astro_Cactus", // optional
+			short_name: "Aymen Hafeez",
 			description: siteConfig.description,
 			lang: siteConfig.lang,
 			icon: "public/icon.svg", // the source for generating favicon & icons
@@ -99,6 +99,7 @@ export default defineConfig({
 		optimizeDeps: {
 			exclude: ["@resvg/resvg-js"],
 		},
+		// @ts-expect-error Astro and @tailwindcss/vite currently resolve separate Vite type copies.
 		plugins: [tailwind(), rawFonts([".ttf", ".woff"])],
 	},
 	env: {

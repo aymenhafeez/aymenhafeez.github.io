@@ -2,38 +2,39 @@
 import PageLayout from "@/layouts/Base.astro";
 
 const meta = {
-	description: "Chemical engineer, recreational mathematician and (neo)vim nerd",
+	description:
+		"About Aymen Hafeez — data science, chemical engineering, applied mathematics and software.",
 	title: "About",
 };
 ---
 
 <PageLayout meta={meta}>
-	<h1 class="title mb-12">About</h1>
-	<div class="prose prose prose-cactus max-w-none">
-		<p>
-      Hi 👋 I’m a data science and analytics enthusiast with a background in
-      chemical engineering, an interest in applied mathematics, and (Neo)Vim
-      nerd
-		</p>
-		<p>
-      I work on projects involving machine learning and data visualisation,
-      with a focus on understanding patterns in real-world data and turning
-      them into meaningful insights.
-		</p>
-		<p>
-      My academic work centred on mathematical modelling, including research
-      into optimising microalgae growth for CO<sub>2</sub> utilisation in
-      carbon capture systems. You can read more about the background <a
-      class="cactus-link inline-block"
-    href="https://aymenhafeez.github.io/posts/2024-05-20-pi-model/">here</a>.
-		</p>
-		<p>
-			Check out the <a class="cactus-link inline-block" href="/photos/">photos</a> page for recent trips, my
-			<a class="cactus-link inline-block" href="http://www.github.com/aymenhafeez" rel="noreferrer" target="_blank">github</a> for projects, and the
-			<a class="cactus-link inline-block" href="/posts/">blog</a> for posts on maths and engineering.
-		</p>
-		<p>
-			Feel free to get in touch at <a class="cactus-link inline-block" href="mailto:aymennh@gmail.com">aymennh@gmail.com</a> 🤖
-		</p>
+	<div class="content-column">
+		<p class="eyebrow mb-4">About</p>
+		<!-- <h1 class="title text-4xl sm:text-5xl">Aymen Hafeez</h1> -->
+		<div class="prose mt-10 max-w-none">
+			<p class="lead">
+      I’m a data science and analytics enthusiast with a background in chemical
+      engineering.
+			</p>
+			<p>
+				I work on projects involving machine learning and data visualisation, with a focus on
+				understanding patterns in real world data and turning them into meaningful insights.
+			</p>
+			<p>
+				My academic work centred on mathematical modelling, including research into optimising
+        microalgae growth for CO<sub>2</sub> utilisation in carbon capture systems. You can
+         read more about the background <a href="/posts/2024-05-20-pi-model/">here</a>.
+			</p>
+			<!-- <h2>Elsewhere</h2> -->
+			<p>
+      See <a href="/photos/">photos</a> from recent trips I've been on, projects I'm working on on
+				<a href="https://github.com/aymenhafeez" rel="noreferrer" target="_blank">GitHub</a> or
+				see the full archive of posts <a href="/posts/">here</a>.
+			</p>
+			<p>
+				You can reach me at <a href="mailto:aymennh@gmail.com">aymennh@gmail.com</a>.
+			</p>
+		</div>
 	</div>
 </PageLayout>

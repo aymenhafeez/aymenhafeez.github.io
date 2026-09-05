@@ -1,97 +1,37 @@
 ---
-import Search from "@/components/Search.astro";
 import ThemeToggle from "@/components/ThemeToggle.astro";
-import { menuLinks } from "@/site.config";
-import { siteConfig } from "../../site.config";
+import { menuLinks, siteConfig } from "@/site.config";
+
+const pathname = Astro.url.pathname;
+const isCurrent = (path: string) => (path === "/" ? pathname === "/" : pathname.startsWith(path));
 ---
 
-<header class="group relative mb-28 flex items-center sm:ps-18" id="main-header">
-	<div class="flex sm:flex-col">
-		<a
-			aria-current={Astro.url.pathname === "/" ? "page" : false}
-			class="inline-flex items-center hover:underline"
-			href="/"
-		>
-			<span class="text-xl font-bold sm:text-2xl">{siteConfig.title}</span>
+<header class="border-b bg-[var(--background)]">
+	<div class="page-shell flex min-h-18 flex-wrap items-center justify-between gap-x-6 gap-y-3 py-3">
+		<a class="title text-lg no-underline" href="/" aria-label={`${siteConfig.title}, home`}>
+			{siteConfig.title}
 		</a>
-		<nav
-			aria-label="Main menu"
-			class="bg-global-bg absolute -inset-x-4 top-12 hidden flex-col divide-y px-2 py-4 group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:-ms-4 sm:mt-1 sm:flex sm:flex-row sm:divide-x sm:divide-y-0 sm:bg-transparent sm:p-0"
-			id="navigation-menu"
-		>
-			{
-				menuLinks.map((link) => (
-					<a
-						aria-current={Astro.url.pathname === link.path ? "page" : false}
-						class="text-accent px-2 py-4 font-semibold sm:px-4 sm:py-0 sm:underline-offset-2 sm:hover:underline"
-						href={link.path}
-					>
-						{link.title}
-					</a>
-				))
-			}
-		</nav>
+		<div class="flex items-center gap-2 sm:gap-5">
+			<nav aria-label="Main navigation">
+				<ul class="flex items-center gap-1 sm:gap-2">
+					{
+						menuLinks
+							.filter((link) => link.path !== "/")
+							.map((link) => (
+								<li>
+									<a
+										aria-current={isCurrent(link.path) ? "page" : undefined}
+										class="rounded-md px-2 py-2 text-sm font-medium text-[var(--muted)] no-underline hover:text-[var(--heading)] aria-[current=page]:text-[var(--heading)] sm:px-3"
+										href={link.path}
+									>
+										{link.title === "Blog" ? "Posts" : link.title}
+									</a>
+								</li>
+							))
+					}
+				</ul>
+			</nav>
+			<ThemeToggle />
+		</div>
 	</div>
-	<Search />
-	<ThemeToggle />
-	<mobile-button>
-		<button
-			aria-expanded="false"
-			aria-haspopup="menu"
-			class="group relative ms-4 h-7 w-7 sm:invisible sm:hidden"
-			id="toggle-navigation-menu"
-			type="button"
-		>
-			<span class="sr-only">Open main menu</span>
-			<svg
-				aria-hidden="true"
-				class="absolute start-1/2 top-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 transition-all group-aria-expanded:scale-0 group-aria-expanded:opacity-0"
-				fill="none"
-				focusable="false"
-				id="line-svg"
-				stroke="currentColor"
-				stroke-width="1.5"
-				viewBox="0 0 24 24"
-				xmlns="http://www.w3.org/2000/svg"
-			>
-				<path d="M3.75 9h16.5m-16.5 6.75h16.5" stroke-linecap="round" stroke-linejoin="round"
-				></path>
-			</svg>
-			<svg
-				aria-hidden="true"
-				class="text-accent absolute start-1/2 top-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all group-aria-expanded:scale-100 group-aria-expanded:opacity-100"
-				class="text-accent"
-				fill="none"
-				focusable="false"
-				id="cross-svg"
-				stroke="currentColor"
-				stroke-width="1.5"
-				viewBox="0 0 24 24"
-				xmlns="http://www.w3.org/2000/svg"
-			>
-				<path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"></path>
-			</svg>
-		</button>
-	</mobile-button>
 </header>
-
-<script>
-	import { toggleClass } from "@/utils/domElement";
-
-	class MobileNavBtn extends HTMLElement {
-		#menuOpen: boolean = false;
-
-		connectedCallback() {
-			const headerEl = document.getElementById("main-header")!;
-			const mobileButtonEl = this.querySelector<HTMLButtonElement>("button");
-
-			mobileButtonEl?.addEventListener("click", () => {
-				if (headerEl) toggleClass(headerEl, "menu-open");
-				this.#menuOpen = !this.#menuOpen;
-				mobileButtonEl.setAttribute("aria-expanded", this.#menuOpen.toString());
-			});
-		}
-	}
-
-	customElements.define("mobile-button", MobileNavBtn);
-</script>

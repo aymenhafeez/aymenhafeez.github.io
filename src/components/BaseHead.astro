@@ -22,8 +22,15 @@ const socialImageURL = new URL(ogImage ? ogImage : "/social-card.png", Astro.url
 {
 	import.meta.env.PROD && siteConfig.gaMeasurementId && (
 		<>
-			<script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.gaMeasurementId}`} />
-			<script is:inline set:html={`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${siteConfig.gaMeasurementId}');`} />
+			<script
+				is:inline
+				async
+				src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.gaMeasurementId}`}
+			/>
+			<script
+				is:inline
+				set:html={`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${siteConfig.gaMeasurementId}');`}
+			/>
 		</>
 	)
 }
@@ -84,7 +91,12 @@ const socialImageURL = new URL(ogImage ? ogImage : "/social-card.png", Astro.url
 <link href="/notes/rss.xml" title="Notes" rel="alternate" type="application/rss+xml" />
 
 {/* KaTeX CSS for math rendering */}
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous" />
+<link
+	rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css"
+	integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn"
+	crossorigin="anonymous"
+/>
 
 {/* Webmentions */}
 {
@@ -97,3 +109,31 @@ const socialImageURL = new URL(ogImage ? ogImage : "/social-card.png", Astro.url
 }
 
 <meta content={Astro.generator} name="generator" />
+{/* Apply the saved theme before first paint to avoid a colour flash. */}
+<script is:inline>
+	(() => {
+		const root = document.documentElement;
+		const media = window.matchMedia("(prefers-color-scheme: dark)");
+		const valid = ["system", "light", "dark"];
+		const stored = localStorage.getItem("theme-preference");
+		let preference = valid.includes(stored) ? stored : "system";
+
+		const apply = () => {
+			root.dataset.themePreference = preference;
+			root.dataset.theme =
+				preference === "system" ? (media.matches ? "dark" : "light") : preference;
+		};
+
+		apply();
+		media.addEventListener("change", () => {
+			if (preference === "system") apply();
+		});
+		window.addEventListener("theme-preference", (event) => {
+			const next = event.detail;
+			if (!valid.includes(next)) return;
+			preference = next;
+			localStorage.setItem("theme-preference", preference);
+			apply();
+		});
+	})();
+</script>
