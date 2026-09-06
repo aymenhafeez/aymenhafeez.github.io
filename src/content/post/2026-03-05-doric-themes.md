@@ -1,7 +1,7 @@
 ---
 title: "Neovim port of the doric-themes for GNU Emacs"
 publishDate: "5 March 2026"
-description: "A minimalist Neovim colorscheme port with subtle gradients and careful typography"
+description: "A minimalist Neovim theme with subtle gradients and careful typography"
 tags: ["neovim"]
 ---
 
