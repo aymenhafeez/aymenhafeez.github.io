@@ -19,7 +19,8 @@
 	--heading: #111827;
 	--muted: #687386;
 	--border: #dfe3e8;
-	--accent: #315b7d;
+	/* --accent: #315b7d; */
+  --accent: #687386;
 	--accent-soft: #e9f0f5;
 	--code-bg: #f1f3f5;
 	color-scheme: light;
