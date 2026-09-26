@@ -7,17 +7,23 @@ tags: ["mathematics", "calculus", "gamma function"]
 
 The factorial operator can be defined as:
 
-$$n!=n\cdot(n-1)\cdot(n-2)\cdot(n-3)\cdots3\cdot2\cdot1$$
+$$
+n!=n\cdot(n-1)\cdot(n-2)\cdot(n-3)\cdots3\cdot2\cdot1
+$$
 
 Or in a more compact form:
 
-$$n!=\prod_{k=1}^nk$$
+$$
+n!=\prod_{k=1}^nk
+$$
 
 However, this is only true for integer values of $n$. The factorial for
 non-integer values can be defined using the gamma function. The integral form of
 the gamma function is
 
-$$\Gamma(z)=\int_0^\infty x^{z-1}e^{-x}dx$$
+$$
+\Gamma(z)=\int_0^\infty x^{z-1}e^{-x}dx
+$$
 
 From here we'll inductively derive an expression for finding the factorial of
 any real or complex $z$, with $\Re(z)>0$. We do this by first finding
@@ -56,11 +62,15 @@ $$
 
 And so, we get that
 
-$$\Gamma(z)=(z-1)!$$
+$$
+\Gamma(z)=(z-1)!
+$$
 
 For $(\frac{1}{2})!$ let $z=\frac{3}{2}$:
 
-$$\Gamma\left(\frac{3}{2}\right)=\left(\frac{1}{2}\right)!$$
+$$
+\Gamma\left(\frac{3}{2}\right)=\left(\frac{1}{2}\right)!
+$$
 
 $\Gamma(\frac{3}{2})$ can be given in terms of $\Gamma(\frac{1}{2})$ by the property $\Gamma(z+1)=z\Gamma(z)$:
 
@@ -73,7 +83,9 @@ $$
 
 If we substitute $x=u^2$, with $dx=2udu$, we get
 
-$$\Gamma\left(\frac{3}{2}\right)=\int_0^{\infty}e^{-u^2}du$$
+$$
+\Gamma\left(\frac{3}{2}\right)=\int_0^{\infty}e^{-u^2}du
+$$
 
 The right hand side is known as the Gaussian integral. To evaluate this integral we must first square both sides. This may seem strange, however, in order to solve it the integral must be transformed from cartesian to polar coordinates.
 
@@ -110,7 +122,9 @@ $$
 
 And so, the integral becomes
 
-$$\left(\Gamma\left(\frac{3}{2}\right)\right)^2=\int_0^{\infty}\int_0^{\frac{\pi}{2}}e^{-r^2}rdrd\theta$$
+$$
+\left(\Gamma\left(\frac{3}{2}\right)\right)^2=\int_0^{\infty}\int_0^{\frac{\pi}{2}}e^{-r^2}rdrd\theta
+$$
 
 The way we've transformed the coordinates may seem a bit confusing and abstract. I have put some links at the bottom of the page which better explain how this transformation is made and what's actually going on when the Jacobian matrix is used.
 
@@ -138,11 +152,15 @@ $$
 
 Taking the square root of both sides gives
 
-$$\Gamma\left(\frac{3}{2}\right)=\frac{\sqrt{\pi}}{2}$$
+$$
+\Gamma\left(\frac{3}{2}\right)=\frac{\sqrt{\pi}}{2}
+$$
 
 We showed earlier that $\Gamma(\frac{3}{2})=(\frac{1}{2})!$. And so, using this we get:
 
-$$\left(\frac{1}{2}\right)!=\frac{\sqrt{\pi}}{2}$$
+$$
+\left(\frac{1}{2}\right)!=\frac{\sqrt{\pi}}{2}
+$$
 
 Though the method of getting to the above result was
 pretty convoluted, I think with just how mind-blowing the result is, it's
@@ -152,11 +170,15 @@ We showed earlier that
 $\Gamma\left(\frac{3}{2}\right)=\left(\frac{1}{2}\right)\Gamma\left(\frac{1}{2}\right)$.
 And so, from the result we just proved, it follows that
 
-$$\Gamma\left(\frac{1}{2}\right)=\sqrt{\pi}$$
+$$
+\Gamma\left(\frac{1}{2}\right)=\sqrt{\pi}
+$$
 
 If we recall the property $\Gamma(z)=(z-1)!$, then we see that
 
-$$\left(-\frac{1}{2}\right)!=\sqrt{\pi}$$
+$$
+\left(-\frac{1}{2}\right)!=\sqrt{\pi}
+$$
 
 Useful links:
 

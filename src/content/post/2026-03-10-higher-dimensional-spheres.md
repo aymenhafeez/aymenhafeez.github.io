@@ -2,7 +2,7 @@
 title: "Higher dimensional spheres and the prime numbers"
 publishDate: "10 March 2026"
 description: "Relating the volume of higher dimensional spheres to the prime numbers"
-tags: ["mathematics"]
+tags: ["mathematics", "prime numbers"]
 ---
 
 In a [previous

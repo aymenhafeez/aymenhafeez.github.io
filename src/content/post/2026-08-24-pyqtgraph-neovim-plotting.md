@@ -2,7 +2,7 @@
 title: "A small plotting tool using Neovim and PyQtGraph"
 publishDate: "24 August 2026"
 description: "A small plugin which links Neovim to a PtQtGraph console and plot widget"
-tags: ["visualization"]
+tags: ["visualisation"]
 ---
 
 <center>
@@ -15,11 +15,11 @@ tags: ["visualization"]
 
 I've been building a [mathematical analysis/visualisation
 tool](https://github.com/aymenhafeez/strange-attractors-qt) using
-[PyQtGraph](https://github.com/pyqtgraph/pyqtgraph) which is an unreasonably 
-fast Python graphics library. Part of the tool has an integrated text editor 
-with an embedded Jupyter console linked to a plot widget, the idea being that 
+[PyQtGraph](https://github.com/pyqtgraph/pyqtgraph) which is an unreasonably
+fast Python graphics library. Part of the tool has an integrated text editor
+with an embedded Jupyter console linked to a plot widget, the idea being that
 you can interactively plot and explore mathematical expressions. I decided
-the write a small Neovim plugin around this idea, and this post will walk 
+the write a small Neovim plugin around this idea, and this post will walk
 through the core parts of the code for the plugin and how it works. The full code can be found [here](https://github.com/aymenhafeez/plotREPL).
 
 The plugin has two parts to it. The Neovim side written in Lua, which
@@ -37,7 +37,7 @@ Neovim doesn't actually have anything to do with the plot rendering or console c
 :PlotReplSendSelection
 ```
 
-The process is tracked with a `job_id` which gets checked before sending any 
+The process is tracked with a `job_id` which gets checked before sending any
 code to ensure the process is still live and starts it if it isn't.
 The process is started with a piped stdin:
 
@@ -54,7 +54,7 @@ process.
 When code is sent from Neovim it gets sent as a JSON message:
 
 ```lua
-local message = vim.json.encode({ 
+local message = vim.json.encode({
   op = "execute",
   code = code
 })
@@ -107,7 +107,7 @@ The Jupyter console namespace gets loaded with some useful names:
 
 ```python
 kernel.shell.push({
-    "pg": pg,  # PyQtGraph    
+    "pg": pg,  # PyQtGraph
     "pw": self.plot_widget  # the live plot widget
 })
 ```

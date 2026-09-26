@@ -2,7 +2,7 @@
 title: "A cool formula for π/8"
 publishDate: "12 December 2025"
 description: "A cool formula for pi / 8 from the zeta function"
-tags: ["mathematics"]
+tags: ["mathematics", "pi"]
 ---
 
 I came across this expression whilst writing the <a

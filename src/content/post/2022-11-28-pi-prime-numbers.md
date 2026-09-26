@@ -2,7 +2,7 @@
 title: "The Riemann zeta function at even values"
 publishDate: "28 November 2022"
 description: "Deriving an expression for the Riemann zeta function at even values"
-tags: ["mathematics", "zeta function"]
+tags: ["mathematics", "zeta function", "prime numbers"]
 ---
 
 <!-- At first glance the prime numbers seem randomly distributed along the -->

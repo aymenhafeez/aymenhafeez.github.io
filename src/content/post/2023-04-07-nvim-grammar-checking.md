@@ -2,7 +2,7 @@
 title: "Grammar checking in Neovim"
 publishDate: "7 April 2023"
 description: "Setting up grammar checking with Neovim's native LSP client and grammar-guard"
-tags: ["neovim", "editor", "lsp"]
+tags: ["neovim"]
 ---
 
 I use Neovim these days primarily for writing in LaTeX, as well as some light

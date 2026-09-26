@@ -150,7 +150,7 @@ anim.AnimPlot3D(fig, [ax] * len(lines), lines, points, xs, ys, zs,
 ![Dadras attractor with glow effect](/images/dadras_glow.gif)
 
 What we're seeing in the animation is just the same plot being animated over
-itself, but each with a slightly thicker line and slightly higher alpha value.
+itself, but each with a slightly thicker line and slightly lower alpha value.
 
 <br>
 

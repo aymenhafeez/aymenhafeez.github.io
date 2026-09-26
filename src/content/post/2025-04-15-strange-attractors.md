@@ -2,7 +2,7 @@
 title: "Strange Attractors"
 publishDate: "15 April 2025"
 description: "Visualising some interesting strange attractors"
-tags: ["mathematics", "chaos", "visualization"]
+tags: ["mathematics", "chaos", "visualisation"]
 ---
 
 # Lorenz attractor

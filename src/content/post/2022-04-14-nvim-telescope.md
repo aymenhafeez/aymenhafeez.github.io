@@ -2,7 +2,7 @@
 title: "File gazing with Telescope"
 publishDate: "14 April 2022"
 description: "Talking about one of my favourtite Neovim plugins"
-tags: ["neovim", "editor", "plugins"]
+tags: ["neovim"]
 ---
 
 (Neo)Vim has some great built-in options when it comes to file navigation. The

@@ -2,7 +2,7 @@
 title: "Miscellaneous formulae for pi"
 publishDate: "2 May 2025"
 description: "Various formulae relating to pi that I come across."
-tags: ["mathematics", "pi", "series"]
+tags: ["mathematics", "pi"]
 ---
 
 ## Infinite products
