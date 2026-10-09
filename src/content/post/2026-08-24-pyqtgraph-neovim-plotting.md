@@ -2,7 +2,7 @@
 title: "A small plotting tool using Neovim and PyQtGraph"
 publishDate: "24 August 2026"
 description: "A small plugin which links Neovim to a PtQtGraph console and plot widget"
-tags: ["visualisation"]
+tags: ["visualisation", "neovim"]
 ---
 
 <center>
@@ -13,7 +13,7 @@ tags: ["visualisation"]
 	</figure>
 </center>
 
-I've been building a [mathematical analysis/visualisation
+I've been building a [mathematical exploration and visualisation
 tool](https://github.com/aymenhafeez/strange-attractors-qt) using
 [PyQtGraph](https://github.com/pyqtgraph/pyqtgraph) which is an unreasonably
 fast Python graphics library. Part of the tool has an integrated text editor
