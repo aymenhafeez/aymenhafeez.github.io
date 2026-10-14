@@ -1,0 +1,15 @@
+---
+layout: base.njk
+pagination:
+  data: collections.topicPages
+  size: 1
+  alias: topic
+permalink: "{{ topic.url }}"
+eleventyComputed:
+  title: "Posts about {{ topic.tag }}"
+---
+<p><a href="/tags/">All tags</a></p>
+<h1>Posts about {{ topic.tag | escape }}</h1>
+{% set posts = topic.posts %}
+{% include "post-list.njk" %}
+<p class="pagination">{% if topic.previous %}<a href="{{ topic.previous }}">Newer</a>{% endif %}{% if topic.next %}<a href="{{ topic.next }}">Older</a>{% endif %}</p>

@@ -1,0 +1,10 @@
+---
+layout: page.njk
+title: Photos
+permalink: /photos/
+---
+<ul class="gallery-list" role="list">
+{% for gallery in galleries %}
+  <li><a href="/photos/{{ gallery.slug }}/">{{ gallery.title | escape }}</a></li>
+{% endfor %}
+</ul>

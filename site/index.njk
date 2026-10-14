@@ -1,0 +1,11 @@
+---
+layout: base.njk
+title: Posts
+---
+<h1>{{ site.title }}</h1>
+<p>Tags: {% for topic in collections.topics %}<a href="{{ topic.url }}">{{ topic.name | escape }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
+{% for group in collections.posts | groupByYear %}
+<h2>{{ group.year }}</h2>
+{% set posts = group.posts %}
+{% include "post-list.njk" %}
+{% endfor %}

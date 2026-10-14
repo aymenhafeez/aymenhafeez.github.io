@@ -1,0 +1,19 @@
+---
+layout: base.njk
+pagination:
+  data: galleries
+  size: 1
+  alias: gallery
+permalink: "/photos/{{ gallery.slug }}/"
+eleventyComputed:
+  title: "{{ gallery.title }}"
+  description: "{{ gallery.description }}"
+---
+<h1>{{ gallery.title | escape }}</h1>
+<p>{{ gallery.camera }}<br>{{ gallery.film }}</p>
+{% for photo in gallery.photos %}
+<figure>
+  <img src="{{ photo.src }}" alt="{{ gallery.title | escape }} photo {{ loop.index }}" width="{{ photo.width }}" loading="lazy">
+</figure>
+{% endfor %}
+<p><a href="/photos/">All photos</a></p>

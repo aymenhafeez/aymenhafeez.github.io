@@ -1,0 +1,22 @@
+---
+permalink: /sitemap-0.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% for path in ['/', '/about/', '/photos/', '/tags/', '/notes/'] %}
+  <url><loc>{{ path | absoluteUrl }}</loc></url>
+  {% endfor %}
+  {% for post in collections.posts %}
+  <url><loc>{{ post.url | absoluteUrl }}</loc></url>
+  {% endfor %}
+  {% for gallery in galleries %}
+  <url><loc>{{ ('/photos/' + gallery.slug + '/') | absoluteUrl }}</loc></url>
+  {% endfor %}
+  {% for topic in collections.topicPages %}
+  <url><loc>{{ topic.url | absoluteUrl | escape }}</loc></url>
+  {% endfor %}
+  {% for example in collections.all %}
+  {% if example.inputPath.startsWith('./site/examples/') %}<url><loc>{{ example.url | absoluteUrl }}</loc></url>{% endif %}
+  {% endfor %}
+</urlset>

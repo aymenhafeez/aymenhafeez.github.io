@@ -1,0 +1,10 @@
+---
+layout: page.njk
+title: Tags
+permalink: /tags/
+---
+<ul>
+{% for topic in collections.topics %}
+  <li><a href="{{ topic.url }}">{{ topic.name | escape }}</a> ({{ topic.posts.length }})</li>
+{% endfor %}
+</ul>
