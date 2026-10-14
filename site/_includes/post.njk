@@ -8,5 +8,5 @@ layout: base.njk
   {% if tags.length %}
   <p>Tags: {% for tag in tags %}<a href="/tags/{{ tag | encode }}/">{{ tag | escape }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
   {% endif %}
-  <p><a href="/">All posts</a></p>
+  <p><a href="/">Homepage</a></p>
 </article>
