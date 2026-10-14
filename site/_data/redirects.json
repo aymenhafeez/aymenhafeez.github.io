@@ -1,0 +1,230 @@
+[
+  {
+    "from": "/2022-11-15/",
+    "to": "/posts/2022-11-15/"
+  },
+  {
+    "from": "/2025-10-09-lorenz-example/",
+    "to": "/lorenz-example/"
+  },
+  {
+    "from": "/404/",
+    "to": "/404.html"
+  },
+  {
+    "from": "/animplotlib/",
+    "to": "/posts/2025-10-09-animplotlib/"
+  },
+  {
+    "from": "/bath.html",
+    "to": "/photos/bath/"
+  },
+  {
+    "from": "/bath/",
+    "to": "/photos/bath/"
+  },
+  {
+    "from": "/bessel-function/",
+    "to": "/posts/2024-10-11-bessel-function/"
+  },
+  {
+    "from": "/bessel-solution/",
+    "to": "/posts/2024-10-29-bessel-solution/"
+  },
+  {
+    "from": "/cmdline-fuzzy-finding/",
+    "to": "/posts/2026-02-27-cmdline-fuzzy-finding/"
+  },
+  {
+    "from": "/cool-pi-formula/",
+    "to": "/posts/2025-12-12-cool-pi-formula/"
+  },
+  {
+    "from": "/daytoday.html",
+    "to": "/photos/daytoday/"
+  },
+  {
+    "from": "/daytoday/",
+    "to": "/photos/daytoday/"
+  },
+  {
+    "from": "/doric-themes/",
+    "to": "/posts/2026-03-05-doric-themes/"
+  },
+  {
+    "from": "/factorial-non-integer/",
+    "to": "/posts/2022-08-02-factorial-non-integer/"
+  },
+  {
+    "from": "/ghostty-nvim-lspprogress/",
+    "to": "/posts/2026-02-25-ghostty-nvim-lspprogress/"
+  },
+  {
+    "from": "/heat-conduction/",
+    "to": "/posts/2024-11-17-heat-conduction/"
+  },
+  {
+    "from": "/higher-dimensional-spheres/",
+    "to": "/posts/2026-03-10-higher-dimensional-spheres/"
+  },
+  {
+    "from": "/iceland.html",
+    "to": "/photos/iceland/"
+  },
+  {
+    "from": "/iceland/",
+    "to": "/photos/iceland/"
+  },
+  {
+    "from": "/infinite-slab-reactor/",
+    "to": "/posts/2025-01-22-infinite-slab-reactor/"
+  },
+  {
+    "from": "/london.html",
+    "to": "/photos/london/"
+  },
+  {
+    "from": "/london/",
+    "to": "/photos/london/"
+  },
+  {
+    "from": "/mass-transport-diffusion/",
+    "to": "/posts/2024-08-05-mass-transport-diffusion/"
+  },
+  {
+    "from": "/more-pi-forumulae/",
+    "to": "/posts/2025-05-02-more-pi-forumulae/"
+  },
+  {
+    "from": "/n-ball-gamma-function/",
+    "to": "/posts/2026-03-01-n-ball-gamma-function/"
+  },
+  {
+    "from": "/newyork.html",
+    "to": "/photos/newyork/"
+  },
+  {
+    "from": "/newyork/",
+    "to": "/photos/newyork/"
+  },
+  {
+    "from": "/nvim-grammar-checking/",
+    "to": "/posts/2023-04-07-nvim-grammar-checking/"
+  },
+  {
+    "from": "/nvim-jupyter-notebooks/",
+    "to": "/posts/2026-03-31-nvim-jupyter-notebooks/"
+  },
+  {
+    "from": "/nvim-native/",
+    "to": "/posts/2025-09-26-nvim-native/"
+  },
+  {
+    "from": "/nvim-telescope/",
+    "to": "/posts/2022-04-14-nvim-telescope/"
+  },
+  {
+    "from": "/photos.html",
+    "to": "/photos/"
+  },
+  {
+    "from": "/pi-formula/",
+    "to": "/posts/2023-09-13-pi-formula/"
+  },
+  {
+    "from": "/pi-model/",
+    "to": "/posts/2024-05-20-pi-model/"
+  },
+  {
+    "from": "/pi-prime-numbers/",
+    "to": "/posts/2022-11-28-pi-prime-numbers/"
+  },
+  {
+    "from": "/posts/",
+    "to": "/"
+  },
+  {
+    "from": "/posts/2/",
+    "to": "/"
+  },
+  {
+    "from": "/posts/2025-04-07-nvim-grammar-checking/",
+    "to": "/posts/2023-04-07-nvim-grammar-checking/"
+  },
+  {
+    "from": "/posts/2025-04-14-nvim-telescope/",
+    "to": "/posts/2022-04-14-nvim-telescope/"
+  },
+  {
+    "from": "/posts/2026-01-03-n-ball-gamma-function/",
+    "to": "/posts/2026-03-01-n-ball-gamma-function/"
+  },
+  {
+    "from": "/posts/2026-01-26-nvim-native/",
+    "to": "/posts/2025-09-26-nvim-native/"
+  },
+  {
+    "from": "/posts/3/",
+    "to": "/"
+  },
+  {
+    "from": "/posts/animplotlib/",
+    "to": "/posts/2025-10-09-animplotlib/"
+  },
+  {
+    "from": "/prime-product/",
+    "to": "/posts/2025-06-21-prime-product/"
+  },
+  {
+    "from": "/pyqtgraph-neovim-plotting/",
+    "to": "/posts/2026-08-24-pyqtgraph-neovim-plotting/"
+  },
+  {
+    "from": "/riemann-zeta-function/",
+    "to": "/posts/2025-02-08-riemann-zeta-function/"
+  },
+  {
+    "from": "/strange-attractors/",
+    "to": "/posts/2025-04-15-strange-attractors/"
+  },
+  {
+    "from": "/tags/animation/",
+    "to": "/tags/visualisation/"
+  },
+  {
+    "from": "/tags/bessel function/",
+    "to": "/tags/physics/"
+  },
+  {
+    "from": "/tags/calculus/",
+    "to": "/tags/mathematics/"
+  },
+  {
+    "from": "/tags/diffusion/",
+    "to": "/tags/physics/"
+  },
+  {
+    "from": "/tags/heat transfer/",
+    "to": "/tags/physics/"
+  },
+  {
+    "from": "/tags/matplotlib/",
+    "to": "/tags/python/"
+  },
+  {
+    "from": "/tags/nuclear engineering/",
+    "to": "/tags/physics/"
+  },
+  {
+    "from": "/vim-pack-lazy-loading/",
+    "to": "/posts/2026-01-13-vim-pack-lazy-loading/"
+  },
+  {
+    "from": "/wales.html",
+    "to": "/photos/wales/"
+  },
+  {
+    "from": "/wales/",
+    "to": "/photos/wales/"
+  }
+]

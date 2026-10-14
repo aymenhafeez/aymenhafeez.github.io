@@ -1,0 +1,116 @@
+{
+  "pages": {
+    "/404.html": [],
+    "/about/": [],
+    "/aizawa-attractor-example/": [],
+    "/glowing-attractor-example/": [],
+    "/": [],
+    "/lissajous-example/": [],
+    "/lorenz-example/": [],
+    "/notes/": [],
+    "/photos/bath/": [],
+    "/photos/daytoday/": [],
+    "/photos/iceland/": [],
+    "/photos/": [],
+    "/photos/london/": [],
+    "/photos/newyork/": [],
+    "/photos/wales/": [],
+    "/posts/2/": [],
+    "/posts/2022-04-14-nvim-telescope/": [
+      "file-gazing-in-lua",
+      "vast-defaults",
+      "extensibility"
+    ],
+    "/posts/2022-08-02-factorial-non-integer/": [],
+    "/posts/2022-11-15/": [],
+    "/posts/2022-11-28-pi-prime-numbers/": [],
+    "/posts/2023-04-07-nvim-grammar-checking/": [],
+    "/posts/2023-09-13-pi-formula/": [],
+    "/posts/2024-05-20-pi-model/": [
+      "hyperbolic-tangent-expression",
+      "references"
+    ],
+    "/posts/2024-08-05-mass-transport-diffusion/": [],
+    "/posts/2024-10-11-bessel-function/": [
+      "references"
+    ],
+    "/posts/2024-10-29-bessel-solution/": [],
+    "/posts/2024-11-17-heat-conduction/": [
+      "references"
+    ],
+    "/posts/2025-01-22-infinite-slab-reactor/": [
+      "references"
+    ],
+    "/posts/2025-02-08-riemann-zeta-function/": [],
+    "/posts/2025-04-15-strange-attractors/": [
+      "clifford-attractor",
+      "aizawa",
+      "three-scroll",
+      "thomas-attractor",
+      "multi-wing-attractors",
+      "dadras"
+    ],
+    "/posts/2025-05-02-more-pi-forumulae/": [
+      "infinite-products",
+      "euler"
+    ],
+    "/posts/2025-06-21-prime-product/": [],
+    "/posts/2025-09-26-nvim-native/": [
+      "what-is-lsp",
+      "lsp-support-in-neovim",
+      "from-v05-to-now-v012",
+      "the-current-landscape",
+      "autocompletion",
+      "potential-limitations"
+    ],
+    "/posts/2025-10-09-animplotlib/": [],
+    "/posts/2025-12-12-cool-pi-formula/": [],
+    "/posts/2026-01-13-vim-pack-lazy-loading/": [],
+    "/posts/2026-02-25-ghostty-nvim-lspprogress/": [],
+    "/posts/2026-02-27-cmdline-fuzzy-finding/": [
+      "command-line-autocompletion",
+      "fuzzy-file-finding",
+      "sources"
+    ],
+    "/posts/2026-03-01-n-ball-gamma-function/": [],
+    "/posts/2026-03-05-doric-themes/": [
+      "screenshots"
+    ],
+    "/posts/2026-03-10-higher-dimensional-spheres/": [],
+    "/posts/2026-03-31-nvim-jupyter-notebooks/": [
+      "jupytext",
+      "interactive-code-execution",
+      "plugin-alternatives",
+      "references"
+    ],
+    "/posts/2026-08-24-pyqtgraph-neovim-plotting/": [],
+    "/posts/3/": [],
+    "/posts/": [],
+    "/tags/animation/": [],
+    "/tags/bessel function/": [],
+    "/tags/calculus/": [],
+    "/tags/chaos/": [],
+    "/tags/diffusion/": [],
+    "/tags/gamma function/": [],
+    "/tags/heat transfer/": [],
+    "/tags/": [],
+    "/tags/mathematics/": [],
+    "/tags/matplotlib/": [],
+    "/tags/neovim/": [],
+    "/tags/nuclear engineering/": [],
+    "/tags/physics/": [],
+    "/tags/pi/": [],
+    "/tags/prime numbers/": [],
+    "/tags/python/": [],
+    "/tags/visualisation/": [],
+    "/tags/zeta function/": [],
+    "/torus-example/": []
+  },
+  "files": [
+    "/rss.xml",
+    "/notes/rss.xml",
+    "/robots.txt",
+    "/sitemap-index.xml",
+    "/sitemap-0.xml"
+  ]
+}

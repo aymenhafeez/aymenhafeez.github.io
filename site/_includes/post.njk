@@ -1,0 +1,12 @@
+---
+layout: base.njk
+---
+<article>
+  <h1>{{ title | escape }}</h1>
+  <p><time datetime="{{ publishDate | isoDate }}">{{ publishDate | date }}</time>{% if updatedDate %}<span class="updated-date">Updated <time datetime="{{ updatedDate | isoDate }}">{{ updatedDate | date }}</time></span>{% endif %}</p>
+  {{ content | safe }}
+  {% if tags.length %}
+  <p>Tags: {% for tag in tags %}<a href="/tags/{{ tag | encode }}/">{{ tag | escape }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
+  {% endif %}
+  <p><a href="/">All posts</a></p>
+</article>
