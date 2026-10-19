@@ -2,7 +2,7 @@
 title: "Solving the neutron diffusion equation"
 publishDate: "29 October 2024"
 description: "Solving the neutron diffusion equation."
-tags: ["physics"]
+tags: ["engineering"]
 ---
 
 Recall from the first part of this post a diffusion equation was derived to

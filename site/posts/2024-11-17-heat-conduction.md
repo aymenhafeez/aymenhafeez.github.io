@@ -2,7 +2,7 @@
 title: "Heat conduction in a symmetric, finite rod"
 publishDate: "17 November 2024"
 description: "Deriving an expression for the temperature profile for a symmetric, finite rod"
-tags: ["physics"]
+tags: ["engineering"]
 ---
 
 Consider the following 1-D metal bar

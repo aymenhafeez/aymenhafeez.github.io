@@ -2,7 +2,7 @@
 title: "Neutron flux in an infinite slab reactor"
 publishDate: "22 January 2025"
 description: "Deriving an expression for the thermal neutron flux in an infinite slab reactor"
-tags: ["physics"]
+tags: ["engineering"]
 ---
 
 In [this](https://aymenhafeez.github.io/posts/2024-10-11-bessel-function/) post we derived the

@@ -2,7 +2,7 @@
 title: "Mass transport by diffusion"
 publishDate: "5 August 2024"
 description: "Deriving an expression for the concentration profile for semi-transient"
-tags: ["physics"]
+tags: ["engineering"]
 ---
 
 Given some medium, e.g. water,

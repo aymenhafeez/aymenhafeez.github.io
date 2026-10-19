@@ -193,7 +193,7 @@
   },
   {
     "from": "/tags/bessel function/",
-    "to": "/tags/physics/"
+    "to": "/tags/engineering/"
   },
   {
     "from": "/tags/calculus/",
@@ -201,11 +201,11 @@
   },
   {
     "from": "/tags/diffusion/",
-    "to": "/tags/physics/"
+    "to": "/tags/engineering/"
   },
   {
     "from": "/tags/heat transfer/",
-    "to": "/tags/physics/"
+    "to": "/tags/engineering/"
   },
   {
     "from": "/tags/matplotlib/",
@@ -213,7 +213,7 @@
   },
   {
     "from": "/tags/nuclear engineering/",
-    "to": "/tags/physics/"
+    "to": "/tags/engineering/"
   },
   {
     "from": "/vim-pack-lazy-loading/",

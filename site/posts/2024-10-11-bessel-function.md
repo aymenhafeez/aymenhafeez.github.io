@@ -2,7 +2,7 @@
 title: "Deriving the neutron diffusion equation"
 publishDate: "11 October 2024"
 description: "An application of the Bessel function in nuclear reactor theory --- derivation"
-tags: ["physics"]
+tags: ["engineering"]
 ---
 
 The most mathematically involved module I took during my masters was a nuclear

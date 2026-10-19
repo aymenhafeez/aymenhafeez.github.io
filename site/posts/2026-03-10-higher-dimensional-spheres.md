@@ -2,26 +2,26 @@
 title: "Higher dimensional spheres and the prime numbers"
 publishDate: "10 March 2026"
 description: "Relating the volume of higher dimensional spheres to the prime numbers"
-tags: ["mathematics", "prime numbers"]
+tags: ["mathematics", "prime numbers", "gamma function"]
 ---
 
 In a [previous
-post](https://aymenhafeez.github.io/posts/2026-03-01-n-ball-gamma-function/) we
-showed how to derive an expression for the volume of an $n$-ball:
+post](https://aymenhafeez.github.io/posts/2026-03-01-n-ball-gamma-function/) we showed
+how to derive an expression for the volume of a unit $n$-ball:
 
 $$
   V_n = \frac{\pi^{n/2}}{\Gamma\left(\frac{n}{2} + 1\right)}
   = \frac{\pi^{n/2}}{(n/2)!}
 $$
 
-In  another post we've also looked at the [Riemann zeta function at even
+In another post we've also looked at the [Riemann zeta function at even
 values](https://aymenhafeez.github.io/posts/2022-11-28-pi-prime-numbers/),
 
 $$
   \zeta(2k) = \frac{(-1)^{k+1}(2\pi)^{2k}\Beta_{2k}}{2(2k)!}
 $$
 
-as well how the deriving [Euler's prime product
+as well how to derive [Euler's prime product
 formula](https://aymenhafeez.github.io/posts/2025-06-21-prime-product/),
 
 $$
@@ -38,9 +38,11 @@ $$
 $$
 
 In this post we'll see how all these tie together to give a surprising relation
-between the volume of an $n$-ball and the primes.
+between the volume of a unit $n$-ball and the primes.
 
-Recall again that for $4$ dimensional $n$-ball, the volume is
+> In the rest of this post I'll use '$n$-ball' and 'unit $n$-ball' synonymously.
+
+Recall again that for a $4$ dimensional $n$-ball, the volume is
 
 $$
   V_4 = \frac{\pi^2}{\Gamma(3)} = \frac{\pi^2}{2!} = \frac{\pi^2}{2} = 3\zeta(2)
@@ -65,7 +67,7 @@ $$
   \zeta(4) = \frac{\pi^4}{90}
 $$
 
-Putting these together and then equation to the prime product formula at $s = 4$:
+Putting these together and then equating to the prime product formula at $s = 4$:
 
 $$
   V_8 = \frac{90}{24}\zeta(4) = \frac{15}{4}\zeta(4)
