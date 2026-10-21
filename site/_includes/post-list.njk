@@ -2,7 +2,10 @@
 {% for post in posts %}
   <li>
     <time datetime="{{ post.data.publishDate | isoDate }}">{{ post.data.publishDate | date }}</time>
-    <a href="{{ post.url }}">{{ post.data.title | escape }}</a>
+    <div>
+      <a href="{{ post.url }}">{{ post.data.title | escape }}</a>
+      <p class="post-desc">{{ post.data.description | escape }}</p>
+    </div>
   </li>
 {% endfor %}
 </ul>

@@ -3,9 +3,20 @@ layout: base.njk
 title: Posts
 ---
 <h1>{{ site.title }}</h1>
-<p>Tags: {% for topic in collections.topics %}<a href="{{ topic.url }}">{{ topic.name | escape }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
-{% for group in collections.posts | groupByYear %}
-<h2>{{ group.year }}</h2>
-{% set posts = group.posts %}
-{% include "post-list.njk" %}
-{% endfor %}
+<div class="home-layout">
+  <div class="home-posts">
+    {% for group in collections.posts | groupByYear %}
+    <h2>{{ group.year }}</h2>
+    {% set posts = group.posts %}
+    {% include "post-list.njk" %}
+    {% endfor %}
+  </div>
+  <aside class="home-tags">
+    <h2>Tags</h2>
+    <ul>
+      {% for topic in collections.topics %}
+      <li><a href="{{ topic.url }}">{{ topic.name | escape }}</a></li>
+      {% endfor %}
+    </ul>
+  </aside>
+</div>
