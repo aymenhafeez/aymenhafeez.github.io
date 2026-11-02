@@ -58,7 +58,7 @@ for (const path of files(root)) {
   const html = readFileSync(path, "utf8").replace(/<!--[\s\S]*?-->/g, "");
   if (route === "/aizawa.html") continue; // A self-contained Plotly export, not a blog template.
   if (/katex-error|KaTeX parse error/.test(html)) errors.add(`${route}: invalid maths`);
-  for (const match of html.matchAll(/\b(?:href|src)\s*=\s*["']([^"']+)["']/g)) {
+  for (const match of html.matchAll(/\b(?:href|src|poster)\s*=\s*["']([^"']+)["']/g)) {
     const url = new URL(decode(match[1]), new URL(route, site.url));
     if (url.origin !== new URL(site.url).origin) continue;
     const target = check(url.pathname, route);

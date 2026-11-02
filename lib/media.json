@@ -1,0 +1,937 @@
+{
+  "/images/De_Jong_Attractors.png": {
+    "src": "/images/optimized/De_Jong_Attractors.webp",
+    "width": 2000,
+    "height": 1600,
+    "originalBytes": 1791532,
+    "bytes": 779000,
+    "hash": "6b90fad18528476c6267438f7df3cc9ba2c16330e056eb175458a9a22e0bd88e"
+  },
+  "/images/aizawa.gif": {
+    "src": "/images/optimized/aizawa.mp4",
+    "width": 500,
+    "height": 466,
+    "poster": "/images/optimized/aizawa.webp",
+    "originalBytes": 23408466,
+    "bytes": 4239759,
+    "hash": "afb84206003d5a03787e9023ff67dee6f480df57f84e4c17e4a14cd2204faf03"
+  },
+  "/images/aizawa_dark_1.gif": {
+    "src": "/images/optimized/aizawa_dark_1.mp4",
+    "width": 700,
+    "height": 700,
+    "poster": "/images/optimized/aizawa_dark_1.webp",
+    "originalBytes": 16997409,
+    "bytes": 14390486,
+    "hash": "38156504cbea1de84cf1b4f494f919118fa5b8a92011a8474e9bc47f32d20445"
+  },
+  "/images/aizawa_simple.gif": {
+    "src": "/images/optimized/aizawa_simple.mp4",
+    "width": 700,
+    "height": 700,
+    "poster": "/images/optimized/aizawa_simple.webp",
+    "originalBytes": 12790030,
+    "bytes": 1580119,
+    "hash": "e2f387a89332f73bfd8c9ee1ceb1b0f876ebf0406d3123733ed6f730b6efde64"
+  },
+  "/images/aizawa_smoke_dark.gif": {
+    "src": "/images/optimized/aizawa_smoke_dark.mp4",
+    "width": 700,
+    "height": 700,
+    "poster": "/images/optimized/aizawa_smoke_dark.webp",
+    "originalBytes": 15719900,
+    "bytes": 4506069,
+    "hash": "3f0324c306f66d923230a68a6a6ed1ef1e61301133cad9ba41156d5d8d0526a8"
+  },
+  "/images/bath/bath_1.png": {
+    "src": "/images/optimized/bath/bath_1.webp",
+    "width": 638,
+    "height": 998,
+    "originalBytes": 773904,
+    "bytes": 100392,
+    "hash": "a57399b0f544dcbf88af9ccb8212e2468029753e673dfb1439e583cdc2ac5f23"
+  },
+  "/images/bath/bath_2.png": {
+    "src": "/images/optimized/bath/bath_2.webp",
+    "width": 782,
+    "height": 1184,
+    "originalBytes": 1020274,
+    "bytes": 72550,
+    "hash": "1f0db18babe073bd27ad4b4a1d69f0bf08795d90157c6978f301456346ccd2c1"
+  },
+  "/images/bath/bath_3.png": {
+    "src": "/images/optimized/bath/bath_3.webp",
+    "width": 716,
+    "height": 1080,
+    "originalBytes": 924905,
+    "bytes": 96356,
+    "hash": "1faab10b60ea49feb045fa7a8bbe79c14dafbe16c2eb7d2d16130d314b171d81"
+  },
+  "/images/bath/bath_4.png": {
+    "src": "/images/optimized/bath/bath_4.webp",
+    "width": 758,
+    "height": 1154,
+    "originalBytes": 1038497,
+    "bytes": 116780,
+    "hash": "7f7f10090f07282a5168ccd8abc6c332bbb4a358bcde23d70d8c4967ebeaf4de"
+  },
+  "/images/bath/bath_5.png": {
+    "src": "/images/optimized/bath/bath_5.webp",
+    "width": 784,
+    "height": 1188,
+    "originalBytes": 1212521,
+    "bytes": 61628,
+    "hash": "52b18ca4097e6caa156badf6ef95bb3942446c0bd9a56b5c983519922c1e0096"
+  },
+  "/images/bath/bath_6.png": {
+    "src": "/images/optimized/bath/bath_6.webp",
+    "width": 694,
+    "height": 1050,
+    "originalBytes": 829483,
+    "bytes": 69790,
+    "hash": "d67e5450ba850ab454c75f24aa4cfee557a78a13c5f4cabb1be2ce9973a9f4a1"
+  },
+  "/images/clifford_attractor.png": {
+    "src": "/images/optimized/clifford_attractor.webp",
+    "width": 2000,
+    "height": 1297,
+    "originalBytes": 1078304,
+    "bytes": 533960,
+    "hash": "fa3fab79c67dd69fbe0dabcbb43a09e2bf3cf00c6dd6dc09896cad6bf93671b6"
+  },
+  "/images/cmdline.gif": {
+    "src": "/images/optimized/cmdline.mp4",
+    "width": 1600,
+    "height": 1000,
+    "poster": "/images/optimized/cmdline.webp",
+    "originalBytes": 2983242,
+    "bytes": 666131,
+    "hash": "f695a8f6471c2531d5ad4e1059e7e0decaea5d2069da1aa28ba8cd1e05b4dd36"
+  },
+  "/images/cv.png": {
+    "src": "/images/optimized/cv.webp",
+    "width": 1299,
+    "height": 379,
+    "originalBytes": 31366,
+    "bytes": 10020,
+    "hash": "7b03e8e942e5b293d5581aa924ac9c6242ed702e1a9dc957b2159ed8683ed560"
+  },
+  "/images/dadras.gif": {
+    "src": "/images/optimized/dadras.mp4",
+    "width": 500,
+    "height": 451,
+    "poster": "/images/optimized/dadras.webp",
+    "originalBytes": 33598330,
+    "bytes": 3052403,
+    "hash": "3344e50c1c4c6d42f106013edf69db856374b081acb44e1ae822f1dd8cfc68d2"
+  },
+  "/images/dadras.png": {
+    "src": "/images/optimized/dadras.webp",
+    "width": 3450,
+    "height": 3450,
+    "originalBytes": 957674,
+    "bytes": 348840,
+    "hash": "dc85aa4b048b9e1abf9ca3276844ac9a427969d765f26d56b5c665e1a5d74351"
+  },
+  "/images/dadras_glow.gif": {
+    "src": "/images/optimized/dadras_glow.mp4",
+    "width": 700,
+    "height": 700,
+    "poster": "/images/optimized/dadras_glow.webp",
+    "originalBytes": 7761322,
+    "bytes": 233721,
+    "hash": "0b0bc6b30b6c0bf48659e618b11b0f0d8171658c0a97258fa51c63820a666c38"
+  },
+  "/images/daytoday/daytoday_1.png": {
+    "src": "/images/optimized/daytoday/daytoday_1.webp",
+    "width": 842,
+    "height": 1282,
+    "originalBytes": 1368538,
+    "bytes": 233144,
+    "hash": "812fae34fe353f87c5ca4e5d179f1e3c08d5e47942bae81a9bd824e67e67b7c6"
+  },
+  "/images/daytoday/daytoday_10.png": {
+    "src": "/images/optimized/daytoday/daytoday_10.webp",
+    "width": 1628,
+    "height": 1072,
+    "originalBytes": 2090095,
+    "bytes": 327892,
+    "hash": "304d6247367cd61d02f43feb23a9f121b23ea07e758e429cfb94a096609b2aa3"
+  },
+  "/images/daytoday/daytoday_11.png": {
+    "src": "/images/optimized/daytoday/daytoday_11.webp",
+    "width": 1976,
+    "height": 1310,
+    "originalBytes": 3254672,
+    "bytes": 536988,
+    "hash": "c7b19ff052ba3f16a93781cfe1379057a54428432fc0de8daec1328492c11324"
+  },
+  "/images/daytoday/daytoday_12.png": {
+    "src": "/images/optimized/daytoday/daytoday_12.webp",
+    "width": 858,
+    "height": 1298,
+    "originalBytes": 1466258,
+    "bytes": 295776,
+    "hash": "d9dccf248462b429af2dd2956c00a78435d89618d52542a4fac5fc533c432d01"
+  },
+  "/images/daytoday/daytoday_13.png": {
+    "src": "/images/optimized/daytoday/daytoday_13.webp",
+    "width": 860,
+    "height": 1302,
+    "originalBytes": 1405181,
+    "bytes": 246794,
+    "hash": "91597e47a4c982384fe6b55061bc9c80e502dee505a213bbbc802c0c321d9839"
+  },
+  "/images/daytoday/daytoday_14.png": {
+    "src": "/images/optimized/daytoday/daytoday_14.webp",
+    "width": 862,
+    "height": 1306,
+    "originalBytes": 1414525,
+    "bytes": 247142,
+    "hash": "af17d6e2072477ca83d59137a72cd74e2495dce3fd62099b10960f67ff63ec01"
+  },
+  "/images/daytoday/daytoday_15.png": {
+    "src": "/images/optimized/daytoday/daytoday_15.webp",
+    "width": 864,
+    "height": 1308,
+    "originalBytes": 1453324,
+    "bytes": 282352,
+    "hash": "3adbd33a6a8165eaa37d9a7b46ae04c97f9260edaf7801a628139a277b560ce6"
+  },
+  "/images/daytoday/daytoday_2.png": {
+    "src": "/images/optimized/daytoday/daytoday_2.webp",
+    "width": 858,
+    "height": 1304,
+    "originalBytes": 1384991,
+    "bytes": 219104,
+    "hash": "8b0dd6c181426bcb19218f1de8ea0d8ab52e6a2ec46fd3e97b7332661f0e9e14"
+  },
+  "/images/daytoday/daytoday_3.png": {
+    "src": "/images/optimized/daytoday/daytoday_3.webp",
+    "width": 1774,
+    "height": 1172,
+    "originalBytes": 2505207,
+    "bytes": 390760,
+    "hash": "85417947affd592aa36fda7f50aa39d0c214d0cdd777e4a5d5af40b76ba87d3c"
+  },
+  "/images/daytoday/daytoday_4.png": {
+    "src": "/images/optimized/daytoday/daytoday_4.webp",
+    "width": 1764,
+    "height": 1164,
+    "originalBytes": 2574084,
+    "bytes": 479158,
+    "hash": "905b133ae8195bc48ad72f76378d15bf312c4a36fb7b30bb404dee767cf336e3"
+  },
+  "/images/daytoday/daytoday_6.png": {
+    "src": "/images/optimized/daytoday/daytoday_6.webp",
+    "width": 854,
+    "height": 1308,
+    "originalBytes": 1265305,
+    "bytes": 143290,
+    "hash": "4eb6a517e5b59f5c294291289702fe090b45aa04df16472aa3c9da0c3728da34"
+  },
+  "/images/daytoday/daytoday_7.png": {
+    "src": "/images/optimized/daytoday/daytoday_7.webp",
+    "width": 1720,
+    "height": 1138,
+    "originalBytes": 2565819,
+    "bytes": 527242,
+    "hash": "4e32d44f22eea56cf70426917c7339d7480abbfee612b72bfb0b80496661c803"
+  },
+  "/images/daytoday/daytoday_8.png": {
+    "src": "/images/optimized/daytoday/daytoday_8.webp",
+    "width": 1578,
+    "height": 1036,
+    "originalBytes": 2155532,
+    "bytes": 442264,
+    "hash": "4ebe096aed9b50b9f193c3ca10d3dce91551c398238535722955ec7caee72e2e"
+  },
+  "/images/daytoday/daytoday_9.png": {
+    "src": "/images/optimized/daytoday/daytoday_9.webp",
+    "width": 858,
+    "height": 1310,
+    "originalBytes": 1470913,
+    "bytes": 263994,
+    "hash": "25606ce53ecca768897a6059fb8c96d577b72b1c9707aa2996bb40640a6cf18c"
+  },
+  "/images/doric-themes/doric-beach.png": {
+    "src": "/images/optimized/doric-themes/doric-beach.webp",
+    "width": 5220,
+    "height": 2916,
+    "originalBytes": 1572323,
+    "bytes": 562090,
+    "hash": "5e9a32bb1e0daec75fdccb5d548dd1ee00b9fc53dea78fbff27bf86190c47713"
+  },
+  "/images/doric-themes/doric-cherry.png": {
+    "src": "/images/optimized/doric-themes/doric-cherry.webp",
+    "width": 5220,
+    "height": 2916,
+    "originalBytes": 1572349,
+    "bytes": 584594,
+    "hash": "4089dc5d9d89627ba428ef7686cf01e7d60cc67d016288142838e04fe57a7e68"
+  },
+  "/images/doric-themes/doric-copper.png": {
+    "src": "/images/optimized/doric-themes/doric-copper.webp",
+    "width": 5220,
+    "height": 2916,
+    "originalBytes": 1540401,
+    "bytes": 651422,
+    "hash": "b2c93d7a10b8e68ffc231066c51e0e05df39dfc81ff240390e6fa8c3485e7254"
+  },
+  "/images/doric-themes/doric-dark.png": {
+    "src": "/images/optimized/doric-themes/doric-dark.webp",
+    "width": 5220,
+    "height": 2916,
+    "originalBytes": 1576732,
+    "bytes": 579480,
+    "hash": "826e1dc9f98e286bdb694ba6f50cf88b5053a579fdfecd78ade0188e43bd37a1"
+  },
+  "/images/doric-themes/doric-earth.png": {
+    "src": "/images/optimized/doric-themes/doric-earth.webp",
+    "width": 5220,
+    "height": 2916,
+    "originalBytes": 1572149,
+    "bytes": 601950,
+    "hash": "15cb6bcf33a636e71fb3fd271affc1e0099e9672cc4a33b014c9c5fa5552e936"
+  },
+  "/images/doric-themes/doric-fire.png": {
+    "src": "/images/optimized/doric-themes/doric-fire.webp",
+    "width": 5220,
+    "height": 2916,
+    "originalBytes": 1545137,
+    "bytes": 647710,
+    "hash": "e4892b9815ca444f7940a8f668625e51d7ce6ea2a36ae82a04ec740f02c01177"
+  },
+  "/images/doric-themes/doric-jade.png": {
+    "src": "/images/optimized/doric-themes/doric-jade.webp",
+    "width": 5220,
+    "height": 2916,
+    "originalBytes": 1609730,
+    "bytes": 702286,
+    "hash": "a24be8aff56f347458dda7dcb71dd80b4e174f0805d89d90fe42cd27c14c0885"
+  },
+  "/images/doric-themes/doric-light.png": {
+    "src": "/images/optimized/doric-themes/doric-light.webp",
+    "width": 5220,
+    "height": 2916,
+    "originalBytes": 1597873,
+    "bytes": 595992,
+    "hash": "1acebe687db85e2ee5d96e8f28b4b6d6733614991dd20eda46e99a28ae8fd0bd"
+  },
+  "/images/doric-themes/doric-marble.png": {
+    "src": "/images/optimized/doric-themes/doric-marble.webp",
+    "width": 5220,
+    "height": 2916,
+    "originalBytes": 1206883,
+    "bytes": 419038,
+    "hash": "6cb8e815ef70ffe5fff4c1d43ab309295feb5b758a1c3467bbfc95da71573865"
+  },
+  "/images/doric-themes/doric-mermaid.png": {
+    "src": "/images/optimized/doric-themes/doric-mermaid.webp",
+    "width": 5220,
+    "height": 2916,
+    "originalBytes": 1566151,
+    "bytes": 534774,
+    "hash": "da915e5e486199a12a19ce8a9e993df7afaa5e020ccf287f6128175d6cc8d890"
+  },
+  "/images/doric-themes/doric-oak.png": {
+    "src": "/images/optimized/doric-themes/doric-oak.webp",
+    "width": 5220,
+    "height": 2916,
+    "originalBytes": 1645282,
+    "bytes": 782734,
+    "hash": "52d51fbe6b632e23c6bdd60368a8df4d5e9d12eb7a8bac17b00450e1435434bb"
+  },
+  "/images/doric-themes/doric-obsidian.png": {
+    "src": "/images/optimized/doric-themes/doric-obsidian.webp",
+    "width": 5220,
+    "height": 2916,
+    "originalBytes": 1180743,
+    "bytes": 417356,
+    "hash": "9d3a1370a8be2a60ee99c5f16220f89bfc31297297a23723f80ea0b448ddf90d"
+  },
+  "/images/doric-themes/doric-pine.png": {
+    "src": "/images/optimized/doric-themes/doric-pine.webp",
+    "width": 5220,
+    "height": 2916,
+    "originalBytes": 1537950,
+    "bytes": 629548,
+    "hash": "cfb2c196e5b29a2d430d3bfc8ff4d7508ad7f561266a1b93c9481d52c82b7f15"
+  },
+  "/images/doric-themes/doric-plum.png": {
+    "src": "/images/optimized/doric-themes/doric-plum.webp",
+    "width": 5220,
+    "height": 2916,
+    "originalBytes": 1573209,
+    "bytes": 562772,
+    "hash": "9dff243ac8eb27b52017694d4ef92f805a94f4200ae460dc8ae7a2d1969cc31b"
+  },
+  "/images/doric-themes/doric-siren.png": {
+    "src": "/images/optimized/doric-themes/doric-siren.webp",
+    "width": 5220,
+    "height": 2916,
+    "originalBytes": 1620814,
+    "bytes": 676566,
+    "hash": "130c4920ab2cfeb5e551b035953047e627a6d9e92c27faf8915d9c52b08b1a81"
+  },
+  "/images/doric-themes/doric-valley.png": {
+    "src": "/images/optimized/doric-themes/doric-valley.webp",
+    "width": 5220,
+    "height": 2916,
+    "originalBytes": 1505439,
+    "bytes": 610338,
+    "hash": "939dc3938d2ab51ce0b2a15a55e825af1a27448b2c11d198391dac0c0d9f7f62"
+  },
+  "/images/doric-themes/doric-water.png": {
+    "src": "/images/optimized/doric-themes/doric-water.webp",
+    "width": 5220,
+    "height": 2916,
+    "originalBytes": 1565982,
+    "bytes": 567028,
+    "hash": "e33c15450fbce0133d60c1d8252a36aaf99a8ccfe46ac76258d353b021c6ee99"
+  },
+  "/images/doric-themes/doric-wind.png": {
+    "src": "/images/optimized/doric-themes/doric-wind.webp",
+    "width": 5220,
+    "height": 2916,
+    "originalBytes": 1587136,
+    "bytes": 618300,
+    "hash": "e8347af9acc236c86d9a8eed5b8980835461053af7bd7bcfc66592ba76e5742f"
+  },
+  "/images/fig.png": {
+    "src": "/images/optimized/fig.webp",
+    "width": 640,
+    "height": 480,
+    "originalBytes": 14159,
+    "bytes": 5124,
+    "hash": "a8fe4b4d960822a1e8ad48312f7c647cf0c3897e906148024cdfa5d8b0b4d138"
+  },
+  "/images/figs/example.png": {
+    "src": "/images/optimized/figs/example.webp",
+    "width": 1848,
+    "height": 1316,
+    "originalBytes": 420952,
+    "bytes": 74234,
+    "hash": "4c58ea60c9aef5adbb63e70cd77c635a537ef624bdd6414898f518a82f44f6e6"
+  },
+  "/images/figs/grep.png": {
+    "src": "/images/optimized/figs/grep.webp",
+    "width": 2560,
+    "height": 1408,
+    "originalBytes": 380047,
+    "bytes": 49862,
+    "hash": "552b2d481db75b50cddb59a95e187f3781907de8c9cc8affbdcb63057d856242"
+  },
+  "/images/figs/layout.png": {
+    "src": "/images/optimized/figs/layout.webp",
+    "width": 2560,
+    "height": 1408,
+    "originalBytes": 269518,
+    "bytes": 34566,
+    "hash": "a1e7a47d2a498728cc0a2ea653dc0a7c7feb51f46e0bb526d0d224174f8a0380"
+  },
+  "/images/figs/lspinfo.png": {
+    "src": "/images/optimized/figs/lspinfo.webp",
+    "width": 2744,
+    "height": 1734,
+    "originalBytes": 859296,
+    "bytes": 157938,
+    "hash": "9c410d21ab9c1c26a112d30bc401d129099f3cfc0d6b1e84659e50ed8b873783"
+  },
+  "/images/figs/notes.png": {
+    "src": "/images/optimized/figs/notes.webp",
+    "width": 2560,
+    "height": 1408,
+    "originalBytes": 407458,
+    "bytes": 53968,
+    "hash": "d61a889fd38543e28830c1cc4a536b55a7b38dd866cdbbf63cd64f7109d8aaa9"
+  },
+  "/images/figs/planets.png": {
+    "src": "/images/optimized/figs/planets.webp",
+    "width": 2560,
+    "height": 1408,
+    "originalBytes": 68790,
+    "bytes": 16744,
+    "hash": "544620e47d66874620a90a8872e3f1ba91ba56ff1cdd793249481e6f6a3eb34a"
+  },
+  "/images/figs/spell.png": {
+    "src": "/images/optimized/figs/spell.webp",
+    "width": 1303,
+    "height": 1028,
+    "originalBytes": 155136,
+    "bytes": 34678,
+    "hash": "80bd3a221c6666c2f646c36dcd0deb48588791966e2e8d4813f9b9490379fa34"
+  },
+  "/images/figs/workflow.gif": {
+    "src": "/images/optimized/figs/workflow.webp",
+    "width": 2560,
+    "height": 1565,
+    "originalBytes": 11354409,
+    "bytes": 7292380,
+    "hash": "a41c34c48a3aee442f960e90a898a6aa67dac2cf36510baf1116f8e2dc77767b"
+  },
+  "/images/fourier_bad_loop.gif": {
+    "src": "/images/optimized/fourier_bad_loop.mp4",
+    "width": 640,
+    "height": 480,
+    "poster": "/images/optimized/fourier_bad_loop.webp",
+    "originalBytes": 1743072,
+    "bytes": 358964,
+    "hash": "97aa4d7af12ccea540569f5b0598fd6e822497ed393778c0c699057c557b964d"
+  },
+  "/images/fourier_trefoil.gif": {
+    "src": "/images/optimized/fourier_trefoil.mp4",
+    "width": 640,
+    "height": 480,
+    "poster": "/images/optimized/fourier_trefoil.webp",
+    "originalBytes": 3200735,
+    "bytes": 713098,
+    "hash": "6df8111e3d8301bf21777c5125b4f0fc0da82f836e6fd6abd1d94b8f7a7981af"
+  },
+  "/images/fuzzy.gif": {
+    "src": "/images/optimized/fuzzy.mp4",
+    "width": 1600,
+    "height": 900,
+    "poster": "/images/optimized/fuzzy.webp",
+    "originalBytes": 742176,
+    "bytes": 236643,
+    "hash": "a9be77e6fbaa852e7ecfe23d94656f4be8867f7ad47fab886f493b22ae0dd4ba"
+  },
+  "/images/ghostty.gif": {
+    "src": "/images/optimized/ghostty.mp4",
+    "width": 1600,
+    "height": 1000,
+    "poster": "/images/optimized/ghostty.webp",
+    "originalBytes": 1364620,
+    "bytes": 263509,
+    "hash": "3ce571009341407e16175164908b104c829524a4063561894c64bcc17a228974"
+  },
+  "/images/haf-har.gif": {
+    "src": "/images/optimized/haf-har.mp4",
+    "width": 1056,
+    "height": 482,
+    "poster": "/images/optimized/haf-har.webp",
+    "originalBytes": 6027904,
+    "bytes": 183078,
+    "hash": "f8a7eaa3c6092b2a439e496ea21cdcd98d905718f86112cea4457438eef5bda2"
+  },
+  "/images/haf-har2.gif": {
+    "src": "/images/optimized/haf-har2.mp4",
+    "width": 1056,
+    "height": 482,
+    "poster": "/images/optimized/haf-har2.webp",
+    "originalBytes": 3582231,
+    "bytes": 163647,
+    "hash": "ae6aaedf7f9389331ad5df9cb60650845b6de3911de4cc5087e1ba4ae481cba6"
+  },
+  "/images/hc-1.png": {
+    "src": "/images/optimized/hc-1.webp",
+    "width": 866,
+    "height": 222,
+    "originalBytes": 18465,
+    "bytes": 4216,
+    "hash": "b1f26cc65ec594adcaf2b743f45bf0c671d9f37d55341f94ee28b9a48ac68e54"
+  },
+  "/images/hc-2.png": {
+    "src": "/images/optimized/hc-2.webp",
+    "width": 816,
+    "height": 672,
+    "originalBytes": 47925,
+    "bytes": 10702,
+    "hash": "6cf0f1d65651bdc5867c1b60062cf906aa01ef01c41bf60de2fdf747e4fabda4"
+  },
+  "/images/hc-3.png": {
+    "src": "/images/optimized/hc-3.webp",
+    "width": 1760,
+    "height": 490,
+    "originalBytes": 91067,
+    "bytes": 19468,
+    "hash": "c44eeb11b5defb9cc679d2aa151381147444e4f25f38b8266cdfc62dd16cbf5a"
+  },
+  "/images/iceland/iceland_1.png": {
+    "src": "/images/optimized/iceland/iceland_1.webp",
+    "width": 1024,
+    "height": 1522,
+    "originalBytes": 3018806,
+    "bytes": 147524,
+    "hash": "5e5efc88a9a9dbd59152f40407b0abfbb67dfc25b6e9f9e06f4497e5d6751102"
+  },
+  "/images/iceland/iceland_2.png": {
+    "src": "/images/optimized/iceland/iceland_2.webp",
+    "width": 1924,
+    "height": 1289,
+    "originalBytes": 4938314,
+    "bytes": 239922,
+    "hash": "2a78e780bebc6cbbcf42235261a07354b63da623402b96b500a3ae81ead93e2d"
+  },
+  "/images/iceland/iceland_3.png": {
+    "src": "/images/optimized/iceland/iceland_3.webp",
+    "width": 918,
+    "height": 1368,
+    "originalBytes": 2405195,
+    "bytes": 147536,
+    "hash": "fd752ead4431151fe1ffada0594718434766d1a80ba67ea9da809285de2bd42a"
+  },
+  "/images/iceland/iceland_4.png": {
+    "src": "/images/optimized/iceland/iceland_4.webp",
+    "width": 920,
+    "height": 1372,
+    "originalBytes": 1818221,
+    "bytes": 68648,
+    "hash": "a136274867cabb57e1ac75945701437a45a279cd5dae2ed85aa53ff1a587c093"
+  },
+  "/images/iceland/iceland_5.png": {
+    "src": "/images/optimized/iceland/iceland_5.webp",
+    "width": 1812,
+    "height": 1212,
+    "originalBytes": 5250921,
+    "bytes": 418662,
+    "hash": "e89415695354c5381bd3c0db3c734eec663cb07a8fecee79bbfa1a4bb4fad9bc"
+  },
+  "/images/iceland/iceland_6.png": {
+    "src": "/images/optimized/iceland/iceland_6.webp",
+    "width": 916,
+    "height": 1366,
+    "originalBytes": 2746843,
+    "bytes": 183142,
+    "hash": "e5bbbe39a7e37dd497f2a6343bf14590d8b31a340440b476b91ebcddaa3c6683"
+  },
+  "/images/iceland/iceland_7.png": {
+    "src": "/images/optimized/iceland/iceland_7.webp",
+    "width": 1892,
+    "height": 1266,
+    "originalBytes": 5390793,
+    "bytes": 419028,
+    "hash": "78e212830b58c167938bf10902b1bd7e91780685b0425af43d549c5d143848dc"
+  },
+  "/images/iceland/iceland_8.png": {
+    "src": "/images/optimized/iceland/iceland_8.webp",
+    "width": 2046,
+    "height": 1364,
+    "originalBytes": 5942374,
+    "bytes": 378906,
+    "hash": "2a5691ca6b38b6876a8fefb0e4913a805b5d841532ebf14d361350bfe9e6848f"
+  },
+  "/images/jupytext.gif": {
+    "src": "/images/optimized/jupytext.mp4",
+    "width": 1600,
+    "height": 1000,
+    "poster": "/images/optimized/jupytext.webp",
+    "originalBytes": 3032219,
+    "bytes": 684571,
+    "hash": "d54c5ffdd67b468af24aa11fe261b27744d3c830f37c7f74a9f71159dffb202d"
+  },
+  "/images/light.png": {
+    "src": "/images/optimized/light.webp",
+    "width": 905,
+    "height": 628,
+    "originalBytes": 43789,
+    "bytes": 14272,
+    "hash": "f702b718251abd778d6f70ae7a6a3cbd509f03477a7478f08bee335c9513084d"
+  },
+  "/images/lissajous_plot.png": {
+    "src": "/images/optimized/lissajous_plot.webp",
+    "width": 1900,
+    "height": 700,
+    "originalBytes": 254251,
+    "bytes": 99122,
+    "hash": "0ba05dd21f450d0550258ab2bb3af7c5fd6d63cec64e5f726309a9e6ddf7fda5"
+  },
+  "/images/london/london_1.png": {
+    "src": "/images/optimized/london/london_1.webp",
+    "width": 1626,
+    "height": 1090,
+    "originalBytes": 2653716,
+    "bytes": 371946,
+    "hash": "ee63d2fb3808bc3f614388a94c4f4d453f17615bc9b3caefe6dedb03b0240805"
+  },
+  "/images/london/london_10.png": {
+    "src": "/images/optimized/london/london_10.webp",
+    "width": 730,
+    "height": 1086,
+    "originalBytes": 1064751,
+    "bytes": 117650,
+    "hash": "7e37f17d81ee1b5b86699cbbdf07320a7b7a9fb4ed44f27aad47a50431f2e267"
+  },
+  "/images/london/london_2.png": {
+    "src": "/images/optimized/london/london_2.webp",
+    "width": 1506,
+    "height": 1006,
+    "originalBytes": 2188408,
+    "bytes": 239628,
+    "hash": "e2d04fc7a48ffadfcfb0a942134beba29b5a45199c66ed146584b2748a224d09"
+  },
+  "/images/london/london_3.png": {
+    "src": "/images/optimized/london/london_3.webp",
+    "width": 756,
+    "height": 1120,
+    "originalBytes": 1044428,
+    "bytes": 90602,
+    "hash": "9d25ff25ae77839d54fba7542aa6d556ef2f10547f31e4d94abcdb5379ed37fa"
+  },
+  "/images/london/london_4.png": {
+    "src": "/images/optimized/london/london_4.webp",
+    "width": 1640,
+    "height": 1104,
+    "originalBytes": 2692952,
+    "bytes": 362140,
+    "hash": "99dd88b070266f73e8cc83ad0ac345aae5d2431d38a997277920166c752de096"
+  },
+  "/images/london/london_5.png": {
+    "src": "/images/optimized/london/london_5.webp",
+    "width": 1708,
+    "height": 1144,
+    "originalBytes": 3020817,
+    "bytes": 450256,
+    "hash": "3d25fa193d85128f79acd82edfd0aba0a066e43a1896117f07898243fe12a0b4"
+  },
+  "/images/london/london_6.png": {
+    "src": "/images/optimized/london/london_6.webp",
+    "width": 830,
+    "height": 1242,
+    "originalBytes": 1377394,
+    "bytes": 158092,
+    "hash": "609fd47410e77cdd74c734a728bb34bc37034d53ec95a74952d4509875f1e49d"
+  },
+  "/images/london/london_7.png": {
+    "src": "/images/optimized/london/london_7.webp",
+    "width": 844,
+    "height": 1260,
+    "originalBytes": 1256918,
+    "bytes": 79708,
+    "hash": "d807e73444c7cc5679106c40e23c659dfcccfd3eec625585b46452cc753be7d9"
+  },
+  "/images/london/london_8.png": {
+    "src": "/images/optimized/london/london_8.webp",
+    "width": 816,
+    "height": 1220,
+    "originalBytes": 1161342,
+    "bytes": 76116,
+    "hash": "87b992a0032150cd1e984964a951583bf0d8fb7bc359cf23e2ccee07c623415f"
+  },
+  "/images/london/london_9.png": {
+    "src": "/images/optimized/london/london_9.webp",
+    "width": 892,
+    "height": 1336,
+    "originalBytes": 1584562,
+    "bytes": 133098,
+    "hash": "61e335672d7741f1bc31e80bd8516fbf585842fa04d526bc2a2c3220b4640543"
+  },
+  "/images/lorenz-anim.gif": {
+    "src": "/images/optimized/lorenz-anim.mp4",
+    "width": 600,
+    "height": 540,
+    "poster": "/images/optimized/lorenz-anim.webp",
+    "originalBytes": 18862344,
+    "bytes": 1953308,
+    "hash": "4372a3b69ac96dcd601a267f7e75a54d8dd9e409e00b83f9ba71d3eb8f7c79e5"
+  },
+  "/images/lorenz_3d.png": {
+    "src": "/images/optimized/lorenz_3d.webp",
+    "width": 2070,
+    "height": 2070,
+    "originalBytes": 606889,
+    "bytes": 185486,
+    "hash": "ca740ceb6f0f1d63fb72328f24d812a8d49696376a59dbe29501838060d27321"
+  },
+  "/images/lorenz_colour.gif": {
+    "src": "/images/optimized/lorenz_colour.mp4",
+    "width": 700,
+    "height": 700,
+    "poster": "/images/optimized/lorenz_colour.webp",
+    "originalBytes": 26274548,
+    "bytes": 5428473,
+    "hash": "ea680620f02bf63850a2c65659e20190ec6def29c82c62b29be22329465c5e51"
+  },
+  "/images/lsp_microsoft.png": {
+    "src": "/images/optimized/lsp_microsoft.webp",
+    "width": 938,
+    "height": 406,
+    "originalBytes": 102808,
+    "bytes": 60744,
+    "hash": "7add5b28612906a51f463ed1bb43a194db523e17750bad625dfd4be8c34c8012"
+  },
+  "/images/lsp_showcase.gif": {
+    "src": "/images/optimized/lsp_showcase.mp4",
+    "width": 1600,
+    "height": 1517,
+    "poster": "/images/optimized/lsp_showcase.webp",
+    "originalBytes": 6512775,
+    "bytes": 1240239,
+    "hash": "02be149361f51b8dd91931fbbfd4ae988bda59339a7173878ce7da2790ef2741"
+  },
+  "/images/lsp_showcase_2.gif": {
+    "src": "/images/optimized/lsp_showcase_2.mp4",
+    "width": 1600,
+    "height": 1328,
+    "poster": "/images/optimized/lsp_showcase_2.webp",
+    "originalBytes": 6277820,
+    "bytes": 1368718,
+    "hash": "8ba2910b56f0e6d19644f1ae7944b133793df9662643aee7f7e31e8cacd47466"
+  },
+  "/images/newyork/ny_1.png": {
+    "src": "/images/optimized/newyork/ny_1.webp",
+    "width": 778,
+    "height": 1164,
+    "originalBytes": 2163819,
+    "bytes": 136328,
+    "hash": "cee57b93aa716eb1202081bb2f13781a264b47d094657982c2b777ad43866af0"
+  },
+  "/images/newyork/ny_2.png": {
+    "src": "/images/optimized/newyork/ny_2.webp",
+    "width": 1324,
+    "height": 890,
+    "originalBytes": 2439225,
+    "bytes": 122836,
+    "hash": "da78b805680871b70b6840fac5bd16ffc4966bac92460fa9e45e91f65fabb854"
+  },
+  "/images/newyork/ny_3.png": {
+    "src": "/images/optimized/newyork/ny_3.webp",
+    "width": 786,
+    "height": 1180,
+    "originalBytes": 2062471,
+    "bytes": 94782,
+    "hash": "9bfb7e4e301ed8bc0deb1d68978f8e3f301cfe973143373e424a6e73d68e3a3a"
+  },
+  "/images/newyork/ny_4.png": {
+    "src": "/images/optimized/newyork/ny_4.webp",
+    "width": 792,
+    "height": 1182,
+    "originalBytes": 2504893,
+    "bytes": 231820,
+    "hash": "a585b836e670b0cdf2f111b2d71d9b0ce3e0ec9999e38c001ba7fd41f5c66db4"
+  },
+  "/images/newyork/ny_5.png": {
+    "src": "/images/optimized/newyork/ny_5.webp",
+    "width": 1536,
+    "height": 1020,
+    "originalBytes": 3586876,
+    "bytes": 346250,
+    "hash": "fada8ea20acf259eb154e0f9446b0c27e2fe31e1a44c8776f4c881e03f319f3a"
+  },
+  "/images/newyork/ny_6.png": {
+    "src": "/images/optimized/newyork/ny_6.webp",
+    "width": 784,
+    "height": 1172,
+    "originalBytes": 2030058,
+    "bytes": 110786,
+    "hash": "54ede1a973e32e3e2e8623156cb31737b584c20c311401a46c56fc421255d3c9"
+  },
+  "/images/plotrepl.png": {
+    "src": "/images/optimized/plotrepl.webp",
+    "width": 1920,
+    "height": 1159,
+    "originalBytes": 1011955,
+    "bytes": 325308,
+    "hash": "17445d22a31682656c83b9c8af3b9acf60d99364e818111de4ffe2311d77a525"
+  },
+  "/images/repl.gif": {
+    "src": "/images/optimized/repl.mp4",
+    "width": 1600,
+    "height": 1000,
+    "poster": "/images/optimized/repl.webp",
+    "originalBytes": 1583173,
+    "bytes": 572417,
+    "hash": "97924af4a0de73ed795608f28b8dc28663fdab740ae341ba8610fa0ce9c06e18"
+  },
+  "/images/slab.png": {
+    "src": "/images/optimized/slab.webp",
+    "width": 560,
+    "height": 620,
+    "originalBytes": 6946,
+    "bytes": 1256,
+    "hash": "b8e4e13f1262d751288ec32d98b9675ec890a2c0932a609f132e9f1e9505a036"
+  },
+  "/images/thomas.gif": {
+    "src": "/images/optimized/thomas.mp4",
+    "width": 480,
+    "height": 422,
+    "poster": "/images/optimized/thomas.webp",
+    "originalBytes": 23292118,
+    "bytes": 2459238,
+    "hash": "5d1c64a45f1c62e97dab3b20ec49d2bcc57afe806b10cdd7eee7123b99e12d7d"
+  },
+  "/images/three_scroll.gif": {
+    "src": "/images/optimized/three_scroll.mp4",
+    "width": 480,
+    "height": 376,
+    "poster": "/images/optimized/three_scroll.webp",
+    "originalBytes": 20893359,
+    "bytes": 1849572,
+    "hash": "a6ba0cad3ad5f74f53d5c7751598d154864bf361fc9958fb309c513b7157057c"
+  },
+  "/images/torus.png": {
+    "src": "/images/optimized/torus.webp",
+    "width": 2950,
+    "height": 2950,
+    "originalBytes": 1327428,
+    "bytes": 640042,
+    "hash": "d0f2040ade8ec8834ed1da494ea90a80feda976ce990c2071eb72946249e2249"
+  },
+  "/images/torus_knots.gif": {
+    "src": "/images/optimized/torus_knots.mp4",
+    "width": 1000,
+    "height": 500,
+    "poster": "/images/optimized/torus_knots.webp",
+    "originalBytes": 6611033,
+    "bytes": 1577226,
+    "hash": "27f5e8e5fe1a35becd854a09f4f32bf214cb7aa6a9e90d09685fb8c6471aaeac"
+  },
+  "/images/torus_on_torus.gif": {
+    "src": "/images/optimized/torus_on_torus.mp4",
+    "width": 700,
+    "height": 700,
+    "poster": "/images/optimized/torus_on_torus.webp",
+    "originalBytes": 24373048,
+    "bytes": 4021445,
+    "hash": "f768e73a56826399fff2fc995bb0d5db968169ebffdc79bf7a71be55425160c1"
+  },
+  "/images/wales/wales_1.png": {
+    "src": "/images/optimized/wales/wales_1.webp",
+    "width": 838,
+    "height": 1248,
+    "originalBytes": 2067973,
+    "bytes": 104140,
+    "hash": "71b6d28bef9c07220630dc0422da1959d0f2fde4e0bb974e3b8d979604b3e6c4"
+  },
+  "/images/wales/wales_2.png": {
+    "src": "/images/optimized/wales/wales_2.webp",
+    "width": 878,
+    "height": 1304,
+    "originalBytes": 2262124,
+    "bytes": 99816,
+    "hash": "4d67b0d276a33c239797555eb3d2f977b9411dc8dc287fbda7a5cd62aacccad2"
+  },
+  "/images/wales/wales_3.png": {
+    "src": "/images/optimized/wales/wales_3.webp",
+    "width": 854,
+    "height": 1276,
+    "originalBytes": 2159887,
+    "bytes": 55540,
+    "hash": "d85dacce47378497357b4abd714be56eb017040ee48f11b5f72618fe76186cbb"
+  },
+  "/images/wales/wales_4.png": {
+    "src": "/images/optimized/wales/wales_4.webp",
+    "width": 786,
+    "height": 1214,
+    "originalBytes": 2099983,
+    "bytes": 122172,
+    "hash": "5ee2a38fbda76ce8dc7e5777203bcc077d92b0698c5ffc359893404cbe57ffbb"
+  },
+  "/images/wales/wales_5.png": {
+    "src": "/images/optimized/wales/wales_5.webp",
+    "width": 1698,
+    "height": 1134,
+    "originalBytes": 4403232,
+    "bytes": 480016,
+    "hash": "729e626c1a08d21fdfdfef75069912497dff18f7c06a85cebb0c3707cf627221"
+  },
+  "/images/wales/wales_6.png": {
+    "src": "/images/optimized/wales/wales_6.webp",
+    "width": 838,
+    "height": 1258,
+    "originalBytes": 2565141,
+    "bytes": 211118,
+    "hash": "1e1a0ba0e80ad5312696984be32639738b8426688c25acba1df4340f64e4fd3f"
+  }
+}

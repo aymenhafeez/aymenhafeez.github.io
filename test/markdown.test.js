@@ -53,3 +53,35 @@ test("post dates retain their calendar day in summer and winter", () => {
   assert.equal(formatDate("2026-08-24"), "24 Aug 2026");
   assert.throws(() => parseDate("not a date"), /Invalid date/);
 });
+
+test("footnotes are numbered by reference order with a collapsed section and rich content", () => {
+  const markdown = createMarkdown();
+  const source = `A longer note.[^gamma] Another.[^short] Repeated.[^gamma]
+
+[^short]: A short explanation.
+
+[^gamma]: First paragraph with **formatting** and [a link](https://example.com).
+
+    Second paragraph with $x^2$.
+
+    - A list item.
+
+    ~~~python
+    print("hello")
+    ~~~
+`;
+  const html = markdown.render(source);
+  assert.match(html, /<details class="footnotes">\s*<summary>Footnotes<\/summary>/);
+  assert.doesNotMatch(html, /<details[^>]*\bopen\b/);
+  assert.match(html, /aria-label="Footnote 1" href="#fn1" id="fnref1"/);
+  assert.match(html, /href="#fn1" id="fnref1:1"/);
+  assert.match(html, /href="#fn2" id="fnref2"/);
+  assert.match(html, /<strong>formatting<\/strong>/);
+  assert.match(html, /<p>Second paragraph with <span class="katex"/);
+  assert.match(html, /<li>A list item\.<\/li>/);
+  assert.match(html, /class="token string"/);
+  assert.match(html, /href="#fnref1:1" class="footnote-backref"/);
+  assert.equal(markdown.render(source), html);
+  assert.doesNotMatch(markdown.render('An ordinary post.'), /footnotes/);
+  assert.match(markdown.render('A fresh post.[^a]\n\n[^a]: New note.'), /id="fn1"/);
+});
