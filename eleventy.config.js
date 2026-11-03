@@ -3,6 +3,7 @@ import { dirname, join } from "node:path";
 import { rm } from "node:fs/promises";
 import { createMarkdown } from "./lib/markdown.js";
 import { parseDate, formatDate } from "./lib/dates.js";
+import { optimizeMedia } from "./lib/media.js";
 
 const require = createRequire(import.meta.url);
 const katexDirectory = join(dirname(require.resolve("katex/package.json")), "dist");
@@ -12,7 +13,12 @@ function published(post) {
 }
 
 export default function (eleventyConfig) {
+  // Reload scripts after post edits so newly added footnotes get popup controls.
+  eleventyConfig.setServerOptions({ domDiff: false });
   eleventyConfig.setLibrary("md", createMarkdown());
+  eleventyConfig.addTransform("optimize-media", function (content) {
+    return this.page.outputPath?.endsWith(".html") ? optimizeMedia(content) : content;
+  });
   // Deployment builds must not retain removed posts or assets from an earlier build.
   eleventyConfig.on("eleventy.before", async ({ runMode }) => {
     if (runMode === "build") await rm("dist", { recursive: true, force: true });
