@@ -1,8 +1,8 @@
 ---
 title: "LSODA and RK4 comparison"
-publishDate: "1 November 2026"
+publishDate: "27 September 2026"
 description: "Comparing integration methods for solving strange attractors"
-tags: ["maths", "python"]
+tags: ["mathematics", "python"]
 ---
 
 One of the main features of the [mathematical exploration
